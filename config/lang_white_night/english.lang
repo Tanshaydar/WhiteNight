@@ -3,7 +3,6 @@
     <Directory Path="fonts/eng" />
     <Directory Path="lang/eng" />
   </RESOURCES>
-  
   <CATEGORY Name="Inventory">
 		<Entry Name="ItemName_key_tower_2">Hall Key</Entry>
 		<Entry Name="ItemDesc_key_tower_2">Key that opens the door end of the hall.</Entry>

@@ -1,1 +1,3 @@
-Launcher.exe wn_config/main_init.cfg
+@echo off
+cd /d ..
+start Amnesia.exe White_Night/config/white_night_main_init.cfg

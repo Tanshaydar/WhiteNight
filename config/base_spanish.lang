@@ -49,6 +49,16 @@
 	<Entry Name="Chapter">Capítulo</Entry>
 	<Entry Name="Level">Nivel</Entry>
 	<Entry Name="Save">Guardar</Entry>
+	<Entry Name="HardMode">Hard mode</Entry>
+	<Entry Name="NormalMode">Normal</Entry>
+	
+	<Entry Name="HardModeDescription">Enemies will spot you more easily. Tinderboxes and oil are harder to come by. Autosave is disabled and saving your game costs tinderboxes. Losing your sanity will kill you.</Entry>
+	<Entry Name="NormalModeDescription">The way the game was designed to be played.</Entry>
+	<Entry Name="HardModeStartNewGame">Start a new game in hard mode?</Entry>
+
+	<Entry Name="HardModeSaveCost">Saving costs # Tinderboxes</Entry>
+	<Entry Name="HardModeTinderboxInInventory">you have # in your inventory</Entry>
+	<Entry Name="HardModeSavePopup">Saving will remove # tinderboxes from the inventory</Entry>
   </CATEGORY>
   <CATEGORY Name="OptionsMenu">
         <Entry Name="Low">Bajo</Entry>
@@ -68,6 +78,7 @@
         <Entry Name="Resolution">Resolución</Entry>
         <Entry Name="ResolutionTip">Cambiar la resolución de la pantalla.</Entry>
         <Entry Name="FullScreen">FullScreen</Entry>
+		<Entry Name="FullScreenDesktop">Full Desktop on</Entry>
         <Entry Name="FullScreenTip">Cambiar entre full screen y modo ventana.</Entry>
         <Entry Name="VSync">Sincronización Vertical</Entry>
         <Entry Name="VSyncTip">Sincronizar el retorno vertical. Podría resolver el desgarro en la imagen.</Entry>
@@ -104,6 +115,10 @@
         <Entry Name="SmoothMouseTip">Si los movimientos del ratón son más suaves.</Entry>
         <Entry Name="MouseSensitivity">Sensibilidad del ratón</Entry>
         <Entry Name="MouseSensitivityTip">Regula la sensibilidad de los movimientos del ratón.</Entry>
+		<Entry Name="InvertGamepadLook">Invert Right Stick look</Entry>
+		<Entry Name="InvertGamepadLookTip">Inverts the gamepad analog look Y-axis.</Entry>
+		<Entry Name="GamepadLookSensitivity">Stick look sensitivity</Entry>
+		<Entry Name="GamepadLookSensitivityTip">Set how sensitive the gamepad analog look movements should be.</Entry>
         <Entry Name="Volume">Volumen</Entry>
         <Entry Name="VolumeTip">Volumen de sonido global</Entry>
         <Entry Name="GammaInstructions">Controla la luminosidad de la pantalla. Para jugar baja el Gamma hasta que el cuadrado de la derecha no sea visible.</Entry>
@@ -406,6 +421,58 @@
         <Entry Name="World_93">Mundo 93</Entry>
         <Entry Name="World_94">Mundo 94</Entry>
         <Entry Name="World_95">Mundo 95</Entry>
+    <Entry Name="Axis 0.Negative">LStick Left</Entry>
+    <Entry Name="Axis 0.Positive">LStick Right</Entry>
+    <Entry Name="Axis 1.Negative">LStick Up</Entry>
+    <Entry Name="Axis 1.Positive">LStick Down</Entry>
+    <Entry Name="Axis 2.Negative">Button RT</Entry>
+    <Entry Name="Axis 2.Positive">Button LT</Entry>
+    <Entry Name="Axis 3.Negative">RStick Up</Entry>
+    <Entry Name="Axis 3.Positive">RStick Down</Entry>
+    <Entry Name="Axis 4.Negative">RStick Left</Entry>
+    <Entry Name="Axis 4.Positive">RStick Right</Entry>
+    <Entry Name="Hat 0.Up">DPad Up</Entry>
+    <Entry Name="Hat 0.Right">DPad Right</Entry>
+    <Entry Name="Hat 0.Down">DPad Down</Entry>
+    <Entry Name="Hat 0.Left">DPad Left</Entry>
+    <Entry Name="Button 0">Button A</Entry>
+    <Entry Name="Button 1">Button B</Entry>
+    <Entry Name="Button 2">Button X</Entry>
+    <Entry Name="Button 3">Button Y</Entry>
+    <Entry Name="Button 4">Button LB</Entry>
+    <Entry Name="Button 5">Button RB</Entry>
+    <Entry Name="Button 6">Back</Entry>
+    <Entry Name="Button 7">Start</Entry>
+    <Entry Name="Button 8">Button LStick</Entry>
+    <Entry Name="Button 9">Button RStick</Entry>
+    <Entry Name="Button 10">Button x5</Entry>
+    <Entry Name="Button 11">Button x6</Entry>
+    <!-- SDL 2 mapping names -->
+    <Entry Name="Axis LeftX.Negative">LStick Left</Entry>
+    <Entry Name="Axis LeftX.Positive">LStick Right</Entry>
+    <Entry Name="Axis LeftY.Negative">LStick Up</Entry>
+    <Entry Name="Axis LeftY.Positive">LStick Down</Entry>
+	<Entry Name="Axis RightTrigger.Positive">Button RT</Entry>
+	<Entry Name="Axis LeftTrigger.Positive">Button LT</Entry>
+    <Entry Name="Axis RightX.Negative">RStick Up</Entry>
+    <Entry Name="Axis RightX.Positive">RStick Down</Entry>
+    <Entry Name="Axis RightY.Negative">RStick Left</Entry>
+    <Entry Name="Axis RightY.Positive">RStick Right</Entry>
+	<Entry Name="Button DpadUp">DPad Up</Entry>
+	<Entry Name="Button DpadRight">DPad Right</Entry>
+    <Entry Name="Button DpadDown">DPad Down</Entry>
+    <Entry Name="Button DpadLeft">DPad Left</Entry>
+    <Entry Name="Button A">Button A</Entry>
+    <Entry Name="Button B">Button B</Entry>
+    <Entry Name="Button X">Button X</Entry>
+    <Entry Name="Button Y">Button Y</Entry>
+    <Entry Name="Button LeftShoulder">Button LB</Entry>
+    <Entry Name="Button RightShoulder">Button RB</Entry>
+	<Entry Name="Button Back">Back</Entry>
+	<Entry Name="Button Start">Start</Entry>
+    <Entry Name="Button LeftStick">Button LStick</Entry>
+    <Entry Name="Button RightStick">Button RStick</Entry>
+    <Entry Name="Button Guide">Guide</Entry>
   </CATEGORY>
   <CATEGORY Name="Actions">
         <Entry Name="Forward">Adelante</Entry>
@@ -414,6 +481,7 @@
         <Entry Name="Left">Izquierda</Entry>
         <Entry Name="LeanRight">AsomarseDerecha</Entry>
         <Entry Name="LeanLeft">AsomarseIzquierda</Entry>
+		<Entry Name="Lean">Asomarse</Entry>
         <Entry Name="Run">Correr</Entry>
         <Entry Name="Crouch">Agacharse</Entry>
         <Entry Name="Jump">Saltar</Entry>

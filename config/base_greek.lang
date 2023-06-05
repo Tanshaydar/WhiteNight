@@ -49,6 +49,16 @@
     <Entry Name="Chapter">[u922][u949][u966][u940][u955][u945][u953][u959]</Entry>
     <Entry Name="Level">[u917][u960][u943][u960][u949][u948][u959]</Entry>
     <Entry Name="Save">[u913][u960][u959][u952][u942][u954][u949][u965][u963][u951]</Entry>
+	<Entry Name="HardMode">Hard mode</Entry>
+	<Entry Name="NormalMode">Normal</Entry>
+	
+	<Entry Name="HardModeDescription">Enemies will spot you more easily. Tinderboxes and oil are harder to come by. Autosave is disabled and saving your game costs tinderboxes. Losing your sanity will kill you.</Entry>
+	<Entry Name="NormalModeDescription">The way the game was designed to be played.</Entry>
+	<Entry Name="HardModeStartNewGame">Start a new game in hard mode?</Entry>
+
+	<Entry Name="HardModeSaveCost">Saving costs # Tinderboxes</Entry>
+	<Entry Name="HardModeTinderboxInInventory">you have # in your inventory</Entry>
+	<Entry Name="HardModeSavePopup">Saving will remove # tinderboxes from the inventory</Entry>
   </CATEGORY>
   <CATEGORY Name="OptionsMenu">
     <Entry Name="Low">[u935][u945][u956][u951][u955][u972]</Entry>
@@ -68,6 +78,7 @@
     <Entry Name="Resolution">[u913][u957][u940][u955][u965][u963][u951]</Entry>
     <Entry Name="ResolutionTip">[u913][u955][u955][u945][u947][u942] [u945][u957][u940][u955][u965][u963][u951][u962] [u964][u951][u962] [u959][u952][u972][u957][u951][u962].</Entry>
     <Entry Name="FullScreen">[u928][u955][u942][u961][u951][u962] [u927][u952][u972][u957][u951]</Entry>
+	<Entry Name="FullScreenDesktop">[u928][u955][u942][u961][u951][u962] [u927][u952][u972][u957][u951] @</Entry>
     <Entry Name="FullScreenTip">[u917][u957][u945][u955][u955][u945][u947][u942] [u956][u949][u964][u945][u958][u973] [u960][u955][u942][u961][u959][u965][u962] [u959][u952][u972][u957][u951][u962] [u954][u945][u953] [u960][u945][u961][u945][u952][u973][u961][u959][u965].</Entry>
     <Entry Name="VSync">[u922][u940][u952][u949][u964][u959][u962] [u931][u965][u967][u961][u959][u957][u953][u963][u956][u972][u962]</Entry>
     <Entry Name="VSyncTip">[u913][u965][u964][u942] [u951] [u955][u949][u953][u964][u959][u965][u961][u947][u949][u943][u945] [u956][u960][u959][u961][u949][u943] [u957][u945] [u955][u973][u963][u949][u953] "[u963][u967][u953][u963][u942][u956][u945][u964][u945]" [u954][u945][u953] [u940][u955][u955][u945] [u960][u945][u961][u972][u956][u959][u953][u945] [u960][u961][u959][u946][u955][u942][u956][u945][u964][u945] [u963][u964][u951][u957] [u949][u953][u954][u972][u957][u945].</Entry>
@@ -104,6 +115,10 @@
     <Entry Name="SmoothMouseTip">[u917][u940][u957] [u959][u953] [u954][u953][u957][u942][u963][u949][u953][u962] [u964][u959][u965] [u960][u959][u957][u964][u953][u954][u959][u973] [u960][u961][u941][u960][u949][u953] [u957][u945] [u949][u958][u959][u956][u945][u955][u973][u957][u959][u957][u964][u945][u953].</Entry>
     <Entry Name="MouseSensitivity">[u917][u965][u945][u953][u963][u952][u951][u963][u943][u945] [u928][u959][u957][u964][u953][u954][u953][u959][u973]</Entry>
     <Entry Name="MouseSensitivityTip">[u929][u965][u952][u956][u943][u950][u949][u953] [u960][u972][u963][u959] [u949][u965][u945][u943][u963][u952][u951][u964][u959] [u960][u961][u941][u960][u949][u953] [u957][u945] [u949][u943][u957][u945][u953] [u964][u959] [u960][u959][u957][u964][u943][u954][u953].</Entry>
+	<Entry Name="InvertGamepadLook">Invert Right Stick look</Entry>
+    <Entry Name="InvertGamepadLookTip">Inverts the gamepad analog look Y-axis.</Entry>
+    <Entry Name="GamepadLookSensitivity">Stick look sensitivity</Entry>
+    <Entry Name="GamepadLookSensitivityTip">Set how sensitive the gamepad analog look movements should be.</Entry>
     <Entry Name="Volume">[u922][u973][u961][u953][u945] [u941][u957][u964][u945][u963][u951] [u942][u967][u959][u965]</Entry>
     <Entry Name="VolumeTip">[u919] [u947][u949][u957][u953][u954][u942] [u941][u957][u964][u945][u963][u951] [u964][u959][u965] [u942][u967][u959][u965]</Entry>
     <Entry Name="GammaInstructions">[u917][u955][u941][u947][u967][u949][u953] [u964][u951] [u966][u969][u964][u949][u953][u957][u972][u964][u951][u964][u945] [u964][u951][u962] [u959][u952][u972][u957][u951][u962]. [u915][u953][u945] [u957][u945] [u960][u945][u943][u958][u949][u964][u949] [u963][u949] [u954][u945][u955][u973][u964][u949][u961][u959] [u960][u949][u961][u953][u946][u940][u955][u955][u959][u957], [u967][u945][u956][u951][u955][u974][u963][u964][u949] [u964][u959] Gamma [u956][u941][u967][u961][u953] [u964][u959] [u948][u949][u958][u953][u940] [u964][u949][u964][u961][u940][u947][u969][u957][u959] [u957][u945] [u956][u951][u957] [u949][u943][u957][u945][u953] [u960][u955][u941][u959][u957] [u959][u961][u945][u964][u972].</Entry>
@@ -405,6 +420,58 @@
     <Entry Name="World_93">World 93</Entry>
     <Entry Name="World_94">World 94</Entry>
     <Entry Name="World_95">World 95</Entry>
+    <Entry Name="Axis 0.Negative">LStick Left</Entry>
+    <Entry Name="Axis 0.Positive">LStick Right</Entry>
+    <Entry Name="Axis 1.Negative">LStick Up</Entry>
+    <Entry Name="Axis 1.Positive">LStick Down</Entry>
+    <Entry Name="Axis 2.Negative">Button RT</Entry>
+    <Entry Name="Axis 2.Positive">Button LT</Entry>
+    <Entry Name="Axis 3.Negative">RStick Up</Entry>
+    <Entry Name="Axis 3.Positive">RStick Down</Entry>
+    <Entry Name="Axis 4.Negative">RStick Left</Entry>
+    <Entry Name="Axis 4.Positive">RStick Right</Entry>
+    <Entry Name="Hat 0.Up">DPad Up</Entry>
+    <Entry Name="Hat 0.Right">DPad Right</Entry>
+    <Entry Name="Hat 0.Down">DPad Down</Entry>
+    <Entry Name="Hat 0.Left">DPad Left</Entry>
+    <Entry Name="Button 0">Button A</Entry>
+    <Entry Name="Button 1">Button B</Entry>
+    <Entry Name="Button 2">Button X</Entry>
+    <Entry Name="Button 3">Button Y</Entry>
+    <Entry Name="Button 4">Button LB</Entry>
+    <Entry Name="Button 5">Button RB</Entry>
+    <Entry Name="Button 6">Back</Entry>
+    <Entry Name="Button 7">Start</Entry>
+    <Entry Name="Button 8">Button LStick</Entry>
+    <Entry Name="Button 9">Button RStick</Entry>
+    <Entry Name="Button 10">Button x5</Entry>
+    <Entry Name="Button 11">Button x6</Entry>
+    <!-- SDL 2 mapping names -->
+    <Entry Name="Axis LeftX.Negative">LStick Left</Entry>
+    <Entry Name="Axis LeftX.Positive">LStick Right</Entry>
+    <Entry Name="Axis LeftY.Negative">LStick Up</Entry>
+    <Entry Name="Axis LeftY.Positive">LStick Down</Entry>
+	<Entry Name="Axis RightTrigger.Positive">Button RT</Entry>
+	<Entry Name="Axis LeftTrigger.Positive">Button LT</Entry>
+    <Entry Name="Axis RightX.Negative">RStick Up</Entry>
+    <Entry Name="Axis RightX.Positive">RStick Down</Entry>
+    <Entry Name="Axis RightY.Negative">RStick Left</Entry>
+    <Entry Name="Axis RightY.Positive">RStick Right</Entry>
+	<Entry Name="Button DpadUp">DPad Up</Entry>
+	<Entry Name="Button DpadRight">DPad Right</Entry>
+    <Entry Name="Button DpadDown">DPad Down</Entry>
+    <Entry Name="Button DpadLeft">DPad Left</Entry>
+    <Entry Name="Button A">Button A</Entry>
+    <Entry Name="Button B">Button B</Entry>
+    <Entry Name="Button X">Button X</Entry>
+    <Entry Name="Button Y">Button Y</Entry>
+    <Entry Name="Button LeftShoulder">Button LB</Entry>
+    <Entry Name="Button RightShoulder">Button RB</Entry>
+	<Entry Name="Button Back">Back</Entry>
+	<Entry Name="Button Start">Start</Entry>
+    <Entry Name="Button LeftStick">Button LStick</Entry>
+    <Entry Name="Button RightStick">Button RStick</Entry>
+    <Entry Name="Button Guide">Guide</Entry>
   </CATEGORY>
   <CATEGORY Name="Actions">
     <Entry Name="Forward">[u924][u960][u961][u959][u963][u964][u940]</Entry>
@@ -413,6 +480,7 @@
     <Entry Name="Left">[u913][u961][u953][u963][u964][u949][u961][u940]</Entry>
     <Entry Name="LeanRight">[u923][u973][u947][u953][u963][u956][u945] [u960][u961][u959][u962] [u964][u945] [u948][u949][u958][u953][u940]</Entry>
     <Entry Name="LeanLeft">[u923][u973][u947][u953][u963][u956][u945] [u960][u961][u959][u962] [u964][u945] [u945][u961][u953][u963][u964][u949][u961][u940]</Entry>
+	<Entry Name="Lean">[u923][u973][u947][u953][u963][u956][u945]</Entry>
     <Entry Name="Run">[u932][u961][u941][u958][u953][u956][u959]</Entry>
     <Entry Name="Crouch">[u931][u954][u943][u968][u953][u956][u959]</Entry>
     <Entry Name="Jump">[u902][u955][u956][u945]</Entry>
