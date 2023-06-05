@@ -1,0 +1,40 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 180" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="180 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="-0.0445889 0.495141 -0.177308" CameraTarget="-0.0164574 0 0.0728278" CameraZoom="4.5" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/white_night/office_folderholder/office_folderholder_empty.dae">
+            <SubMesh Active="true" ID="0" Material="" Name="holder" Rotation="0 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 0.162968 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="1" Name="Shape_1" RelativeRotation="0 0 0" RelativeScale="0.02 0.32 0.25" RelativeTranslation="0.0591897 0.0768552 0.00230496" Rotation="0 0 0" Scale="0.02 0.32 0.25" ShapeType="Box" Tag="" WorldPos="0.0566177 0.164535 0.00322596" />
+            <BodyShape Active="true" ID="2" Name="Shape_2" RelativeRotation="0 0 0" RelativeScale="0.02 0.32 0.25" RelativeTranslation="-0.0591897 0.0768552 0.00230496" Rotation="0 0 0" Scale="0.02 0.32 0.25" ShapeType="Box" Tag="" WorldPos="-0.0617617 0.164535 0.00322596" />
+            <BodyShape Active="true" ID="3" Name="Shape_3" RelativeRotation="-2.53518e-006 1.5708 -2.53518e-006" RelativeScale="0.02 0.32 0.12" RelativeTranslation="-0.0014822 0.0768552 0.117699" Rotation="-2.53518e-006 1.5708 -2.53518e-006" Scale="0.02 0.32 0.12" ShapeType="Box" Tag="" WorldPos="-0.0040542 0.164535 0.11862" />
+            <BodyShape Active="true" ID="4" Name="Shape_4" RelativeRotation="-1.5708 0 -1.5708" RelativeScale="0.02 0.25 0.12" RelativeTranslation="-0.0014822 -0.0768551 0.00334702" Rotation="-1.5708 0 -1.5708" Scale="0.02 0.25 0.12" ShapeType="Box" Tag="" WorldPos="-0.0040542 0.0108247 0.00426802" />
+            <BodyShape Active="true" ID="5" Name="Shape_5" RelativeRotation="3.14159 1.5708 3.14159" RelativeScale="0.02 0.25 0.12" RelativeTranslation="0.00200531 0.0399712 -0.117699" Rotation="0 1.5708 0" Scale="0.02 0.25 0.12" ShapeType="Box" Tag="" WorldPos="-0.001 0.128 -0.117" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="false" ID="6" LinearDamping="0" Mass="0" Material="Generic_Hard" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_1" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="-0.002572 0.0876798 0.000921">
+                <Children>
+                    <Child ID="0" />
+                </Children>
+                <Shape ID="1" />
+                <Shape ID="2" />
+                <Shape ID="3" />
+                <Shape ID="4" />
+                <Shape ID="5" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="StaticProp" />
+</Entity>

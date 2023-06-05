@@ -1,0 +1,11 @@
+<SOUNDENTITY>
+  <SOUNDS>
+  	<Main>
+  		<Sound File="mine_event_react1" />
+  		<Sound File="mine_event_react2" />
+  		<Sound File="mine_event_react3" />
+  		<Sound File="mine_event_react4" />
+  	</Main>
+  </SOUNDS>
+  <PROPERTIES Volume="0.7" MinDistance="1" MaxDistance="10" Random="1" Interval="0" FadeEnd="False" FadeStart="False" Stream="False" Loop="False" Use3D="True" Blockable="True" BlockVolumeMul="0.5" Priority="0" />
+</SOUNDENTITY>

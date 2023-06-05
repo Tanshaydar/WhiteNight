@@ -1,0 +1,2490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.0">
+  <asset>
+    <contributor>
+      <author>Laptop</author>
+      <authoring_tool>Maya 7.0 | ColladaMaya v0.88</authoring_tool>
+      <comments>Collada Maya Export Options: bakeTransforms=0;exportPolygonMeshes=1;bakeLighting=0;isSampling=0;
+curveConstrainSampling=0;exportCameraAsLookat=0;relativePaths=0;
+exportLights=1;exportCameras=1;exportJointsAndSkin=1;
+exportAnimations=1;exportTriangles=1;exportInvisibleNodes=0;
+exportNormals=1;exportTexCoords=1;exportVertexColors=1;exportTangents=1;
+exportTexTangents=1;exportConstraints=1;exportPhysics=1;exportXRefs=1;
+dereferenceXRefs=0;cameraXFov=0;cameraYFov=1</comments>
+      <source_data>file://C|/penumbra2/work_models/items/batteries/batteries.mb</source_data>
+    </contributor>
+    <created>2006-08-31T18:11:52Z</created>
+    <modified>2006-08-31T18:11:52Z</modified>
+    <unit name="meter" meter="1.000000"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="file2-image" name="file2">
+      <init_from>file://C|\Prologue\scenes\Battery\item_battery.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="lambert2" name="lambert2">
+      <instance_effect url="#lambert2-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="lambert2-fx" name="lambert2">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="file2-image" texcoord="UVSET0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">true</wrapU>
+                    <wrapV sid="wrapV0">true</wrapV>
+                    <mirrorU sid="mirrorU0">false</mirrorU>
+                    <mirrorV sid="mirrorV0">false</mirrorV>
+                    <coverageU sid="coverageU0">1.000000</coverageU>
+                    <coverageV sid="coverageV0">1.000000</coverageV>
+                    <translateFrameU sid="translateFrameU0">0</translateFrameU>
+                    <translateFrameV sid="translateFrameV0">0</translateFrameV>
+                    <rotateFrame sid="rotateFrame0">0</rotateFrame>
+                    <stagger sid="stagger0">false</stagger>
+                    <fast sid="fast0">false</fast>
+                    <repeatU sid="repeatU0">1.000000</repeatU>
+                    <repeatV sid="repeatV0">1.000000</repeatV>
+                    <offsetU sid="offsetU0">0</offsetU>
+                    <offsetV sid="offsetV0">0</offsetV>
+                    <rotateUV sid="rotateUV0">0</rotateUV>
+                    <noiseU sid="noiseU0">0</noiseU>
+                    <noiseV sid="noiseV0">0</noiseV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <transparent>
+              <color sid="transparent">0 0 0 1.000000</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="_collider_box_batteryShape-lib" name="_collider_box_batteryShape">
+      <mesh>
+        <source id="_collider_box_batteryShape-lib-Position">
+          <float_array count="24" id="_collider_box_batteryShape-lib-Position-array">
+-0.500000 -0.500000 0.500000
+0.500000 -0.500000 0.500000
+-0.500000 0.500000 0.500000
+0.500000 0.500000 0.500000
+-0.500000 0.500000 -0.500000
+0.500000 0.500000 -0.500000
+-0.500000 -0.500000 -0.500000
+0.500000 -0.500000 -0.500000
+</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_batteryShape-lib-Position-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_batteryShape-lib-Normal">
+          <float_array count="108" id="_collider_box_batteryShape-lib-Normal-array">
+0 0 1.000000
+0 0 1.000000
+0 0 1.000000
+0 0 1.000000
+0 0 1.000000
+0 0 1.000000
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 0 -1.000000
+0 0 -1.000000
+0 0 -1.000000
+0 0 -1.000000
+0 0 -1.000000
+0 0 -1.000000
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+1.000000 0 0
+1.000000 0 0
+1.000000 0 0
+1.000000 0 0
+1.000000 0 0
+1.000000 0 0
+-1.000000 0 0
+-1.000000 0 0
+-1.000000 0 0
+-1.000000 0 0
+-1.000000 0 0
+-1.000000 0 0
+</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_batteryShape-lib-Normal-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+          <technique profile="MAYA">
+            <DOUBLE_SIDED>true</DOUBLE_SIDED>
+          </technique>
+        </source>
+        <source id="_collider_box_batteryShape-lib-Tangent">
+          <float_array count="108" id="_collider_box_batteryShape-lib-Tangent-array">
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_batteryShape-lib-Tangent-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_batteryShape-lib-Binormal">
+          <float_array count="108" id="_collider_box_batteryShape-lib-Binormal-array">
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_batteryShape-lib-Binormal-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_batteryShape-lib-map1" name="map1">
+          <float_array count="28" id="_collider_box_batteryShape-lib-map1-array">
+0 0
+1.000000 0
+0 1.000000
+1.000000 1.000000
+0 2.000000
+1.000000 2.000000
+0 3.000000
+1.000000 3.000000
+0 4.000000
+1.000000 4.000000
+2.000000 0
+2.000000 1.000000
+-1.000000 0
+-1.000000 1.000000
+</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_batteryShape-lib-map1-array" count="14" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_batteryShape-lib-map1-tangents">
+          <float_array count="18" id="_collider_box_batteryShape-lib-map1-tangents-array">
+0 0 -1.000000
+0 0 1.000000
+1.000000 0 0
+1.000000 0 0
+1.000000 0 0
+1.000000 0 0
+</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_batteryShape-lib-map1-tangents-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_batteryShape-lib-map1-binormals">
+          <float_array count="18" id="_collider_box_batteryShape-lib-map1-binormals-array">
+0 1.000000 0
+0 1.000000 0
+0 -1.000000 0
+0 0 -1.000000
+0 0 1.000000
+0 1.000000 0
+</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_batteryShape-lib-map1-binormals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="_collider_box_batteryShape-lib-Vertex">
+          <input semantic="POSITION" source="#_collider_box_batteryShape-lib-Position"/>
+        </vertices>
+        <triangles material="lambert2" count="12">
+          <input semantic="VERTEX" offset="0" source="#_collider_box_batteryShape-lib-Vertex"/>
+          <input semantic="NORMAL" offset="1" source="#_collider_box_batteryShape-lib-Normal"/>
+          <input semantic="TANGENT" offset="1" source="#_collider_box_batteryShape-lib-Tangent"/>
+          <input semantic="BINORMAL" offset="1" source="#_collider_box_batteryShape-lib-Binormal"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#_collider_box_batteryShape-lib-map1"/>
+          <input semantic="TEXTANGENT" offset="3" set="0" source="#_collider_box_batteryShape-lib-map1-tangents"/>
+          <input semantic="TEXBINORMAL" offset="3" set="0" source="#_collider_box_batteryShape-lib-map1-binormals"/>
+          <p>0 0 0 5 1 1 1 5 2 2 2 5 1 3 1 5 3 4 3 5 2 5 2 5 2 6 2 3 3 7 3 3 4 8 4 3 3 9 3 3 5 10 5 3 4 11 4 3 4 12 4 2 5 13 5 2 6 14 6 2 5 15 5 2 7 16 7 2 6 17 6 2 6 18 6 4 7 19 7 4 0 20 8 4 7 21 7 4 1 22 9 4 0 23 8 4 1 24 1 0 7 25 10 0 3 26 3 0 7 27 10 0 5 28 11 0 3 29 3 0 6 30 12 1 0 31 0 1 4 32 13 1 0 33 0 1 2 34 2 1 4 35 13 1</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="group1_item_battery1_item_battery1-lib" name="item_battery1">
+      <mesh>
+        <source id="group1_item_battery1_item_battery1-lib-Position">
+          <float_array count="108" id="group1_item_battery1_item_battery1-lib-Position-array">
+0.766045 -0.948776 -0.642788
+0.173648 -0.948776 -0.984808
+-0.500000 -0.948776 -0.866026
+-0.939693 -0.948776 -0.342020
+-0.939693 -0.948776 0.342020
+-0.500000 -0.948776 0.866025
+0.173648 -0.948776 0.984808
+0.766044 -0.948776 0.642788
+1.000000 -0.948776 0
+0.766045 1.000000 -0.642788
+0.173648 1.000000 -0.984808
+-0.500000 1.000000 -0.866026
+-0.939693 1.000000 -0.342020
+-0.939693 1.000000 0.342020
+-0.500000 1.000000 0.866025
+0.173648 1.000000 0.984808
+0.766044 1.000000 0.642788
+1.000000 1.000000 0
+0.383022 1.000000 -0.321394
+0.086824 1.000000 -0.492404
+-0.250000 1.000000 -0.433013
+-0.469846 1.000000 -0.171010
+-0.469846 1.000000 0.171010
+-0.250000 1.000000 0.433013
+0.086824 1.000000 0.492404
+0.383022 1.000000 0.321394
+0.500000 1.000000 -0.000000
+0.383022 1.064644 -0.321394
+0.086824 1.064644 -0.492404
+-0.250000 1.064644 -0.433013
+-0.469846 1.064644 -0.171010
+-0.469846 1.064644 0.171010
+-0.250000 1.064644 0.433013
+0.086824 1.064644 0.492404
+0.383022 1.064644 0.321394
+0.500000 1.064644 -0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#group1_item_battery1_item_battery1-lib-Position-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="group1_item_battery1_item_battery1-lib-Normal">
+          <float_array count="270" id="group1_item_battery1_item_battery1-lib-Normal-array">
+0.766044 0 -0.642788
+0.173648 0 -0.984808
+0.173648 0 -0.984808
+0.766044 0 -0.642788
+-0.500000 0 -0.866026
+-0.500000 0 -0.866026
+-0.939693 0 -0.342020
+-0.939693 0 -0.342020
+-0.939693 0 0.342020
+-0.939693 0 0.342020
+-0.500000 0 0.866025
+-0.500000 0 0.866025
+0.173648 0 0.984808
+0.173648 0 0.984808
+0.766044 0 0.642788
+0.766044 0 0.642788
+1.000000 0 0
+1.000000 0 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0.000000
+0 1.000000 0.000000
+0 1.000000 0.000000
+0 1.000000 0.000000
+0 1.000000 0.000000
+0 1.000000 0.000000
+0.000000 1.000000 0
+0.000000 1.000000 0
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0 1.000000 -0.000000
+0 1.000000 -0.000000
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+-0.000000 1.000000 0
+-0.000000 1.000000 0
+0.500000 0 -0.866025
+0.500000 0 -0.866025
+0.500000 0 -0.866025
+0.500000 0 -0.866025
+-0.173648 0 -0.984808
+-0.173648 0 -0.984808
+-0.173648 0 -0.984808
+-0.173648 0 -0.984808
+-0.766044 0 -0.642788
+-0.766044 0 -0.642788
+-0.766044 0 -0.642788
+-0.766044 0 -0.642788
+-1.000000 0.000000 0
+-1.000000 0.000000 0
+-1.000000 0.000000 0
+-1.000000 0.000000 0
+-0.766044 0 0.642788
+-0.766044 0 0.642788
+-0.766044 0 0.642788
+-0.766044 0 0.642788
+-0.173648 0 0.984808
+-0.173648 0 0.984808
+-0.173648 0 0.984808
+-0.173648 0 0.984808
+0.500000 0 0.866025
+0.500000 0 0.866025
+0.500000 0 0.866025
+0.500000 0 0.866025
+0.939693 -0.000000 0.342020
+0.939693 -0.000000 0.342020
+0.939693 -0.000000 0.342020
+0.939693 -0.000000 0.342020
+0.939693 0 -0.342020
+0.939693 0 -0.342020
+0.939693 0 -0.342020
+0.939693 0 -0.342020
+</float_array>
+          <technique_common>
+            <accessor source="#group1_item_battery1_item_battery1-lib-Normal-array" count="90" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+          <technique profile="MAYA">
+            <DOUBLE_SIDED>false</DOUBLE_SIDED>
+          </technique>
+        </source>
+        <source id="group1_item_battery1_item_battery1-lib-Tangent">
+          <float_array count="270" id="group1_item_battery1_item_battery1-lib-Tangent-array">
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+</float_array>
+          <technique_common>
+            <accessor source="#group1_item_battery1_item_battery1-lib-Tangent-array" count="90" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="group1_item_battery1_item_battery1-lib-Binormal">
+          <float_array count="270" id="group1_item_battery1_item_battery1-lib-Binormal-array">
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+</float_array>
+          <technique_common>
+            <accessor source="#group1_item_battery1_item_battery1-lib-Binormal-array" count="90" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="group1_item_battery1_item_battery1-lib-map1" name="map1">
+          <float_array count="152" id="group1_item_battery1_item_battery1-lib-map1-array">
+0.015395 0.026347
+0.106197 0.026347
+0.197000 0.026347
+0.287803 0.026347
+0.378605 0.026347
+0.469408 0.026347
+0.560211 0.026347
+0.651013 0.026347
+0.741816 0.026347
+0.832619 0.026347
+0.015395 0.775286
+0.106197 0.775286
+0.197000 0.775286
+0.287803 0.775286
+0.378605 0.775286
+0.469408 0.775286
+0.560211 0.775286
+0.651013 0.775286
+0.741816 0.775286
+0.832619 0.775286
+0.966760 0.751649
+0.966760 0.853999
+0.931222 0.853999
+0.931222 0.751649
+0.966760 0.046169
+0.931222 0.046169
+0.966760 0.144805
+0.931222 0.144805
+0.966760 0.242811
+0.361229 0.954922
+0.383927 0.893508
+0.361229 0.832094
+0.303757 0.799417
+0.238402 0.810766
+0.195744 0.860831
+0.195744 0.926186
+0.238402 0.976250
+0.303757 0.987599
+0.324070 0.924215
+0.295334 0.940554
+0.262656 0.934879
+0.241327 0.909847
+0.241327 0.877169
+0.262656 0.852137
+0.295334 0.846462
+0.324070 0.862801
+0.335418 0.893508
+0.361229 0.954922
+0.303757 0.987599
+0.295334 0.940554
+0.324070 0.924215
+0.238402 0.976250
+0.262656 0.934879
+0.195744 0.926186
+0.241327 0.909847
+0.195744 0.860831
+0.241327 0.877169
+0.238402 0.810766
+0.262656 0.852137
+0.303757 0.799417
+0.295334 0.846462
+0.361229 0.832094
+0.324070 0.862801
+0.383927 0.893508
+0.335418 0.893508
+0.931222 0.242811
+0.966760 0.341447
+0.931222 0.341447
+0.966760 0.441755
+0.931222 0.441755
+0.966760 0.544106
+0.931222 0.544106
+0.966760 0.647877
+0.931222 0.647877
+0.966760 0.954307
+0.931222 0.954307
+</float_array>
+          <technique_common>
+            <accessor source="#group1_item_battery1_item_battery1-lib-map1-array" count="76" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="group1_item_battery1_item_battery1-lib-map1-tangents">
+          <float_array count="60" id="group1_item_battery1_item_battery1-lib-map1-tangents-array">
+-0.984808 0 -0.173648
+-0.866026 0 0.500000
+-0.642788 0 -0.766044
+-0.342020 0 0.939693
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+-0.000001 -1.000000 -0.000003
+-0.000000 -1.000000 0.000001
+-0.000000 -1.000000 0
+-0.000001 -1.000000 -0.000001
+0.000001 -1.000000 -0.000001
+-0.000002 -1.000000 -0.000000
+0 0 -1.000000
+0.342020 0 0.939693
+0.642788 0 -0.766044
+0.866025 0 0.500000
+0.984808 0 -0.173648
+1.000000 0 -0.000001
+1.000000 0 -0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#group1_item_battery1_item_battery1-lib-map1-tangents-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="group1_item_battery1_item_battery1-lib-map1-binormals">
+          <float_array count="60" id="group1_item_battery1_item_battery1-lib-map1-binormals-array">
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+-0.984808 0 0.173648
+-0.866025 0 -0.500000
+-0.642788 0 0.766044
+-0.342020 0.000003 -0.939693
+0 0.000001 1.000000
+0.342020 0 -0.939693
+0.642788 -0.000002 0.766044
+0.866025 0.000002 -0.500000
+0.984808 -0.000002 0.173648
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+-0.000001 0 -1.000000
+0.000000 0 1.000000
+</float_array>
+          <technique_common>
+            <accessor source="#group1_item_battery1_item_battery1-lib-map1-binormals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="group1_item_battery1_item_battery1-lib-Vertex">
+          <input semantic="POSITION" source="#group1_item_battery1_item_battery1-lib-Position"/>
+        </vertices>
+        <triangles material="lambert2" count="68">
+          <input semantic="VERTEX" offset="0" source="#group1_item_battery1_item_battery1-lib-Vertex"/>
+          <input semantic="NORMAL" offset="1" source="#group1_item_battery1_item_battery1-lib-Normal"/>
+          <input semantic="TANGENT" offset="1" source="#group1_item_battery1_item_battery1-lib-Tangent"/>
+          <input semantic="BINORMAL" offset="1" source="#group1_item_battery1_item_battery1-lib-Binormal"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#group1_item_battery1_item_battery1-lib-map1"/>
+          <input semantic="TEXTANGENT" offset="3" set="0" source="#group1_item_battery1_item_battery1-lib-map1-tangents"/>
+          <input semantic="TEXBINORMAL" offset="3" set="0" source="#group1_item_battery1_item_battery1-lib-map1-binormals"/>
+          <p>0 0 0 2 1 1 1 0 9 3 10 2 1 1 1 0 10 2 11 0 9 3 10 2 1 1 1 0 2 4 2 1 10 2 11 0 2 4 2 1 11 5 12 1 10 2 11 0 2 4 2 1 3 6 3 3 11 5 12 1 3 6 3 3 12 7 13 3 11 5 12 1 3 6 3 3 4 8 4 14 12 7 13 3 4 8 4 14 13 9 14 14 12 7 13 3 4 8 4 14 5 10 5 16 13 9 14 14 5 10 5 16 14 11 15 16 13 9 14 14 5 10 5 16 6 12 6 17 14 11 15 16 6 12 6 17 15 13 16 17 14 11 15 16 6 12 6 17 7 14 7 15 15 13 16 17 7 14 7 15 16 15 17 15 15 13 16 17 7 14 7 15 8 16 8 13 16 15 17 15 8 16 8 13 17 17 18 13 16 15 17 15 8 16 8 13 0 0 9 2 17 17 18 13 0 0 9 2 9 3 19 2 17 17 18 13 0 18 29 19 8 19 30 19 1 26 37 19 8 19 30 19 7 20 31 19 1 26 37 19 7 20 31 19 6 21 32 19 1 26 37 19 6 21 32 19 5 22 33 19 1 26 37 19 5 22 33 19 4 23 34 19 1 26 37 19 4 23 34 19 3 24 35 19 1 26 37 19 3 24 35 19 2 25 36 19 1 26 37 19 27 27 38 18 28 28 39 18 35 35 46 18 28 28 39 18 29 29 40 18 35 35 46 18 29 29 40 18 30 30 41 18 35 35 46 18 30 30 41 18 31 31 42 18 35 35 46 18 31 31 42 18 32 32 43 18 35 35 46 18 32 32 43 18 33 33 44 18 35 35 46 18 33 33 44 18 34 34 45 18 35 35 46 18 9 36 47 18 10 37 48 18 18 39 50 18 10 37 48 18 19 38 49 18 18 39 50 18 10 37 48 18 11 40 51 18 19 38 49 18 11 40 51 18 20 41 52 18 19 38 49 18 11 40 51 18 12 42 53 18 20 41 52 18 12 42 53 18 21 43 54 18 20 41 52 18 12 42 53 18 13 44 55 18 21 43 54 18 13 44 55 18 22 45 56 18 21 43 54 18 13 44 55 18 14 46 57 18 22 45 56 18 14 46 57 18 23 47 58 18 22 45 56 18 14 46 57 18 15 48 59 18 23 47 58 18 15 48 59 18 24 49 60 18 23 47 58 18 15 48 59 18 16 50 61 18 24 49 60 18 16 50 61 18 25 51 62 18 24 49 60 18 16 50 61 18 17 52 63 18 25 51 62 18 17 52 63 18 26 53 64 18 25 51 62 18 17 52 63 18 9 36 47 18 26 53 64 18 9 36 47 18 18 39 50 18 26 53 64 18 18 54 20 5 19 55 21 5 27 57 23 5 19 55 21 5 28 56 22 5 27 57 23 5 19 58 21 4 20 59 74 4 28 61 22 4 20 59 74 4 29 60 75 4 28 61 22 4 20 62 24 6 21 63 26 6 29 65 25 6 21 63 26 6 30 64 27 6 29 65 25 6 21 66 26 8 22 67 28 8 30 69 27 8 22 67 28 8 31 68 65 8 30 69 27 8 22 70 28 10 23 71 66 10 31 73 65 10 23 71 66 10 32 72 67 10 31 73 65 10 23 74 66 12 24 75 68 12 32 77 67 12 24 75 68 12 33 76 69 12 32 77 67 12 24 78 68 11 25 79 70 11 33 81 69 11 25 79 70 11 34 80 71 11 33 81 69 11 25 82 70 9 26 83 72 9 34 85 71 9 26 83 72 9 35 84 73 9 34 85 71 9 26 86 72 7 18 87 20 7 35 89 73 7 18 87 20 7 27 88 23 7 35 89 73 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="item_batteryShape3-lib" name="item_batteryShape3">
+      <mesh>
+        <source id="item_batteryShape3-lib-Position">
+          <float_array count="108" id="item_batteryShape3-lib-Position-array">
+0.766045 -0.948776 -0.642788
+0.173648 -0.948776 -0.984808
+-0.500000 -0.948776 -0.866026
+-0.939693 -0.948776 -0.342020
+-0.939693 -0.948776 0.342020
+-0.500000 -0.948776 0.866025
+0.173648 -0.948776 0.984808
+0.766044 -0.948776 0.642788
+1.000000 -0.948776 0
+0.766045 1.000000 -0.642788
+0.173648 1.000000 -0.984808
+-0.500000 1.000000 -0.866026
+-0.939693 1.000000 -0.342020
+-0.939693 1.000000 0.342020
+-0.500000 1.000000 0.866025
+0.173648 1.000000 0.984808
+0.766044 1.000000 0.642788
+1.000000 1.000000 0
+0.383022 1.000000 -0.321394
+0.086824 1.000000 -0.492404
+-0.250000 1.000000 -0.433013
+-0.469846 1.000000 -0.171010
+-0.469846 1.000000 0.171010
+-0.250000 1.000000 0.433013
+0.086824 1.000000 0.492404
+0.383022 1.000000 0.321394
+0.500000 1.000000 -0.000000
+0.383022 1.064644 -0.321394
+0.086824 1.064644 -0.492404
+-0.250000 1.064644 -0.433013
+-0.469846 1.064644 -0.171010
+-0.469846 1.064644 0.171010
+-0.250000 1.064644 0.433013
+0.086824 1.064644 0.492404
+0.383022 1.064644 0.321394
+0.500000 1.064644 -0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#item_batteryShape3-lib-Position-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="item_batteryShape3-lib-Normal">
+          <float_array count="270" id="item_batteryShape3-lib-Normal-array">
+0.766044 0 -0.642788
+0.173648 0 -0.984808
+0.173648 0 -0.984808
+0.766044 0 -0.642788
+-0.500000 0 -0.866026
+-0.500000 0 -0.866026
+-0.939693 0 -0.342020
+-0.939693 0 -0.342020
+-0.939693 0 0.342020
+-0.939693 0 0.342020
+-0.500000 0 0.866025
+-0.500000 0 0.866025
+0.173648 0 0.984808
+0.173648 0 0.984808
+0.766044 0 0.642788
+0.766044 0 0.642788
+1.000000 0 0
+1.000000 0 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0.000000
+0 1.000000 0.000000
+0 1.000000 0.000000
+0 1.000000 0.000000
+0 1.000000 0.000000
+0 1.000000 0.000000
+0.000000 1.000000 0
+0.000000 1.000000 0
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0 1.000000 -0.000000
+0 1.000000 -0.000000
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+-0.000000 1.000000 0
+-0.000000 1.000000 0
+0.500000 0 -0.866025
+0.500000 0 -0.866025
+0.500000 0 -0.866025
+0.500000 0 -0.866025
+-0.173648 0 -0.984808
+-0.173648 0 -0.984808
+-0.173648 0 -0.984808
+-0.173648 0 -0.984808
+-0.766044 0 -0.642788
+-0.766044 0 -0.642788
+-0.766044 0 -0.642788
+-0.766044 0 -0.642788
+-1.000000 0.000000 0
+-1.000000 0.000000 0
+-1.000000 0.000000 0
+-1.000000 0.000000 0
+-0.766044 0 0.642788
+-0.766044 0 0.642788
+-0.766044 0 0.642788
+-0.766044 0 0.642788
+-0.173648 0 0.984808
+-0.173648 0 0.984808
+-0.173648 0 0.984808
+-0.173648 0 0.984808
+0.500000 0 0.866025
+0.500000 0 0.866025
+0.500000 0 0.866025
+0.500000 0 0.866025
+0.939693 -0.000000 0.342020
+0.939693 -0.000000 0.342020
+0.939693 -0.000000 0.342020
+0.939693 -0.000000 0.342020
+0.939693 0 -0.342020
+0.939693 0 -0.342020
+0.939693 0 -0.342020
+0.939693 0 -0.342020
+</float_array>
+          <technique_common>
+            <accessor source="#item_batteryShape3-lib-Normal-array" count="90" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+          <technique profile="MAYA">
+            <DOUBLE_SIDED>false</DOUBLE_SIDED>
+          </technique>
+        </source>
+        <source id="item_batteryShape3-lib-Tangent">
+          <float_array count="270" id="item_batteryShape3-lib-Tangent-array">
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+</float_array>
+          <technique_common>
+            <accessor source="#item_batteryShape3-lib-Tangent-array" count="90" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="item_batteryShape3-lib-Binormal">
+          <float_array count="270" id="item_batteryShape3-lib-Binormal-array">
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+</float_array>
+          <technique_common>
+            <accessor source="#item_batteryShape3-lib-Binormal-array" count="90" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="item_batteryShape3-lib-map1" name="map1">
+          <float_array count="152" id="item_batteryShape3-lib-map1-array">
+0.015395 0.026347
+0.106197 0.026347
+0.197000 0.026347
+0.287803 0.026347
+0.378605 0.026347
+0.469408 0.026347
+0.560211 0.026347
+0.651013 0.026347
+0.741816 0.026347
+0.832619 0.026347
+0.015395 0.775286
+0.106197 0.775286
+0.197000 0.775286
+0.287803 0.775286
+0.378605 0.775286
+0.469408 0.775286
+0.560211 0.775286
+0.651013 0.775286
+0.741816 0.775286
+0.832619 0.775286
+0.966760 0.751649
+0.966760 0.853999
+0.931222 0.853999
+0.931222 0.751649
+0.966760 0.046169
+0.931222 0.046169
+0.966760 0.144805
+0.931222 0.144805
+0.966760 0.242811
+0.361229 0.954922
+0.383927 0.893508
+0.361229 0.832094
+0.303757 0.799417
+0.238402 0.810766
+0.195744 0.860831
+0.195744 0.926186
+0.238402 0.976250
+0.303757 0.987599
+0.324070 0.924215
+0.295334 0.940554
+0.262656 0.934879
+0.241327 0.909847
+0.241327 0.877169
+0.262656 0.852137
+0.295334 0.846462
+0.324070 0.862801
+0.335418 0.893508
+0.361229 0.954922
+0.303757 0.987599
+0.295334 0.940554
+0.324070 0.924215
+0.238402 0.976250
+0.262656 0.934879
+0.195744 0.926186
+0.241327 0.909847
+0.195744 0.860831
+0.241327 0.877169
+0.238402 0.810766
+0.262656 0.852137
+0.303757 0.799417
+0.295334 0.846462
+0.361229 0.832094
+0.324070 0.862801
+0.383927 0.893508
+0.335418 0.893508
+0.931222 0.242811
+0.966760 0.341447
+0.931222 0.341447
+0.966760 0.441755
+0.931222 0.441755
+0.966760 0.544106
+0.931222 0.544106
+0.966760 0.647877
+0.931222 0.647877
+0.966760 0.954307
+0.931222 0.954307
+</float_array>
+          <technique_common>
+            <accessor source="#item_batteryShape3-lib-map1-array" count="76" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="item_batteryShape3-lib-map1-tangents">
+          <float_array count="60" id="item_batteryShape3-lib-map1-tangents-array">
+-0.984808 0 -0.173648
+-0.866026 0 0.500000
+-0.642788 0 -0.766044
+-0.342020 0 0.939693
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+-0.000001 -1.000000 -0.000003
+-0.000000 -1.000000 0.000001
+-0.000000 -1.000000 0
+-0.000001 -1.000000 -0.000001
+0.000001 -1.000000 -0.000001
+-0.000002 -1.000000 -0.000000
+0 0 -1.000000
+0.342020 0 0.939693
+0.642788 0 -0.766044
+0.866025 0 0.500000
+0.984808 0 -0.173648
+1.000000 0 -0.000001
+1.000000 0 -0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#item_batteryShape3-lib-map1-tangents-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="item_batteryShape3-lib-map1-binormals">
+          <float_array count="60" id="item_batteryShape3-lib-map1-binormals-array">
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+-0.984808 0 0.173648
+-0.866025 0 -0.500000
+-0.642788 0 0.766044
+-0.342020 0.000003 -0.939693
+0 0.000001 1.000000
+0.342020 0 -0.939693
+0.642788 -0.000002 0.766044
+0.866025 0.000002 -0.500000
+0.984808 -0.000002 0.173648
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+-0.000001 0 -1.000000
+0.000000 0 1.000000
+</float_array>
+          <technique_common>
+            <accessor source="#item_batteryShape3-lib-map1-binormals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="item_batteryShape3-lib-Vertex">
+          <input semantic="POSITION" source="#item_batteryShape3-lib-Position"/>
+        </vertices>
+        <triangles material="lambert2" count="68">
+          <input semantic="VERTEX" offset="0" source="#item_batteryShape3-lib-Vertex"/>
+          <input semantic="NORMAL" offset="1" source="#item_batteryShape3-lib-Normal"/>
+          <input semantic="TANGENT" offset="1" source="#item_batteryShape3-lib-Tangent"/>
+          <input semantic="BINORMAL" offset="1" source="#item_batteryShape3-lib-Binormal"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#item_batteryShape3-lib-map1"/>
+          <input semantic="TEXTANGENT" offset="3" set="0" source="#item_batteryShape3-lib-map1-tangents"/>
+          <input semantic="TEXBINORMAL" offset="3" set="0" source="#item_batteryShape3-lib-map1-binormals"/>
+          <p>0 0 0 2 1 1 1 0 9 3 10 2 1 1 1 0 10 2 11 0 9 3 10 2 1 1 1 0 2 4 2 1 10 2 11 0 2 4 2 1 11 5 12 1 10 2 11 0 2 4 2 1 3 6 3 3 11 5 12 1 3 6 3 3 12 7 13 3 11 5 12 1 3 6 3 3 4 8 4 14 12 7 13 3 4 8 4 14 13 9 14 14 12 7 13 3 4 8 4 14 5 10 5 16 13 9 14 14 5 10 5 16 14 11 15 16 13 9 14 14 5 10 5 16 6 12 6 17 14 11 15 16 6 12 6 17 15 13 16 17 14 11 15 16 6 12 6 17 7 14 7 15 15 13 16 17 7 14 7 15 16 15 17 15 15 13 16 17 7 14 7 15 8 16 8 13 16 15 17 15 8 16 8 13 17 17 18 13 16 15 17 15 8 16 8 13 0 0 9 2 17 17 18 13 0 0 9 2 9 3 19 2 17 17 18 13 0 18 29 19 8 19 30 19 1 26 37 19 8 19 30 19 7 20 31 19 1 26 37 19 7 20 31 19 6 21 32 19 1 26 37 19 6 21 32 19 5 22 33 19 1 26 37 19 5 22 33 19 4 23 34 19 1 26 37 19 4 23 34 19 3 24 35 19 1 26 37 19 3 24 35 19 2 25 36 19 1 26 37 19 27 27 38 18 28 28 39 18 35 35 46 18 28 28 39 18 29 29 40 18 35 35 46 18 29 29 40 18 30 30 41 18 35 35 46 18 30 30 41 18 31 31 42 18 35 35 46 18 31 31 42 18 32 32 43 18 35 35 46 18 32 32 43 18 33 33 44 18 35 35 46 18 33 33 44 18 34 34 45 18 35 35 46 18 9 36 47 18 10 37 48 18 18 39 50 18 10 37 48 18 19 38 49 18 18 39 50 18 10 37 48 18 11 40 51 18 19 38 49 18 11 40 51 18 20 41 52 18 19 38 49 18 11 40 51 18 12 42 53 18 20 41 52 18 12 42 53 18 21 43 54 18 20 41 52 18 12 42 53 18 13 44 55 18 21 43 54 18 13 44 55 18 22 45 56 18 21 43 54 18 13 44 55 18 14 46 57 18 22 45 56 18 14 46 57 18 23 47 58 18 22 45 56 18 14 46 57 18 15 48 59 18 23 47 58 18 15 48 59 18 24 49 60 18 23 47 58 18 15 48 59 18 16 50 61 18 24 49 60 18 16 50 61 18 25 51 62 18 24 49 60 18 16 50 61 18 17 52 63 18 25 51 62 18 17 52 63 18 26 53 64 18 25 51 62 18 17 52 63 18 9 36 47 18 26 53 64 18 9 36 47 18 18 39 50 18 26 53 64 18 18 54 20 5 19 55 21 5 27 57 23 5 19 55 21 5 28 56 22 5 27 57 23 5 19 58 21 4 20 59 74 4 28 61 22 4 20 59 74 4 29 60 75 4 28 61 22 4 20 62 24 6 21 63 26 6 29 65 25 6 21 63 26 6 30 64 27 6 29 65 25 6 21 66 26 8 22 67 28 8 30 69 27 8 22 67 28 8 31 68 65 8 30 69 27 8 22 70 28 10 23 71 66 10 31 73 65 10 23 71 66 10 32 72 67 10 31 73 65 10 23 74 66 12 24 75 68 12 32 77 67 12 24 75 68 12 33 76 69 12 32 77 67 12 24 78 68 11 25 79 70 11 33 81 69 11 25 79 70 11 34 80 71 11 33 81 69 11 25 82 70 9 26 83 72 9 34 85 71 9 26 83 72 9 35 84 73 9 34 85 71 9 26 86 72 7 18 87 20 7 35 89 73 7 18 87 20 7 27 88 23 7 35 89 73 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="item_batteryShape4-lib" name="item_batteryShape4">
+      <mesh>
+        <source id="item_batteryShape4-lib-Position">
+          <float_array count="108" id="item_batteryShape4-lib-Position-array">
+0.766045 -0.948776 -0.642788
+0.173648 -0.948776 -0.984808
+-0.500000 -0.948776 -0.866026
+-0.939693 -0.948776 -0.342020
+-0.939693 -0.948776 0.342020
+-0.500000 -0.948776 0.866025
+0.173648 -0.948776 0.984808
+0.766044 -0.948776 0.642788
+1.000000 -0.948776 0
+0.766045 1.000000 -0.642788
+0.173648 1.000000 -0.984808
+-0.500000 1.000000 -0.866026
+-0.939693 1.000000 -0.342020
+-0.939693 1.000000 0.342020
+-0.500000 1.000000 0.866025
+0.173648 1.000000 0.984808
+0.766044 1.000000 0.642788
+1.000000 1.000000 0
+0.383022 1.000000 -0.321394
+0.086824 1.000000 -0.492404
+-0.250000 1.000000 -0.433013
+-0.469846 1.000000 -0.171010
+-0.469846 1.000000 0.171010
+-0.250000 1.000000 0.433013
+0.086824 1.000000 0.492404
+0.383022 1.000000 0.321394
+0.500000 1.000000 -0.000000
+0.383022 1.064644 -0.321394
+0.086824 1.064644 -0.492404
+-0.250000 1.064644 -0.433013
+-0.469846 1.064644 -0.171010
+-0.469846 1.064644 0.171010
+-0.250000 1.064644 0.433013
+0.086824 1.064644 0.492404
+0.383022 1.064644 0.321394
+0.500000 1.064644 -0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#item_batteryShape4-lib-Position-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="item_batteryShape4-lib-Normal">
+          <float_array count="270" id="item_batteryShape4-lib-Normal-array">
+0.766044 0 -0.642788
+0.173648 0 -0.984808
+0.173648 0 -0.984808
+0.766044 0 -0.642788
+-0.500000 0 -0.866026
+-0.500000 0 -0.866026
+-0.939693 0 -0.342020
+-0.939693 0 -0.342020
+-0.939693 0 0.342020
+-0.939693 0 0.342020
+-0.500000 0 0.866025
+-0.500000 0 0.866025
+0.173648 0 0.984808
+0.173648 0 0.984808
+0.766044 0 0.642788
+0.766044 0 0.642788
+1.000000 0 0
+1.000000 0 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0.000000
+0 1.000000 0.000000
+0 1.000000 0.000000
+0 1.000000 0.000000
+0 1.000000 0.000000
+0 1.000000 0.000000
+0.000000 1.000000 0
+0.000000 1.000000 0
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0 1.000000 -0.000000
+0 1.000000 -0.000000
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+-0.000000 1.000000 0
+-0.000000 1.000000 0
+0.500000 0 -0.866025
+0.500000 0 -0.866025
+0.500000 0 -0.866025
+0.500000 0 -0.866025
+-0.173648 0 -0.984808
+-0.173648 0 -0.984808
+-0.173648 0 -0.984808
+-0.173648 0 -0.984808
+-0.766044 0 -0.642788
+-0.766044 0 -0.642788
+-0.766044 0 -0.642788
+-0.766044 0 -0.642788
+-1.000000 0.000000 0
+-1.000000 0.000000 0
+-1.000000 0.000000 0
+-1.000000 0.000000 0
+-0.766044 0 0.642788
+-0.766044 0 0.642788
+-0.766044 0 0.642788
+-0.766044 0 0.642788
+-0.173648 0 0.984808
+-0.173648 0 0.984808
+-0.173648 0 0.984808
+-0.173648 0 0.984808
+0.500000 0 0.866025
+0.500000 0 0.866025
+0.500000 0 0.866025
+0.500000 0 0.866025
+0.939693 -0.000000 0.342020
+0.939693 -0.000000 0.342020
+0.939693 -0.000000 0.342020
+0.939693 -0.000000 0.342020
+0.939693 0 -0.342020
+0.939693 0 -0.342020
+0.939693 0 -0.342020
+0.939693 0 -0.342020
+</float_array>
+          <technique_common>
+            <accessor source="#item_batteryShape4-lib-Normal-array" count="90" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+          <technique profile="MAYA">
+            <DOUBLE_SIDED>false</DOUBLE_SIDED>
+          </technique>
+        </source>
+        <source id="item_batteryShape4-lib-Tangent">
+          <float_array count="270" id="item_batteryShape4-lib-Tangent-array">
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+</float_array>
+          <technique_common>
+            <accessor source="#item_batteryShape4-lib-Tangent-array" count="90" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="item_batteryShape4-lib-Binormal">
+          <float_array count="270" id="item_batteryShape4-lib-Binormal-array">
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+</float_array>
+          <technique_common>
+            <accessor source="#item_batteryShape4-lib-Binormal-array" count="90" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="item_batteryShape4-lib-map1" name="map1">
+          <float_array count="152" id="item_batteryShape4-lib-map1-array">
+0.015395 0.026347
+0.106197 0.026347
+0.197000 0.026347
+0.287803 0.026347
+0.378605 0.026347
+0.469408 0.026347
+0.560211 0.026347
+0.651013 0.026347
+0.741816 0.026347
+0.832619 0.026347
+0.015395 0.775286
+0.106197 0.775286
+0.197000 0.775286
+0.287803 0.775286
+0.378605 0.775286
+0.469408 0.775286
+0.560211 0.775286
+0.651013 0.775286
+0.741816 0.775286
+0.832619 0.775286
+0.966760 0.751649
+0.966760 0.853999
+0.931222 0.853999
+0.931222 0.751649
+0.966760 0.046169
+0.931222 0.046169
+0.966760 0.144805
+0.931222 0.144805
+0.966760 0.242811
+0.361229 0.954922
+0.383927 0.893508
+0.361229 0.832094
+0.303757 0.799417
+0.238402 0.810766
+0.195744 0.860831
+0.195744 0.926186
+0.238402 0.976250
+0.303757 0.987599
+0.324070 0.924215
+0.295334 0.940554
+0.262656 0.934879
+0.241327 0.909847
+0.241327 0.877169
+0.262656 0.852137
+0.295334 0.846462
+0.324070 0.862801
+0.335418 0.893508
+0.361229 0.954922
+0.303757 0.987599
+0.295334 0.940554
+0.324070 0.924215
+0.238402 0.976250
+0.262656 0.934879
+0.195744 0.926186
+0.241327 0.909847
+0.195744 0.860831
+0.241327 0.877169
+0.238402 0.810766
+0.262656 0.852137
+0.303757 0.799417
+0.295334 0.846462
+0.361229 0.832094
+0.324070 0.862801
+0.383927 0.893508
+0.335418 0.893508
+0.931222 0.242811
+0.966760 0.341447
+0.931222 0.341447
+0.966760 0.441755
+0.931222 0.441755
+0.966760 0.544106
+0.931222 0.544106
+0.966760 0.647877
+0.931222 0.647877
+0.966760 0.954307
+0.931222 0.954307
+</float_array>
+          <technique_common>
+            <accessor source="#item_batteryShape4-lib-map1-array" count="76" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="item_batteryShape4-lib-map1-tangents">
+          <float_array count="60" id="item_batteryShape4-lib-map1-tangents-array">
+-0.984808 0 -0.173648
+-0.866026 0 0.500000
+-0.642788 0 -0.766044
+-0.342020 0 0.939693
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+-0.000001 -1.000000 -0.000003
+-0.000000 -1.000000 0.000001
+-0.000000 -1.000000 0
+-0.000001 -1.000000 -0.000001
+0.000001 -1.000000 -0.000001
+-0.000002 -1.000000 -0.000000
+0 0 -1.000000
+0.342020 0 0.939693
+0.642788 0 -0.766044
+0.866025 0 0.500000
+0.984808 0 -0.173648
+1.000000 0 -0.000001
+1.000000 0 -0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#item_batteryShape4-lib-map1-tangents-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="item_batteryShape4-lib-map1-binormals">
+          <float_array count="60" id="item_batteryShape4-lib-map1-binormals-array">
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+-0.984808 0 0.173648
+-0.866025 0 -0.500000
+-0.642788 0 0.766044
+-0.342020 0.000003 -0.939693
+0 0.000001 1.000000
+0.342020 0 -0.939693
+0.642788 -0.000002 0.766044
+0.866025 0.000002 -0.500000
+0.984808 -0.000002 0.173648
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+-0.000001 0 -1.000000
+0.000000 0 1.000000
+</float_array>
+          <technique_common>
+            <accessor source="#item_batteryShape4-lib-map1-binormals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="item_batteryShape4-lib-Vertex">
+          <input semantic="POSITION" source="#item_batteryShape4-lib-Position"/>
+        </vertices>
+        <triangles material="lambert2" count="68">
+          <input semantic="VERTEX" offset="0" source="#item_batteryShape4-lib-Vertex"/>
+          <input semantic="NORMAL" offset="1" source="#item_batteryShape4-lib-Normal"/>
+          <input semantic="TANGENT" offset="1" source="#item_batteryShape4-lib-Tangent"/>
+          <input semantic="BINORMAL" offset="1" source="#item_batteryShape4-lib-Binormal"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#item_batteryShape4-lib-map1"/>
+          <input semantic="TEXTANGENT" offset="3" set="0" source="#item_batteryShape4-lib-map1-tangents"/>
+          <input semantic="TEXBINORMAL" offset="3" set="0" source="#item_batteryShape4-lib-map1-binormals"/>
+          <p>0 0 0 2 1 1 1 0 9 3 10 2 1 1 1 0 10 2 11 0 9 3 10 2 1 1 1 0 2 4 2 1 10 2 11 0 2 4 2 1 11 5 12 1 10 2 11 0 2 4 2 1 3 6 3 3 11 5 12 1 3 6 3 3 12 7 13 3 11 5 12 1 3 6 3 3 4 8 4 14 12 7 13 3 4 8 4 14 13 9 14 14 12 7 13 3 4 8 4 14 5 10 5 16 13 9 14 14 5 10 5 16 14 11 15 16 13 9 14 14 5 10 5 16 6 12 6 17 14 11 15 16 6 12 6 17 15 13 16 17 14 11 15 16 6 12 6 17 7 14 7 15 15 13 16 17 7 14 7 15 16 15 17 15 15 13 16 17 7 14 7 15 8 16 8 13 16 15 17 15 8 16 8 13 17 17 18 13 16 15 17 15 8 16 8 13 0 0 9 2 17 17 18 13 0 0 9 2 9 3 19 2 17 17 18 13 0 18 29 19 8 19 30 19 1 26 37 19 8 19 30 19 7 20 31 19 1 26 37 19 7 20 31 19 6 21 32 19 1 26 37 19 6 21 32 19 5 22 33 19 1 26 37 19 5 22 33 19 4 23 34 19 1 26 37 19 4 23 34 19 3 24 35 19 1 26 37 19 3 24 35 19 2 25 36 19 1 26 37 19 27 27 38 18 28 28 39 18 35 35 46 18 28 28 39 18 29 29 40 18 35 35 46 18 29 29 40 18 30 30 41 18 35 35 46 18 30 30 41 18 31 31 42 18 35 35 46 18 31 31 42 18 32 32 43 18 35 35 46 18 32 32 43 18 33 33 44 18 35 35 46 18 33 33 44 18 34 34 45 18 35 35 46 18 9 36 47 18 10 37 48 18 18 39 50 18 10 37 48 18 19 38 49 18 18 39 50 18 10 37 48 18 11 40 51 18 19 38 49 18 11 40 51 18 20 41 52 18 19 38 49 18 11 40 51 18 12 42 53 18 20 41 52 18 12 42 53 18 21 43 54 18 20 41 52 18 12 42 53 18 13 44 55 18 21 43 54 18 13 44 55 18 22 45 56 18 21 43 54 18 13 44 55 18 14 46 57 18 22 45 56 18 14 46 57 18 23 47 58 18 22 45 56 18 14 46 57 18 15 48 59 18 23 47 58 18 15 48 59 18 24 49 60 18 23 47 58 18 15 48 59 18 16 50 61 18 24 49 60 18 16 50 61 18 25 51 62 18 24 49 60 18 16 50 61 18 17 52 63 18 25 51 62 18 17 52 63 18 26 53 64 18 25 51 62 18 17 52 63 18 9 36 47 18 26 53 64 18 9 36 47 18 18 39 50 18 26 53 64 18 18 54 20 5 19 55 21 5 27 57 23 5 19 55 21 5 28 56 22 5 27 57 23 5 19 58 21 4 20 59 74 4 28 61 22 4 20 59 74 4 29 60 75 4 28 61 22 4 20 62 24 6 21 63 26 6 29 65 25 6 21 63 26 6 30 64 27 6 29 65 25 6 21 66 26 8 22 67 28 8 30 69 27 8 22 67 28 8 31 68 65 8 30 69 27 8 22 70 28 10 23 71 66 10 31 73 65 10 23 71 66 10 32 72 67 10 31 73 65 10 23 74 66 12 24 75 68 12 32 77 67 12 24 75 68 12 33 76 69 12 32 77 67 12 24 78 68 11 25 79 70 11 33 81 69 11 25 79 70 11 34 80 71 11 33 81 69 11 25 82 70 9 26 83 72 9 34 85 71 9 26 83 72 9 35 84 73 9 34 85 71 9 26 86 72 7 18 87 20 7 35 89 73 7 18 87 20 7 27 88 23 7 35 89 73 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="item_batteryShape2-lib" name="item_batteryShape2">
+      <mesh>
+        <source id="item_batteryShape2-lib-Position">
+          <float_array count="108" id="item_batteryShape2-lib-Position-array">
+0.766045 -0.948776 -0.642788
+0.173648 -0.948776 -0.984808
+-0.500000 -0.948776 -0.866026
+-0.939693 -0.948776 -0.342020
+-0.939693 -0.948776 0.342020
+-0.500000 -0.948776 0.866025
+0.173648 -0.948776 0.984808
+0.766044 -0.948776 0.642788
+1.000000 -0.948776 0
+0.766045 1.000000 -0.642788
+0.173648 1.000000 -0.984808
+-0.500000 1.000000 -0.866026
+-0.939693 1.000000 -0.342020
+-0.939693 1.000000 0.342020
+-0.500000 1.000000 0.866025
+0.173648 1.000000 0.984808
+0.766044 1.000000 0.642788
+1.000000 1.000000 0
+0.383022 1.000000 -0.321394
+0.086824 1.000000 -0.492404
+-0.250000 1.000000 -0.433013
+-0.469846 1.000000 -0.171010
+-0.469846 1.000000 0.171010
+-0.250000 1.000000 0.433013
+0.086824 1.000000 0.492404
+0.383022 1.000000 0.321394
+0.500000 1.000000 -0.000000
+0.383022 1.064644 -0.321394
+0.086824 1.064644 -0.492404
+-0.250000 1.064644 -0.433013
+-0.469846 1.064644 -0.171010
+-0.469846 1.064644 0.171010
+-0.250000 1.064644 0.433013
+0.086824 1.064644 0.492404
+0.383022 1.064644 0.321394
+0.500000 1.064644 -0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#item_batteryShape2-lib-Position-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="item_batteryShape2-lib-Normal">
+          <float_array count="270" id="item_batteryShape2-lib-Normal-array">
+0.766044 0 -0.642788
+0.173648 0 -0.984808
+0.173648 0 -0.984808
+0.766044 0 -0.642788
+-0.500000 0 -0.866026
+-0.500000 0 -0.866026
+-0.939693 0 -0.342020
+-0.939693 0 -0.342020
+-0.939693 0 0.342020
+-0.939693 0 0.342020
+-0.500000 0 0.866025
+-0.500000 0 0.866025
+0.173648 0 0.984808
+0.173648 0 0.984808
+0.766044 0 0.642788
+0.766044 0 0.642788
+1.000000 0 0
+1.000000 0 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0.000000
+0 1.000000 0.000000
+0 1.000000 0.000000
+0 1.000000 0.000000
+0 1.000000 0.000000
+0 1.000000 0.000000
+0.000000 1.000000 0
+0.000000 1.000000 0
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0 1.000000 -0.000000
+0 1.000000 -0.000000
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+-0.000000 1.000000 0
+-0.000000 1.000000 0
+0.500000 0 -0.866025
+0.500000 0 -0.866025
+0.500000 0 -0.866025
+0.500000 0 -0.866025
+-0.173648 0 -0.984808
+-0.173648 0 -0.984808
+-0.173648 0 -0.984808
+-0.173648 0 -0.984808
+-0.766044 0 -0.642788
+-0.766044 0 -0.642788
+-0.766044 0 -0.642788
+-0.766044 0 -0.642788
+-1.000000 0.000000 0
+-1.000000 0.000000 0
+-1.000000 0.000000 0
+-1.000000 0.000000 0
+-0.766044 0 0.642788
+-0.766044 0 0.642788
+-0.766044 0 0.642788
+-0.766044 0 0.642788
+-0.173648 0 0.984808
+-0.173648 0 0.984808
+-0.173648 0 0.984808
+-0.173648 0 0.984808
+0.500000 0 0.866025
+0.500000 0 0.866025
+0.500000 0 0.866025
+0.500000 0 0.866025
+0.939693 -0.000000 0.342020
+0.939693 -0.000000 0.342020
+0.939693 -0.000000 0.342020
+0.939693 -0.000000 0.342020
+0.939693 0 -0.342020
+0.939693 0 -0.342020
+0.939693 0 -0.342020
+0.939693 0 -0.342020
+</float_array>
+          <technique_common>
+            <accessor source="#item_batteryShape2-lib-Normal-array" count="90" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+          <technique profile="MAYA">
+            <DOUBLE_SIDED>false</DOUBLE_SIDED>
+          </technique>
+        </source>
+        <source id="item_batteryShape2-lib-Tangent">
+          <float_array count="270" id="item_batteryShape2-lib-Tangent-array">
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+</float_array>
+          <technique_common>
+            <accessor source="#item_batteryShape2-lib-Tangent-array" count="90" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="item_batteryShape2-lib-Binormal">
+          <float_array count="270" id="item_batteryShape2-lib-Binormal-array">
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+0 0 0
+</float_array>
+          <technique_common>
+            <accessor source="#item_batteryShape2-lib-Binormal-array" count="90" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="item_batteryShape2-lib-map1" name="map1">
+          <float_array count="152" id="item_batteryShape2-lib-map1-array">
+0.015395 0.026347
+0.106197 0.026347
+0.197000 0.026347
+0.287803 0.026347
+0.378605 0.026347
+0.469408 0.026347
+0.560211 0.026347
+0.651013 0.026347
+0.741816 0.026347
+0.832619 0.026347
+0.015395 0.775286
+0.106197 0.775286
+0.197000 0.775286
+0.287803 0.775286
+0.378605 0.775286
+0.469408 0.775286
+0.560211 0.775286
+0.651013 0.775286
+0.741816 0.775286
+0.832619 0.775286
+0.966760 0.751649
+0.966760 0.853999
+0.931222 0.853999
+0.931222 0.751649
+0.966760 0.046169
+0.931222 0.046169
+0.966760 0.144805
+0.931222 0.144805
+0.966760 0.242811
+0.361229 0.954922
+0.383927 0.893508
+0.361229 0.832094
+0.303757 0.799417
+0.238402 0.810766
+0.195744 0.860831
+0.195744 0.926186
+0.238402 0.976250
+0.303757 0.987599
+0.324070 0.924215
+0.295334 0.940554
+0.262656 0.934879
+0.241327 0.909847
+0.241327 0.877169
+0.262656 0.852137
+0.295334 0.846462
+0.324070 0.862801
+0.335418 0.893508
+0.361229 0.954922
+0.303757 0.987599
+0.295334 0.940554
+0.324070 0.924215
+0.238402 0.976250
+0.262656 0.934879
+0.195744 0.926186
+0.241327 0.909847
+0.195744 0.860831
+0.241327 0.877169
+0.238402 0.810766
+0.262656 0.852137
+0.303757 0.799417
+0.295334 0.846462
+0.361229 0.832094
+0.324070 0.862801
+0.383927 0.893508
+0.335418 0.893508
+0.931222 0.242811
+0.966760 0.341447
+0.931222 0.341447
+0.966760 0.441755
+0.931222 0.441755
+0.966760 0.544106
+0.931222 0.544106
+0.966760 0.647877
+0.931222 0.647877
+0.966760 0.954307
+0.931222 0.954307
+</float_array>
+          <technique_common>
+            <accessor source="#item_batteryShape2-lib-map1-array" count="76" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="item_batteryShape2-lib-map1-tangents">
+          <float_array count="60" id="item_batteryShape2-lib-map1-tangents-array">
+-0.984808 0 -0.173648
+-0.866026 0 0.500000
+-0.642788 0 -0.766044
+-0.342020 0 0.939693
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+-0.000001 -1.000000 -0.000003
+-0.000000 -1.000000 0.000001
+-0.000000 -1.000000 0
+-0.000001 -1.000000 -0.000001
+0.000001 -1.000000 -0.000001
+-0.000002 -1.000000 -0.000000
+0 0 -1.000000
+0.342020 0 0.939693
+0.642788 0 -0.766044
+0.866025 0 0.500000
+0.984808 0 -0.173648
+1.000000 0 -0.000001
+1.000000 0 -0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#item_batteryShape2-lib-map1-tangents-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="item_batteryShape2-lib-map1-binormals">
+          <float_array count="60" id="item_batteryShape2-lib-map1-binormals-array">
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+-0.984808 0 0.173648
+-0.866025 0 -0.500000
+-0.642788 0 0.766044
+-0.342020 0.000003 -0.939693
+0 0.000001 1.000000
+0.342020 0 -0.939693
+0.642788 -0.000002 0.766044
+0.866025 0.000002 -0.500000
+0.984808 -0.000002 0.173648
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+-0.000001 0 -1.000000
+0.000000 0 1.000000
+</float_array>
+          <technique_common>
+            <accessor source="#item_batteryShape2-lib-map1-binormals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="item_batteryShape2-lib-Vertex">
+          <input semantic="POSITION" source="#item_batteryShape2-lib-Position"/>
+        </vertices>
+        <triangles material="lambert2" count="68">
+          <input semantic="VERTEX" offset="0" source="#item_batteryShape2-lib-Vertex"/>
+          <input semantic="NORMAL" offset="1" source="#item_batteryShape2-lib-Normal"/>
+          <input semantic="TANGENT" offset="1" source="#item_batteryShape2-lib-Tangent"/>
+          <input semantic="BINORMAL" offset="1" source="#item_batteryShape2-lib-Binormal"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#item_batteryShape2-lib-map1"/>
+          <input semantic="TEXTANGENT" offset="3" set="0" source="#item_batteryShape2-lib-map1-tangents"/>
+          <input semantic="TEXBINORMAL" offset="3" set="0" source="#item_batteryShape2-lib-map1-binormals"/>
+          <p>0 0 0 2 1 1 1 0 9 3 10 2 1 1 1 0 10 2 11 0 9 3 10 2 1 1 1 0 2 4 2 1 10 2 11 0 2 4 2 1 11 5 12 1 10 2 11 0 2 4 2 1 3 6 3 3 11 5 12 1 3 6 3 3 12 7 13 3 11 5 12 1 3 6 3 3 4 8 4 14 12 7 13 3 4 8 4 14 13 9 14 14 12 7 13 3 4 8 4 14 5 10 5 16 13 9 14 14 5 10 5 16 14 11 15 16 13 9 14 14 5 10 5 16 6 12 6 17 14 11 15 16 6 12 6 17 15 13 16 17 14 11 15 16 6 12 6 17 7 14 7 15 15 13 16 17 7 14 7 15 16 15 17 15 15 13 16 17 7 14 7 15 8 16 8 13 16 15 17 15 8 16 8 13 17 17 18 13 16 15 17 15 8 16 8 13 0 0 9 2 17 17 18 13 0 0 9 2 9 3 19 2 17 17 18 13 0 18 29 19 8 19 30 19 1 26 37 19 8 19 30 19 7 20 31 19 1 26 37 19 7 20 31 19 6 21 32 19 1 26 37 19 6 21 32 19 5 22 33 19 1 26 37 19 5 22 33 19 4 23 34 19 1 26 37 19 4 23 34 19 3 24 35 19 1 26 37 19 3 24 35 19 2 25 36 19 1 26 37 19 27 27 38 18 28 28 39 18 35 35 46 18 28 28 39 18 29 29 40 18 35 35 46 18 29 29 40 18 30 30 41 18 35 35 46 18 30 30 41 18 31 31 42 18 35 35 46 18 31 31 42 18 32 32 43 18 35 35 46 18 32 32 43 18 33 33 44 18 35 35 46 18 33 33 44 18 34 34 45 18 35 35 46 18 9 36 47 18 10 37 48 18 18 39 50 18 10 37 48 18 19 38 49 18 18 39 50 18 10 37 48 18 11 40 51 18 19 38 49 18 11 40 51 18 20 41 52 18 19 38 49 18 11 40 51 18 12 42 53 18 20 41 52 18 12 42 53 18 21 43 54 18 20 41 52 18 12 42 53 18 13 44 55 18 21 43 54 18 13 44 55 18 22 45 56 18 21 43 54 18 13 44 55 18 14 46 57 18 22 45 56 18 14 46 57 18 23 47 58 18 22 45 56 18 14 46 57 18 15 48 59 18 23 47 58 18 15 48 59 18 24 49 60 18 23 47 58 18 15 48 59 18 16 50 61 18 24 49 60 18 16 50 61 18 25 51 62 18 24 49 60 18 16 50 61 18 17 52 63 18 25 51 62 18 17 52 63 18 26 53 64 18 25 51 62 18 17 52 63 18 9 36 47 18 26 53 64 18 9 36 47 18 18 39 50 18 26 53 64 18 18 54 20 5 19 55 21 5 27 57 23 5 19 55 21 5 28 56 22 5 27 57 23 5 19 58 21 4 20 59 74 4 28 61 22 4 20 59 74 4 29 60 75 4 28 61 22 4 20 62 24 6 21 63 26 6 29 65 25 6 21 63 26 6 30 64 27 6 29 65 25 6 21 66 26 8 22 67 28 8 30 69 27 8 22 67 28 8 31 68 65 8 30 69 27 8 22 70 28 10 23 71 66 10 31 73 65 10 23 71 66 10 32 72 67 10 31 73 65 10 23 74 66 12 24 75 68 12 32 77 67 12 24 75 68 12 33 76 69 12 32 77 67 12 24 78 68 11 25 79 70 11 33 81 69 11 25 79 70 11 34 80 71 11 33 81 69 11 25 82 70 9 26 83 72 9 34 85 71 9 26 83 72 9 35 84 73 9 34 85 71 9 26 86 72 7 18 87 20 7 35 89 73 7 18 87 20 7 27 88 23 7 35 89 73 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="DefaultScene" name="batteries">
+      <node id="group1" name="group1" sid="group1">
+        <rotate sid="rotateZ">0 0 1 0</rotate>
+        <rotate sid="rotateY">0 1 0 0</rotate>
+        <rotate sid="rotateX">1 0 0 0</rotate>
+        <node id="_collider_box_battery" name="_collider_box_battery" sid="_collider_box_battery">
+          <translate sid="translate">-0.026458 0.001855 0.014845</translate>
+          <rotate sid="rotateZ">0 0 1 0</rotate>
+          <rotate sid="rotateY">0 1 0 0</rotate>
+          <rotate sid="rotateX">1 0 0 0</rotate>
+          <scale sid="scale">0.191645 0.114583 0.104436</scale>
+          <instance_geometry url="#_collider_box_batteryShape-lib">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="lambert2" target="#lambert2">
+                  <bind semantic="UVSET0" target="#_collider_box_batteryShape-lib-map1"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="group1_item_battery1" name="item_battery1" sid="group1_item_battery1">
+          <translate sid="translate">0 -0.002019 0</translate>
+          <rotate sid="rotateZ">0 0 1 0</rotate>
+          <rotate sid="rotateY">0 1 0 0</rotate>
+          <rotate sid="rotateX">1 0 0 0</rotate>
+          <scale sid="scale">0.018283 0.057723 0.018283</scale>
+          <instance_geometry url="#group1_item_battery1_item_battery1-lib">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="lambert2" target="#lambert2">
+                  <bind semantic="UVSET0" target="#group1_item_battery1_item_battery1-lib-map1"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="item_battery3" name="item_battery3" sid="item_battery3">
+          <translate sid="translate">-0.045135 -0.002019 0</translate>
+          <rotate sid="rotateZ">0 0 1 0</rotate>
+          <rotate sid="rotateY">0 1 0 0</rotate>
+          <rotate sid="rotateX">1 0 0 0</rotate>
+          <scale sid="scale">0.018283 0.057723 0.018283</scale>
+          <instance_geometry url="#item_batteryShape3-lib">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="lambert2" target="#lambert2">
+                  <bind semantic="UVSET0" target="#item_batteryShape3-lib-map1"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="item_battery4" name="item_battery4" sid="item_battery4">
+          <translate sid="translate">-0.090270 -0.038511 0</translate>
+          <rotate sid="rotateZ">0 0 1 0</rotate>
+          <rotate sid="rotateY">0 1 0 -6.513443</rotate>
+          <rotate sid="rotateX">1 0 0 90.000076</rotate>
+          <scale sid="scale">0.018283 0.057723 0.018283</scale>
+          <instance_geometry url="#item_batteryShape4-lib">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="lambert2" target="#lambert2">
+                  <bind semantic="UVSET0" target="#item_batteryShape4-lib-map1"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="item_battery2" name="item_battery2" sid="item_battery2">
+          <translate sid="translate">-0.000242 -0.036763 0.043525</translate>
+          <rotate sid="rotateZ">0 0 1 90.000076</rotate>
+          <rotate sid="rotateY">0 1 0 0</rotate>
+          <rotate sid="rotateX">1 0 0 -13.150338</rotate>
+          <scale sid="scale">0.018283 0.057723 0.018283</scale>
+          <instance_geometry url="#item_batteryShape2-lib">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="lambert2" target="#lambert2">
+                  <bind semantic="UVSET0" target="#item_batteryShape2-lib-map1"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+      <extra>
+        <technique profile="MAYA">
+          <start_time>0.041667</start_time>
+          <end_time>2.000000</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#DefaultScene"/>
+  </scene>
+</COLLADA>

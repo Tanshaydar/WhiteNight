@@ -1,0 +1,506 @@
+void OnStart()
+{
+	SetMapDisplayNameEntry("Intro");
+	//User properties
+	SetPlayerActive(false);
+	SetSanityDrainDisabled(true);
+	SetInventoryDisabled(true);
+	SetPlayerCrouchDisabled(true);
+	SetPlayerJumpDisabled(true);
+	ShowPlayerCrossHairIcons(false);
+	SetPlayerLampOil(0.0f);
+	
+	//Sounds
+	PlaySoundAtEntity("Rain", "general_rain_m.snt", "AreaRain", 0, true);
+	PlaySoundAtEntity("Flow", "fan.snt", "fan_1", 0, true);
+	PlaySoundAtEntity("Flow", "fan.snt", "fan_2", 0, true);
+	
+	//Stuff
+	SetLightVisible("SpotLight_1", false);
+	SetLightVisible("SpotLight_2", false);
+	SetLightVisible("SpotLight_3", false);
+	SetLightVisible("SpotLight_4", false);
+	SetLightVisible("SpotLight_5", false);
+	SetLightVisible("SpotLight_6", false);
+	SetLightVisible("SpotLight_7", false);
+	
+	SetLightVisible("SpotLight_10", false);
+	SetLightVisible("SpotLight_11", false);
+	SetLightVisible("SpotLight_12", false);
+	SetLightVisible("SpotLight_13", false);
+	SetLightVisible("SpotLight_14", false);
+	SetLightVisible("SpotLight_15", false);
+	SetLightVisible("SpotLight_16", false);
+	SetLightVisible("SpotLight_17", false);
+	SetLightVisible("SpotLight_18", false);
+
+	//Timers
+	AddTimer("Intro", 8, "Intro");
+	AddTimer("Music", 1, "Music");
+	AddTimer("Police", 2, "Police");
+	AddTimer("lamp_wall_lamp_3", 4, "Flickering");
+	AddTimer("lamp_wall_lamp_3", 6, "StopFlickering");
+	AddTimer("lamp_wall_lamp_4", 13, "Flickering");
+	AddTimer("lamp_wall_lamp_4", 15, "StopFlickering");
+	AddTimer("iron_mine_lamp_9", 10, "StopFlickering");
+	AddTimer("iron_mine_lamp_17", 10, "Flickering");
+	
+	//CollideBacks
+	AddEntityCollideCallback("Player", "toGurney", "Gurney", true, 1);
+	AddEntityCollideCallback("Player", "ScriptArea_5", "TeleportToAlternate1", true, 1);
+	AddEntityCollideCallback("Player", "ScriptArea_9", "TeleportToAlternate2", true, 1);
+	AddEntityCollideCallback("Player", "ScriptArea_10", "TeleportToAlternate3", true, 1);
+	AddEntityCollideCallback("Player", "ScriptArea_6", "TeleportToNormal1", true, 1);
+	AddEntityCollideCallback("Player", "ScriptArea_7", "TeleportToNormal2", true, 1);
+	AddEntityCollideCallback("Player", "ScriptArea_8", "TeleportToNormal3", true, 1);
+	AddEntityCollideCallback("Player", "Grunter", "GrunterShow", true, 1);
+	
+	//Alternate
+	RotatePropToSpeed("door_shaft_propeller_1", 5, 5, 0, 1, 0, false, "");
+	RotatePropToSpeed("wallfan_gobo_31", 5, 5, 0, 1, 0, false, "");
+	RotatePropToSpeed("door_shaft_propeller_2", 5, 5, 0, 0, 1, false, "");	
+	RotatePropToSpeed("wallfan_gobo_32", 5, 5, 0, 0, 1, false, "");	
+	
+	//Finally Start
+	FadeOut(0);
+	FadeIn(4);
+	
+	AddTimer("Debug", 1, "Debug");
+}
+
+void Debug(string &in asTimer)
+{
+	AddLocalVarInt("aq", 1);
+	AddDebugMessage(" "+ GetLocalVarInt("aq"), false);
+	AddTimer("Debug", 1, "Debug");
+}
+
+void Music(string &in asTimer)
+{
+	PlayMusic("intro", false, 1.0f, 5.0f, 1, true);
+}
+
+void Intro(string &in asTimer)
+{
+	AddLocalVarInt("IntroInt", 1);
+	
+	switch( GetLocalVarInt("IntroInt") )
+	{
+		case 1:
+			FadeOut(2);
+			StopSound("Rain", 2);
+		break;
+		case 4:
+			PlaySoundAtEntity("Rain2", "general_rain_m.snt", "AreaRain_1", 4, true);
+			SetEntityActive("lamp_wall_lamp_3", false);
+			FadeIn(4);
+			TeleportPlayer("PlayerStartArea_2");
+		break;
+		case 12:
+			StopSound("Rain2", 3);
+			FadeOut(3);
+		break;
+		case 20:
+			SetLightVisible("SpotLight_1", true);
+			SetLightVisible("SpotLight_2", true);
+			SetLightVisible("SpotLight_3", true);
+			DestroyParticleSystem("rain");
+			FadeIn(4);
+			TeleportPlayer("PlayerStartArea_3");
+			SetEntityActive("lamp_wall_lamp_4", false);
+		break;
+		case 26:
+			SetPropActiveAndFade("grace_1", true, 3);
+			AddEffectVoice("0_1.ogg", "", "Voice", "00_intro_01", false, "", 0, 0 );
+			AddEffectVoice("0_2.ogg", "", "Voice", "00_intro_02", false, "", 0, 0 );
+			AddEffectVoice("0_3.ogg", "", "Voice", "00_intro_03", false, "", 0, 0 );
+			AddEffectVoice("0_4.ogg", "", "Voice", "00_intro_04", false, "", 0, 0 );
+			AddEffectVoice("0_5.ogg", "", "Voice", "00_intro_05", false, "", 0, 0 );
+		break;
+		case 29:
+			SetPropActiveAndFade("daivd_1", true, 3);
+		break;
+		case 40:
+			SetPropActiveAndFade("grace_1", false, 3);
+			SetPropActiveAndFade("daivd_1", false, 3);
+		break;
+		case 42:
+			FadeOut(4);
+		break;
+		case 46:
+			SetLightVisible("SpotLight_4", true);
+			SetLightVisible("SpotLight_5", true);
+			FadeIn(4);
+			TeleportPlayer("PlayerStartArea_4");
+		break;
+		case 50:
+			AddEffectVoice("0_6", "", "Voice", "00_intro_06", false, "", 0, 0 );
+			SetPropActiveAndFade("sofia_1", true, 3);
+		break;
+		case 52:
+			SetPropActiveAndFade("patrick_1", true, 3);
+		break;
+		case 54:
+			SetPropActiveAndFade("psychiatrist_1", true, 3);
+		break;
+		case 58:
+			FadeOut(4);
+		break;
+		case 59:
+			SetPropActiveAndFade("sofia_1", false, 2);
+			SetPropActiveAndFade("patrick_1", false, 2);
+			SetPropActiveAndFade("psychiatrist_1", false, 2);
+		break;
+		case 62:
+			SetLightVisible("SpotLight_1", true);
+			SetLightVisible("SpotLight_2", true);
+			SetLightVisible("SpotLight_3", true);
+			SetLightVisible("SpotLight_4", true);
+			SetLightVisible("SpotLight_5", true);
+			FadeIn(4);
+			TeleportPlayer("PlayerStartArea_5");
+		break;
+		case 63:
+			SetPropActiveAndFade("music_1", true, 3);
+		break;
+		case 66:
+			AddEffectVoice("0_7", "", "Voice", "00_intro_07", false, "", 0, 0 );
+			AddEffectVoice("0_8", "", "Voice", "00_intro_08", false, "", 0, 0 );
+			AddEffectVoice("0_9", "", "Voice", "00_intro_09", false, "", 0, 0 );
+			AddEffectVoice("0_10", "", "Voice", "00_intro_10", false, "", 0, 0 );
+		break;
+		case 78:
+			SetPropActiveAndFade("music_1", false, 3);
+			FadeOut(4);
+		break;
+		case 82:
+			PlaySoundAtEntity("Police", "police.snt", "police", 12, true);
+		break;
+		case 97:
+			FadeIn(4);
+			SetLightVisible("SpotLight_6", true);
+			TeleportPlayer("PlayerStartArea_6");
+		break;
+		case 96:
+			PlaySoundAtEntity("Radio", "radio.snt", "radio", 4, true);
+		break;
+		case 105:
+			FadeOut(3);
+		break;
+		case 110:
+			FadeIn(3);
+			SetLightVisible("SpotLight_6", false);
+			SetLightVisible("SpotLight_7", true);
+			TeleportPlayer("PlayerStartArea_7");
+			AddPropForce("hanging_prisoner_1", 0, 0, 500, "World");
+		break;
+		case 117:
+			FadeOut(3);
+		break;
+		case 123:
+			RemoveTimer("Police");
+			FadeIn(3);
+			ShowPlayerCrossHairIcons(true);
+			TeleportPlayer("PlayerStartArea_8");
+			SetPlayerActive(true);
+			SetPlayerMoveSpeedMul(0.5f);
+			SetPlayerRunSpeedMul(0.5f);
+			SetLightVisible("SpotLight_10", true);
+			SetLightVisible("SpotLight_11", true);
+			SetLightVisible("SpotLight_12", true);
+			SetLightVisible("SpotLight_13", true);
+			SetLightVisible("SpotLight_14", true);
+			SetLightVisible("SpotLight_15", true);
+			SetLightVisible("SpotLight_16", true);
+			SetLightVisible("SpotLight_17", true);
+			SetLightVisible("SpotLight_18", true);
+		break;
+		case 125:
+			PlayMusic("intro_2", false, 0.8f, 5.0f, 1, true);
+		break;
+	}
+	
+	if( GetLocalVarInt("IntroInt") < 126)
+		AddTimer("blackout", 1, "Intro");
+}
+
+void Gurney(string &in asParent, string &in asChild, int alState)
+{
+	ShowPlayerCrossHairIcons(false);
+	SetEntityActive("servant_brute_2", true);
+	AddTimer("GruntEnder2", 0.3f, "GruntEnder2");
+	FadePlayerRollTo(85, 1, 1); 
+	FadeOut(3);
+	AddTimer("Gurney2", 4, "Gurney2");
+}
+
+void GruntEnder2(string &in asTimer)
+{
+	SetEntityActive("servant_brute_2", false);
+}
+
+void Gurney2(string &in asTimer)
+{
+	SetLightVisible("SpotLight_10", false);
+	SetLightVisible("SpotLight_11", false);
+	SetLightVisible("SpotLight_12", false);
+	SetLightVisible("SpotLight_13", false);
+	SetLightVisible("SpotLight_14", false);
+	SetLightVisible("SpotLight_15", false);
+	SetLightVisible("SpotLight_16", false);
+	SetLightVisible("SpotLight_17", false);
+	SetLightVisible("SpotLight_18", false);
+	FadeIn(2);
+	TeleportPlayer("PlayerStartArea_9");
+	SetPlayerCrouching(true);
+	SetPlayerActive(false);
+	AddTimer("Forcing", 8.3f, "ForcerSound");
+	AddTimer("LookAt1", 1.5f, "Looker1");
+}
+
+void StopLookAt(string &in asTimer)
+{
+	StopPlayerLookAt();
+}
+
+void Looker1(string &in asTimer)
+{
+	StartPlayerLookAt("ScriptArea_2", 4, 100, "");
+	AddTimer("LookAt1", 2.0f, "Looker2");
+}
+
+void Looker2(string &in asTimer)
+{
+	StartPlayerLookAt("ScriptArea_3", 4, 100, "");
+	AddTimer("LookAt1", 2.0f, "Looker3");
+}
+
+void Looker3(string &in asTimer)
+{
+	StartPlayerLookAt("ScriptArea_4", 4, 100, "");
+	PlaySoundAtEntity("sigh", "react_pant.snt", "Player", 1.0 / 2, false);
+	AddTimer("LookAt1", 2.0f, "Looker4");
+}
+
+void Looker4(string &in asTimer)
+{
+	StartPlayerLookAt("ScriptArea_1", 4, 100, "");
+	AddTimer("Forcing", 2.0f, "Forcer");
+}
+
+void ForcerSound(string &in asTimer)
+{
+	PlayGuiSound("gurney", 4);
+}
+
+void Forcer(string &in asTimer)
+{
+	StopPlayerLookAt();
+	SetPlayerLookSpeedMul(0);
+	AddLocalVarInt("ForceTime", 1);
+	AddPlayerBodyForce( 5800.0f, 0, 0, false);
+	
+	if( GetLocalVarInt("ForceTime") < 50)
+		AddTimer("Forcing", 0.2f, "Forcer");
+	else
+		AddTimer("Forcing2", 0.8f, "Forcer2");
+}
+
+void Forcer2(string &in asTimer)
+{
+	AddLocalVarInt("ForceTime2", 1);
+	AddPlayerBodyForce( 5900.0f, 0, 0, false);
+	
+	if( GetLocalVarInt("ForceTime2") < 50)
+		AddTimer("Forcing2", 0.2f, "Forcer2");
+	else
+		AddTimer("Forcing3", 0.8f, "Forcer3");
+}
+
+void Forcer3(string &in asTimer)
+{
+	AddLocalVarInt("ForceTime3", 1);
+	AddPlayerBodyForce( 5900.0f, 0, 0, false);
+	
+	if( GetLocalVarInt("ForceTime3") == 44)
+		FadeOut(5);
+	
+	if( GetLocalVarInt("ForceTime3") < 50)
+		AddTimer("Forcing3", 0.2f, "Forcer3");
+	else
+		ChangeMap("01_rooms", "PlayerStartArea_1", "", "");
+}
+
+//CollideBacks
+
+void GrunterShow(string &in asParent, string &in asChild, int alState)
+{
+	SetEnemyDisableTriggers("servant_brute_1", true);
+	SetEntityActive("servant_brute_1", true);
+	AddTimer("GrunterEnder1", 0.3f, "GrunterEnder");
+}
+
+void GrunterEnder(string &in asTimer)
+{
+	SetEntityActive("servant_brute_1", false);
+}
+
+void TeleportToAlternate1(string &in asParent, string &in asChild, int alState)
+{
+	FadeIn(1);
+	PlaySoundAtEntity("sigh", "react_pant.snt", "Player", 1.0 / 2, false);
+	TeleportPlayer("PlayerStartArea_10");
+	StartPlayerLookAt("ScriptArea_11", 100, 100, "");
+	AddTimer("LookStopper", 0.1f, "StopLookAt");
+}
+
+void TeleportToAlternate2(string &in asParent, string &in asChild, int alState)
+{
+	StartPlayerLookAt("ScriptArea_12", 100, 100, "");
+	AddTimer("LookStopper", 0.1f, "StopLookAt");
+	TeleportPlayer("PlayerStartArea_14");
+}
+
+void TeleportToAlternate3(string &in asParent, string &in asChild, int alState)
+{
+	StartPlayerLookAt("ScriptArea_13", 100, 100, "");
+	AddTimer("LookStopper", 0.1f, "StopLookAt");
+	TeleportPlayer("PlayerStartArea_15");
+}
+
+void TeleportToNormal1(string &in asParent, string &in asChild, int alState)
+{
+	StartPlayerLookAt("ScriptArea_14", 100, 100, "");
+	AddTimer("LookStopper", 0.1f, "StopLookAt");
+	TeleportPlayer("PlayerStartArea_11");
+}
+
+void TeleportToNormal2(string &in asParent, string &in asChild, int alState)
+{
+	StartPlayerLookAt("ScriptArea_15", 100, 100, "");
+	AddTimer("LookStopper", 0.1f, "StopLookAt");
+	TeleportPlayer("PlayerStartArea_12");
+}
+
+void TeleportToNormal3(string &in asParent, string &in asChild, int alState)
+{
+	StartPlayerLookAt("ScriptArea_16", 100, 100, "");
+	AddTimer("LookStopper", 0.1f, "StopLookAt");
+	TeleportPlayer("PlayerStartArea_13");
+	///
+	SetSwingDoorLocked("prison_9", false, false);
+	SetSwingDoorClosed("prison_9", false, false);
+	SetSwingDoorDisableAutoClose("prison_9", true);
+	AddPropImpulse("prison_9", 0.0f, 0.0f, 150.0f, "World");	
+	///
+	SetSwingDoorLocked("prison_18", false, false);
+	SetSwingDoorClosed("prison_18", false, false);
+	SetSwingDoorDisableAutoClose("prison_18", true);
+	AddPropImpulse("prison_18", 0.0f, 0.0f, -150.0f, "World");
+	
+	AddTimer("open_door_1", 0.6f, "OpenDoors1");
+	AddTimer("open_door_2", 3.2f, "OpenDoors2");
+	AddTimer("open_door_3", 4.0f, "OpenDoors3");
+}
+
+void OpenDoors1(string &in asTimer)
+{
+	///
+	SetSwingDoorLocked("prison_10", false, false);
+	SetSwingDoorClosed("prison_10", false, false);
+	SetSwingDoorDisableAutoClose("prison_10", true);
+	AddPropImpulse("prison_10", 0.0f, 0.0f, 150.0f, "World");
+	///
+	SetSwingDoorLocked("prison_21", false, false);
+	SetSwingDoorClosed("prison_21", false, false);
+	SetSwingDoorDisableAutoClose("prison_21", true);
+	AddPropImpulse("prison_21", 0.0f, 0.0f, -150.0f, "World");
+}
+
+void OpenDoors2(string &in asTimer)
+{
+	///
+	SetSwingDoorLocked("prison_12", false, false);
+	SetSwingDoorClosed("prison_12", false, false);
+	SetSwingDoorDisableAutoClose("prison_12", true);
+	AddPropImpulse("prison_12", 0.0f, 0.0f, 150.0f, "World");
+	///
+	SetSwingDoorLocked("prison_20", false, false);
+	SetSwingDoorClosed("prison_20", false, false);
+	SetSwingDoorDisableAutoClose("prison_20", true);
+	AddPropImpulse("prison_20", 0.0f, 0.0f, -150.0f, "World");	
+}
+void OpenDoors3(string &in asTimer)
+{
+	///
+	SetSwingDoorLocked("prison_13", false, false);
+	SetSwingDoorClosed("prison_13", false, false);
+	SetSwingDoorDisableAutoClose("prison_13", true);
+	AddPropImpulse("prison_13", 0.0f, 0.0f, 150.0f, "World");
+	///
+	SetSwingDoorLocked("prison_22", false, false);
+	SetSwingDoorClosed("prison_22", false, false);
+	SetSwingDoorDisableAutoClose("prison_22", true);
+	AddPropImpulse("prison_22", 0.0f, 0.0f, -150.0f, "World");	
+}
+
+void Police(string &in asTimer)
+{
+	AddLocalVarInt("polis", 1);
+	
+	switch( GetLocalVarInt("polis") )
+	{
+		case 1:
+			SetLightVisible("red", false);
+			SetLightVisible("blue", true);
+		break;
+		case 2:
+			SetLightVisible("blue", false);
+			SetLightVisible("red", true);
+			SetLocalVarInt("polis", 0);
+		break;
+
+	}
+	
+	AddTimer("Police", 1, "Police");
+}
+
+void Flickering(string &in asTimer)
+{
+	AddLocalVarInt("flicker", 1);
+	
+	switch( GetLocalVarInt("flicker") )
+	{
+		case 1:
+			SetLampLit(asTimer, true, false);
+			PlaySoundAtEntity("Lamp_Flicker_1", "lm_light_flicker.snt", asTimer, 0, true);
+		break;
+		case 2:
+			SetLampLit(asTimer, false, false);
+			SetLocalVarInt("flicker", 0);
+		break;
+	}
+	
+	AddTimer(asTimer, RandFloat(0.1f, 0.3f), "Flickering");
+}
+
+void StopFlickering(string &in asTimer)
+{
+	RemoveTimer(asTimer);
+	SetLampLit(asTimer, true, true);
+}
+void OnEnter()
+{	
+	PreloadSound("general_rain_m");	PreloadSound("police");	PreloadSound("radio");	PreloadSound("lm_light_flicker");	PreloadParticleSystem("ps_water_rain");
+	SetSanityDrainDisabled(true);
+}
+
+////////////////////////////
+// Run when leaving map
+void OnLeave()
+{
+	StopMusic(5.0f, 1);
+	//////////////////////
+	//Load Screen Setup
+	SetupLoadScreen("LoadingText", "Load_Text_01", 1, "game_loading_failure.jpg");
+}

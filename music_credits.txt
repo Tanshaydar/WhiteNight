@@ -1,0 +1,52 @@
+Aside from two tracks; all musics are taken from free albums of Broken Notes and Liminality.
+No other original soundtrack is included. The list below specifies the tracks I used and their
+composers. I asked Broken Notes composers for their permission and they kindly let me to use
+their music.
+Liminality has no information about using their music in their website though.
+
+Broken Notes: http://www.broken-notes.com/
+Liminality: http://www.liminalrecs.com/
+
+=======================================================================================================================================
+OGG File        -   Actual Music                  |   Composer                | Album
+---------------------------------------------------------------------------------------------------------------------------------------
+asylum          -   Man In the Street             |   Jason Gervais           | Broken Notes Sanatoruim
+hospital_2      -   The Abandoned Outskirts       |   John Anthony Mathewson  | Broken Notes Melancholy
+MusicBox Puzzle -   Komkolzgrad                   |   John Anthony Mathewson  | Broken Notes Intermission: Volume Two
+hospital_1      -   Suspense Buildup              |   Jason Gervais           | Broken Notes Intermission: Volume One
+intro           -   Crimson Paintings             |   Christophe Frutuoso     | Broken Notes Intermission: Volume Two
+intro_2         -   Difficult Acceptance          |   Christopher So          | Broken Notes Melancholy
+mental_1_2      -   Midnight Corridors            |   Jason Gervais           | Broken Notes Intermission: Volume One
+mental_2_2      -   Static Ambience               |   Jason Gervais           | Broken Notes From the Vault
+mental_2_3      -   Outside(Part III)~Entering H. |   Jason G. & Samantha Dean| Broken Notes From the Vault
+mental_2_4      -   Spirits of the Sanctuary      |   Jason Gervais           | Broken Notes Melancholy
+mental_3_1      -   Into the World of Madness     |   Jason Gervais           | Broken Notes Sanatorium
+mental_3_2      -   Where Has the Town Gone       |   Christopher So          | Broken Notes Sanatorium
+mental_3_patriick - Gray Afternoon                |   Christopher So          | Broken Notes Sanatorium
+menu            -   The Fog (Part II)             |   Christophe Frutuoso     | Broken Notes Sanatorium
+rooms_1         -   Cold Rain of Silent Hill(No SFX)| Jason Gervais           | Broken Notes From the Vault
+rooms_2         -   Searching (Alternate) ~ Station | Jason Gervais           | Broken Notes From the Vault
+mental_3_last   -   Theme of Execution            |   Jason Gervais           | Broken Notes
+---------------------------------------------------------------------------------------------------------------------------------------
+pre_menu        -   Walk Through                  |   KAVver.                 | Liminality: Revision 
+ending          -   Elsewhere                     |   Fellirium & KAVver.     | Liminality II: Oakeri
+entrance_2      -   Just a Matter of Time         |   KAVver.                 | Liminality: The Silent Hill Inspired Album (Disc One)
+hospital_3      -   Night at the Hospital         |   Fellirium               | Liminality: The Silent Hill Inspired Album (Disc One)
+entrance_1      -   Endless Break                 |   Y-Ring                  | Liminality: The Silent Hill Inspired Album (Disc One)
+doctor          -   Calmness in the Fog           |   Wialenove               | Liminality II: Okaeri
+mental_2_1      -   Their Heaven                  |   Mr. Somnambula          | Liminality: Revision
+tunnels_2       -   Run from Yourself             |   Wialenove               | Liminality: Revision
+yaratik         -   Final Battle                  |   Os1R!s                  | Liminality: The Silent Hill Inspired Album (Disc Two)
+---------------------------------------------------------------------------------------------------------------------------------------
+mental_1_1.ogg  -   Dr. K 02                      |   Akira Yamaoka           | Silent Hill: Shattered Memories Complete Soundtrack (Disc 2: PSP Rip)
+---------------------------------------------------------------------------------------------------------------------------------------
+credits.org     -   Main Theme                    |   Kawai Kenji             | Higurashi No Naku Koro Ni Original Soundtrack
+
+
+
+I can't really remember where I get this music. Possibly Broken Notes, if not, Liminality. I listened the music source five times
+to find original one, but no luck. If you know original owners of these two music please contact me so I can add them to credits properly.
+-tunnels_1.ogg
+
+You can go to respected websites and download their albums which are completely free.
+I have no liberty to release a soundtrack.

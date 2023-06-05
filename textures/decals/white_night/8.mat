@@ -1,0 +1,7 @@
+<Material>
+    <Main BlendMode="Mul" DepthTest="true" PhysicsMaterial="Default" Type="decal" UseAlpha="false" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="0" AnimMode="None" Compress="false" File="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/textures/decals/8.jpg" MipMaps="true" Type="2D" Wrap="Repeat" />
+    </TextureUnits>
+    <SpecificVariables />
+</Material>

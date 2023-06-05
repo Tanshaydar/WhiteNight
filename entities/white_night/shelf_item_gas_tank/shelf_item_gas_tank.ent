@@ -1,0 +1,48 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 180" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="180 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="-0.952748 3.37649 0.22181" CameraTarget="1.25024 1.64271 -0.359528" CameraZoom="2.86013" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/white_night/shelf_item_gas_tank/shelf_item_gas_tank.dae">
+            <SubMesh Active="true" ID="0" Material="" Name="polySurface5" Rotation="0 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 1.05238 0" />
+            <SubMesh Active="true" ID="1" Material="" Name="polySurface6" Rotation="0 0 0" Scale="1 1 1" SubMeshID="1" Tag="" WorldPos="0 1.05238 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="2" Name="Shape_1" RelativeRotation="0 0 0" RelativeScale="0.4 2 0.4" RelativeTranslation="0 -0.736502 -0.036051" Rotation="0 0 0" Scale="0.4 2 0.4" ShapeType="Cylinder" Tag="" WorldPos="0 1 0" />
+            <BodyShape Active="true" ID="3" Name="Shape_2" RelativeRotation="0 0 0" RelativeScale="0.4 0.4 0.4" RelativeTranslation="0 0.263498 -0.036051" Rotation="0 0 0" Scale="0.4 0.4 0.4" ShapeType="Sphere" Tag="" WorldPos="0 2 0" />
+            <BodyShape Active="true" ID="4" Name="Shape_3" RelativeRotation="0 0 0" RelativeScale="0.05 0.25 0.05" RelativeTranslation="0 0.736502 -0.036051" Rotation="0 0 0" Scale="0.05 0.25 0.05" ShapeType="Cylinder" Tag="" WorldPos="0 2.473 0" />
+            <BodyShape Active="true" ID="5" Name="Shape_4" RelativeRotation="1.5708 0 0" RelativeScale="0.03 0.1 0.03" RelativeTranslation="0 0.71818 0.036051" Rotation="1.5708 0 0" Scale="0.03 0.1 0.03" ShapeType="Cylinder" Tag="" WorldPos="0 2.45468 0.072102" />
+            <BodyShape Active="true" ID="8" Name="Shape_5" RelativeRotation="0 0 0" RelativeScale="0.15 0.05 0.15" RelativeTranslation="0 0 0" Rotation="0 0 0" Scale="0.15 0.05 0.15" ShapeType="Cylinder" Tag="" WorldPos="0 2.59091 0" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="7" LinearDamping="0" Mass="0" Material="Metal" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_1" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0 1.7365 0.036051">
+                <Children>
+                    <Child ID="1" />
+                </Children>
+                <Shape ID="2" />
+                <Shape ID="3" />
+                <Shape ID="4" />
+                <Shape ID="5" />
+            </Body>
+            <Body Active="true" AngularDamping="1" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="true" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="9" LinearDamping="1" Mass="1" Material="Metal" MaxAngularSpeed="4" MaxLinearSpeed="4" Name="Body_2" PushedByCharacterGravity="true" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0 2.59091 0">
+                <Children>
+                    <Child ID="0" />
+                </Children>
+                <Shape ID="8" />
+            </Body>
+        </Bodies>
+        <Joints>
+            <JointHinge Active="true" BreakForce="0" BreakSound="" Breakable="false" CollideBodies="false" ConnectedChildBodyID="9" ConnectedParentBodyID="7" ID="12" LimitStepCount="0" MaxAngle="180" MaxLimitMaxSpeed="0" MaxLimitMinSpeed="0" MaxLimitSound="" MaxMoveFreq="1.1" MaxMoveFreqSpeed="0.7" MaxMoveSpeed="2" MaxMoveVolume="0.8" MiddleMoveSpeed="0.5" MiddleMoveVolume="0.5" MinAngle="-180" MinLimitMaxSpeed="0" MinLimitMinSpeed="0" MinLimitSound="" MinMoveFreq="0.95" MinMoveFreqSpeed="0.2" MinMoveSpeed="0.1" MinMoveVolume="0.01" MoveSound="" MoveType="Linear" Name="JointHinge_1" PinDir="0 1 0" Rotation="0 0 0" Scale="1 1 1" StickyMaxLimit="true" StickyMinLimit="true" Stiffness="0" Tag="" WorldPos="0 2.55079 0" />
+        </Joints>
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="StaticProp" />
+</Entity>

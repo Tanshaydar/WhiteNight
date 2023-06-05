@@ -1,0 +1,8 @@
+<SOUNDENTITY>
+  <SOUNDS>
+  	<Main>
+		<Sound File="lm_generator_run1" />
+  	</Main>
+  </SOUNDS>
+  <PROPERTIES Volume="0.9" MinDistance="7" MaxDistance="18" Random="1" Interval="0" FadeEnd="False" FadeStart="False" Stream="False" Loop="True" Use3D="True" Blockable="True" BlockVolumeMul="0.5" Priority="0" />
+</SOUNDENTITY>

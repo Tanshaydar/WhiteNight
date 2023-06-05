@@ -1,0 +1,428 @@
+void OnStart()
+{
+	ChangePlayerStateToNormal();
+	SetSanityDrainDisabled( true);
+	SetInventoryDisabled(false);
+	SetLanternDisabled(false);
+	SetMapDisplayNameEntry("Entrance");
+	if( ScriptDebugOn())
+		GiveItemFromFile("lantern", "lantern.ent");
+	ChangePlayerSpeed(1);
+	
+	//////////////////////////////////////////////////
+	SetEntityInteractionDisabled("piano_1", true);
+	SetEntityInteractionDisabled("painting03_dynamic_1", true);
+	for(int i = 1; i <= 6; i++)
+	{
+		SetEntityActive("MusicArea_"+i, false);
+		SetLightVisible("MusicLight_"+i, false);
+	}
+	SetLocalVarInt("Puzzle", 0);
+	SetWheelStuckState("phonograph_3", -1, false);
+	/////////////////////////////////
+	
+	AddUseItemCallback("Female_Wing", "patient_key_1", "door_freezerdoor_1", "UseOnDoor", true);
+	AddUseItemCallback("Music_Box", "waxroll_record_1", "phonograph_1", "UseWaxOnPhono", true);
+	
+	AddEntityCollideCallback("Player", "PhoneRinger", "PhoneRinger", true, 1);
+	AddEntityCollideCallback("Player", "Cinematic", "Cinematic", true, 1);
+	AddEntityCollideCallback("Player", "Cinematic_1", "Cinematic", true, 1);
+	AddEntityCollideCallback("Player", "InstantKill", "InstantKill", true, 1);
+	AddEntityCollideCallback("Player", "InstantHallu", "InstantHallu", true, 1);
+	AddEntityCollideCallback("Player", "InstantHallu_1", "InstantHallu_1", true, 1);
+	
+	for( int i = 1; i <= 3; i++)
+		AddEntityCollideCallback("Player", "David_"+i, "David", true, 1);
+	
+	////////////////////////////////////
+	PlayMusic("entrance_1", true, 0.8f, 20, 1, true);
+	AutoSave();
+}
+
+void ChangePlayerSpeed(float speed)
+{
+	SetPlayerMoveSpeedMul(speed);
+	SetPlayerRunSpeedMul(speed);
+	SetPlayerLookSpeedMul(speed);
+}
+
+
+///////////////////////////
+// INTERACT CALLBACKS
+void InteractMe(string &in asEntity)
+{
+	SetMessage("Signs", "Phono01", 0);
+}
+void StateChangePhono(string &in asEntity, int alState)
+{
+	SetSanityDrainDisabled(true);
+	StopMusic(0, 1);
+	if(alState == 1)
+	{
+		SetWheelInteractionDisablesStuck(asEntity, false);
+		SetWheelStuckState(asEntity, alState, false);
+		
+		PlaySoundAtEntity("phono_scrape", "ptest_phono_loop", asEntity, 1.0f, false);
+		PlaySoundAtEntity("music_box", "music_box_short", asEntity, 1.0f, false);
+		
+		AddDebugMessage("State changed to: "+alState, false);
+		AddTimer(asEntity, 21, "Phono");
+		
+		AddLocalVarInt(asEntity, 1);
+	}
+}
+
+void Phono(string &in asTimer)
+{
+	SetSanityDrainDisabled(true);
+	if(GetLocalVarInt(asTimer) == 1)
+	{
+		SetEntityInteractionDisabled("piano_1", false);
+		for(int i = 1; i <= 6; i++)
+		{
+			SetEntityActive("MusicArea_"+i, true);
+			SetLightVisible("MusicLight_"+i, true);
+		}
+	}
+	
+	StopSound("phono_scrape", 0);
+	ResetProp(asTimer);
+	SetWheelInteractionDisablesStuck(asTimer, true);
+	SetWheelStuckState(asTimer, 0, false);
+	SetWheelAngle(asTimer, -720, false);
+}
+
+void playMusic(string &in asEntity)
+{
+	if( asEntity == "MusicArea_1")
+	{
+		PlaySoundAtEntity("music_box_1", "music_box_1", asEntity, 1.0f, false);
+		SetLocalVarInt("Puzzle", 1);
+		return;
+	}
+	if( asEntity == "MusicArea_2")
+	{
+		PlaySoundAtEntity("music_box_4", "music_box_4", asEntity, 1.0f, false);
+		if(GetLocalVarInt("Puzzle") == 3)	SetLocalVarInt("Puzzle", 4);
+		return;
+	}
+	if( asEntity == "MusicArea_3")
+	{
+		PlaySoundAtEntity("music_box_2", "music_box_2", asEntity, 1.0f, false);
+		if(GetLocalVarInt("Puzzle") == 1)	SetLocalVarInt("Puzzle", 2);
+		return;
+	}
+	if( asEntity == "MusicArea_4")
+	{
+		PlaySoundAtEntity("music_box_6", "music_box_6", asEntity, 1.0f, false);
+		if(GetLocalVarInt("Puzzle") == 5)	GiveTheKey();
+		return;
+	}
+	if( asEntity == "MusicArea_5")
+	{
+		PlaySoundAtEntity("music_box_3", "music_box_3", asEntity, 1.0f, false);
+		if(GetLocalVarInt("Puzzle") == 2)	SetLocalVarInt("Puzzle", 3);
+		return;
+	}
+	if( asEntity == "MusicArea_6")
+	{
+		PlaySoundAtEntity("music_box_5", "music_box_5", asEntity, 1.0f, false);
+		if(GetLocalVarInt("Puzzle") == 4)	SetLocalVarInt("Puzzle", 5);
+		return;
+	}
+}
+
+void GiveTheKey()
+{
+	SetSanityDrainDisabled(true);
+	SetPropStaticPhysics("painting03_dynamic_1", false);
+	SetEntityInteractionDisabled("painting03_dynamic_1", false);
+	
+	AddTimer("impulse", 0.5f, "TimerShakePainting");
+	AddTimer("impulse", 0.9f, "TimerShakePainting");
+	AddTimer("impulse", 1.4f, "TimerShakePainting");
+	AddTimer("impulse", 1.6f, "TimerShakePainting");
+	
+	AddTimer("shake", 0.3f, "TimerShakePainting");
+	
+	AddDebugMessage("Key is given!", false);
+	SetEntityActive("PhoneRinger", true);
+}
+
+void TimerShakePainting(string &in asTimer)
+{
+	if(asTimer == "shake")
+		StartScreenShake(0.008f, 0.1f, 0.25f, 0.65f);
+	else
+		AddPropImpulse("painting03_dynamic_1", 0.5f, 1.0f, 0.5f, "");
+}
+
+void Piano(string &in asEntity, int alState)
+{
+	if( alState == 1)
+	{
+		SetLeverStuckState(asEntity, alState, false);
+	}
+}
+
+void UseOnDoor(string &in asItem, string &in asEntity)
+{
+	RemoveItem(asItem);
+	SetSwingDoorLocked(asEntity, false, true);
+	PlaySoundAtEntity("", "unlock_door.snt", asEntity, 0.0f, true);
+	SetMessage("Signs","ScrewDriver",0);
+	StartEffectEmotionFlash("Flashbacks", "Flashback_04", "flashback_flash.snt");
+	SetSanityDrainDisabled(true);
+}
+
+void PhoneRinger(string &in asParent, string &in asChild, int alState)
+{
+	PlaySoundAtEntity("Phone", "phone_ringing.snt", "phone_1", 0, false);
+	SetEntityPlayerInteractCallback("phone_1", "Phone_Pickup", true);
+	///////////////////////
+	//Setup the checkpoint
+	CheckPoint("checkGruntDeath1", "PlayerStartDarkPlace", "CheckPointGrunt", "Hints", "Forget");
+	SetSanityDrainDisabled(true);
+}
+
+void David(string &in asParent, string &in asChild, int alState)
+{
+	AddLocalVarInt("DP", 1);
+	if( GetLocalVarInt("DP") == 1)
+	{
+		AddEffectVoice("8_24.ogg", "", "Voice", "08_entrance_24", false, "", 1, 10 );
+		AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+		AddEffectVoice("8_25.ogg", "", "Voice", "08_entrance_25", false, "", 1, 10 );
+	}
+	if( GetLocalVarInt("DP") == 2)
+	{
+		AddEffectVoice("8_26.ogg", "", "Voice", "08_entrance_26", false, "", 1, 10 );
+		AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+		AddEffectVoice("8_27.ogg", "", "Voice", "08_entrance_27", false, "", 1, 10 );
+	}
+	if( GetLocalVarInt("DP") == 3)
+	{
+		AddEffectVoice("8_28.ogg", "", "Voice", "08_entrance_28", false, "", 1, 10 );
+		AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+		AddEffectVoice("8_29.ogg", "", "Voice", "08_entrance_29", false, "", 1, 10 );
+	}
+}
+
+void Phone_Pickup(string &in asEntity)
+{
+	StopSound("Phone", 1);
+	SetPlayerActive(false);
+	AddTimer("phone_1", 1, "PhoneCall");
+}
+void PhoneCall(string &in asTimer)
+{
+	SetSanityDrainDisabled(true);
+	PlaySoundAtEntity("Pickup", "phone_pickup.snt", "Player", 0, false);
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("8_2.ogg", "", "Voice", "08_entrance_2", true, asTimer, 1, 10 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("8_3.ogg", "", "Voice", "08_entrance_3", true, asTimer, 1, 10 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("8_4.ogg", "", "Voice", "08_entrance_4", true, asTimer, 1, 10 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("8_5.ogg", "", "Voice", "08_entrance_5", true, asTimer, 1, 10 );
+	SetEffectVoiceOverCallback("CallOver");
+}
+void CallOver()
+{
+	PlaySoundAtEntity("LineCut", "line_cut.snt", "Player", 0, false);
+	SetPlayerActive(true);
+	PlayMusic("entrance_2", true, 1, 10, 1, true);
+}
+
+void UseWaxOnPhono(string &in asItem, string &in asEntity)
+{
+	SetWheelStuckState(asEntity, 0, false);
+	SetWheelInteractionDisablesStuck(asEntity, true);
+	PlaySoundAtEntity("", "12_make_drill.snt", asEntity, 0.0f,false);
+	SetEntityPlayerInteractCallback(asEntity, "", false);
+	RemoveItem(asItem);
+}
+
+void Session_1(string &in asEntity)
+{
+	SetSanityDrainDisabled(true);
+	if(GetEffectVoiceActive())
+		SetMessage("Signs", "WaitAlittle", 0);
+	else
+	{
+		AddLocalVarInt("Session", 1);
+		SetEntityInteractionDisabled(asEntity, true);
+		if( GetLocalVarInt("Session") == 1)
+		{
+			AddEffectVoice("8_6.ogg", "", "Voice", "08_entrance_6", true, asEntity, 1, 10 );
+			AddEffectVoice("8_7.ogg", "", "Voice", "08_entrance_7", true, asEntity, 1, 10 );
+			AddEffectVoice("8_8.ogg", "", "Voice", "08_entrance_8", true, asEntity, 1, 10 );
+			AddEffectVoice("8_9.ogg", "", "Voice", "08_entrance_9", true, asEntity, 1, 10 );
+			AddEffectVoice("8_10.ogg", "", "Voice", "08_entrance_10", true, asEntity, 1, 10 );
+			AddEffectVoice("8_11.ogg", "", "Voice", "08_entrance_11", true, asEntity, 1, 10 );
+			AddEffectVoice("8_12.ogg", "", "Voice", "08_entrance_12", true, asEntity, 1, 10 );
+			AddEffectVoice("8_13.ogg", "", "Voice", "08_entrance_13", true, asEntity, 1, 10 );
+		}
+		if( GetLocalVarInt("Session") == 2)
+		{
+			AddEffectVoice("8_14.ogg", "", "Voice", "08_entrance_14", true, asEntity, 1, 10 );
+			AddEffectVoice("8_15.ogg", "", "Voice", "08_entrance_15", true, asEntity, 1, 10 );
+			AddEffectVoice("8_16.ogg", "", "Voice", "08_entrance_16", true, asEntity, 1, 10 );
+			AddEffectVoice("8_17.ogg", "", "Voice", "08_entrance_17", true, asEntity, 1, 10 );
+			AddEffectVoice("8_18.ogg", "", "Voice", "08_entrance_18", true, asEntity, 1, 10 );
+			AddEffectVoice("8_19.ogg", "", "Voice", "08_entrance_19", true, asEntity, 1, 10 );
+			AddEffectVoice("8_20.ogg", "", "Voice", "08_entrance_20", true, asEntity, 1, 10 );
+			AddEffectVoice("8_21.ogg", "", "Voice", "08_entrance_21", true, asEntity, 1, 10 );
+		}
+		if( GetLocalVarInt("Session") == 3)
+			AddEffectVoice("8_22.ogg", "", "Voice", "08_entrance_22", true, asEntity, 1, 10 );
+	}
+}
+
+void Cinematic(string &in asParent, string &in asChild, int alState)
+{
+	if(asChild == "Cinematic")
+	{
+		SetPlayerMoveSpeedMul(0.2f);
+		ShowPlayerCrossHairIcons(false);
+		SetPlayerActive(false);
+		StartPlayerLookAt("chair_wood_4", 2, 2, "");
+		FadeImageTrailTo( 2, 2);
+		AddTimer("automove", 0.01, "TimerMoveForward");
+	}
+	if(asChild == "Cinematic_1")
+	{
+		RemoveTimer("automove");
+		StartPlayerLookAt("InstantKill", 2, 2, "");
+		AddEffectVoice("8_30.ogg", "", "Voice", "08_entrance_30", false, "", 1, 10 );
+		AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+		AddEffectVoice("8_31.ogg", "", "Voice", "08_entrance_31", false, "", 1, 10 );
+		AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+		SetEffectVoiceOverCallback("Over");
+	}
+}
+
+void Over(){	AddTimer("automove", 0.01, "TimerMoveForward");}
+void TimerMoveForward(string &in asTimer)
+{
+	MovePlayerForward(1);
+	AddTimer("automove", 0, "TimerMoveForward");
+	AddDebugMessage("Move forward!", false);
+}
+/////////////////////////////////////////
+///Ending
+
+void InstantHallu(string &in asParent, string &in asChild, int alState){	FadeEnemyToSmoke("character_infected_alpha_1", false);}
+void InstantHallu_1(string &in asParent, string &in asChild, int alState)
+{
+	StartPlayerLookAt("tech_speaker_2", 4, 100, "");
+	PlaySoundAtEntity("Speaker", "general_speaker_noise.snt", "Player", 0.0f, true);
+	AddTimer("Sofiatalks", 0.8f, "SofiaTalks_2");
+	AddTimer("LookAtDone", 1, "StopLook");
+}
+
+void SofiaTalks_2(string &in asTimer){	AddEffectVoice("8_1", "", "Voice", "08_entrance_1", false, "", 1, 15 );}
+
+void StopLook(string &in asTimer){	StopPlayerLookAt();}
+
+void InstantKill(string &in asParent, string &in asChild, int alState)
+{
+	RemoveTimer("automove");
+	SetEntityActive("character_infected_alpha_2", true);
+	ShowEnemyPlayerPosition("character_infected_alpha_2");
+	StartPlayerLookAt("character_infected_alpha_2", 10, 10, "LookAt");
+}
+
+void LookAt()
+{
+	GivePlayerDamage(110, "Claws", true, true);
+	StartScreenShake(0.01f, 0.5f, 0.5f, 1.0f);
+}
+
+void CheckPointGrunt(string &in asName, int alCount)
+{
+	StartPlayerLookAt("iron_mine_lamp_2", 10, 10, "");
+	FadeOut(0.0f);
+	SetPlayerActive(false);
+	SetPlayerCrouching(true);
+	PlayGuiSound("22_start.snt", 1.0f);
+	PlayGuiSound("22_start_daniel.snt", 1.0f);
+	FadeIn(5);
+	AddTimer("", 4, "ForcerSound");
+	AddTimer("", 3, "Forcer");
+	AddTimer("iron_mine_lamp_3", 1, "Flickering");
+	AddTimer("iron_mine_lamp_8", 2, "Flickering");
+	AddTimer("iron_mine_lamp_14", 3, "Flickering");
+	AddTimer("iron_mine_lamp_15", 4, "Flickering");
+}
+
+void ForcerSound(string &in asTimer)
+{
+	PlayGuiSound("gurney", 4);
+	FadeRadialBlurTo(1.1f, 15);
+	FadeImageTrailTo(2,1);
+}
+
+void Forcer(string &in asTimer)
+{
+	AddLocalVarInt("ForceTime", 1);
+	AddPlayerBodyForce( 0, 0, 5800.0f, false);
+	
+	if( GetLocalVarInt("ForceTime") == 3)	StopPlayerLookAt();
+	if( GetLocalVarInt("ForceTime") < 50)	AddTimer("Forcing", 0.2f, "Forcer");
+	else	AddTimer("Forcing2", 0.8f, "Forcer2");
+}
+
+void Forcer2(string &in asTimer)
+{
+	AddLocalVarInt("ForceTime2", 1);
+	AddDebugMessage(""+GetLocalVarInt("ForceTime2"), false);
+	AddPlayerBodyForce( 0, 0, 5800.0f, false);
+	
+	if( GetLocalVarInt("ForceTime2") == 3)	FadeSepiaColorTo(2, 15);
+	if( GetLocalVarInt("ForceTime2") < 50)	AddTimer("Forcing2", 0.2f, "Forcer2");
+	else	AddTimer("Forcing3", 2, "Forcer3");
+}
+void Forcer3(string &in asTimer)
+{
+	AddPlayerBodyForce( 0, 0, 5800.0f, false);
+	ChangeMap("09_mental_3", "PlayerStartArea_1", "", "");
+}
+
+
+void Flickering(string &in asTimer)
+{
+	AddLocalVarInt("flicker", 1);
+	
+	switch( GetLocalVarInt("flicker") )
+	{
+		case 1:
+			SetLampLit(asTimer, true, false);
+			PlaySoundAtEntity("Lamp_Flicker_1", "lm_light_flicker.snt", asTimer, 0, true);
+		break;
+		case 2:
+			SetLampLit(asTimer, false, false);
+			SetLocalVarInt("flicker", 0);
+		break;
+	}
+	
+	AddTimer(asTimer, RandFloat(0.1f, 0.3f), "Flickering");
+}
+/////////////////////////////////////////////
+
+void OnEnter()
+{
+	PreloadParticleSystem("ps_area_fog_xlarge");
+	SetSanityDrainDisabled(true);
+}
+
+////////////////////////////
+// Run when leaving map
+void OnLeave()
+{
+	StopMusic(5.0f, 1);
+	//////////////////////
+	//Load Screen Setup
+	SetupLoadScreen("LoadingText", "Load_Text_09", 1, "game_loading_last_mental.jpg");
+}

@@ -1,0 +1,406 @@
+void OnStart()
+{
+	SetSanityDrainDisabled( true);
+	SetMapDisplayNameEntry("Tunnels");
+	if( ScriptDebugOn())
+		GiveItemFromFile("lantern", "lantern.ent");
+	
+	//Disabled Interactions
+	SetEntityInteractionDisabled("hand_flashlight_1", true);
+	SetEntityInteractionDisabled("hand_flashlight_2", true);
+	
+	//Collide CallBacks
+	AddEntityCollideCallback("Player", "SuitorWalks", "SuitorWalks", true, 1);
+	AddEntityCollideCallback("wn_enemy_suitor_basile_1", "SuitorEnds", "SuitorEnds", true, 1);
+	AddEntityCollideCallback("Player", "WheelTeleport", "WheelTeleport", true, 1);
+	AddEntityCollideCallback("Player", "Ender", "Ender", true, 1);
+	AddEntityCollideCallback("Player", "Save", "Save", true, 1);
+	AddEntityCollideCallback("Player", "LadderUp", "LadderUp", true, 1);
+	AddEntityCollideCallback("Player", "Map", "Map", true, 1);
+	
+	//Music
+	PlayMusic("tunnels_1", true, 0.6f, 0, 1, true);
+	AutoSave();
+}
+
+///////////////////////////////
+///COLLIDE CALL BACKS
+void SuitorWalks(string &in asParent, string &in asChild, int alState)
+{
+	SetEntityActive("wn_enemy_suitor_basile_1", true);
+	AddEnemyPatrolNode("wn_enemy_suitor_basile_1", "PathNodeArea", 0, "");
+	SetSanityDrainDisabled(true);
+}
+
+void SuitorEnds(string &in asParent, string &in asChild, int alState){	FadeEnemyToSmoke(asParent, false);}
+
+void WheelTeleport(string &in asParent, string &in asChild, int alState)
+{
+	CheckPoint("MazeDeath", "PlayerStartArea_2", "", "", "");
+	SetPlayerActive(false);
+	FadeOut(4);
+	AddTimer("Chaser1", 5, "Chaser");
+	SetLanternActive(false, false);
+	SetEntityActive("wheelchair_monster_1", true);
+	SetEntityActive("wheelchair_monster_2", true);
+	SetEntityActive("wheelchair_monster_3", true);
+	SetEntityActive("character_infected_alpha_1", true);
+	StopMusic(5, 1);
+	SetSanityDrainDisabled(true);
+}
+
+void Chaser(string &in asTimer)
+{
+	SetSanityDrainDisabled(true);
+	if( asTimer == "Chaser1")
+	{
+		TeleportPlayer("PlayerStartArea_2");
+		AddTimer("Chaser", 1, "Chaser");
+		PlayMusic("tunnels_2.ogg", false, 0.6f, 8, 1, true);
+	}
+	else
+	{
+		FadeIn(4);
+		SetPlayerActive(true);
+		SetLanternActive(true, true);
+		AddPlayerLampOil(50);
+	}
+}
+
+void Ender(string &in asParent, string &in asChild, int alState)
+{
+	FadeEnemyToSmoke("character_infected_alpha_1", false);
+	FadeEnemyToSmoke("wheelchair_monster_1", false);
+	FadeEnemyToSmoke("wheelchair_monster_2", false);
+	FadeEnemyToSmoke("wheelchair_monster_3", false);
+	if(ScriptDebugOn())	Addfrigginquest();
+	SetSanityDrainDisabled(true);
+}
+
+void Save(string &in asParent, string &in asChild, int alState){	AutoSave();}
+
+void LadderUp(string &in asParent, string &in asChild, int alState)
+{
+	CreateEntityAtArea("ladder_static_1", "ladder_static.ent", "LadderCreator_2", false);
+	SetMoveObjectState("ladder_static_1", 1);
+	AddTimer("Ladder", 2, "Ladder");
+}
+
+void Ladder(string &in asTimer)
+{
+	if( asTimer == "Ladder")
+	{
+		CreateEntityAtArea("ladder_static_2", "ladder_static.ent", "LadderCreator_1", false);
+		AddTimer("Ladder1", 1, "Ladder");
+		return;
+	}
+	if( asTimer == "Ladder1")
+	{
+		SetMoveObjectState("ladder_static_2", 1);
+		AddTimer("Ladder2", 1, "Ladder");
+		return;
+	}
+	if( asTimer == "Ladder2")
+	{
+		SetEntityActive("LadderArea_1", true);
+		return;
+	}
+}
+
+void Map(string &in asParent, string &in asChild, int alState){	ChangeMap("07_asylum", "PlayerStartArea_1", "", "");}
+
+//////////////////////////////////////////
+// INTERACT CALLBACKS
+
+void FireDone(string &in entity){	StartEffectEmotionFlash("Flashbacks", "Flashback_03", "flashback_flash.snt");}
+
+void PatrickDies(string &in asEntity)
+{
+	SetSanityDrainDisabled(true);
+	SetEntityActive("block_box_nonchar_13", true);
+	StopMusic(5, 1);
+	AddEffectVoice("6_1.ogg", "", "Voice", "06_tunnels_01", true, asEntity, 1, 20 );
+	AddEffectVoice("6_2.ogg", "", "Voice", "06_tunnels_02", true, asEntity, 1, 20 );
+	AddEffectVoice("6_3.ogg", "", "Voice", "06_tunnels_03", true, asEntity, 1, 20 );
+	AddEffectVoice("6_4.ogg", "", "Voice", "06_tunnels_04", true, asEntity, 1, 20 );
+	AddEffectVoice("6_5.ogg", "", "Voice", "06_tunnels_05", true, asEntity, 1, 20 );
+	AddEffectVoice("6_6.ogg", "", "Voice", "06_tunnels_06", true, asEntity, 1, 20 );
+	AddEffectVoice("6_7.ogg", "", "Voice", "06_tunnels_07", true, asEntity, 1, 20 );
+	AddEffectVoice("6_8.ogg", "", "Voice", "06_tunnels_08", true, asEntity, 1, 20 );
+	AddEffectVoice("6_9.ogg", "", "Voice", "06_tunnels_09", true, asEntity, 1, 20 );
+	AddEffectVoice("6_10.ogg", "", "Voice", "06_tunnels_10", true, asEntity, 1, 20 );
+	AddEffectVoice("6_11.ogg", "", "Voice", "06_tunnels_11", true, asEntity, 1, 20 );
+	AddEffectVoice("6_12.ogg", "", "Voice", "06_tunnels_12", true, asEntity, 1, 20 );
+	SetEffectVoiceOverCallback("Addfrigginquest");
+	SetEntityPlayerInteractCallback(asEntity, "", false);
+}
+void Addfrigginquest(){	AddTimer("TimerFlashBack", 0.01f, "TimerFlashBack");}
+
+void TimerFlashBack(string &in asTimer)
+{	
+	/*Configurables
+	 */
+	float fEventSpeed = 0.5f;	//The default time between steps in an event
+	
+	/*Helpers - Do not edit
+	 */
+	string sEvent = asTimer;	//Using first timer name for variable, timer name & callback for the timer that loops
+	AddLocalVarInt(sEvent, 1);	//What step to play in the event
+	AddDebugMessage("-"+GetLocalVarInt(sEvent), false);
+	
+	switch(GetLocalVarInt(sEvent)){
+		case 1:
+			SetPlayerLookSpeedMul(0.8f);
+			
+			SetPlayerCrouchDisabled(true);
+			SetInventoryDisabled(true);
+			
+			if(GetLanternActive())
+			{
+				SetLocalVarInt("LanternActive", 1);
+				SetLanternActive(false, true);
+				SetLanternDisabled(true);
+			}
+			else	SetLanternDisabled(true);
+			
+			StartEffectFlash(0.1f, 0.1f, 0.25f);
+			SetPlayerRunSpeedMul(0.6);
+			SetPlayerMoveSpeedMul(0.75f);
+			PlaySoundAtEntity("SoundFlash1", "scare_thump_flash.snt", "Player", 0.0f, false);
+			PlaySoundAtEntity("Breath1", "react_breath.snt", "Player", 1.0f, false);
+			fEventSpeed = 0.3f;
+		break;
+		case 2:			
+			SetPlayerLookSpeedMul(0.6f);
+			StartScreenShake(0.01f, 0.75f, 0.25f,1.5f);
+			FadePlayerRollTo(60, 5, 5);
+			FadeImageTrailTo(1.2f, 2);
+			FadeSepiaColorTo(0.65f, 0.5f);
+			FadePlayerFOVMulTo(4, 0.04f);
+			MovePlayerHeadPos(0, -1.2f, 0, 0.3f, 0.25f);
+			fEventSpeed = 2.0f;
+		break;
+		case 3:
+			SetPlayerLookSpeedMul(0.4f);
+			FadePlayerRollTo(-60, 10, 10);
+			MovePlayerHeadPos(0, 0, 0, 0.2f, 0.25f);
+			SetPlayerRunSpeedMul(0.3);
+			SetPlayerMoveSpeedMul(0.5f);
+			PlaySoundAtEntity("Breath1", "react_breath.snt", "Player", 1.5f, false);
+			fEventSpeed = 1.75f;
+		break;
+		case 4:
+			SetPlayerLookSpeedMul(0.2f);
+			FadePlayerRollTo(0, 10, 10);
+			MovePlayerHeadPos(0, -1.2f, 0, 1.0f, 0.25f);
+			StartPlayerLookAt("lamp_wall_flour_1", 0.5f, 0.5f, "");
+			SetLampLit("lamp_wall_flour_1", false, true);
+			SetPlayerRunSpeedMul(0);
+			SetPlayerMoveSpeedMul(0.3f);
+			PlaySoundAtEntity("Breath1", "react_breath.snt", "Player", 1.25f, false);
+			fEventSpeed = 2.0f;
+			FadeOut(2);
+		break;
+		case 5:
+			StopPlayerLookAt();
+			MovePlayerHeadPos(0, 0, 0, 1, 0.5f);
+			PlaySoundAtEntity("Breath1", "react_breath.snt", "Player", 1.5f, false);
+		break;
+		case 6:
+			FadeImageTrailTo(0,0.2f);
+			FadePlayerFOVMulTo(1, 0.2f);
+			TeleportPlayer("Sofia");
+			ChangePlayerStateToNormal();
+			SetPlayerActive(true);
+			SetPlayerCrouching(true);
+			SetInventoryDisabled(true);
+			SetPlayerJumpDisabled(true);
+			SetPlayerCrouchDisabled(true);
+			ShowPlayerCrossHairIcons(false);
+			SetPlayerRunSpeedMul(0);
+			SetPlayerMoveSpeedMul(0);
+			SetPlayerLookSpeedMul(0.2f);
+			AddTimer("SofiaTalks", 2.0f, "StartSofia");
+			PlayMusic("doctor", true, 0.7f, 0, 1, true);
+			SetSanityDrainDisabled(true);
+		break;
+	}
+	
+	AddTimer(sEvent, fEventSpeed, sEvent);
+}
+
+void StartSofia(string &in asTimer)
+{
+	SetSanityDrainDisabled(true);
+	RemoveTimer("TimerFlashBack");
+	FadeIn(4);
+	AddEffectVoice("6_13", "", "Voice", "06_tunnels_13", false, "", 0, 0 );
+	AddEffectVoice("6_14", "", "Voice", "06_tunnels_14", false, "", 0, 0 );
+	AddEffectVoice("6_15", "", "Voice", "06_tunnels_15", false, "", 0, 0 );
+	AddEffectVoice("6_16", "", "Voice", "06_tunnels_16", false, "", 0, 0 );
+	AddEffectVoice("6_17", "", "Voice", "06_tunnels_17", false, "", 0, 0 );
+	AddEffectVoice("6_18", "", "Voice", "06_tunnels_18", false, "", 0, 0 );
+	AddEffectVoice("6_19", "", "Voice", "06_tunnels_19", false, "", 0, 0 );
+	AddEffectVoice("6_20", "", "Voice", "06_tunnels_20", false, "", 0, 0 );
+	AddEffectVoice("6_21", "", "Voice", "06_tunnels_21", false, "", 0, 0 );
+	AddEffectVoice("6_22", "", "Voice", "06_tunnels_22", false, "", 0, 0 );
+	AddEffectVoice("6_23", "", "Voice", "06_tunnels_23", false, "", 0, 0 );
+	SetEffectVoiceOverCallback("SofiaEnds");
+}
+
+void SofiaEnds()
+{
+	FadeOut(3);
+	AddTimer("TeleportPlayerBack", 4, "TeleportedBack");
+}
+
+void TeleportedBack(string &in asTimer)
+{
+	TeleportPlayer("Remember");
+	SetPlayerCrouching(false);
+	SetInventoryDisabled(false);
+	SetPlayerJumpDisabled(false);
+	SetPlayerCrouchDisabled(false);
+	ShowPlayerCrossHairIcons(true);
+	StopMusic( 0, 1);
+	AddTimer("blackout", 0.5f, "TimerBlackOut");
+}
+
+void TimerBlackOut(string &in asTimer)
+{
+	AddLocalVarInt("BlackoutStep", 1);		//What step to play in the event
+	float fEventSpeed = 0.5f;				//The default time between steps in an event
+
+	switch( GetLocalVarInt("BlackoutStep") ) {
+		case 1:
+			FadeIn(4);
+			AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+			AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+			AddEffectVoice("6_24.ogg", "", "Voice", "06_tunnels_24", false, "", 1, 10 );
+			FadeImageTrailTo(2,1);
+			SetPlayerActive(true);
+			SetPlayerMoveSpeedMul(0.05f);
+			SetPlayerLookSpeedMul(0.05f);
+			fEventSpeed = 3.0f;
+		break;
+		case 2:
+			StartPlayerLookAt("Map", 10, 10, "");
+			FadePlayerRollTo(85, 1, 1); 
+		break;
+		case 4:
+			FadeImageTrailTo(0,1);
+			FadePlayerRollTo(65, 1, 1); 
+		break;
+		case 5:
+			PlaySoundAtEntity("sigh", "react_sigh.snt", "Player", 1.0 / 2, false);
+			FadeOut(2);
+			fEventSpeed = 1.5f;	
+		break;
+		case 6:
+			FadePlayerRollTo(85, 1, 4); 
+		break;
+		case 7:
+			FadeImageTrailTo(1.8f,1.5f);
+			FadePlayerFOVMulTo(1.25f, 0.01);
+			StartPlayerLookAt("LadderUp", 10, 10, "");
+		break;
+		case 8:
+			FadePlayerRollTo(45, 1, 2); 
+			FadeIn(2);
+			fEventSpeed = 1.5f;	
+		break;
+		case 9:
+		break;
+		case 10:
+			FadePlayerRollTo(15, 1, 2); 
+			FadePlayerFOVMulTo(0.75f, 0.01);
+		break;
+		case 11:
+			PlaySoundAtEntity("sigh", "react_sigh.snt", "Player", 1.0 / 1.5f, false);
+			FadeOut(1);
+			StartPlayerLookAt("LadderCreator_1", 1, 1, "");
+			FadePlayerRollTo(50, 1, 2); 
+			fEventSpeed = 2.0f;	
+		break;
+		case 12:
+			SetPlayerMoveSpeedMul(0.1f);
+			SetPlayerLookSpeedMul(0.1f);
+			StartPlayerLookAt("Map", 1, 1, "");
+			FadePlayerFOVMulTo(1.1f, 0.01);
+			FadeImageTrailTo(0,1.5f);
+			fEventSpeed = 1.5f;	
+		break;
+		case 13:
+			SetPlayerMoveSpeedMul(0.2f);
+			SetPlayerLookSpeedMul(0.2f);
+			FadePlayerRollTo(-15, 1, 2); 
+			FadeIn(1);
+			fEventSpeed = 2.0f;	
+		break;
+		case 14:
+			SetPlayerMoveSpeedMul(0.3f);
+			SetPlayerLookSpeedMul(0.4f);
+			FadePlayerRollTo(-30, 10, 60); 	
+			MovePlayerHeadPos(0, 0, 0, 1, 0.5f);	
+			FadePlayerFOVMulTo(0.9f, 0.01);
+			FadeImageTrailTo(1.5,2);
+			PlaySoundAtEntity("movement", "player_climb.snt", "Player", 0, false);
+		break;
+		case 15:
+			SetPlayerMoveSpeedMul(0.4f);
+			SetPlayerLookSpeedMul(0.6f);
+			FadePlayerRollTo(10, 10, 20); 	
+			MovePlayerHeadPos(0, -0.5f, 0, 1, 0.5f);
+		break;
+		case 16:
+			SetPlayerMoveSpeedMul(0.5f);
+			SetPlayerLookSpeedMul(0.8f);
+			FadePlayerRollTo(0, 10, 60); 	
+			MovePlayerHeadPos(0, 0, 0, 1, 0.5f);
+			StartPlayerLookAt("LadderUp", 2, 2, "");
+			FadePlayerFOVMulTo(1, 0.01f);
+			PlaySoundAtEntity("movement", "player_climb.snt", "Player", 0, false);
+			fEventSpeed = 2.0f;	
+		break;
+		case 17:
+			StopPlayerLookAt();
+			ShowPlayerCrossHairIcons(true);
+			SetPlayerJumpDisabled(false);
+			SetPlayerCrouchDisabled(false);
+			SetPlayerMoveSpeedMul(0.6f);
+			SetPlayerLookSpeedMul(1.0f);
+			FadeImageTrailTo(0,0.2f);
+			PlaySoundAtEntity("sigh", "react_sigh.snt", "Player", 1.0 / 1, false);
+			fEventSpeed = 1.0f;		
+		break;
+		case 30:
+			ChangePlayerStateToNormal();
+			ShowPlayerCrossHairIcons(true);
+			SetPlayerMoveSpeedMul(1.0f);
+			SetPlayerRunSpeedMul(1.0f);
+			SetInventoryDisabled(false);
+			SetLanternDisabled(false);
+		break;
+	}
+	
+	if( GetLocalVarInt("BlackoutStep") < 31)
+		AddTimer("blackout", fEventSpeed, "TimerBlackOut");
+}
+
+////////////////////////////
+//
+void OnEnter()
+{	
+	PreloadSound("guardian_activated");
+	PreloadParticleSystem("ps_light_dust_large");
+	SetSanityDrainDisabled(true);
+}
+////////////////////////////
+// Run when leaving map
+void OnLeave()
+{
+	StopMusic( 4, 1);
+	//////////////////////
+	//Load Screen Setup
+	SetupLoadScreen("LoadingText", "Load_Text_07", 1, "game_loading_wakeup.jpg");
+}

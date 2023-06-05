@@ -1,0 +1,480 @@
+<LANGUAGE>
+  <RESOURCES>
+    <Directory Path="fonts/eng" />
+    <Directory Path="lang/eng" />
+  </RESOURCES>
+  
+  <CATEGORY Name="Inventory">
+		<Entry Name="ItemName_key_tower_2">Koridor Anahtarı</Entry>
+		<Entry Name="ItemDesc_key_tower_2">Muhtemelen koridorun sonundaki kapıyı açıyor.</Entry>
+		<Entry Name="ItemName_strairs">Nowhere Anahtarı</Entry>
+		<Entry Name="ItemDesc_strairs">Muhtemelen şu kilitli kapıyı açıyordur.</Entry>
+		<Entry Name="ItemName_LunaticDoor">Tecrit Hastaları Anahtarı</Entry>
+		<Entry Name="ItemDesc_LunaticDoor">Etikette "tecrit hastaları" (isolated patients) anahtarı yazıyor.</Entry>
+		<Entry Name="ItemName_LunaticDoor2">Hastane Koridoru Anahtarı</Entry>
+		<Entry Name="ItemDesc_LunaticDoor2">Etikette hastane koridoru yazıyor.</Entry>
+		<Entry Name="ItemName_DownStairs">Hasta Kanadı Anahtarı</Entry>
+		<Entry Name="ItemDesc_DownStairs">Etikette hasta kanadı (patients wing) yazıyor.</Entry>
+		<Entry Name="ItemName_PatientDownStairs">Alt Kat Anahtarı</Entry>
+		<Entry Name="ItemDesc_PatientDownStairs">Etikette alt kat yazıyor.</Entry>
+		<Entry Name="ItemName_storage_key">Depo Anahtarı</Entry>
+		<Entry Name="ItemDesc_storage_key">Muhtemelen depodaki kilitli kapıyı açıyordur.</Entry>
+		<Entry Name="ItemName_female">Kadın Hasta Kanadı Anahtarı</Entry>
+		<Entry Name="ItemDesc_female">Muhtemelen ilk kattaki kilitli kapıyı açıyordur.</Entry>
+		<Entry Name="ItemName_axe">Yangın Baltası</Entry>
+		<Entry Name="ItemDesc_axe">Eski bir yangın baltası. Görünüşe göre oldukça iş görmüş...</Entry>
+		<Entry Name="ItemName_screwdriver">Tornavida</Entry>
+		<Entry Name="ItemDesc_screwdriver">Bir tornavida. Bazı kilitli yerleri açmamda yardımcı olabilir.</Entry>
+		<Entry Name="ItemName_hook">Kanca</Entry>
+		<Entry Name="ItemDesc_hook">Küçük bir kanca.</Entry>
+		<Entry Name="ItemName_illumination">Aydınlanma</Entry>
+		<Entry Name="ItemDesc_illumination">...</Entry>
+		<Entry Name="ItemName_silent_hill">İpe Bağlı Kanca</Entry>
+		<Entry Name="ItemDesc_silent_hill">Ucuna bir kanca bağlı olan bir ip.</Entry>
+		<Entry Name="ItemName_Lightbulb">Ampul</Entry>
+		<Entry Name="ItemDesc_Lightbulb">Kullanılmamış bir ampul. Yanmış veya kırılmış olanları değiştirmekte kullanabilirim.</Entry>
+		<Entry Name="ItemName_Gasoline_Empty">Boş Yakıt Bidonu</Entry>
+		<Entry Name="ItemDesc_Gasoline_Empty">Boş bir yakıt bidonu. Doldurmak için bir yerlerden yakıt bulmam gerekiyor.</Entry>
+		<Entry Name="ItemName_Gasoline">Dolu Yakıt Bidonu</Entry>
+		<Entry Name="ItemDesc_Gasoline">Dolu bir yakıt bidonu. Kullanılmaya hazır.</Entry>
+		<Entry Name="ItemName_ring_memories">Hatıralar Yüzüğü</Entry>
+		<Entry Name="ItemDesc_ring_memories">Gümüş bir yüzük. İçine "Hatıralar" yazısı kazınmış.</Entry>
+		<Entry Name="ItemName_ring_reflections">Yansımalar Yüzüğü</Entry>
+		<Entry Name="ItemDesc_ring_reflections">Gümüş bir yüzük. İçine "Yansımalar" yazısı kazınmış.</Entry>
+		<Entry Name="ItemName_key_tower_1">Bölüm Anahtarı</Entry>
+		<Entry Name="ItemDesc_key_tower_1">Hastanenin bu bölümüne giden kapıyı açan anahtar.</Entry>
+		<Entry Name="ItemName_key_laboratory_1">Merdiven Anahtarı</Entry>
+		<Entry Name="ItemDesc_key_laboratory_1">Merdivenlerin başındaki kapıyı açan anahtar.</Entry>
+		<Entry Name="ItemName_Sewers">Kanalizasyon Anahtarı</Entry>
+		<Entry Name="ItemDesc_Sewers">Kanalizasyona inen kapıyı açan anahtar.</Entry>
+		<Entry Name="ItemDesc_crowbar">Büyük bir manivela kuvveti sağlayabilir.</Entry>
+		<Entry Name="ItemName_crowbar">Levye</Entry>
+		<Entry Name="ItemDesc_StringPile">Kenevirden yapılmış bir iplik parçası.</Entry>
+		<Entry Name="ItemName_StringPile">İplik</Entry>
+		<Entry Name="ItemName_waxroll_record">Balmumu Silindir</Entry>
+		<Entry Name="ItemDesc_waxroll_record">Fonograf için balmumundan yapılma bir silindir.</Entry>
+		<Entry Name="ItemDesc_WrigglePrisonBar">Merdiven parmaklıklarından kopardığım demir bir boru.</Entry>
+		<Entry Name="ItemName_WrigglePrisonBar">Demir Çubuk</Entry>
+		<Entry Name="ItemName_HollowNeedle">İçi Boş İğne</Entry>
+		<Entry Name="ItemDesc_HollowNeedle">Cerrahi bir iğne. Herhalde bir yerleri açmama yarar.</Entry>
+	</CATEGORY>
+	<CATEGORY Name="Journal">
+		<Entry Name="Quest_Password01_Text">Şifrenin son hanesi ikinci hanesinin yarısı kadar.[br]
+		İkinci haneyse tualetteki lavaboların sayısına eşit.</Entry>
+		<Entry Name="Quest_Password02_Text">Şifrenin üçüncü hanesi 2. Şifre dört haneli.</Entry>
+		<Entry Name="Quest_Bricks_Text">Görünüşe göre bu tuğlaları kullanarak yolumu bulabilirim.</Entry>
+	    <Entry Name="Note_Text01_Name">SANA bir not</Entry>
+	    <Entry Name="Note_Text01_Text">Hiçbir şey hatırlamıyorsun, değil mi David? Hah! Bahse girerim hatırlamıyorsundur. Hatırlamana izin vermeyecekler.[br]Ama lütfen David, BANA yardım etmelisin.[br]Hayatında bir kez olsun, bir kere de BENİ düşün![br][br]Buradan çıkmanı istiyorum. Ama, bir daha asla kâbus görmeyeceğin konusunda söz veremem.[br][br]Son bir şey daha: neye veya kime inanacağın konusunda dikkatli ol...</Entry>
+	    <Entry Name="Note_Text02_Name">Dr. S.'e</Entry>
+	    <Entry Name="Note_Text02_Text">Hasta sık aralıklarla hafızasının parçalarını kaybetmeye devam etmekte. Özellikle de o olaydan sonrakilerini. Şu aşamada bu durum beklenmedik bir sonuç değil.[br]Yine de, hasta halen yeni anılar kazanmada ve bunları korumada yetkinlik gösteriyor ve olan biten her şeyi hatırlama ihtimali halen mevcut.[br][br]Hastalık süreci çok yakından dikkatle incelenmeli ve eğer gerekirse hasta hemen kilit altına alınmalı.</Entry>
+	    <Entry Name="Note_Text03_Name">SANA bir başka not</Entry>
+	    <Entry Name="Note_Text03_Text">Onlar SENİ yakalamadan hemen kaç![br]Sakın arkana bakayım deme!</Entry>
+	    <Entry Name="Note_Text04_Name">SANA bir başka not daha</Entry>
+	    <Entry Name="Note_Text04_Text">Her şeyi nasıl unuttuğunu hatırla.[br]KİM olduğunu hatırla.[br][br][br][br][br][br]Daha çok çaba sarfetmelisin David.[br]Yoksa ikimzi de mahvolacağız...</Entry>
+		<Entry Name="Note_stranger_Name">Son Sözlerim</Entry>
+	    <Entry Name="Note_stranger_Text">Neden hiç kimse kendi dünyamda yaşamama izin vermiyor?[br]
+		Beni kıskanıyorlar mı? Yoksa topluma karşı bir tehdit mi oluşturuyorum?[br]
+		Ailemin ve arkadaşlarımın iyileşmemi istemesini anlayabiliyorum. Ama neden ızdırap dolu hayata geri döneyim ki?[br][br]
+		Korkarım ki bana her şeyi unutturacaklar... Doktorların bana yardım etmeye çalıştığını sanıyordum...</Entry>
+		<Entry Name="Note_formylove1_Name">Bunu Aşkım İçin Yaptım</Entry>
+	    <Entry Name="Note_formylove1_Text">Onu çok sevdim, o kadar çok sevdim ki o olmadan nefes bile alamıyordum...[br][br]
+		Beni buraya ilk getirdiklerinde, bana her şeyin iyi olacağını söylemişlerdi. Sanki tüm bu saçmalığa inanacakmışım gibi.[br]
+		Beni asla anlamayacaklar, buna eminim.[br][new_page][br]
+		Dün benim yüzüğümü alıp kilitledi. Onu daha iyi saklamam gerekirdi. Ondan kalan tek hatıram buydu. Sürecin bir parçası olduğunu söyledi. Bir süreç geliştirmek istediğimi kim söyledi? Sadece yüzüğümü geri istiyorum. Yüzüğüm, onun yansımaları ile dolu yüzüğüm...[br][new_page][br]
+		Bugün yaptım. Senin için yaptım aşkım. Bıçağı aldım ve onun içini aradım. Orada değildi. Sanırım onun dolabında bulabilirim. Her zaman dolabını kilitli tutardı. Orada olmak zorunda.</Entry>
+		<Entry Name="Note_formylove2_Name">Buldum Onu Aşkım</Entry>
+	    <Entry Name="Note_formylove2_Text">Onun içini aradıktan sonra, dolabının içini ararken beni yakaladılar[br][br]
+		Yüzüğümü de bulup onu benden aldılar. Yüzüğüm, senin hatıraların ile dolu yüzüğüm...[br][new_page][br]
+		Eğer takacak bir yüzüğüm yoksa, neden parmağa ihtiyaç duyayım ki?</Entry>
+		<Entry Name="Note_formylove3_Name">Hasta #6 Ölüm Raporu</Entry>
+	    <Entry Name="Note_formylove3_Text">-Hasta #6, Bay Jamestown;[br][br]
+		-Ölüm Sebebi: Kan kaybı.[br]
+		-Bulundu mu? Ne zaman: Öğleden önce, saat 11 civarında.[br]
+		-Bulundu mu? Nerede: Morg taraflarındaki kilitli bir odada.[br][br]
+		Kapı içeriden kilitlenmişti, bu da bizi hastanın kendini içeri kilitlediği sonucuna çıkarıyor. Dün gece hizmetlinin cesedi bulundu ve hasta #6'nın kayıp olduğu bildirildi. Anladığımız kadarıyla, hasta hizmetliyi morgdan çaldığı bir bıçak ile öldürdü ve sonra da kendini bir odaya kilitledi.[br][new_page][br]
+		Hasta buraya ilk geldiğinde oldukça agresif ve sanrılıydı, ama halüsinasyonlarının şiddeti giderek azalıyordu. Hiç evlenmemiş olmasına rağmen, Maria isimli ölmüş karısının sanrılarına tutunuyor; ve hizmetli ile sık sık bu konu hakkında konuşuyordu. Bu yüzden hastanın hizmetli ile ilişkisini gözlemliyor, arkadaşlığa dönüşeceğini umuyorduk.[br]
+		Hizmetli ile hasta o kadar yakın olmasa da, sık sık birbirleri ile konuşuyordu. Bay Jamestown'ı bulduğumuzda, çoktan kan kaybından ölmüştü. Sol eli ve sağ elinin iki parmağı muhtemelen hizmetliyi öldürmekte kullandığı bıçak ile kesilmişti. Neden hizmetliyi öldürdükten sonra kendisine böyle bir şey yaptı, merak ediyorum.[br][new_page][br]
+		Hastanın hiçbir şekilde intihara meyil sergilemediği halde neden hizmetliyi öldürdüğünü, neden kendini içeri kilitlediğini ve neden sol eli ile sağ elinin iki parmağını kestiğini bilmiyoruz.</Entry>
+		<Entry Name="Note_History_Name">Hastane Tarihçesi</Entry>
+	    <Entry Name="Note_History_Text">
+		  Devlet Deli Hastanesi 1878'de Denver'da, seçkin Boston'lu mimar Nathaniel J Bradlee tarafından, beklenenden çok daha kırsal bir bölgede, tabiri caizse "kuş uçmaz kervan geçmez bir yerde" inşa edildi. Boston'un güneyinde 1870'lerin başında kapanan fakültenin neden olduğu kriz, Boston'un kuzeyinde bir akıl hastanesinin açılması için zemin hazırladı. 1873'te, Worcester, Taunton ve Northampton ve 1866'da kurulan Tewksbury Akıl Hastaneleri en fazla 1000 kişi için tasarlanıp inşa edilmiş oldukları halde, 1300 hastaya ev sahipliği yapıyorlardı; ve başka 1200 hasta da diğer hastanelere dağıtılmış durumdaydı.
+		[br][new_page][br]
+		  Hastanenin kendisi "zihnen hasta" olan kişilere kalacak yer ve tedavi sağlamak amacıyla kurulmuş olmasına rağmen, fonksiyonları 1889'da hemşireler için eğitim programı ve 1895'te de patolojik araştırma laboratuarı ile genişletildi. 1920'lerde ise hastane çocuklardanki zihinsel problemleri teşhis etmek için okul kliniği olarak da hizmet veriyordu. 1960'larda alternatif tedavi metotlarına verilen önemin giderek artması ve akıl sağlığı tedavilerinin kurumsallaştırma dışına alınarak topluluk bazına vurulmasımım sonucu olarak, "hastanede yataklı tedavi gören hasta nüfusu düşmeye başladı". Denver Devlet Hastanesi 24 Haziran 1992'de akıl sağlığı sistemine ayrılan bütçe kesintileri yüzünden kapatıldı.
+		[br][new_page][br]
+		  1998'de, Denver Devlet Hastanesi Dr. Diane Selwyn tarafından tekrar açıldı ve günün standartlarına uyabilmek için kısmî restorasyondan geçmeye başladı. Ülkenin önde gelen psikiyatristlerinin en ünlülerinden olan Patrick Parr'ın da hastane kadrosuna katılması ile birlikte, hastanenin itibarı artmaya başladıysa da, "kuş uçmaz kervan geçmez" mekânı yüzünden ülkede pek tercih edilen bir yer olamadı.
+		[br][new_page][br]
+		(Burada elle yazılmış bir not var)[br][br]Bugünse, Denver Devlet Hastanesi unutulmuş ve terkedilmiş bir yer...
+		</Entry>
+		<Entry Name="Note_Renewal_Name">Yenileme Çalışmaları</Entry>
+	    <Entry Name="Note_Renewal_Text">Şu anda komple revizyon altındayız. Tüm eski mobilyalar ve eşyalar yenileriyle değiştiriliyor. Dr. S. verdiği direktifler konusunda oldukça katı.[br][br]Eh, şu eski, çürüyen tahta yatakların yeni, sağlam, demirden olanları ile değiştirilmesine ses çıkardığım yok. Tahtakurularından bıktım usandım.
+		[br][new_page][br]Ama anlamadığım bir şey var, Tecrit Hastaları Kanadına elektronik bir kapı yerleştirdikleri halde, neden benden halen kanat kapısını kilitli tutmamı istiyorlar?
+		</Entry>
+		<Entry Name="Note_puzzle_1_3_Name">Onu Sinirlendir</Entry>
+	    <Entry Name="Note_puzzle_1_3_Text">#3 -- [2]. Bunu bilmiyor. Ama dört haneli!</Entry>
+		<Entry Name="Note_Clarence_Name">Dr. Patrick'e Not</Entry>
+	    <Entry Name="Note_Clarence_Text">Dr. Patrick[br]
+		Clarence kontrolden çıktı ve ben de kendisine bir doz yatıştırıcı verdim.[br]
+		Benim üstüme vazife değil belki, ama durumunun giderek kötüleştiğini düşünüyorum. Philip adında birinin kendisinden kurtulmaya çalıştığını söyleyip durmaya başladı. Eğer merağımı mazur görürseniz, bu Philip denen kişi kimdir ve Clarence neden kendisini öldürmeye çalıştığını düşünüyor?[br]
+		Diğer hastaların huzuru için, sizden gelecek direktiflere kadar onu gözlem hücresine kilitledim.
+		</Entry>
+		<Entry Name="Note_Regression_Name">Regresyon</Entry>
+	    <Entry Name="Note_Regression_Text">Bir defasında, benim için önemli bir hasta bana şöyle demişti:[br][br]
+		  "Tüm insanlar bilgilerine ve algılarına dayanarak yaşıyorlar, ve bu yüzden de onlara bağlılar. O sınırların 'gerçeklik' diye kabul ettikleri şeyi oluşturduğunu düşünüyorlar.[br][br]
+		  Ama bilgi ve algı kesin olan şeyler değil, o yüzden 'gerçeklik' dedikleri şey de bir ilüzyondan ibaret olabilir[br][br]
+		  İnsanlar kendi kısıtlı algıları tarafından kapana kısılıp yaşıyorlar, görüyor musun?"
+		[br][new_page][br]
+		"Öyleylese gerçeklik nedir?" diye sordum. "Ne söyleyeceğim kimin umrunda?" diye cevap verdi. Haklıydı, kimsenin umrunda olmazdı... O zaman onun haklı olduğunu kanıtlamak için ne yapabilirdim ki?[br][br]
+		Ama o zamandan beri, kafamı kurcalayan bir soru var: Ya... ya birisi tüm hafızasını kaybederse? Neye inanacak? Gerçeklik onun için ne olacak? Ve en önemlisi, hiç varolmamış bir gerçeklik yaratmak için yaşanmamış hafızalar enjekte edebilir miyiz?[br][br]
+		[br][new_page][br]
+		Şimdi tüm ülkede saygı duyulan birisi olmama rağmen, o zaman onu kurtaramamıştım.[br]
+		Daha öğrenecek çok şeyim var.[br][br]
+		- Dr. Patric Parr</Entry>
+		<Entry Name="Note_Generator_Name">Jeneratör Değişimi</Entry>
+	    <Entry Name="Note_Generator_Text">Bütün bu yenileme çalışmasında, ilk önce jeneratörün değiştirilmesi çok önemli. Ama, Dr. S beni dinlemedi ve şimdi tüm hastane yerel elektrik kesintileri yaşıyor. Bu defa benim hatam değil.[br][br]
+		Jeneratör oldukça eski ve zaman zaman da kendi kendine çalışmayı durdurabiliyor. Geçen hafta yine kendi kendine durdu. Tekrar olacak, ve bu noktadan sonra tamir filan da işlemez. 
+		[br][new_page][br]
+		Herhangi bir acil durum olursa:[br][br]
+		1- Dolu bir yakıt bidonu bulundurun.[br]
+		2- Jeneratörün yanındaki konteynıra yakıtı doldurun ki jeneratöre bir itiş kuvveti olsun.[br]
+		3- Konteynırın yanındaki kolu çekin.[br]
+		4- Kol da eski. O yüzden birkaç kere çekmek gerekebilir.</Entry>
+		<Entry Name="Note_Retrograde_Name">Ribot Kanunu</Entry>
+	    <Entry Name="Note_Retrograde_Text">Gerileyen Amnezi(hafıza kaybı), bir hasar öncesinde veya hastalık başlangıcında öğrenilen bir bilgi veya olmuş bir olayın anısına erişimin kaybolmasıdır.[br][br]
+		Gerileyen Amnezi'nin Ribot Kanunu, 1881'de Théodule Ribot tarafından bir hipotez olarak kuruldu. Bu kanun, Gerileyen Amnezi'de zamana bağlı bir eğim derecesi olduğunu savunur. Yakın hafızanın uzak hafızaya göre kaybolması çok daha muhtemeldir. Gerileyen Amnezi'den muzdarip olan tüm hastalar Ribot Kanunu belirtilerini göstermez.[br][br]
+		"Hafızanın bozulması olayın yakınlığı ile ters orantılıdır."[br][br]
+		Yani kısaca, hafıza eskidikçe, bozulmaya karşı dirençli hale gelir.
+		[br][new_page][br]
+		Büyük oranda araştırma Ribot Kanunu'nun öngörülerini deskteklemektedir. Teori hafızanın zamana bağlı göreceli gücünü konu alır, ki bu da doğrudan test edilemez. Onun yerine, bilim adamları unutma (amnezi) ve hatırlama sürecini incelemektedir. Ribot Kanunu, yıkıcı bir olay sonucu hastaların tercihen daha eski anılarını koruyan, zamansal olarak derecelendirilebilen Gerileyen Amnezi göstereceğini savunur.[br][br]
+		Bu da, eğer -tercihen cerrahi müdahele ile- Gerileyen Amnezi tetiklenebilirse, Korsakoff Sendromuna neden olmadan tüm anıların bir kerede silinmesinin imkânsıza yakın olduğu anlamına gelmektedir; ki bu da bu çalışmanın tüm amacına ters düşmektedir.
+		[br][new_page][br]
+		Yine de, eğer bir hasta periyodik olarak bu çalışmaya tabi tutulursa, hiçbir şekilde başarı şansının olmadığı söylenemez. Ama, Dr. Parr bile sürecin zorluğuna mutabık durumda, özellikle de konu hafızanın seçilmiş parçalarının temporal loba hasar vermeden silinmesine gelince.[br][br]
+		Dr. S teorik çalışmadan fiziksel çalışmaya geçilmesine şiddetle karşı çıkıyor. Doğrusu, gerçek bir deney yapmadan, bu çalışmanın gün ışığına çıkardığı tüm teoriler buradaki tahtası eksiklerin anlamsız mırıldanmalarından daha fazlasını ifade etmiyor.</Entry>
+		<Entry Name="Note_SofiaParr_Name">Seansların Organize Edilmesi</Entry>
+	    <Entry Name="Note_SofiaParr_Text">Dr. Selwyn[br][br]
+		Çalışmamızın şu anki durumunu göz önünde bulundurunca seanslarımı organize etmekte güçlük çekiyorum. Ağır zihinsel hastalıklardan muzdarip olan üç hasta sürekli bakım altında tutulmalı, ve diğer hastalarım ile olan haftalık seanslarım hafıza değişimi üzerine olan çalışmamda ilerlememi engelliyor.[br][br]
+		Çalışmamım önemini, bu dalda yeni alanlar açma ve hatta yeni tedaviler geliştirebilme ihtimalini biliyorsunuz. O yüzden, eğer uygun görürseniz, fiziksel deneyler yapabilecek dereceeye gelene kadar Grace'in ve Sofia'nınkiler hariç tüm seanslarımı iptal etmek istiyorum. Bu ikisi benim ve çalışmam için oldukça önemliler. Bu ikilinin durumu üzerine daha fazla zaman harcamak isterim.[br][br]
+		Düşünmeniz gereken bir başka konu işe bu ikilinin çok iyi arkadaş olduklarıdır, ki bu durum, Sofia'nın hiç arkadaşı olmamasını -ya da istememesini- düşündüğümüzde oldukça şaşırtıcı -ve ilginç-. Arkadaşlarık süreçlerini ve bunun durumları üzerindeki etkisini daha yakından incelemek isterim.
+		[br][br]- Dr. Patrick P.</Entry>
+		<Entry Name="Note_Music_Name">Terapi için Müzik?</Entry>
+	    <Entry Name="Note_Music_Text">Sanatsal hislerin beynin doğrudan ulaşamayacağımız bölümlerine ulaşmamıza imkân verebileceğini düşünüyorum. Dahası, beynin kullanılmayan, ya da daha kötüsü, yanlış kullanılan bölümlerini aktifleştirerek düzenli seansların sonuçlarını güçlendirebilir.[br][br]
+		Bu sadece bir teoriden ibaret olsa da, seanslarına katıldığım hastaların bu müzik deneyleri ile yakından ilgilendiğini gözlemledim. Her ne kadar müziği doğrudan sonuçlarını ayrıştıramasam da, hastalarım en azından bana daha çok dikkat gösteriyor ve seanslarda daha ilgili oluyorlar.[br][br]
+		Bir sonraki seansta, fonograftan dinleteceğim bir melodiyi piyanoda aynen çalmalarını isteyeceğim. Eğer başarılı olurlarsa, bazılarını ödüllendirebilirim.[br][br]
+		(Sanırım bir müzik seti almanın vakti geldi)</Entry>
+		<Entry Name="Note_SofiaDown_Name">Kilitlenme ve Restorasyon</Entry>
+	    <Entry Name="Note_SofiaDown_Text">Hasta Kanadı kapısı Dr. Sofia'nın emriyle kilitlendi.
+		[br][br]Restorasyon yarım kaldı ve şu haliyle hasta kanadını kullanmak imkânsıza yakın. Doktor, yetenekli hastaların çalışmaların devamı için kullanılabileceğini söyledi, o yüzden ben de incelemek için hastaların dosyalarını alıp bir liste yaptım. Bir şekilde bu hastaları organize edip yarım kalan işi devam ettirmelisin.
+		[br][br]- John Barker (buraya gelmeden önce marangozdu)
+		[br]- Richard Crichton (boyacı ve zanaatkâr)
+		[br]- Thomas Redwood (tecrübe sahibi genç bir çocuk)
+		[br]- David
+		[br][br]
+		(Yazının geri kalanı kötü el yazısı yüzünden okunmuyor)</Entry>
+		<Entry Name="Note_LastLine_Name">Hasta Durum Raporu #2</Entry>
+	    <Entry Name="Note_LastLine_Text">David artık travmasından kurtulduğuna göre, deneyimizin bir sonraki aşamasına geçebiliriz.</Entry>
+	</CATEGORY>
+	<CATEGORY Name="Flashbacks">
+        <Entry Name="Flashback_01">Sıcak, o kadar sıcak kı bedenim kaldıramıyor.
+		[br]Parlak, o kadar parlak ki gözlerim körleşiyor.
+		[br]O çığlıkları duymak dayanılacak gibi değil... "Yardım et!"
+		[br]Sağır olacağımı ümit ederek kulaklarımı tıkıyorum...</Entry>
+        <Entry Name="Flashback_02">Duyduğum o çığlıklar silinemez.
+		[br]Oturup boşluğa doğru baktığımda, bana sağ kalan dediler.
+		[br]Kim böyle bir anı ile sağ kalmak ister ki?</Entry>
+        <Entry Name="Flashback_03">Sağır edici sesler zihnimde yankılanıyor.
+		[br]Her zaman bir itfaiyeci olmak isterdim.
+		[br]Şimdi bir tanesi, isten kararmış yüzüyle bana bakıyor.
+		[br]"İyi misin evlât?" diye soruyor. Biliyorum, bir daha asla iyi olamayacağım.</Entry>
+        <Entry Name="Flashback_04">Yanıyordu... Her şey yanıyordu.
+		[br]Herkes çığlık atıyordu... yardım için yalvarıyordu.
+		[br]Onları sanki çığlıkları vücut almış gibi görebiliyordum.</Entry>
+        <Entry Name="Flashback_05">Şimdi hatırlıyorum... Ailem hiçbir zaman yardım için çığlık atmadı...
+		[br]Ne dediklerini çok iyi hatırlıyorum...
+		[br]"Kurtar kendini David, bizim için!..."</Entry>
+    </CATEGORY>
+	<CATEGORY Name="Voice">
+        <Entry Name="00_intro_01">David, geç kalmamaya çalış.</Entry>
+        <Entry Name="00_intro_02">Kalmam. Merak etme, unutmadım.</Entry>
+        <Entry Name="00_intro_03">Neyi unutmadın?</Entry>
+        <Entry Name="00_intro_04">Yıl dönümümüzü.</Entry>
+        <Entry Name="00_intro_05">Unutmadığını biliyorum. Tamam, sonra görüşürüz...</Entry>
+        <Entry Name="00_intro_06">Dışarı çıkma zamanı Grace. Yapacak çok işimiz var.</Entry>
+        <Entry Name="00_intro_07">Tam üç yıl oldu...</Entry>
+        <Entry Name="00_intro_08">Evet, zaman çok çabuk geçiyor...</Entry>
+        <Entry Name="00_intro_09">İlk tanıştığımız zamanı hatırlıyor musun?</Entry>
+        <Entry Name="00_intro_10">Elbette hatırlıyorum Grace! Nasıl unutabilirim ki?</Entry>
+        <Entry Name="01_rooms_01">David?</Entry>
+        <Entry Name="01_rooms_02">Merhaba David, bugün nasılsın?</Entry>
+        <Entry Name="01_rooms_03">Nerdeyim ben, sen kimsin?</Entry>
+        <Entry Name="01_rooms_04">Oh, David. Yine mi unuttun? Ben senin doktorunum, adım Doktor Sofia, ve sen de bir hastanedesin, bir akıl hastanesinde. Şimdi hatırladın mı?</Entry>
+        <Entry Name="01_rooms_05">Hayır...</Entry>
+        <Entry Name="01_rooms_06">Endişelenme David. İçinde bulunduğun durumda bir şeyleri unutmak beklenmedin bir olay değil. Ben de bu yüzden buradayım zaten. Sana yardım etmek için.</Entry>
+        <Entry Name="01_rooms_07">Ah...</Entry>
+        <Entry Name="01_rooms_08">Bugünkü seansımız için hazır mısın, David?</Entry>
+        <Entry Name="01_rooms_09">Neden burada tek başımayım?</Entry>
+        <Entry Name="01_rooms_10">Çünkü sen kriminal bir hastasın, David.</Entry>
+        <Entry Name="01_rooms_11">Ne? Ben suçlu filan değilim!</Entry>
+        <Entry Name="01_rooms_12">Sakin ol, David. Sana yardım etmek için buradayım. Zihnini iyileştirmek için buradayım.</Entry>
+        <Entry Name="01_mental_1_01">David, geri gelmen gerekiyor. Gözlerini aç.</Entry>
+        <Entry Name="03_hospital_01">Hasta durum raporu.</Entry>
+        <Entry Name="03_hospital_02">Son tanılar eşliğinde, hasta ikincil kişiliği için kabullenme göstermeye başladı. 
+		Bu kişilik bozukluğuna neyin sebep olduğunu halen anlayabilmiş değilim ve söz konusu sebebin, eğer böyle bir sebep varsa tabi, ne zaman olmuş olabilceği hakkında fikrim yok.</Entry>
+        <Entry Name="03_hospital_03">İlginç olansa, normal kişiliğinde olduğu sürece, şimdilik buna böyle bir isim verdim, güçlü bir zihne sahip normal bir insan gibi davranıyor.</Entry>
+        <Entry Name="03_hospital_04">Bugün bu ikincil -hasta- kişiliği neyin tetikleyebileceğini test etmek istedim. 
+		Hastaya Dr. S.'i tanıyıp tanımadığını sordum. O da bana odasının şifresini bile bildiğini söyledi. 
+		Şifrenin ne olduğunu sordum, ve o da bana şifrenin son hanesinin ikinci hanesinin yarısı olduğunu söyledi.</Entry>
+        <Entry Name="03_hospital_05">Sonra da şifrenin ikinci hanesinin tualetteki lavabo sayısına eşit olduğunu fısıldadı.</Entry>
+        <Entry Name="03_hospital_06">Bunca şeyi nasıl bildiğini sordum, o da bana Sofia'nın kendisine söylediğini söyledi.
+		Korkarım ki incelemeye çalıştığım bu kişilik ben soru sormaya başlamadan önce tetiklenmişti.
+		Bu, Sofia'nın işi mi?</Entry>
+        <Entry Name="03_hospital_07">Most importantly, how did Sofia know this much?</Entry>
+        <Entry Name="03_hospital_08">Ne gördüğünü söyle, David.</Entry>
+        <Entry Name="03_hospital_09">Bu resme baktığında ne hissettiğini söyle.</Entry>
+        <Entry Name="03_hospital_10">Yine kâbuslar demek ha, David?</Entry>
+        <Entry Name="03_hospital_11">Bugün daha iyi olabileceğini ummuştum, ama görünüşe göre pek de iyi değilsin...</Entry>
+        <Entry Name="03_hospital_12">Bana ne oldu? Bu yerde neden sadece ben varım?</Entry>
+        <Entry Name="03_hospital_13">Şimdiden soru sormaya başladın demek? O zaman beni ve kendi adını hatırlıyorsun? Güzel, sonunda ilerleme kaydetmeye başladın.</Entry>
+        <Entry Name="03_hospital_14">Ne ilerlemesi, sen neden bahsediyorsun?</Entry>
+        <Entry Name="03_hospital_15">İnsan zihni kırılgandır, David. Korkarım, seninki fazlasıyla kırılmış. Ama endişelenme, zihnini iyileştirmek için buradayım.</Entry>
+        <Entry Name="03_hospital_16">Şunu söylemeyi kes!</Entry>
+        <Entry Name="03_hospital_17">Bugün biraz agresifiz, değil mi, David? İstekli olduğunu görmek güzel. O zaman bugünki seansımıza başlayalım.</Entry>
+        <Entry Name="03_hospital_18">Bana ne oldu?</Entry>
+        <Entry Name="03_hospital_19">Çok şey oldu David, ama biraz ağırdan alalım.</Entry>
+        <Entry Name="03_hospital_20">İyi bir insan olduğunu bilmelisin, David; ama yaptığın kötü şeyler var.</Entry>
+        <Entry Name="03_hospital_21">Ben yanlış bir şey yapmadım!</Entry>
+        <Entry Name="03_hospital_22">Öyleyse hatırlıyorsun?</Entry>
+        <Entry Name="03_hospital_23">Ben... hayır.</Entry>
+        <Entry Name="03_hospital_24">O zaman nasıl bu kadar emin olabiliyorsun, David?</Entry>
+        <Entry Name="03_hospital_25">Ben...</Entry>
+        <Entry Name="03_hospital_26">Neden cesetler gördüğünü sanıyorsun, David?</Entry>
+        <Entry Name="03_hospital_27">Cesetler gördüğümü nereden biliyorsun?</Entry>
+        <Entry Name="03_hospital_28">Yani kabul ediyorsun.</Entry>
+        <Entry Name="03_hospital_29">Bak, David, suçluluk duygusu, ne kadar derine gömersen göm, genellikle yaptıklarının yansıması olarak yüzeye çıma eğilimindedir.</Entry>
+        <Entry Name="03_hospital_30">Ama işin iyi yanı da var, suçluluk duygusu ilerleme kaydettiğinin de belirtisidir	.</Entry>
+        <Entry Name="03_hospital_31">Bu yüzden mi bana saldıran şeyler var?</Entry>
+        <Entry Name="03_hospital_32">Sana saldıran şeyler mi var? Hmmm...</Entry>
+        <Entry Name="05_basement_01">David, şimdi senden sakin olmanı ve hareketsiz kalmanı istiyorum.</Entry>
+        <Entry Name="05_basement_02">Bu canını biraz yakabilir. Ama biliyorsun, sana yardım etmek için buradayım.</Entry>
+        <Entry Name="05_basement_03">Zihnini iyileştirmek için buradayım.</Entry>
+        <Entry Name="05_basement_04">...</Entry>
+        <Entry Name="05_basement_05">Hastayı tutun.</Entry>
+        <Entry Name="06_tunnels_01">...</Entry>
+        <Entry Name="06_tunnels_02">Demek bu kadardı. Yine başarısız oldum...</Entry>
+        <Entry Name="06_tunnels_03">Tekrar başarısız olmak için mi bu kadar çalıştım?</Entry>
+        <Entry Name="06_tunnels_04">Bu hastane, bu yer, bu benim için yepyeni bir başlangıç olacaktı.</Entry>
+        <Entry Name="06_tunnels_05">Sofia beni alt etti.</Entry>
+        <Entry Name="06_tunnels_06">Tünellerin içinde yankılanan, diğer hastalara emirler yağdıran sesini duyabiliyorum.</Entry>
+        <Entry Name="06_tunnels_07">...</Entry>
+        <Entry Name="06_tunnels_08">Ben Doktor Patrick Parr. Tüm hayatımı insan zihninin işleyişini anlamaya verdim; ve görünüyor ki bir arpa boyu yol alamadım.</Entry>
+        <Entry Name="06_tunnels_09">Bunlar benim son sözlerim. Birileri yakın gelecekte bunu bulabilir mi, bilemiyorum, ama eğer bulursa...</Entry>
+        <Entry Name="06_tunnels_10">Gördüğün bir şeylerden emin olduğun an, yanıldığın andır.</Entry>
+        <Entry Name="06_tunnels_11">[ayak sesleri]</Entry>
+        <Entry Name="06_tunnels_12">Demek, geldin, Sofia...</Entry>
+        <Entry Name="06_tunnels_13">Sen ne... Nasıl... Patrick'e ne oldu?</Entry>
+        <Entry Name="06_tunnels_14">Zeki birisi olduğunu hep biliyordum zaten, David. Demek sonunda anladın.</Entry>
+        <Entry Name="06_tunnels_15">Başından beri hiç doktor değildin sen!</Entry>
+        <Entry Name="06_tunnels_16">Evet David, gerçek bir doktor değildim, ama sana karşı iyi bir doktor olmadığımı da söyleyemezsin.</Entry>
+        <Entry Name="06_tunnels_17">Aslında, Patrick de bana karşı iyi bir doktordu, ama birilerinin benim üzerimde deneyler yapmasına izin veremem, değil mi?</Entry>
+        <Entry Name="06_tunnels_18">Onun yerine, ben onun üzerinde deneyler yaptım. Birkaç kayıp ile sonuçlandı. Zavallı Patrick, işine öylesine adanmıştı ki...</Entry>
+        <Entry Name="06_tunnels_19">Tüm bunları bana neden anlatıyorsun?!</Entry>
+        <Entry Name="06_tunnels_20">Farkeder mi ki David? Nasıl olsa tekrar unutacaksın. Sana unutturacağım. Sana unutturmak çok kolay. Patrick'in senin arkadaşın olduğunu bile hatırlamıyorusn.</Entry>
+        <Entry Name="06_tunnels_21">Arkadaşım... Yani... Ben... burada bir doktor muydum?</Entry>
+        <Entry Name="06_tunnels_22">Kim olmuş olduğun hiç önemli değil David. Önemli olan, senin kim olmanı istediğim.</Entry>
+        <Entry Name="06_tunnels_23">Benim ilk gerçek zaferimden, White Night'tan bu yana ilk başarılı deneyim olacaksın!</Entry>
+        <Entry Name="06_tunnels_24">Kalkma zamanı David, hatırlama zamanı.</Entry>
+        <Entry Name="07_asylum_1">Çok güzel, değil mi David? Harika görünüyor, değil mi?</Entry>
+        <Entry Name="07_asylum_2">Bahse girerim şuradan güneşin batışını izlemek muhteşemdir.</Entry>
+        <Entry Name="07_asylum_3">Beni ziyarete geldiğin zaman ortalıkta boş boş geziniriz.</Entry>
+        <Entry Name="07_asylum_4">Beni ziyarete geleceksin, değil mi, David?</Entry>
+        <Entry Name="07_asylum_5">Burada yeni bir arkadaş edindim, David. Çok nazik birisi ve çok şey biliyor!</Entry>
+        <Entry Name="07_asylum_6">Seni çok özledim David, geçen gün neden gelmedin?</Entry>
+        <Entry Name="07_asylum_7">Konuşmamız gerekiyor David. Bu ciddi bir mesele.</Entry>
+        <Entry Name="08_entrance_1">Grace, ziyaretçin var.</Entry>
+        <Entry Name="08_entrance_2">Beni artık ziyaret etmeyecek misin David?</Entry>
+        <Entry Name="08_entrance_3">Beni burada tek başıma mı bırakacaksın?</Entry>
+        <Entry Name="08_entrance_4">Beni terk mi edeceksin?</Entry>
+        <Entry Name="08_entrance_5">Bana burada ne yapacakları hiç mi umrunda değil?</Entry>
+        <Entry Name="08_entrance_6">Merhaba Grace, merhaba.</Entry>
+        <Entry Name="08_entrance_7">Merhaba doktor.</Entry>
+        <Entry Name="08_entrance_8">Grace bugün nasıl hissediyor?</Entry>
+        <Entry Name="08_entrance_9">Çok iyiyim doktor. Siz nasılsınız?</Entry>
+        <Entry Name="08_entrance_10">İyiyim Grace, teşekkür ederim. Görüyorum ki bugün çok daha iyi hissediyorsun?</Entry>
+        <Entry Name="08_entrance_11">Evet doktor.</Entry>
+        <Entry Name="08_entrance_12">Peki bunun özel bir sebebi var mı?</Entry>
+        <Entry Name="08_entrance_13">Evet doktor, bugün beni ziyarete geliyor.</Entry>
+        <Entry Name="08_entrance_14">Merhaba Grace, bugün nasılsın?</Entry>
+        <Entry Name="08_entrance_15">Merhaba doktor. Gayet iyiyim. Size yeni arkadaşımdan bahsettim mi?</Entry>
+        <Entry Name="08_entrance_16">Hayır Grace. Yeni bir arkadaşın mı var?</Entry>
+        <Entry Name="08_entrance_17">Evet doktor. Yeni bir arkadaşım var, ve bana karşı çok nazik. O kadar çok şey biliyor ki...</Entry>
+        <Entry Name="08_entrance_18">Anlıyorum, o zaman burayı sıkıcı bulmuyorsun?</Entry>
+        <Entry Name="08_entrance_19">Hayır, ama...</Entry>
+        <Entry Name="08_entrance_20">Ama?</Entry>
+        <Entry Name="08_entrance_21">Keşke David de burada olsaydı...</Entry>
+        <Entry Name="08_entrance_22">Bu, şimdiye kadar gördüğüm hiçbir şeye benzemiyor. Tüm bu zaman boyunca, baskın kişilik olmak için çalışıyormuş. Çok fazla güçlendi ve korkarıum ki yeni metodlar denemek zorunda kalacağım...</Entry>
+        <Entry Name="08_entrance_24">O nasıl, Patrick?</Entry>
+        <Entry Name="08_entrance_25">Sakin ol, David, konuşmamız gereken çok şey var.</Entry>
+        <Entry Name="08_entrance_26">Onun problemi ne doktor?</Entry>
+        <Entry Name="08_entrance_27">Korkarım ki tahmin ettiğimden çok daha karmaşık.</Entry>
+        <Entry Name="08_entrance_28">Nasıl bu kadar kör olabildim... Tüm bu zaman boyunca gözümün önündeydi...</Entry>
+        <Entry Name="08_entrance_29">David, bu durum sıradan bireylerin anlayabileceği bir durum değil. O yüzden lütfen, kendini cezalandırma, bu senin hatan değil. Aslında, bilâkis, senin sayende onun normal kişiliği hasta kişiliğinden çok daha güçlü.</Entry>
+        <Entry Name="08_entrance_30">Bir sürü söz verdin David. Beni ziyarete geleceğine söz verdin. Beni koruyacağına söz verdin. Ama hayır! Her şey senin istediğin gibi olacak!</Entry>
+        <Entry Name="08_entrance_31">Biliyor musun David, neden herkesi öldürürken seni öldürmedim? Çünkü diğer Grace bana izin vermedi. Ama şimdi, o gitti! Sofia sayesinde!</Entry>
+        <Entry Name="09_mental_3_1">Görüyorsunuz ya Mr. Lawrence? Yapılması gereken şey onu bir hapse tıkmak değil. Bu hiçbir şeyi çözmez. Onun ihtiyacı olan şey tedavi. Zihinsel tedavı. Ve ben, Patrick Parr, şahsen bu dava ile ilgiliyim. Sanırım hastalıklı zihinlerin iyileştirilebileceğini çoktan kanıtladım...</Entry>
+        <Entry Name="09_mental_3_2">Anılarını düşün David. Onları birer tuğla parçası olarak düşün. Yolunu bulmak için onları kullan.</Entry>
+        <Entry Name="09_mental_3_3">Görüyorsun ya David, o kadar da zor değildi.</Entry>
+        <Entry Name="09_mental_3_4">Koş David, bu senin son şansın!</Entry>
+        <Entry Name="09_mental_3_5">David, Sofia neden zaferine 'white night'(beyaz gece) diyor biliyor musun? Çünkü doktor önlüklerini çok seviyor, özellikle de beyaz(white) oldukları zaman. Biliyor musun, şu anda giydiği önlük Patrick'in...di.</Entry>
+        <Entry Name="09_mental_3_6">Senin son ziyaretinden önceki geceydi(night). Buradaki tüm hastaları organize etti, ve hastaneyi ele geçirdi. Zavallı Selwyn, onun Dr. S adı artık Sofia'ya ait.</Entry>
+        <Entry Name="09_mental_3_7">Grace sana o kadar değer veriyor, ama sen gidip de o aşağılık herifin onun üzerinde iğrenç deneylerini yapmasına izin veriyorsun!</Entry>
+        <Entry Name="09_mental_3_8">Ah, eveeeet. Oradaydım... Sofia senin o değerli arkadaşının kafasını keserken!</Entry>
+        <Entry Name="09_mental_3_9">Sofia bana çok şey öğretti, ve karşılığında, ben de ona nasıl bıçak kullanılacağını öğrettim. Ne de olsa, tecrübeliyim.</Entry>
+        <Entry Name="09_mental_3_10">Bunca yıl David! Bunca yıl! Ve bana ailenden bahsetmedin! Bir de kendine koca mı diyorsun?!</Entry>
+        <Entry Name="09_mental_3_11">Biliyor musun, David. Galiba bu defa Sofia'ya yardım edeceğim. Ne de olsa, benim de sana karşı ilgim var. Burada benimle kalabilirsin.</Entry>
+        <Entry Name="09_mental_3_12">İlk tanıştığımız zamanı hatırlıyor musun? Oh bekle, 'hatırlamana' gerek yok ki David. Çünkü o anıları 'ben' istediğim gibi yerleştireceğim.</Entry>
+        <Entry Name="09_mental_3_13">Boşluğa doğru, David, boşluğa doğru...</Entry>
+        <Entry Name="09_mental_3_14">O geceyi hatırlıyor musun David? Onlar Grace'i almaya geldiler, seni değil. Oydu, sen değil.</Entry>
+        <Entry Name="09_mental_3_15">Sana nasıl unutturdular David? Ama şükran duymalısın, sana tekrar hatırlattım. Beni ne kadar derine gömersen göm, sana her zaman yeniden hatırlatacağım.</Entry>
+        <Entry Name="09_mental_3_16">Ben senin küçük 'travma'nım David. Ben kurtulmak için çok uğraştığın bir anıyım. Ama sonunda, sahip olduğun her şey bendim. Beni burakma, yoksa işin biter.</Entry>
+        <Entry Name="10_ending_01">Şimdi üçe kadar sayacağım, ve sen de uyanacaksın, David.</Entry>
+        <Entry Name="10_ending_02">Bir.</Entry>
+        <Entry Name="10_ending_03">İki.</Entry>
+        <Entry Name="10_ending_04">Üç.</Entry>
+        <Entry Name="10_ending_05">Uyaaaaan, David.</Entry>
+        <Entry Name="10_ending_06">Nasıl hissediyorsun? Sanırım daha iyisin. Birkaç seans sonra, tamamiyle iyileşmiş olacaksın.</Entry>
+        <Entry Name="10_ending_07">Oh, saate bak. Eh, bugünlük bu kadar, David. Haftaya görüşürüz.</Entry>
+        <Entry Name="10_ending_08">Oh, bu arada David...</Entry>
+        <Entry Name="10_ending_09">Artık ailenin anısını omuzlarında taşımak zorunda değilsin.</Entry>
+        <Entry Name="10_ending_10">Çünkü bu şekilde unutamazsın...</Entry>
+        <Entry Name="10_ending_11">Gerçekten de seni serbest bırakacağımı mı sandın, David?...</Entry>
+    </CATEGORY>
+	<CATEGORY Name="Signs">
+        <Entry Name="Sign_01">Duvara sıkışmış ve ellerimle çekip çıkaramıyorum.[br]Aşağıdaki kapıyı açmak için kullanabilirim.</Entry>
+		<Entry Name="Sign_02">Çıplak elle açılacak gibi durmuyor; ve anahtarım da yok.</Entry>
+		<Entry Name="Sign_03">Ölmüş?...</Entry>
+		<Entry Name="Sign_04">Blood?...Jesus...</Entry>
+		<Entry Name="Sign_05">Neredeyim ben?...</Entry>
+		<Entry Name="Sign_06">Birazcık daha!...</Entry>
+		<Entry Name="Sign_07">Elektronik olarak kilitlenmiş gibi duruyor. Belki gücü kesebilirim...</Entry>
+		<Entry Name="Sign_08">Kapı kilitli. Açabilmek için şifreye ihtiyacım var.</Entry>
+		<Entry Name="Sign_09">Kilitli. Açabilmek için bir araca ihtiyacım var. Belki levye iş görür.</Entry>
+		<Entry Name="Sign_10">Gevşek görünüyor. Belki kırabilirim. Ama neden?</Entry>
+		<Entry Name="Locked_1">Kıpırdamıyor bile.</Entry>
+		<Entry Name="Locked_2">Kilit bozulmuş.</Entry>
+		<Entry Name="Locked_3">Hareket etmiyor.</Entry>
+		<Entry Name="Locked_4">Sıkışmış.</Entry>
+		<Entry Name="Locked_5">Açılacak gibi durmuyor.</Entry>
+		<Entry Name="Button">Butona bastım ama bir şey olduğu yok.</Entry>
+		<Entry Name="ScrewDriver">Açıldı.</Entry>
+		<Entry Name="Rooms_Stuck">Sıkışmış.</Entry>
+		<Entry Name="HotTub">Çok sıcak. Dokunamıyorum.</Entry>
+		<Entry Name="HotKey">Küvetin deliğinde bir anahtar var.</Entry>
+		<Entry Name="WTF">Ne...</Entry>
+		<Entry Name="Panel">Vidalar çok sıkı. Bununla açamayacağım.[br]Acaba kırabilir miyim?</Entry>
+		<Entry Name="Panel2">Bunu kırmam gerekebilir. Tekrardan...</Entry>
+		<Entry Name="GasolineUsed">Sanırım bu kadar. Şimdi kolu çekmem gerekiyor.</Entry>
+		<Entry Name="Pulled">Hiçbir şey olmuyor.</Entry>
+		<Entry Name="Pulled2">Bir cızırtı duydum ama hiçbir şey olmadı. Tekrar denemeliyim.</Entry>
+		<Entry Name="EmptyGasoline">Yakın bidonunu doldurdum.</Entry>
+		<Entry Name="ClosedSec">Çok ağır ve açamıyorum. Jeneratörü çalıştırmam gerek.</Entry>
+		<Entry Name="Suitor">Çok fazla beklersem beni yakalayacak.</Entry>
+		<Entry Name="Phono01">Fonografın içinde silindir yok.</Entry>
+		<Entry Name="Ending_Stairs">Merdiven yerine asansörü kullansam daha iyi olacak.</Entry>
+		<Entry Name="String">Bir kanca olmadan anahtarı çekemem.</Entry>
+		<Entry Name="Hook">Sarkıtacak bir şey olmadan kanca yetmez.</Entry>
+		<Entry Name="WaitAlittle">Diğer kaydın bitmesini beklesem daha iyi olabilir.</Entry>
+    </CATEGORY>
+	<CATEGORY Name="Hints">
+        <Entry Name="Death_01">Karanlıktan uzak dur...</Entry>
+        <Entry Name="Death_02">Onlardan kaç...</Entry>
+        <Entry Name="Death_03">Adımına dikkat et...</Entry>
+		<Entry Name="Forget">Unut</Entry>
+		<Entry Name="Run">Kaç</Entry>
+    </CATEGORY>
+	<CATEGORY Name="LoadingText">
+        <Entry Name="Load_Text_01">Uyandığımda, bilmediğim; ama tanıdık gelen bir yerdeydim.[br]Daha önce burada bulunmuşum gibi bir his var, ama hiçbirini hatırlayamıyorum.[br][br]En kötüsüyse, hiçbir anıma erişemiyorum.[br]Sanki klişe bir kâbusun içindeyim, ve hiç de televizyonda gördüklerime benzemiyor.</Entry>
+		<Entry Name="Load_Text_02">Bir hastanede uyanıyorsun, ve hiçbir şey hatırlamıyorsun... Neye inanacaksın? Ya da... Kime inanacaksın?[br]Ben gerçekten bir suçlu muyum? Bir katil miyim? Buna inanamıyorum. Yine de, tamamen reddedemiyorum... Kim olduğumu... hatırlamam gerek. Ne olduğunu hatırlamam gerek. Gerçekten de bir...  katil olup olmadığımı hatırlamam gerek...</Entry>
+		<Entry Name="Load_Text_03">[br]Ağzımdaki acı tat... şakaklarımdaki acı... Zihnim hiçbir şeyi hatırlamıyor, ama bedenim hatırlıyor.[br]Tüm bunları hakedecek ne yaptım?[br]İşte cevap vermem gereken soru bu...[br]İşte hatırlamam gereken şey bu...</Entry>
+		<Entry Name="Load_Text_04">[br]Hakim tüm olanlara kayıtsız görünüyordu, sanki söz konusu olan insanların hayatı değilmiş gibi. Bay Lawrence'ın tüm isttediği tüm sorumluluğu başkasının üzerine yıkmaktı. Muhtemelen hayatında ilk defa birilerini öldürmek istedi...[br][br]Eh... Belki ilk defa değil...</Entry>
+		<Entry Name="Load_Text_05">[br]Psikiyatrist şefkatli bir sesle adını seslendi. Gözlerini açtı ve boşluğa baktı.[br]"Nasılsın?" diye sordu. "İyiyim" diye yalan söyledi.[br]Yalan söylediğini biliyordu. Ne yapması gerektiğini de...</Entry>
+		<Entry Name="Load_Text_06">[br]Bir sonraki seans için notlarını alıyordu. "Ya..." diye düşündü önlüğünü düzeltirken, "Ya başarılı olursam?".[br]Heyhat! O ve onun önlüğü için başka planları vardı...</Entry>
+		<Entry Name="Load_Text_07">[br]"Hiç unutmak istemediğiniz anılarınız var mı?..."[br]"Gerçekliğin melodisini duyabiliyor musunuz?..."[br]"Hiç verdiğiniz sözü tutmadığınız oldu mu?..."[br][br]Adam hiç durmadan hayat değiştiren tecrübelerden konuşuyordu... Bunlar onu neredeyse güldürecekti. Sonra birden verdiği söz aklına geldi...</Entry>
+		<Entry Name="Load_Text_08">[br]"Tereyağından kıl çekmek kadar kolaydı", dedi Patrick; "onu burada ziyaret etmek çok daha kolay olacak. Şimdi... şu konu hakkında..."
+		[br]Sonunda gerçek niyetini açığa çıkarıyordu...</Entry>
+		<Entry Name="Load_Text_09">[br]Yakalandım. Kaçırıldım. Bayıltıldım. Alıkonuldum...[br]Sıradan, yağmurlu, kasvetli, Grace'i ziyarete gelidğim bir gündü...[br]Gök gürültüsünden korkardı, hatırlıyorum...[br]İlk tanıştığımız zamanı hatırlıyorum... yağmurluydu...</Entry>
+		<Entry Name="Load_Text_10">[br][br]Tüm olanlar... Unuttuğum - unutturulduğum - tüm geçmiş... ve...[br][br][br]unutmak istediğim tüm geçmiş...</Entry>
+    </CATEGORY>	
+	<CATEGORY Name="Ending">
+		<Entry Name="MyCredits">*White Night[br][br]
+		An "Amnesia: The Dark Descent (C) 2011 Frictional Games" Mod
+		[br][br][br]
+		[br][br]*Presents[br][br]
+		Tanshaydar (Tansel Altınel)[br][br][br]
+		- Design, Story, Development, Programming, etc.-[br]
+		Tansel Altınel[br][br][br]
+		- Voice Acting -[br]
+		David: David Lyon[br]
+		Grace: Amanda Ford[br]
+		Sofia: Deyanira Gomez[br]
+		Dr. Patrick Parr: Ryan Terry (Cryaotic)[br]
+		Last Psychiatrist: Miss Rigi[br][br][br]
+		- Music -[br]
+		Broken Notes[br]
+		Liminality[br]
+		See music_credits.txt for respective credits[br][br][br]
+		- Beta Testing -[br]
+		David Lyon - Lee(Huge thanks, really!)[br]
+		Yaşar Arabacı - yasar11732 (Ambitious)[br]
+		Plato Mavropoulos - plutomaniac (Bug Hunter!)[br]
+		Glenn Winkelmann Jr. - C-zom[br]
+		Gizem Tavukçu (Thanks...)[br]
+		Ünal Yıldız (unalsnake)[br]
+		[br][br][br]
+		-Custom Flashlight[br]
+		HD Flashlight model: DIGIByte (from FG community)[br]
+		Hand Animations: MrBigzy (from FG community)[br]
+		File Editing and structure: Xiphirx (from FG community)[br][br]
+		-Many Other Custom Models and Textures[br]
+		See disclaimer.txt for reference[br][br]
+		-Credits Music[br]
+		Higurashi Main Theme - Kawai Kenji[br][br][br]
+		[br][br]*Special Thanks[br][br]
+		Although she does not love me anymore... my ex-girlfriend, Gizem, for pushing me, giving great ideas, testing the mod, being in my life[br][br][br]
+		My friend, Ünal, for sketching two good levels and constantly testing the mod[br][br][br]
+		David Lyon, for giving his sexy voice for David, ideas, and being the first one giving proper feedback, thanks to his criticism and all of his efforts. He is a game critic so his ideas helped me a lot[br][br][br]
+		yasar11732, for constantly testing the mod, teaching and helping with modeling issues, being sick in the mind, being a good roommate[br][br][br]
+		Mkilbride, for giving criticism and ideas to make the mod even better[br][br][br]
+		Amanda Ford, for giving Grace a soul, making the twists realistic[br][br][br]
+		Deyanira Gomez, for her great work and making Dr. Sofia sound like a real doctor and psychopat[br][br][br]
+		Ryan Terry, for letting Patrick Parr to be a really legendary psychiatrist[br][br][br]
+		Everlone (from FG community) for teaching how to convert models from Penumbra series or even from outside[br][br][br]
+		Modsentry, C-zom(Glenn) specifically, for his support and spreading the word, criticism, ideas, testing and a great review[br][br][br]
+		ModDB, for content hosting and giving the support to great mods[br][br][br]
+		Frictional Games, for making such a great game, I love you guys![br][br][br][br][br]
+		It's a cliché, but you, for playing till the end, I really hope you enjoyed!..
+		[br][br][br][br][br][br]
+		This mod is my first creation ever and aimed to be a test for immersion and storytelling.[br]If you have any questions please contact me: tansel[at]tanshaydar.com[br][br][br]
+		I hope you enjoyed a lot, and I hope you noticed the symbolism. I'd like to hear your comments and feedback for my future projects!
+		[br][br][br][br][br][br]David's Story has ended. See you in another story![br][br][br][br]
+		Tanshaydar.com</Entry>
+    </CATEGORY>
+	<CATEGORY Name="PreMenu">
+		<Entry Name="WelcomeMessage01">Bugünkü seansımıza hoşgeldin.[br][br]Takip eden mesajlar zihninizden en iyi sonucu alabilmemiz için birkaç ipucu niteliğindedir.</Entry>
+		<Entry Name="WelcomeMessage02">Bu seans kazanma veya kaybetme üzerine değildir, doğru cevap yoktur. [br][br]Bahis konusu sizin zihniniz. Onu kırmamaya çalışın.</Entry>
+		<Entry Name="WelcomeMessage03">Amnesia: The Dark Descent harika bir kayıt mekanizmasına sahiptir ve endişe etmenize gerek yoktur. Basit tutun, kendinizi seansın akışına bırakın, hikâyeyi taikip edin, seansı tamamlayın. Doktorunuz olarak, her şeyin icabına bakacağım, ama eğer seansı erkenden terketmek isterseniz, serbestsiniz. Daha sonra hatırlamak için kaydedip çıkabilirsiniz.</Entry>
+		<Entry Name="WelcomeMessage04">White Night tamamen hikâye odaklı bir seanstır. Notları okumanın, gördükleriniz, insanların size söyledikleri ve olanlar hakkında düşünmenin tadını çıkarın. [br][br]Karşılaştığınız herhangi bir şeyle savaşmaya kalkışmayın. Onun yerine, zihninizi kullanın, seans boyunca verilen direktiflere uyun. Bana güvenin, zihninizi iyileştirmek için buradayım.</Entry>
+		<Entry Name="WelcomeMessage05">Aydınlık ve karanlık arasındaki geçiş bu seans için oldukça önemlidir, o yüzden gama ayarlarını düzgün yapmalısınız. Aşağıdaki kontrol çubuğunu kullanarak ayarı yapabilirsiniz. Sağdaki kutu zorlukla görülebilir halde olmalıdır. Gamayı fazla açmamaya dikkat edin, yoksa seanstan alacağınız verim düşecektir. [br][br]Ayrıca karanlık bir odada kulaklık kullanarak seansa katılmanız en iyi verimi almanız için önemlidir. Unutmayın, hikâye önemlidir; seansı geçireceğiniz bölümler de oldukça önemlidir. Seansı kendiniz için verimsiz hale getirmeyin.</Entry>
+		<Entry Name="WelcomeMessage06">Bu kadar. Hadi bugünkü seansımıza başlayalım. Umarım bu defa hazırsınızdır.[br][br][br]- Dr. Sofia</Entry>
+	</CATEGORY>
+	  <CATEGORY Name="Levels">
+		<Entry Name="Intro">Giriş</Entry>
+		<Entry Name="Rooms">Odalar</Entry>
+		<Entry Name="Stairs">Merdiven</Entry>
+		<Entry Name="Hospital">Hastane</Entry>
+		<Entry Name="Morgue">Morg</Entry>
+		<Entry Name="Basement">Bodrum</Entry>
+		<Entry Name="Tunnels">Tüneller</Entry>
+		<Entry Name="Asylum">Tımarhane</Entry>
+		<Entry Name="Entrance">Giriş Salonu</Entry>
+		<Entry Name="Remember">Hatırla</Entry>
+		<Entry Name="Ending">Kapanış</Entry>
+	  </CATEGORY>
+</LANGUAGE>

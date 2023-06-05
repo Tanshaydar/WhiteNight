@@ -1,0 +1,41 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 180" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="180 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="-0.824147 1.66387 -0.0055989" CameraTarget="-0.40901 0 0.267821" CameraZoom="3.36013" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/white_night/bathtub/bathtub_no_plump.dae">
+            <SubMesh Active="true" ID="20" Material="" Name="bathtub" Rotation="1.5708 0 0" Scale="0.28 0.28 0.28" SubMeshID="0" Tag="" WorldPos="-0.192586 0.275167 -0.152721" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="11" Name="Shape_2" RelativeRotation="1.5708 0 0" RelativeScale="2 1 0.1" RelativeTranslation="0.140161 -0.169935 -0.0113576" Rotation="1.5708 0 0" Scale="2 1 0.1" ShapeType="Box" Tag="" WorldPos="0.056897 0.118816 0.0232763" />
+            <BodyShape Active="true" ID="12" Name="Shape_3" RelativeRotation="-0.226893 0 0" RelativeScale="2 0.75 0.1" RelativeTranslation="0.0859531 0.154967 -0.431841" Rotation="-0.226893 0 0" Scale="2 0.75 0.1" ShapeType="Box" Tag="" WorldPos="0.00268942 0.443718 -0.397207" />
+            <BodyShape Active="true" ID="13" Name="Shape_4" RelativeRotation="0.226893 0 0" RelativeScale="2 0.75 0.1" RelativeTranslation="0.0859531 0.136915 0.431841" Rotation="0.226893 0 0" Scale="2 0.75 0.1" ShapeType="Box" Tag="" WorldPos="0.00268942 0.425667 0.466475" />
+            <BodyShape Active="true" ID="14" Name="Shape_5" RelativeRotation="1.5708 0 1.5708" RelativeScale="0.75 1 0.1" RelativeTranslation="1.11951 0.163084 -0.0113576" Rotation="1.5708 0 1.5708" Scale="0.75 1 0.1" ShapeType="Box" Tag="" WorldPos="1.03624 0.451836 0.0232763" />
+            <BodyShape Active="true" ID="17" Name="Shape_1" RelativeRotation="0 0 0.555877" RelativeScale="0.1 0.75 0.5" RelativeTranslation="-1.11951 0.162522 -0.0188459" Rotation="0 0 0.555877" Scale="0.1 0.75 0.5" ShapeType="Box" Tag="" WorldPos="-1.20277 0.451274 0.015788" />
+            <BodyShape Active="true" ID="18" Name="Shape_8" RelativeRotation="0.396768 0.651443 0.604673" RelativeScale="0.1 0.75 0.5" RelativeTranslation="-1.02755 0.169935 0.338588" Rotation="0.396768 0.651443 0.604673" Scale="0.1 0.75 0.5" ShapeType="Box" Tag="" WorldPos="-1.11082 0.458687 0.373222" />
+            <BodyShape Active="true" ID="19" Name="Shape_9" RelativeRotation="-0.537135 -0.849645 0.670427" RelativeScale="0.1 0.75 0.5" RelativeTranslation="-0.929133 0.100191 -0.413014" Rotation="-0.537135 -0.849645 0.670427" Scale="0.1 0.75 0.5" ShapeType="Box" Tag="" WorldPos="-1.0124 0.388943 -0.37838" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="false" ID="22" LinearDamping="0" Mass="0" Material="Generic_Hard" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_1" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="-0.0832637 0.288752 0.0346339">
+                <Shape ID="11" />
+                <Shape ID="12" />
+                <Shape ID="13" />
+                <Shape ID="14" />
+                <Shape ID="17" />
+                <Shape ID="18" />
+                <Shape ID="19" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="StaticProp" />
+</Entity>

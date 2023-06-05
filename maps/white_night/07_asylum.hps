@@ -1,0 +1,47 @@
+void OnStart()
+{
+	SetSanityDrainDisabled( true);
+	SetPlayerHealth(100);
+	SetInventoryDisabled(true);
+	SetLanternDisabled(true);
+	SetMapDisplayNameEntry("Asylum");
+	
+	PlayMusic("asylum", true, 0.6f, 10, 1, true);
+	ChangePlayerSpeed(0.3f);
+	
+	for(int i = 1; i <= 11; i++)
+		PlaySoundAtEntity("Cricet"+i, "cricket.snt", "cricket_"+i, 2, false);
+	
+	for(int i = 1; i <= 7; i++)
+		AddEntityCollideCallback("Player", "ScriptArea_"+i, "GraceFlashback", true, 1);
+		
+	AutoSave();
+}
+
+void ChangePlayerSpeed(float speed)
+{
+	SetPlayerMoveSpeedMul(speed);
+	SetPlayerRunSpeedMul(speed);
+	SetPlayerLookSpeedMul(speed);
+}
+
+void GraceFlashback(string &in asParent, string &in asChild, int alState)
+{
+	SetSanityDrainDisabled(true);
+	AddEffectVoice("7_"+StringSub(asChild, 11, 1)+".ogg", "", "Voice", "07_asylum_"+StringSub(asChild, 11, 1), false, "", 1, 10 );
+}
+
+void OnEnter()
+{
+	PreloadParticleSystem("ps_area_fog_xlarge");
+	SetSanityDrainDisabled(true);
+}
+////////////////////////////
+// Run when leaving map
+void OnLeave()
+{
+	StopMusic(5.0f, 1);
+	//////////////////////
+	//Load Screen Setup
+	SetupLoadScreen("LoadingText", "Load_Text_08", 1, "game_loading_asylum.jpg");
+}

@@ -1,0 +1,8 @@
+<Material>
+  <Main Type="BumpSpecular" PhysicsMaterial="Dyn_Electronics" UseAlpha="False" DepthTest="True" />
+  <TextureUnits>
+    <Diffuse File="item_flashlight_hud.jpg" Compress="false" Type="2D" Mipmaps="true" Wrap="Repeat" AnimMode="None" AnimFrameTime="1" />
+    <NMap File="item_flashlight_hud_bump.tga" Compress="false" Type="2D" Mipmaps="true" Wrap="Repeat" AnimMode="None" AnimFrameTime="1" />
+    <Illumination File="" Compress="false" Type="2D" Mipmaps="true" Wrap="Repeat" AnimMode="None" AnimFrameTime="1" />
+  </TextureUnits>
+</Material>

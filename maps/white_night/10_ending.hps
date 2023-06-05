@@ -1,0 +1,274 @@
+////////////////////////////
+// Run first time starting map
+void OnStart()
+{
+	SetSanityDrainDisabled(true);
+	SetInventoryDisabled(true);
+	SetLanternDisabled(true);
+	SetPlayerHealth(100);
+	SetPlayerSanity(100);
+	SetMapDisplayNameEntry("Ending");
+	RotatePropToSpeed("ceiling_fan_long_1", 5, 5, 0, 1, 0, false, "");
+	RotatePropToSpeed("ceiling_fan_long_2", 5, 5, 0, 1, 0, false, "");
+	
+	AddEntityCollideCallback("Player", "Elevator", "Elevator", true, 1);
+	
+	/////////////////////////////////////
+	FadeOut(0);
+	AddTimer("WakeUp", 5, "WakeUp");
+	AutoSave();
+}
+
+void WakeUp(string &in asTimer)
+{
+	SetPlayerActive(false);
+	SetPlayerCrouching(true);
+	FadePlayerRollTo(75, 10, 100);
+	MovePlayerHeadPos(0, -0.9f, 0, 10, 0.5f);
+	StartPlayerLookAt("ceiling_fan_long_1", 10, 10, "");
+	AddEffectVoice("10_1", "", "Voice", "10_ending_01", false, "", 0, 0 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("10_2", "", "Voice", "10_ending_02", false, "", 0, 0 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("10_3", "", "Voice", "10_ending_03", false, "", 0, 0 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("10_4", "", "Voice", "10_ending_04", false, "", 0, 0 );
+	SetEffectVoiceOverCallback("Waking");
+	SetSanityDrainDisabled(true);
+}
+void Waking()
+{
+	FadeIn(10);
+	FadeImageTrailTo(2,1);
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("10_5", "", "Voice", "10_ending_05", false, "", 0, 0 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("10_6", "", "Voice", "10_ending_06", false, "", 0, 0 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("10_7", "", "Voice", "10_ending_07", false, "", 0, 0 );
+	SetEffectVoiceOverCallback("Waking2");
+	SetSanityDrainDisabled(true);
+}
+void Waking2()
+{
+	FadePlayerRollTo(0, 10, 60);
+	MovePlayerHeadPos(0, 0, 0, 1, 0.5f);
+	SetPlayerActive(true);
+	StopPlayerLookAt();
+	FadeImageTrailTo( 0, 1);
+}
+///////////////////////////
+//COLLISIONS
+void Elevator(string &in asParent, string &in asChild, int alState)
+{
+	SetMoveObjectState("door_air_right_3", 0);
+	SetMoveObjectState("door_air_left_3", 0);
+}
+
+///////////////////////////
+//INTERACTIONS
+void LastLine(string &in asEntity)
+{
+	SetPlayerActive(false);
+	StartPlayerLookAt("furniture_office_chair01_1", 5, 5, "");
+	AddEffectVoice("10_8", "", "Voice", "10_ending_08", false, "", 0, 0 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("10_9", "", "Voice", "10_ending_09", false, "", 0, 0 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("10_10", "", "Voice", "10_ending_10", false, "", 0, 0 );
+	SetEffectVoiceOverCallback("Done");
+	SetSanityDrainDisabled(true);
+}
+void Done()
+{
+	StopPlayerLookAt();
+	SetPlayerActive(true);
+}
+void ElevatorButton(string &in asEntity)
+{
+	SetMoveObjectState("door_air_right_3", -1);
+	SetMoveObjectState("door_air_left_3", 1);
+	SetSanityDrainDisabled(true);
+}
+
+void ElevatorButton(string &in asEntity, int alState)
+{
+	SetPlayerActive(false);
+	ShowPlayerCrossHairIcons(false);
+	StartScreenShake(0.01, 4.7, 0.05, 0.5);
+	PlaySoundAtEntity("Elevator", "elevator.snt", "Player", 0, true);
+	FadeOut(2);
+	AddTimer("elevator_lamp_3", 0.1f, "Flickering");
+	AddTimer("street_lamp_19", 10, "Flickering");
+	AddTimer("elevator_lamp_3", 3, "StopFlickering");
+	AddTimer("PlayerStartArea_2", 6, "Teleporter");
+	AddTimer("Second", 9, "Teleporter");
+	SetSanityDrainDisabled(true);
+}
+
+void Teleporter(string &in asTimer)
+{
+	if(asTimer == "PlayerStartArea_2")
+	{
+		TeleportPlayer(asTimer);
+		FadeIn(3);
+	}
+	else
+	{
+		SetMoveObjectState("door_air_right_4", -1);
+		SetMoveObjectState("door_air_left_4", 1);
+		SetPlayerActive(true);
+		SetSkyBoxActive(false);
+		StopSound("Elevator", 0);
+		ShowPlayerCrossHairIcons(true);
+		//StartCredits("credits.ogg", false, "Ending", "MyCredits", 111); 
+	}
+}
+
+void Stairs(string &in asEntity){	SetMessage( "Signs", "Ending_Stairs", 0);}
+void EndingMusic(string &in asEntity){	PlayMusic("ending", true, 1, 5, 1, true);}
+void Die(string &in asEntity){	AddTimer("TimerFlashBack", 1, "TimerFlashBack");}
+
+void TimerFlashBack(string &in asTimer)
+{	
+	SetSanityDrainDisabled(true);
+	/*Configurables
+	 */
+	float fEventSpeed = 2.0f;	//The default time between steps in an event
+	
+	/*Helpers - Do not edit
+	 */
+	string sEvent = asTimer;	//Using first timer name for variable, timer name & callback for the timer that loops
+	AddLocalVarInt(sEvent, 1);	//What step to play in the event
+	AddDebugMessage("-|"+GetLocalVarInt(sEvent), false);
+	
+	switch(GetLocalVarInt(sEvent)){
+		case 1:
+			SetPlayerLookSpeedMul(0.8f);
+			SetPlayerCrouchDisabled(true);
+			SetPlayerJumpDisabled(true);
+			ShowPlayerCrossHairIcons(false);			
+			StartEffectFlash(0.1f, 0.1f, 0.25f);
+			SetPlayerRunSpeedMul(0.6);
+			SetPlayerMoveSpeedMul(0.75f);
+			PlaySoundAtEntity("SoundFlash1", "scare_thump_flash.snt", "Player", 0.0f, false);
+			PlaySoundAtEntity("Breath1", "react_breath.snt", "Player", 0, false);
+			FadeOut(1);
+		break;
+		case 2:
+			FadeIn(1);
+			SetPlayerLookSpeedMul(0.6f);
+			StartScreenShake(0.01f, 0.75f, 0.25f,1.5f);
+			FadePlayerRollTo(60, 5, 5);
+			FadeImageTrailTo(1.2f, 2);
+			FadeSepiaColorTo(0.65f, 0.5f);
+			FadePlayerFOVMulTo(4, 0.04f);
+			MovePlayerHeadPos(0, -1.2f, 0, 0.3f, 0.25f);
+			PlaySoundAtEntity("Breath1", "react_breath.snt", "Player", 0, false);
+		break;
+		case 3:
+			FadeOut(1);
+			SetPlayerLookSpeedMul(0.4f);
+			FadePlayerRollTo(-60, 10, 10);
+			MovePlayerHeadPos(0, 0, 0, 0.2f, 0.25f);
+			SetPlayerRunSpeedMul(0.3);
+			SetPlayerMoveSpeedMul(0.5f);
+			PlaySoundAtEntity("Breath1", "react_breath.snt", "Player", 0, false);
+			fEventSpeed = 1.75f;
+		break;
+		case 4:
+			FadeIn(1);
+			SetPlayerLookSpeedMul(0.2f);
+			FadePlayerRollTo(0, 10, 10);
+			MovePlayerHeadPos(0, -1.2f, 0, 1.0f, 0.25f);
+			SetPlayerRunSpeedMul(0);
+			SetPlayerMoveSpeedMul(0.3f);
+			PlaySoundAtEntity("Breath1", "react_breath.snt", "Player", 1.25f, false);
+			fEventSpeed = 2.0f;
+		break;
+		case 5:
+			FadeOut(3);
+			MovePlayerHeadPos(0, 0, 0, 1, 0.5f);
+			PlaySoundAtEntity("Breath1", "react_breath.snt", "Player", 1.5f, false);
+		break;
+		case 6:
+			FadeImageTrailTo(0,0.2f);
+			FadePlayerFOVMulTo(1, 0.2f);
+			TeleportPlayer("Sofia");
+			SetPlayerCrouching(true);
+			SetPlayerActive(true);
+			SetPlayerRunSpeedMul(0);
+			SetPlayerMoveSpeedMul(0);
+			SetPlayerLookSpeedMul(0.2f);
+		break;
+		case 7:
+			FadeIn(2);
+			StartPlayerLookAt("lamp_wall_light01_8", 2, 2, "");
+			AddEffectVoice("6_11.ogg", "", "Voice", "06_tunnels_11", true, "ScriptArea_1", 1, 10 );
+		break;
+		case 8:
+			FadeOut(1);
+		break;
+		case 9:
+			FadeIn(2);
+			fEventSpeed = 3.0f;
+		break;
+		case 11:
+			StartPlayerLookAt("ScriptArea_1", 2, 2, "");
+			AddEffectVoice("10_11", "", "Voice", "10_ending_11", false, "", 0, 0 );
+			fEventSpeed = 2.0f;
+		break;
+		case 14:
+			FadeOut(5);
+			StopMusic(5, 1);
+		break;
+		case 16:
+			StartCredits("credits.ogg", false, "Ending", "MyCredits", 111); 
+		break;
+	}
+	
+	AddTimer(sEvent, fEventSpeed, sEvent);
+}
+
+/////////////////////////////////////////////
+void Flickering(string &in asTimer)
+{
+	AddLocalVarInt("flicker", 1);
+	
+	switch( GetLocalVarInt("flicker") )
+	{
+		case 1:
+			SetLampLit(asTimer, true, false);
+			PlaySoundAtEntity("Lamp_Flicker_1", "lm_light_flicker.snt", asTimer, 0, true);
+		break;
+		case 2:
+			SetLampLit(asTimer, false, false);
+			SetLocalVarInt("flicker", 0);
+		break;
+	}
+	
+	AddTimer(asTimer, RandFloat(0.5f, 1.3f), "Flickering");
+}
+void StopFlickering(string &in asTimer)
+{
+	RemoveTimer(asTimer);
+	SetLampLit(asTimer, true, true);
+}
+////////////////////////////
+// Run when entering map
+void OnEnter()
+{
+	SetSanityDrainDisabled(true);
+}
+
+////////////////////////////
+// Run when leaving map
+void OnLeave()
+{
+	//////////////////////
+	//Load Screen Setup
+}

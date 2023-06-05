@@ -1,0 +1,27 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 180" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="180 0.00869247 -0.408546" CameraTarget="0 0.00869247 -0.408546" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="-0.123443 0.0935403 0.106124" CameraTarget="0.0487055 0 0.16417" CameraZoom="5.5" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities>
+            <SpotLight Active="true" Aspect="1" CastShadows="true" DiffuseColor="0.9 0.9 0.7 0.7" FOV="1.0472" FalloffMap="D:/Amnesia - The Dark Descent/redist/lights/light_falloff_short_fade.tga" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="D:/Amnesia - The Dark Descent/redist/lights/flashlight.tga" GoboAnimFrameTime="0" GoboAnimMode="None" ID="5" Name="SpotLight_2" NearClipPlane="0.25" Radius="18" Rotation="3.14159 0 3.14159" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" SpotFalloffMap="" Tag="" WorldPos="0.005 -0.018 -0.199207" />
+            <PointLight Active="true" CastShadows="false" DiffuseColor="0.1 0.1 0.1 0.1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" ID="9" Name="PointLight_1" Radius="0.5" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="-0.10291 0.0361633 -0.0383414" />
+            <Billboard Active="true" BillboardColor="1 1 1 0.81" BillboardOffset="0" BillboardSize="0.08 0.5" BillboardType="Axis" ConnectLight="SpotLight_2" HaloSourceSize="0.3 0.3 0.3" ID="10" IsHalo="false" MaterialFile="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/billboards/bb_yellow_lightray.mat" Name="Billboard_3" Rotation="-1.5708 0 -3.14159" Tag="" WorldPos="0.005 -0.018 0.263" />
+        </Entities>
+        <Mesh Filename="entities/white_night/flashlight/hand_flashlight.dae">
+            <SubMesh Active="true" ID="0" Material="" Name="mesh_PIVOT" Rotation="0 0 0" Scale="0.03 0.03 0.03" SubMeshID="0" Tag="" WorldPos="0.005 -0.018 -0.043" />
+        </Mesh>
+        <Bones />
+        <Shapes />
+        <Bodies />
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="HandObject" />
+</Entity>

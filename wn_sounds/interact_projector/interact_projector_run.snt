@@ -1,0 +1,8 @@
+<SOUNDENTITY>
+  <SOUNDS>
+  	<Main>
+		<Sound File="interact_projector_run1" />
+  	</Main>
+  </SOUNDS>
+  <PROPERTIES Volume="0.6" MinDistance="0.1" MaxDistance="6" Random="1" Interval="0" FadeEnd="False" FadeStart="False" Stream="False" Loop="True" Use3D="False" Blockable="True" BlockVolumeMul="0.5" Priority="0" />
+</SOUNDENTITY>

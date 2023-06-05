@@ -1,0 +1,395 @@
+void OnStart()
+{
+	SetMapDisplayNameEntry("Stairs");
+	SetSanityDrainDisabled(true);
+
+	//Use Callbacks
+	AddUseItemCallback("", "key_laboratory_1", "castle_1", "KeyOnDoor", true);
+	AddUseItemCallback("", "crowbar_2", "prison_section_1", "UseCrowbarOnDoor", true);
+	
+	//Area Callbacks
+	for(int i = 1; i <=6; i++)
+		AddEntityCollideCallback("stone_small01_"+i, "crowbar_area", "CrowBar", true, 1);
+	AddEntityCollideCallback("crowbar_joint_1", "BreakDoor", "CollideAreaBreakDoor", true, 1);
+	AddEntityCollideCallback("Player", "Enemy", "ActivateEnemy", true, 1);
+	AddEntityCollideCallback("Player", "Enemy_1", "DeActivateEnemy", true, 1);
+	AddEntityCollideCallback("Player", "Rooms", "DeActivateStairs", true, 1);
+	AddEntityCollideCallback("Player", "Rooms_1", "OpenDoors", true, 1);
+	AddEntityCollideCallback("Player", "Rooms_2", "CloseDoors", true, 1);
+	AddEntityCollideCallback("Player", "speaker_1", "SofiaTalks", true, 1);
+	AddEntityCollideCallback("Player", "death", "PlayerFalls", false, 1);
+	AddEntityCollideCallback("Player", "LevelEnd", "NextLevel", true, 1);
+	AddEntityCollideCallback("Player", "LightBulb", "LightBulb", true, 1);
+	AddEntityCollideCallback("Player", "Enemy_Sound", "Enemy_Sound", true, 1);
+	
+	//Bits&Pieces	
+	AddPropForce("hanging_lantern_ceiling_chain_1", 0, 0, 90.0f, "World");
+	AddTimer("MusicPlayer", 1, "PlayTheMusic");
+
+	SetLightVisible("debris",false);
+	
+	//Finally Start
+	FadeOut(0);
+	FadeIn(5);
+}
+
+void PlayTheMusic(string &in asTimer)
+{
+	PlayMusic("mental_1_1", true, 0.4f, 0, 1, true);
+	SetSanityDrainDisabled(true);
+	AutoSave();
+}
+
+////////////////////////////////////////////////////////////////////////////
+//Collide CallBacks
+
+void CrowBar(string &in asParent, string &in asChild, int alState)
+{
+	AddPlayerSanity(10.0f);
+	SetEntityActive("crowbar_1", false);
+	SetEntityActive("crowbar_2", true);
+	for(int i = 1; i <= 6; i++)
+		RemoveEntityCollideCallback("stone_small01_"+i, "crowbar_area");
+	SetSanityDrainDisabled(true);
+}
+
+void ActivateEnemy(string &in asParent, string &in asChild, int alState)
+{
+	SetEntityActive("character_infected_1",true);
+	ShowEnemyPlayerPosition("character_infected_1");
+}
+
+void DeActivateEnemy(string &in asParent, string &in asChild, int alState)
+{
+	SetEntityActive("character_infected_1", false);
+	SetEntityActive("cave_in_2", true);
+	SetEntityActive("corpse_male_arm_1", true);
+	SetEntityActive("rock_large01_push_2", true);
+	SetEntityActive("rock_large01_push_3", true);
+	SetEntityActive("note_manual_1", false);
+	StartPlayerLookAt("rock_large01_push_3", 4, 100, "");
+	AddTimer("LookAtDone", 1, "StopLook");
+	CreateParticleSystemAtEntity("Dust", "ps_break_cavein.ps", "dust", true);
+	SetLightVisible("debris", true);
+	SetEntityActive("lamp_wall_lamp_5", false);
+	PlaySoundAtEntity("CaveIn", "break_wood_metal.snt", "dust", 0, true);
+	SetSanityDrainDisabled(true);
+}
+
+void CollideAreaBreakDoor(string &in asParent, string &in asChild, int alState)
+{
+	GiveSanityBoostSmall();
+		
+	SetSwingDoorLocked("prison_section_1", false, false);
+	SetSwingDoorDisableAutoClose("prison_section_1", true);
+	SetSwingDoorClosed("prison_section_1", false,false);
+	
+	PlaySoundAtEntity("break","break_wood_metal", "AreaBreakEffect", 0, false);
+	CreateParticleSystemAtEntity("breakps", "ps_hit_wood", "AreaBreakEffect", false);
+	AddPropImpulse("prison_section_1", 0, 0, -3, "World");
+	
+	SetEntityActive("crowbar_joint_1", false);
+
+	AddDebugMessage("Break door!", false);	
+}
+
+void DeActivateStairs(string &in asParent, string &in asChild, int alState)
+{
+	SetSwingDoorClosed("castle_1", true, true);
+	SetSwingDoorLocked("castle_1", true, true);
+	DestroyParticleSystem("ParticleSystem_1");
+	SetEntityActive("lamp_wall_lamp_1", false);
+	SetEntityActive("lamp_wall_lamp_2", false);
+	SetEntityActive("lamp_wall_lamp_3", false);
+	SetEntityActive("lamp_wall_lamp_4", false);
+	SetEntityActive("lamp_wall_lamp_5", false);
+	SetEntityActive("lamp_wall_lamp_6", false);
+	SetEntityActive("lamp_wall_lamp_7", false);
+	SetEntityActive("lamp_wall_lamp_8", false);
+	SetEntityActive("lamp_wall_lamp_9", false);
+	SetEntityActive("lamp_wall_lamp_10", false);
+	SetEntityActive("lamp_wall_lamp_11", false);
+	SetLampLit("hanging_lantern_ceiling_chain_1", false, false);
+	SetSanityDrainDisabled(true);
+	
+	//Rotator
+	RotatePropToSpeed("bed_simple_1", 2.0f, 2.0f, 0, 1, 0, false, "");
+	RotatePropToSpeed("bed_simple_2", 2.0f, 2.0f, 0, 1, 0, false, "");
+	RotatePropToSpeed("infirmary_hospital_bed_3", 2.0f, 2.0f, 0, 1, 0, false, "");
+	RotatePropToSpeed("table_metal_1", 2.0f, 2.0f, 0, 1, 0, false, "");
+	RotatePropToSpeed("work_desk_2", 2.0f, 2.0f, 0, 1, 0, false, "");
+	RotatePropToSpeed("shelf_high02_1", 2.0f, 2.0f, 0, 1, 0, false, "");
+	RotatePropToSpeed("mansionbase_secret_passage_1", 2.0f, 2.0f, 0, 1, 0, false, "");
+	RotatePropToSpeed("furniture_madrass_1", 2.0f, 2.0f, 0, 1, 0, false, "");
+	RotatePropToSpeed("clock_grandfather_1", 2.0f, 2.0f, 0, 1, 0, false, "");
+	RotatePropToSpeed("stone_altar_large_1", 2.0f, 2.0f, 0, 1, 0, false, "");
+	
+	SetLampLit("iron_mine_lamp_10", true, true);
+	PlaySoundAtEntity("Spot", "spot.snt", "spot_0", 0, true);
+	AddTimer("OpenLights", 1.0f, "Lighto");
+	AutoSave();
+}
+
+void Lighto(string &in asTimer)
+{
+	AddLocalVarInt("Lights", 1);
+	
+	SetLampLit("iron_mine_lamp_1"+GetLocalVarInt("Lights"), true, true);
+	PlaySoundAtEntity("Spot", "spot.snt", "spot_"+GetLocalVarInt("Lights"), 0, true);
+	
+	AddDebugMessage("Lights: "+GetLocalVarInt("Lights"), false);
+	
+	if( GetLocalVarInt("Lights") < 10)
+		AddTimer("OpenLights", 1.0f, "Lighto");
+	else
+	{
+		SetLampLit("iron_mine_lamp_20", true, true);
+		SetLampLit("iron_mine_lamp_21", true, true);
+		SetLampLit("iron_mine_lamp_22", true, true);
+	}
+	SetSanityDrainDisabled(true);
+}
+
+void OpenDoors(string &in asParent, string &in asChild, int alState)
+{
+	SetSanityDrainDisabled(true);
+	AddTimer("DoorOpener", 0.2f, "DoorOpener");
+}
+
+void DoorOpener(string &in asTimer)
+{
+	SetSanityDrainDisabled(true);
+	AddLocalVarInt("Door", 1);
+	SetSwingDoorClosed("prison_k_"+GetLocalVarInt("Door"), false, true);
+	SetSwingDoorDisableAutoClose("prison_k_"+GetLocalVarInt("Door"), true);
+	AddPropImpulse("prison_k_"+GetLocalVarInt("Door"), 0.0f, 0.0f, 100.0f, "World");
+	
+	AddDebugMessage("Doors: "+GetLocalVarInt("Door"), false);
+	
+	AddLocalVarInt("Door", 1);
+	SetSwingDoorClosed("prison_k_"+GetLocalVarInt("Door"), false, true);
+	SetSwingDoorDisableAutoClose("prison_k_"+GetLocalVarInt("Door"), true);
+	AddPropImpulse("prison_k_"+GetLocalVarInt("Door"), 0.0f, 0.0f, -100.0f, "World");
+	
+	AddDebugMessage("Doors: "+GetLocalVarInt("Door"), false);
+	
+	if( GetLocalVarInt("Door") <= 8)
+		AddTimer("DoorOpener", 1, "DoorOpener");
+}
+
+void CloseDoors(string &in asParent, string &in asChild, int alState)
+{
+	AddTimer("DoorCloser", 0.2f, "DoorCloser");
+}
+
+void DoorCloser(string &in asTimer)
+{
+	AddLocalVarInt("Door2", 1);
+	SetSwingDoorLocked("prison_k_"+GetLocalVarInt("Door2"), true, false);
+	
+	AddDebugMessage("Doors: "+GetLocalVarInt("Door2"), false);
+	
+	if( GetLocalVarInt("Door2") <= 8)
+		AddTimer("DoorCloser", 0.2f, "DoorCloser");
+}
+
+void SofiaTalks(string &in asParent, string &in asChild, int alState)
+{
+	StartPlayerLookAt("speaker", 4, 100, "");
+	PlaySoundAtEntity("Speaker", "general_speaker_noise.snt", "speaker", 0.0f, true);
+	AddTimer("Sofiatalks", 0.8f, "SofiaTalks_2");
+	AddTimer("LookAtDone", 1, "StopLook");
+	SetSanityDrainDisabled(true);
+}
+
+void SofiaTalks_2(string &in asTimer){	AddEffectVoice("2_1", "", "Voice", "01_mental_1_01", true, "speaker", 9, 16 );}
+void StopLook(string &in asTimer){	StopPlayerLookAt();}
+
+void PlayerFalls(string &in asParent, string &in asChild, int alState)
+{
+	TeleportPlayer("AfterDeath");
+	AddTimer("health", 2, "health");
+}
+void health(string &in asTimer){	SetPlayerHealth(100.0f);}
+
+void NextLevel(string &in asParent, string &in asChild, int alState)
+{
+	ChangeMap("03_hospital", "PlayerStartArea_1", "", "");
+}
+
+void LightBulb(string &in asParent, string &in asChild, int alState)
+{
+	SetLampLit("lightbulb_light_1", false, true);
+	AddTimer("Light_1", 1, "LightB");
+	AddTimer("Light_2", 2, "LightB");
+	AddTimer("Light_3", 2.3f, "LightB");
+}
+
+void LightB(string &in asTimer)
+{
+	if(asTimer == "Light_1")
+	{
+		SetLampLit("lightbulb_light_1", true, true);
+		PlaySoundAtEntity("Bolt2", "27_orb_done.snt", "lightbulb_light_1", 0, true);
+	}
+	if(asTimer == "Light_2")
+		StopSound("Bolt2", 0);
+	if(asTimer == "Light_3")
+	{
+		SetLampLit("lightbulb_light_1", false, false);
+		PlaySoundAtEntity("BrokenLamp", "break_glass_large", "lightbulb_light_1", 0, false);
+		CreateParticleSystemAtEntity("BrokenGlass", "ps_break_glass_large", "lightbulb_light_1", true);
+	}
+}
+
+void Enemy_Sound(string &in asParent, string &in asChild, int alState)
+{
+	PlaySoundAtEntity("Grunter", "amb_idle_whimp.snt", "lightbulb_1", 0, true);
+	StartPlayerLookAt("lightbulb_1", 4, 50, "");
+	AddTimer("", 0.5f, "LookStopper");
+	CheckPoint("First", "PlayerStartArea_1", "CPCall", "", "");
+}
+
+void CPCall(){	SetEntityActive("note_manual_1", false);}
+
+void LookStopper(string &in asTimer)
+{
+	StopPlayerLookAt();
+	SetMessage("Signs", "WTF", 0);
+}
+
+////////////////////////////////////////////////////////////////////////////
+//Item Use CallBacks
+void KeyOnDoor(string &in asItem, string &in asEntity)
+{
+	SetSwingDoorLocked("castle_1", false, true);
+	PlaySoundAtEntity("", "unlock_door.snt", "castle_1", 0.0f, true);
+	RemoveItem("key_laboratory_1");
+	AddTimer("Electric", 0.3f, "ElectroShock");
+	SetEntityActive("mining_room_wall_1", false);
+}
+
+void ElectroShock(string &in asTimer)
+{
+	AddLocalVarInt("Shock", 1);		//What step to play in the event
+
+	switch( GetLocalVarInt("Shock") ) {
+		case 1:
+			StopMusic( 2, 1);
+			AddDebugMessage("Sahne 1", false);
+			SetPlayerActive(false);
+			ShowPlayerCrossHairIcons(false);
+			SetInventoryDisabled(true);
+			FadeOut(2);
+		break;
+		case 3:
+			AddDebugMessage("Sahne 2", false);
+			TeleportPlayer("PlayerStartArea_2");
+			SetPlayerCrouching(true);
+			FadeIn(3);
+		break;
+		case 6:
+			AddDebugMessage("Sahne 3", false);
+			PlaySoundAtEntity("react1", "react_scare.snt", "sounds", 0, false);
+		break;
+		case 7:
+			AddDebugMessage("Sahne 4", false);
+			StartPlayerLookAt("LookAt_1", 4, 100, "");
+		break;
+		case 8:
+			AddDebugMessage("Sahne 5", false);
+			StartPlayerLookAt("LookAt_2", 4, 100, "");
+			PlaySoundAtEntity("react2", "react_scare.snt", "sounds", 0, false);
+			FadeOut(1);
+		break;
+		case 9:
+			AddDebugMessage("Sahne 6", false);
+			FadeIn(1);
+			StartPlayerLookAt("LookAt_3", 4, 100, "");
+			PlaySoundAtEntity("react3", "react_scare.snt", "sounds", 0, false);
+		break;
+		case 11:
+			StartPlayerLookAt("LookAt_1", 4, 100, "");
+		break;
+		case 14:
+			AddDebugMessage("Sahne 7", false);
+			StartPlayerLookAt("LookAt_4", 4, 100, "");
+		break;
+		case 16:
+			StopPlayerLookAt();
+			AddDebugMessage("Sahne 8", false);
+			PlaySoundAtEntity("react3", "react_scare.snt", "sounds", 0, false);
+			StartScreenShake(0.7f, 7, 5, 5);
+			PlaySoundAtEntity("shock", "electroshock.snt", "sounds", 0, false);
+		break;
+		case 17:
+			AddDebugMessage("Sahne 8 bucuk", false);
+			AddEffectVoice("2_shocked", "", "", "", false, "", 0, 0 );
+		break;
+		case 22:
+			AddDebugMessage("Sahne 9", false);
+			FadeOut(4);
+		break;
+		case 27:
+			StopSound("shock", 3);
+			StopAllEffectVoices(3);
+		break;
+		case 32:
+			AddDebugMessage("Sahne 10", false);	
+			FadeIn(4);
+			TeleportPlayer("PlayerStartArea_3");
+			SetPlayerCrouching(false);
+			SetPlayerActive(true);
+			ShowPlayerCrossHairIcons(true);
+			SetSanityDrainDisabled(true);
+		break;
+		case 33:
+			PlayMusic("mental_1_2", true, 1, 0, 1, true);
+		break;
+	}
+	
+	if( GetLocalVarInt("Shock") < 33)
+		AddTimer("Electric", 1, "ElectroShock");
+}
+
+void UseCrowbarOnDoor(string &in asItem, string &in asEntity)
+{
+	AddTimer(asEntity, 0.2, "TimerSwitchShovel");	
+	PlaySoundAtEntity("pickupcrow","player_crouch.snt", "Player", 0.05, false);
+	SetEntityPlayerInteractCallback(asEntity, "", false);
+}
+
+void TimerSwitchShovel(string &in asTimer)
+{
+	PlaySoundAtEntity("attachshovel","puzzle_place_jar.snt", asTimer, 0, false);
+	
+	SetEntityActive("crowbar_joint_1", true);
+}
+
+void Locked(string &in entity)
+{
+	SetMessage("Signs", "Sign_02", 0);
+}
+void StuckInWall(string &in entity)
+{
+	SetMessage("Signs", "Sign_01", 0);
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+
+void OnEnter()
+{	
+	PreloadSound("spot");	PreloadSound("break_glass_large");	PreloadSound("electroshock");	PreloadSound("react_scare4");	PreloadSound("react_breath1");	PreloadSound("react_breath4");	PreloadSound("react_breath4");	PreloadSound("general_speaker_noise");	PreloadSound("27_orb_done.snt");	PreloadParticleSystem("ps_pipe_flow_small");
+	PreloadParticleSystem("ps_guardian_danger_fog_loop");	PreloadParticleSystem("ps_fire_smoke_stove_small");	PreloadParticleSystem("ps_fire_smoke_epoxy");	PreloadParticleSystem("ps_break_cavein");	PreloadParticleSystem("ps_break_glass_large");
+	SetSanityDrainDisabled(true);
+}
+
+////////////////////////////
+// Run when leaving map
+void OnLeave()
+{
+	StopMusic(3, 1);
+	//////////////////////
+	//Load Screen Setup
+	SetupLoadScreen("LoadingText", "Load_Text_03", 1, "game_loading_stairs_dead.jpg");
+}

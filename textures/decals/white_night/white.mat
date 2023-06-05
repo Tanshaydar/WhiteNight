@@ -1,0 +1,7 @@
+<Material>
+    <Main BlendMode="Mul" DepthTest="true" PhysicsMaterial="Default" Type="decal" UseAlpha="false" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="0" AnimMode="None" Compress="true" File="D:/Amnesia - The Dark Descent/redist/textures/decals/white_night/white.dds" MipMaps="true" Type="2D" Wrap="Repeat" />
+    </TextureUnits>
+    <SpecificVariables />
+</Material>

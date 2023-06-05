@@ -1,0 +1,488 @@
+<LANGUAGE>
+  <RESOURCES>
+    <Directory Path="fonts/eng" />
+    <Directory Path="lang/eng" />
+  </RESOURCES>
+  
+  <CATEGORY Name="Inventory">
+		<Entry Name="ItemName_key_tower_2">klic od haly</Entry>
+		<Entry Name="ItemDesc_key_tower_2">Tento klíč otevře dveře na konci haly.</Entry>
+		<Entry Name="ItemName_strairs">klic nikam</Entry>
+		<Entry Name="ItemDesc_strairs">Nejspíš otevře ty zamčené dveře.</Entry>
+		<Entry Name="ItemName_LunaticDoor">klic k Izolovanym Pacientům</Entry>
+		<Entry Name="ItemDesc_LunaticDoor">Podle štítku je to klíč k hale izolovaných pacientů.</Entry>
+		<Entry Name="ItemName_LunaticDoor2">klic od chodby nemocnice</Entry>
+		<Entry Name="ItemDesc_LunaticDoor2">Podle štítku je to klíč k nemocniční hale.</Entry>
+		<Entry Name="ItemName_DownStairs">klic do oddelení pacientu</Entry>
+		<Entry Name="ItemDesc_DownStairs">Podle štítku je to klíč do oddělení pacientů.</Entry>
+		<Entry Name="ItemName_PatientDownStairs">klic do prízemí</Entry>
+		<Entry Name="ItemDesc_PatientDownStairs">Podle štítku je to klíč do přízemí.</Entry>
+		<Entry Name="ItemName_storage_key">klic od skladiste</Entry>
+		<Entry Name="ItemDesc_storage_key">Nejspíš to otevře dveře od skladiště .</Entry>
+		<Entry Name="ItemName_female">Klíc od zenského oddelení</Entry>
+		<Entry Name="ItemDesc_female">Nejspíš to odemkne ty zamčené dveře v prvním patře.</Entry>
+		<Entry Name="ItemName_axe">Pozární sekera</Entry>
+		<Entry Name="ItemDesc_axe">Stará požární sekera. Vypadá často používaná...</Entry>
+		<Entry Name="ItemName_screwdriver">Sroubovák</Entry>
+		<Entry Name="ItemDesc_screwdriver">Šroubovák. Může přijít vhod když něco nepůjde otevřít.</Entry>
+		<Entry Name="ItemName_hook">háček</Entry>
+		<Entry Name="ItemDesc_hook">Malý háček</Entry>
+		<Entry Name="ItemName_illumination">Osvetlení</Entry>
+		<Entry Name="ItemDesc_illumination">...</Entry>
+		<Entry Name="ItemName_silent_hill">Lano s háčkem</Entry>
+		<Entry Name="ItemDesc_silent_hill">Lano s malým háčkem na konci.</Entry>
+		<Entry Name="ItemName_Lightbulb">Žárovka</Entry>
+		<Entry Name="ItemDesc_Lightbulb">Nepoužitá žárovka. Můžu to použít na výměnu spálených.</Entry>
+		<Entry Name="ItemName_Gasoline_Empty">Prázdny kanystr benzínu</Entry>
+		<Entry Name="ItemDesc_Gasoline_Empty">Prázdný kanystr benzínu. Musím najít benzín a naplnit to.</Entry>
+		<Entry Name="ItemName_Gasoline">Naplneny kanystr benzínu</Entry>
+		<Entry Name="ItemDesc_Gasoline">Naplněný kanystr benzínu. Připraven k použití.</Entry>
+		<Entry Name="ItemName_ring_memories">Prsten vzpomínek</Entry>
+		<Entry Name="ItemDesc_ring_memories">Je to stříbrný prsten. "Vzpomínky" je vyryto uvnitř.</Entry>
+		<Entry Name="ItemName_ring_reflections">Prsten odrazu</Entry>
+		<Entry Name="ItemDesc_ring_reflections">Je to stříbrný prsten. "Odraz" je vyryto uvnitř.</Entry>
+		<Entry Name="ItemName_key_tower_1">klic od sekce</Entry>
+		<Entry Name="ItemDesc_key_tower_1">Tento klíč odemkne tuto sekci nemocnice.</Entry>
+		<Entry Name="ItemName_key_laboratory_1">klic od schodů</Entry>
+		<Entry Name="ItemDesc_key_laboratory_1">Tento klíč odemkne dveře na vrcholu schodiště.</Entry>
+		<Entry Name="ItemName_Sewers">klic ke kanálum</Entry>
+		<Entry Name="ItemDesc_Sewers">Tetno klíč odemkne cestu ke kanálům.</Entry>
+		<Entry Name="ItemDesc_crowbar">Nástroj umožňující použít páku.</Entry>
+		<Entry Name="ItemName_crowbar">Pácidlo</Entry>
+		<Entry Name="ItemDesc_StringPile">Těžké lano z konopí.</Entry>
+		<Entry Name="ItemName_StringPile">Lano</Entry>
+		<Entry Name="ItemName_waxroll_record">Voskovy válec</Entry>
+		<Entry Name="ItemDesc_waxroll_record">Voskový válec pro gramofón.</Entry>
+		<Entry Name="ItemName_cermony_knife">Nůž</Entry>
+		<Entry Name="ItemDesc_cermony_knife">Čepel určená pro řezání a stahování z kůže.</Entry>
+		<Entry Name="ItemDesc_WrigglePrisonBar">Zelezná tyc z barových schodů.</Entry>
+		<Entry Name="ItemName_WrigglePrisonBar">Železná tyč</Entry>
+		<Entry Name="ItemName_HollowNeedle">Dutá jehle</Entry>
+		<Entry Name="ItemDesc_HollowNeedle">Silná injekční jehle.</Entry>
+	</CATEGORY>
+	<CATEGORY Name="Journal">
+		<Entry Name="Quest_Password01_Text">Poslední číslo hesla je polovina druhého čísla.[br]
+		Druhé číslo je stejné jako počet umyvadel na záchodě.</Entry>
+		<Entry Name="Quest_Password02_Text">Třetí číslo hesla je 3. Heslo má čtyři čísla.</Entry>
+		<Entry Name="Quest_Bricks_Text">Zní to jako bych měl najít cestu vpřed použitím cihel.</Entry>
+	    <Entry Name="Note_Text01_Name">poznámka pro TEBE</Entry>
+	    <Entry Name="Note_Text01_Text">Nic si nepamatuješ, že Davide? Ha! Vsadím se že ne. Oni tě nenechají si vzpomenout.[br]Ale prosím Davide, musíš MI pomoct.[br]Pro jednou v životě, mysli na MĚ![br][br]Chci aby ses odsud dostal. Avšak, nemůžu ti slíbit že nebudeš mít zase noční můry.[br][br]Poslední věc: Pozor na to čemu nebo komu budeš věřit...
+		</Entry>
+	    <Entry Name="Note_Text02_Name">Pro Dr. S.</Entry>
+	    <Entry Name="Note_Text02_Text">Pacient stále občas ztrácí části své paměti. Zvláště tu po té události. U tohoto případu to není neočekávané.[br]Nicméně, stále vykazuje schopnost získání a zachování nových a je možné že si pamatuje vše co se stalo.[br][br]Pacientův pokrok by měl být pozorně sledován a když bude třeba, tak by měl být ihned uzamčen.</Entry>
+	    <Entry Name="Note_Text03_Name">další poznámka pro TEBE</Entry>
+	    <Entry Name="Note_Text03_Text">Utíkej než TĚ chytnou![br]A NIKDY se nedívej zpět!</Entry>
+	    <Entry Name="Note_Text04_Name">jeste jedna dalsí poznámka pro TEBE</Entry>
+	    <Entry Name="Note_Text04_Text">Vzpomeň si, jak jsi vše zapoměl.[br]Vzpomeň si kdo JSI.[br][br][br][br][br][br]Musíš se víc snažit Davide.[br]Nebo všichni zahyneme...</Entry>
+		<Entry Name="Note_stranger_Name">Má poslední slova</Entry>
+	    <Entry Name="Note_stranger_Text">Proč mě nikdo nenechá žít v mém vlastním světě?[br]
+		Žárlí na mě? Nebo jsem pro společnost nebezpečný?[br]
+		Chápu že se mě rodina a přátelé snaží vyléčit. Ale proč bych se měl vrátit k životu plnému bídy?[br][br]
+		Bojím se, že mě donutí vše zapomenout... Myslel jsem že se mě doktoři snaží pomoct...</Entry>
+		<Entry Name="Note_formylove1_Name">Udelal jsem to pro svou lásku</Entry>
+	    <Entry Name="Note_formylove1_Text">Tolik jsem ji miloval, tak moc že bez ní nemohu dýchat...[br][br]
+		Když mě sem donesli, řekli mi ,že vše bude v pořádku. Jako bych tomu nesmyslu měl věřit.[br]
+		Nikdy mě nepochopí, tím jsem si jistý.[br][new_page][br]
+		Včera mi vzal prsten a někam ho uzamkl. Měl jsem to lépe skrýt. Byla to má jediná památka na ni. Řekl, že je to část postup. Kdo řekl že chci postupovat? Já chci jen svůj prsten zpět. Můj prsten, s jejím vyrytým odrazem...[br][new_page][br]
+		Dnes jsem to udělal. Zvládl jsem to pro svou lásku. Vzal jsem nůž a hledal v něm. Nebyl tam. Myslím že ho najdu v jeho kabinetu. Vždy si svůj kabinet zamykal. Musí to tam být.</Entry>
+		<Entry Name="Note_formylove2_Name">Nasel jsem to má lásko</Entry>
+	    <Entry Name="Note_formylove2_Text">Po hledání v něm, mě chytili jak ho hledám v jeho kabinetě[br][br]
+		Oni taky našli a vzali mi můj prsten. Můj prsten, vyrytý s jejími vzpomínkami...[br][new_page][br]
+		Když nemám prsten který bych mohl nosit, naco pak mám prsty?</Entry>
+		<Entry Name="Note_formylove3_Name">Pacient #6 Hlásení o smrti</Entry>
+	    <Entry Name="Note_formylove3_Text">-Pacient #6, Pan Jamestown;[br][br]
+		-Důvod ůmrtí: Ztráta krve.[br]
+		-Nalezen? Kdy: Před polednem, okolo 11 dopoledne.[br]
+		-Nalezen? Kde: V jednom ze zamčených pokojů poblíž márnice.[br][br]
+		Dveře byly zamčeny zevnitř, takže se musel zamknout sám. Minulou noc bylo nalezeno tělo vrátného a pacient #6 se ztratil. Podle toho co víme, pacient zabil vrátného nožem který ukradl z márnice, a potom se zamkl v pokoji.[br][new_page][br]
+		Když pacient poprvé přišel byl agresivní a měl bludy, nicméně jeho halucinace se snižovaly. Mimoto se nikdy neoženil, představoval si svou mrtvou manželku které říkal Maria; a často o ní mluvil s vrátným. Proto jsme pozorovali jeho vztah s vrátným v naději, že se to změní na přátelství.[br]
+		Vrátný a pacient si nebyli blízcí, ale často spolu mluvili. Když jsme našli Pána Jamestowna, už byl mrtví kvůli ztrátě krve. Jeho prsty a levá ruka byly uřezané stejným nožem jakým zavraždil vrátného. Zajímalo by mě proč to sobě udělal když ho zabil.[br][new_page][br]
+		Stále nevíme proč zabil vrátného, proč se zamkl uvnitř, proč si usekl prsty a levou ruku, jakoby neměl sebevražedné ůmysly.</Entry>
+		<Entry Name="Note_History_Name">Historie Nemocnice</Entry>
+	    <Entry Name="Note_History_Text">
+		  V roce 1878 byla State Lunatic Hospital v Denveru postavena, pod dozorem vynikajícího Bostonského architekta Nathaniela J Bradleeyho ve venkovském "zcestném prostředí". Bezprostřední krize, která srazila budovu psychiatrické nemocnice severně od Bostonu, skončila v roce 1870 zavřením ůstavu na jihu Bostonu. V roce 1873, Worcester, Taunton a Northampton a Tewksburský azyl pro chronicky postižené pacienty už dohromady ubytovaly 1300 pacientů v jedné budově stavěné na 1000 obyvatel; dalších 1200 pacientů bylo roztroušeno mezi další různé nemocnice.
+		[br][new_page][br]
+		  Mezitím byla nemocnice donucena k poskytnutí obytné léčby a měla se starat o "Mentálně nemocné", její funkce byly rozšířeny tak, aby v roce 1889 nabídly výcvik pro sestřičky a v roce 1895 patologický výzkum v laboratoři. Kolem roku 1920 nemocnice zprovoznila školní kliniky, aby pomohli zjistit mentální postižení u dětí. Během roku 1960 jako výsledek zvýšeného důrazu na alternativní metody léčby a  deinstitutionalizace a společensky založená mentální péče, "lůžková populace se snižovala". Denver State Hospital byla zavřena 24 června 1992 důsledkem škrtů v rozpočtu v mentálním zdravotním systému.
+		[br][new_page][br]
+		  V roce 1998, Denver State Hospital byla znovu otevřena Doktorkou Diane Selwynovou a začala podstupovat částečnou rekonstrukci, aby se vyrovnala moderním standartům. Poté co se jeden z nejvíce uznávaných doktorů v zemi Patrick Parr připojil k nemocničnímu personálu, reputace nemocnice se začala zvyšovat; Nicméně stále "zcestné prostředí" zanechalo v zemi průměrný dojem.
+		[br][new_page][br]
+		(Je tu ručně dopsaná poznámka)[br][br]Dnes je Denver State Hospital zapomenutým a opuštěným místem...
+		</Entry>
+		<Entry Name="Note_Renewal_Name">Obnova prací</Entry>
+	    <Entry Name="Note_Renewal_Text">Jsme pod kompletní generálkou. Všechen starý nábytek a věci budou nahrazeny. Dr. S. je v jejích požadavcích velice přísná.[br][br]Dobře, nemám na mysli to, že se ty staré, ztrouchnivělé dřevěné bedny vymění za silné kovové. Už mě ty štěnice unavují.
+		[br][new_page][br]Co ale nemůžu pochopit je, že když stavěli elektrickou bránu do oddělení izolovaných pacientů, proč po mě chtěli abych hlídal, ať je ta brána pořád zavřená?
+		</Entry>
+		<Entry Name="Note_puzzle_1_3_Name">Její nepríjemnost</Entry>
+	    <Entry Name="Note_puzzle_1_3_Text">#3 -- [2]. Ona to neví, ale já vím, že je to čtyřčíselné.!</Entry>
+		<Entry Name="Note_Clarence_Name">Poznámka pro Dr. Patricka</Entry>
+	    <Entry Name="Note_Clarence_Text">Dr. Patrick[br]
+		Clarence je mimo kontrolu a tak jsem mu podal dávku sedativ.[br]
+		Není to na mě, ale myslím si, že se to zhoršuje. Začal tvrdit že někdo se jménem Philip se ho snaží zbavit. Jestli mi prominete moji zvědavost, chtěl bych jen vědět kdo je ten Philip a proč se ho snaží zabít?[br]
+		Pro prospěch ostatních pacientů jsem ho zamknul do pozorovací cely dokud se mu nedostane náležité léčby.
+		</Entry>
+		<Entry Name="Note_Regression_Name">Návrat</Entry>
+	    <Entry Name="Note_Regression_Text">Jednou mi pacientka, která byla ke mě milá, řekla:[br][br]
+		  "Všichni žijící lidé se spoléhají na svoje vědomosti a vnímání, a tudíž jsou s nimi vázáni. Tyto vazby směřují k přijetí 'reality'.[br][br]
+		  Nicméně vědění a vnímání jsou oboje nejednoznačné, takže 'realita' není nic víc než iluze.[br][br]
+		  Lidé žijí vězněni jejich vlastním vnímáním, vidíte?"
+		[br][new_page][br]
+		"Co je Realita" zeptal jsem se. "Zaleží na tom co odpovím?" odpověděla. Měla pravdu, na tom nezáleží... Jak jsem pak měl dokázat že měla pravdu?[br][br]
+		Od té doby, mě stále pronásleduje jedna otázka: Co když... někdo ztratí všechny vzpomínky? Čemu bude věřit? Co pro něj bude realita? A to nejdůležitější, mohli bychom do něj vložit nové vzpomínky a vytvořit tak pro něj neexistující realitu?[br][br]
+		[br][new_page][br]
+		I když jsem uznávaný skrze celou zemi, nemohl jsem jí zachránit.[br]
+		Ještě se toho musím hodně učit.[br][br]
+		- Dr. Patric Parr</Entry>
+		<Entry Name="Note_Generator_Name">Vymena generátoru</Entry>
+	    <Entry Name="Note_Generator_Text">Při této celkové obnově, je rozhodující, aby byl generátor vyměněn jako první. Nicméně, Dr. S mě neposlechla a teď celá nemocnice trpí z lokálních pádů elektřiny. Tohle ale není moje chyba jako to předchozí.[br][br]
+		Ten generátor je už moc starý a někdy může bezdůvodně vynechat. Minulý týden to zase vypadlo. Pojede, ale v tomto případě nemůže být opraven. 
+		[br][new_page][br]
+		Při stavu nouze:[br][br]
+		1- Ujistěte se že jste naplnili benzínový kanystr.[br]
+		2- Naplňte benzínem nádrž hned vedle generátoru, aby jste získali sílu na start.[br]
+		3- Zatáhněte za páku vedle nádrže.[br]
+		4- páka je taky dost starý. Takže možná budete muset zatáhnout dvakrát.</Entry>
+		<Entry Name="Note_Retrograde_Name">Ribotův Zákon</Entry>
+	    <Entry Name="Note_Retrograde_Text">Zpětná amnesie je ztráta přístupu k událostem které se staly nebo informacím, které se naužil před zraněním nebo na počátku nemoci.[br][br]
+		Ribotův Zákon zpětné amnesie byl předpoklad Thédula Ribota v roce 1881. Staví na tom, že je ve zpětné amnesii časový nárust. Poslední vzpomínky bývají častěji ztraceny než ty mnohem vzdálenější. Ne u všech pacientů trpících zpětnou amnesií byly zaznamenány symptomy Ribotova Zákona.[br][br]
+		"Rozpad paměti je inverzně spojený s novostí události."[br][br]
+		Stačilo napsat, čím jsou vzpomínky starší, tím odolnější proti rozpadu paměti budou.
+		[br][new_page][br]
+		Výzkum podporuje ůvahy Ribotova Zákona. Teorie obávající se relativní síly paměti skrze čas, která nejde přímo testovat. Místo toho se vědci zaměřili na proces zapomínání (amnesie) a její znovuzískání. Ribotův Zákon staví na tom, že při následující rušivé události ukážou pacienti trvající nárust zpětné amnesie která přednostně nahrazuje vzdálenější vzpomínky.[br][br]
+		To znamená, že pokud se někdo pokusí vynutit zpětnou amnesii, přednostně chirurgickou cestou, je téměř nemožné vymazat všechny příslušné vzpomínky bez vyvolání Korsakoffova syndromu; který kompletně zruší cíl výzkumu.
+		[br][new_page][br]
+		Nicméně, nikdo nemůže říct, že pokud to bude pacient podstupovat po částech, není šance že výzkum konečně skončí ůspěšně. Přesto dokonce i Dr. Parr souhlasil i s obtížností postupu, zvláště pro odstranění 'vybraných částí paměti bez trvalého poškození laloku.[br][br]
+		Dr. S silně nesouhlasila s nápadem změnit studování teorie na jednání. Ve skutečnosti, bez skutečného experimentu všechny teorie které tato studia přinesla nejsou moc odlišná než bezmyslná mručení šílenců.</Entry>
+		<Entry Name="Note_SofiaParr_Name">Organizace sezení</Entry>
+	    <Entry Name="Note_SofiaParr_Text">Dr. Selwynová[br][br]
+		Nebudu schopnen organizovat své sezení, které mě byly zadány pro náš výzkum. Tři naléhavý pacientu trpí z několika rozdílných mentálních nemocí, které musí být průběžne sledovány, a má týdenní sezení s ostatními pacienty mě brání zajít dál ve svých výzkumech o nahrazení paměti.[br][br]
+		Vy víte jak jsou mé výzkumy důležité a možná je to příležitost na začátek nové éry v tomto odvětví. Nicméně, pokud mohu, rád bych zrušil všechna sezení kromě Graciny a Sofiiny než dosáhneme stavu, kdy bychom mohli postoupit na tělesné experimenty. Tyhle dvě jsou pro mě a mé výzkumy opravdu důležité. Rád bych s nimi trávil více času.[br][br]
+		Další věc je pro tebe, aby jsi vzal v ůvahu že tyto dvě se stali velkýmy kamarádkami, což je překvapující -a zajímavé-, když vezmeme v ůvahu že Sofia nikdy neměla -nechtěnné- přátele než sem došla. Rád bych více prozkoumala jejich přátelství a ůčinky na jejich situaci.
+		[br][br]- Dr. Patrick P.</Entry>
+		<Entry Name="Note_Music_Name">Hudba na terapii?</Entry>
+	    <Entry Name="Note_Music_Text">Přemýšlel jsem o tom, že umělecké cítění může být způsob jak dosáhnout různých částí mysli, ke kterým se nemůžeme dostat přímo. Navíc to může aktivovat nepoužívané nebo hůř, zneužité části mozku; tohle ještě upevní výsledky normálních sezení.[br][br]
+		Je to jen teorie, ale pacienti vypadají že je hudební experimenty zajímají. I přesto nemohu říct přímé výsledky  u hudby, jsou, alespoň, dávají větší pozor a víc se na sezeních soustředí.[br][br]
+		Při dalším sezení bych je nechal zkusit zahrát na piáno stejný tón, který uslyší v gramofónu. Pokud uspějí, tak některé z nich odměním.[br][br]
+		(Myslím, že je čas koupit nové stereo)</Entry>
+		<Entry Name="Note_SofiaDown_Name">Uzamcení a obnova</Entry>
+	    <Entry Name="Note_SofiaDown_Text">Dveře od cely pacienta jsou zamčené jak Dr. Sofie řekla.
+		[br][br]Obnova byla ponechána napůl dokončená a tak je téměř nemožné použít cely pacientů. Řekla že pacienti s řemeslem budou pokračovat v práci, takže jsem vzal soubory abych zkontroloval pacienty a udělal seznam. Musíte je nějak donutit aby dodělali tu práci která po nás zůstala.
+		[br][br]- John Barker (než přišel tak byl tesař)
+		[br]- Richard Crichton (byl malíř a řemeslník)
+		[br]- Thomas Redwood (mladý chlapec se zkušenostmi)
+		[br]- David
+		[br][br]
+		(Je nemožné přečíst zbytek zápisu, protože je zapsán nečitelně)</Entry>
+		<Entry Name="Note_LastLine_Name">Hlásení pacientova postupu #2</Entry>
+	    <Entry Name="Note_LastLine_Text">Teď, když je Davidovo trauma pryč, můžeme začít další krok našeho experimentu.</Entry>
+	</CATEGORY>
+	<CATEGORY Name="Flashbacks">
+        <Entry Name="Flashback_01">Je to horké, tak horké, že to mé tělo nemůže vydržet.
+		[br]Je to světlé, tak světlé že jsem oslepnul.
+		[br]Ten křik je k nevydržení... "Pomoz mi!"
+		[br]Zakrývám si uši v naději, že ohluchnu...</Entry>
+        <Entry Name="Flashback_02">Ten křik je nezapomenutelný.
+		[br]Jak jsem tak seděl a koukal do prázdna, nazvali mě přeživším.
+		[br]Kdo by chtěl přežít se vzpomínkamy jako jsou tyhle?</Entry>
+        <Entry Name="Flashback_03">Stále slyším ty deprimující hlasy v hlavě.
+		[br]Vždy jsem chtěl být hasič.
+		[br]Jeden se na mě podíval, se začerněným obličejem od saze.
+		[br]"Jsi v pořádku chlapče?" zeptal se. Já vím, že už nikdy nebudu v pořádku.</Entry>
+        <Entry Name="Flashback_04">Hořelo to... Všechno to hořelo.
+		[br]Všichni křičeli... prosili o pomoc.
+		[br]Vidím je skoro jakoby ty výkřiky byly živé.</Entry>
+        <Entry Name="Flashback_05">Už si vzpomínám... Moji rodiče nikdy nekřičeli o pomoc...
+		[br]Teď přesně slyším co říkali...
+		[br]"Zachraň se Davide, pro nás!..."</Entry>
+    </CATEGORY>
+	<CATEGORY Name="Voice">
+        <Entry Name="00_intro_01">Davide, snaž se nepřijít pozdě.</Entry>
+        <Entry Name="00_intro_02">Příjdu. Neboj se, nezapoměl jsem.</Entry>
+        <Entry Name="00_intro_03">Nezapoměl jsi co?</Entry>
+        <Entry Name="00_intro_04">Naše výročí.</Entry>
+        <Entry Name="00_intro_05">Já věděla že ne. Dobře, uvidíme se později...</Entry>
+        <Entry Name="00_intro_06">Je čas jít ven Grace. Máme hodně věcí na práci.</Entry>
+        <Entry Name="00_intro_07">Už to jsou tři roky...</Entry>
+        <Entry Name="00_intro_08">Ano, roky plynou rychle...</Entry>
+        <Entry Name="00_intro_09">Pamatuješ si kdy jsme se poprvé potkali?</Entry>
+        <Entry Name="00_intro_10">Samozřejmě Grace! Jak bych mohl zapomenout?</Entry>
+        <Entry Name="01_rooms_01">Davide?</Entry>
+        <Entry Name="01_rooms_02">Ahoj Davide, jak se dnes máš?</Entry>
+        <Entry Name="01_rooms_03">Kde to jsem, kdo jsi?</Entry>
+        <Entry Name="01_rooms_04">Ou, Davide. Už jsi zase zapoměl? Jsem tvoje doktorka, doktorka Sofie, a ty jsi v nemocnici, v mentální nemocnici. Už si vzpomínáš?</Entry>
+        <Entry Name="01_rooms_05">Ne...</Entry>
+        <Entry Name="01_rooms_06">Žádný strach Davide. V tvém případě je normální zapomenout. A proto jsem tu. Abych ti pomohla.</Entry>
+        <Entry Name="01_rooms_07">Hmmm...</Entry>
+        <Entry Name="01_rooms_08">Jsi připraven na naše dnešní sezení Davide?</Entry>
+        <Entry Name="01_rooms_09">Proč jsem tu sám?</Entry>
+        <Entry Name="01_rooms_10">Protože hsu kriminální pacient Davide.</Entry>
+        <Entry Name="01_rooms_11">Cože? Já nejsem kriminálník!</Entry>
+        <Entry Name="01_rooms_12">V pořádku Davide. Jsem tu abych ti pomohla. Jsem tu abych ti vyléčila mysl.</Entry>
+        <Entry Name="01_mental_1_01">Davide, potřebuji aby ses vrátil. Otevři oči.</Entry>
+        <Entry Name="03_hospital_01">Hlášení pacientova pokroku.</Entry>
+        <Entry Name="03_hospital_02">Podle poslední diagnózy začala pacientka vykazovat znaky její druhé osobnosti. 
+		Stále nemohu pochopit, co mohlo způsobit poruchu rozdvojení identity a  při jaké události se to stalo, jestli teda nějaká byla.</Entry>
+        <Entry Name="03_hospital_03">Zajímavé na tom je, že normální osobnost, jak jsem se jí zatím rozhodl říkat, působí jako zcela normální člověk se silnou myslí.</Entry>
+        <Entry Name="03_hospital_04">Dnes jsem chtěl pomocí malého experimentu zjistit, co mohlo vyvolat tu druhou -nemocnou- osobnost. 
+		Zeptal jsem se ji, jestli zná Dr. S. , řekla mi, že dokonce zná i její heslo. 
+		Zeptal jsem se jí, jaké je to heslo a ona mi řekla, že poslední číslo hesla je polovina druhého čísla.</Entry>
+        <Entry Name="03_hospital_05">Potom zašeptala, že druhé číslo je stejné, jako počet umyvadel na záchodech.</Entry>
+        <Entry Name="03_hospital_06">Zeptal jsem se jí, jak to všechno může znát a ona mi řekla, že jí to řekla Sofie.
+		Bojím se, že ta osobnost kterou se snažím prozkoumat byla vyvolána už když jsem jí začal pokládat otázky.
+		Udělal tohle Sofia?</Entry>
+        <Entry Name="03_hospital_07">Nejdůležitější ale je, jaktože toho Sofie tolik ví?</Entry>
+        <Entry Name="03_hospital_08">Řekni mi co vidíš Davide.</Entry>
+        <Entry Name="03_hospital_09">Řekni mi co cítíš když se díváš na tuto malbu.</Entry>
+        <Entry Name="03_hospital_10">Zase noční můry že, Davide?</Entry>
+        <Entry Name="03_hospital_11">Doufala jsem, že dnes už budeš lepší, ale nejsi, vypadá to tak...</Entry>
+        <Entry Name="03_hospital_12">Co se mě stalo? Proč jsem jen já na tomto... místě?</Entry>
+        <Entry Name="03_hospital_13">Už pokládáš otázky? Takže si pamatuješ mě a své jméno? Dobře, konečně si ukázal nějaký pokrok.</Entry>
+        <Entry Name="03_hospital_14">Jaký pokrok, o čem to mluvíš?</Entry>
+        <Entry Name="03_hospital_15">Mysl je křehká Davide. Bojím se, že ta tvá je těžce porušená. Ale neboj se, jsem tu abych ti výléčila mysl.</Entry>
+        <Entry Name="03_hospital_16">Přestaň to říkat!</Entry>
+        <Entry Name="03_hospital_17">My jsme dnes trochu podráždění, že Davide? Je dobré vidět že jsi ctižádostivý. Pojďme tedy začít naše dnešn sezení.</Entry>
+        <Entry Name="03_hospital_18">Co se mi to stalo?</Entry>
+        <Entry Name="03_hospital_19">Hodně se ti toho stalo Davide, ale pojďme na to pomale.</Entry>
+        <Entry Name="03_hospital_20">Měl bys vědět že jsi dobrý člověk Davide; ale udělal jsi pár špatných věcí.</Entry>
+        <Entry Name="03_hospital_21">Já jsem nic špatného neudělal!</Entry>
+        <Entry Name="03_hospital_22">Takže si vzpomínáš?</Entry>
+        <Entry Name="03_hospital_23">Já... ne.</Entry>
+        <Entry Name="03_hospital_24">Jak si pak můžeš být tak jistý Davide?</Entry>
+        <Entry Name="03_hospital_25">Já...</Entry>
+        <Entry Name="03_hospital_26">Proč si myslíš, že vídáváš mrtvá těla Davide?</Entry>
+        <Entry Name="03_hospital_27">Jak víte že vídávám mrtvá těla?</Entry>
+        <Entry Name="03_hospital_28">Takže to připouštíš.</Entry>
+        <Entry Name="03_hospital_29">Podívej, Davide, vina často vyplave na povrch v podobě tvých činů, bez ohledu na to, jak hluboko je zahrabeš.</Entry>
+        <Entry Name="03_hospital_30">Ale je tu i světlá stránka, vina také ukazuje, že rozvíjíš nějaký pokrok.</Entry>
+        <Entry Name="03_hospital_31">Proto na mě ty věci ůtočí?</Entry>
+        <Entry Name="03_hospital_32">Na tebe ůtočí nějaké věci? Hmmm...</Entry>
+        <Entry Name="05_basement_01">Davide, potřebuji aby ses uklidnil a nehýbal se.</Entry>
+        <Entry Name="05_basement_02">Může to trochu bolet. Ale však víš, jsem tu abych ti pomohla.</Entry>
+        <Entry Name="05_basement_03">Jsem tu abych ti vyléčila mysl.</Entry>
+        <Entry Name="05_basement_04">...</Entry>
+        <Entry Name="05_basement_05">Držte pacienta.</Entry>
+        <Entry Name="06_tunnels_01">...</Entry>
+        <Entry Name="06_tunnels_02">Tak takhle to je. Zase jsem selhal...</Entry>
+        <Entry Name="06_tunnels_03">Tak moc jsem se snažil abych znovu selhal?</Entry>
+        <Entry Name="06_tunnels_04">Tato nemocnice, toto místo, pro mně měl být nový začátek.</Entry>
+        <Entry Name="06_tunnels_05">Sofie mě přechytračila.</Entry>
+        <Entry Name="06_tunnels_06">Slyším v tunelech její hlas, jak dává rozkazy dalším pacientům.</Entry>
+        <Entry Name="06_tunnels_07">...</Entry>
+        <Entry Name="06_tunnels_08">Tady doktor Patrick Parr. Strávil jsem celý život učením o lidské psychice; a vypadá to, že jsem se stále nenaučil vše.</Entry>
+        <Entry Name="06_tunnels_09">Toto jsou má poslední slova. Nemyslím si, že je někdo někdy najde, ale jestli ano...</Entry>
+        <Entry Name="06_tunnels_10">Moment kdy jste si byl jistý něčím co vidíte je moment vaší chyby.</Entry>
+        <Entry Name="06_tunnels_11">[kroky]</Entry>
+        <Entry Name="06_tunnels_12">Takže si přišla, Sofie...</Entry>
+        <Entry Name="06_tunnels_13">Co jsi to... Jak... Co se stalo Patrickovi?</Entry>
+        <Entry Name="06_tunnels_14">Vždy jsem věděla že jsi byl ostrý Davide. Takže si na to přišel.</Entry>
+        <Entry Name="06_tunnels_15">Ty jsi nikdy doktorkou nebyla!</Entry>
+        <Entry Name="06_tunnels_16">Ano Davide, nejsem skutečná doktorka, ale nemůžeš říct, že jsem nebyla dobrou doktorkou pro tebe.</Entry>
+        <Entry Name="06_tunnels_17">Ve skutečnosti, Patrick byl pro mě dobrý doktor, ale já jsem nemohla ustát, že na mě někdo prováděl experimenty, že ne?</Entry>
+        <Entry Name="06_tunnels_18">Místo toho jsem dělala experimenty na něm. A výsledek byl se ztrátamy. Ubohý Patrick, byl tak oddaný své práci.</Entry>
+        <Entry Name="06_tunnels_19">Proč mi to říkáš?!</Entry>
+        <Entry Name="06_tunnels_20">Záleží na tom? Stejně znovu zapomeneš. Já tě přinutím zapomenout. Je snadné tě nechat zapomět. Vždyť si ani nepamatuješ, že Patrick byl tvůj... přítel.</Entry>
+        <Entry Name="06_tunnels_21">Můj přítel... Takže... Já... jsem tu byl doktorem?</Entry>
+        <Entry Name="06_tunnels_22">Nezáleží kdo jsi byl Davide. Na čem záleží je, kdo já chci aby jsi byl.</Entry>
+        <Entry Name="06_tunnels_23">Budeš můj první ůspěšný experiment od mého prvního skutečného vítězství, mé White Night!</Entry>
+        <Entry Name="06_tunnels_24">Je čas vstát Davide, čas aby sis vzpoměl.</Entry>
+        <Entry Name="07_asylum_1">Není to překrásné Davide? Nevypadá to skvěle?</Entry>
+        <Entry Name="07_asylum_2">Vsadím se že je nádherné odsud sledovat západ slunce.</Entry>
+        <Entry Name="07_asylum_3">Až mě příjdeš navštívit, můžeme se tu potulovat.</Entry>
+        <Entry Name="07_asylum_4">Příjdeš mě navštívit že, Davide?</Entry>
+        <Entry Name="07_asylum_5">Mám tu novou kamarádku Davide. Je moc milá a tolik toho ví!</Entry>
+        <Entry Name="07_asylum_6">Chybíš mi Davide, proč některý den nepříjdeš?</Entry>
+        <Entry Name="07_asylum_7">Musíme si promluvit Davide. Tohle je to vážné.</Entry>
+        <Entry Name="08_entrance_1">Grace, máte návštěvníka.</Entry>
+        <Entry Name="08_entrance_2">Už mě nepříjdeš navštívit že, Davide?</Entry>
+        <Entry Name="08_entrance_3">Necháš mě tu takhle samotnou?</Entry>
+        <Entry Name="08_entrance_4">Zapomeneš na mě?</Entry>
+        <Entry Name="08_entrance_5">Nezajímá tě, co mi tu udělají?</Entry>
+        <Entry Name="08_entrance_6">Ahoj Grace, ahoj.</Entry>
+        <Entry Name="08_entrance_7">Ahoj doktore.</Entry>
+        <Entry Name="08_entrance_8">A jak se Grace dnes cítí?</Entry>
+        <Entry Name="08_entrance_9">Cítím se skvěle doktore. A vy?</Entry>
+        <Entry Name="08_entrance_10">Mám se dobře Grace, děkuji. Vidím, že dnes se cítíš mnohem lépe?</Entry>
+        <Entry Name="08_entrance_11">Ano doktore.</Entry>
+        <Entry Name="08_entrance_12">A je tu pro to nějaký důvod, jestli se můžu zeptat?</Entry>
+        <Entry Name="08_entrance_13">Ano doktore, je to protože mě dnes příjde navštívit.</Entry>
+        <Entry Name="08_entrance_14">Ahoj Grace, jak se dneš máš?</Entry>
+        <Entry Name="08_entrance_15">Ahoj doktore. Mám se skvěle. Řekla jsem vám o mé nové kamarádce?</Entry>
+        <Entry Name="08_entrance_16">Ne Grace. Máš novou kamarádku?</Entry>
+        <Entry Name="08_entrance_17">Ano doktore. Mám novou kamarádku a je na mě moc milá. A tolik toho ví...</Entry>
+        <Entry Name="08_entrance_18">To vidím, takže se tu nenudíš?</Entry>
+        <Entry Name="08_entrance_19">Ne, ale...</Entry>
+        <Entry Name="08_entrance_20">Ale?</Entry>
+        <Entry Name="08_entrance_21">Chtěla bych aby tu byl i David...</Entry>
+        <Entry Name="08_entrance_22">Tohle jsem ještě nikdy předtím neviděl. Celou tu dobu se snažila převzít kontrolu, stát se tou skutečnou osobností. Stává se silnější a tak se obávám, že budu muset použít... nebývalé metody...</Entry>
+        <Entry Name="08_entrance_24">Jak se má, Patricku?</Entry>
+        <Entry Name="08_entrance_25">Z lehka Davide, musíme toho hodně probrat.</Entry>
+        <Entry Name="08_entrance_26">Co je její problém doktore?</Entry>
+        <Entry Name="08_entrance_27">Bojím se že je to mnohem komplikovanější než jsem si původně myslel.</Entry>
+        <Entry Name="08_entrance_28">Jak jsem mohl být tak slepý... Celou dobu jsem ji měl před očima...</Entry>
+        <Entry Name="08_entrance_29">Davide, tento případ není něco, co by mohl běžný jedinec pochopit. Takže prosím, netrestej se, není to tvoje chyba. Ve skutečnosti, je to naopak, díky tobě je její normální osobnost mnohem silnější než její... no, nemocná osobnost.</Entry>
+        <Entry Name="08_entrance_30">Slíbil jsi mi spoustu věcí Davide. Slíbil jsi mi že mě příjdeš navštívit. Slíbil jsi že mě ochráníš. Ale ne! Všechno vždy bylo takové jak jsi chtěl!</Entry>
+        <Entry Name="08_entrance_31">Věděl jsi Davide proč jsem tě nezabila když jsem honila ostatní? Protože mě druhá Grace nenechala. Ale teď, je pryč! Díky Sofii!</Entry>
+        <Entry Name="09_mental_3_1">Viděl jsi pana Lawrence? To co potřebujeme udělat není dát ji do vězení. To nic nevyřeší. To co potřebuje je péče. Mentální. A mě, Patricka Parra, osobně tento případ zajímá. Myslím, že už jsem prokázal, že porouchaná mysl se dá vyléčit...</Entry>
+        <Entry Name="09_mental_3_2">Přemýšlej o svých vzpomínkách Davide. Přemýšlej o nich jakoby byly cihly. Použij je aby jsi našel cestu.</Entry>
+        <Entry Name="09_mental_3_3">Vidíš Davide, nebylo to tak těžké.</Entry>
+        <Entry Name="09_mental_3_4">Utíkej Davide, tohle je tvá poslední šance!</Entry>
+        <Entry Name="09_mental_3_5">Davide, víš proč Sofie nazvala své vítězství White Night? Protože miluje pláště, zvláště bílé. Věděl jsi že ten co teď má na sobě je... byl Patrickův.</Entry>
+        <Entry Name="09_mental_3_6">Stalo se to tu noc před tvou poslední návštěvou. Zorganizovala tu všechny pacienty a převzala nemocnici. Ubohá Selwynová, její přezdívka Dr. S teď patří Sofii.</Entry>
+        <Entry Name="09_mental_3_7">Grace si tě tolik cenila, dokud jsi nenechal toho bastarda vést na ní odporné experimenty!</Entry>
+        <Entry Name="09_mental_3_8">Ah, anooo. Bylo to tady... Když Sofie sekala hlavu tvému drahému příteli!</Entry>
+        <Entry Name="09_mental_3_9">Sofie mě hodně naučila, a na oplátku, jsem ji naučila používat nože. Konec konců, jsem zkušená.</Entry>
+        <Entry Name="09_mental_3_10">Tolik let Davide! Všechny ty roky! A ty mi ani neřekneš o tvých rodičích! A to si říkáš manžel?!</Entry>
+        <Entry Name="09_mental_3_11">Víš co, Davide. Mylsím že tentokrát pomůžu Sofii. Konec konců, já , jsem taky, do tebe zamilovaná. Můžeš tu se mnou zůstat.</Entry>
+        <Entry Name="09_mental_3_12">Pamatuješ si kdy jsme se poprvé potkali? Ou počkej, nemusíš si 'pamatovat' Davide. Protože 'Já' ti dám vzpomínky jaké budu chtít.</Entry>
+        <Entry Name="09_mental_3_13">Do hlubin Davide, do hlubin...</Entry>
+        <Entry Name="09_mental_3_14">Pamatuješ si tu noc Davide? Přišli si vzít Grace, ne tebe. To ona to byla, ne ty.</Entry>
+        <Entry Name="09_mental_3_15">Jak tě přinutili zapomenout Davide? Ale měl bys být vděčný, já jsem tě přinutil si zase vzpomenout. Vždy jsem tě nutil si znovu vzpomenout, bez ohledu na to, jak hluboko jsi mě pohřbil.</Entry>
+        <Entry Name="09_mental_3_16">Jsem tvé malé 'trauma' Davide. Jsem vzpomínka, kterou ses tak těžce snažil zapomenout. Ale na konci, jsem byl vše co jsi měl. Pokud mě necháš odejít, skončíš.</Entry>
+        <Entry Name="10_ending_01">Budu teď počítat do tří a ty vstaneš Davide.</Entry>
+        <Entry Name="10_ending_02">Jedna.</Entry>
+        <Entry Name="10_ending_03">Dva.</Entry>
+        <Entry Name="10_ending_04">Tři.</Entry>
+        <Entry Name="10_ending_05">Vstááávej Davide.</Entry>
+        <Entry Name="10_ending_06">Jak se cítíš? Řekla bych že líp. Po pár dalších sezeních už budeš v pořádku.</Entry>
+        <Entry Name="10_ending_07">Ou, podívej kolik už je hodin. Nuže, pro dnešek už je to vše Davide. Uvidíme se příští týden.</Entry>
+        <Entry Name="10_ending_08">Ou, jen tak mimochodem Davide...</Entry>
+        <Entry Name="10_ending_09">Už nemusíš nosit vzpomínky rodičů na ramenou.</Entry>
+        <Entry Name="10_ending_10">Protože tak tě to nenechá zapomenout...</Entry>
+        <Entry Name="10_ending_11">Opravdu sis myslel, že tě nechám jít Davide? ...</Entry>
+    </CATEGORY>
+	<CATEGORY Name="Signs">
+        <Entry Name="Sign_01">Je to zaseklé ve zdi, ručně to nevytáhnu.[br]Mohl bych to použít na otevření těch dveří.</Entry>
+		<Entry Name="Sign_02">Rukama to neotevřu; a ani nemám žádný klíč.</Entry>
+		<Entry Name="Sign_03">Mrtvý?...</Entry>
+		<Entry Name="Sign_04">Krev?...Ježíši...</Entry>
+		<Entry Name="Sign_05">Kde to sakra jsem?...</Entry>
+		<Entry Name="Sign_06">Už jen kousek!...</Entry>
+		<Entry Name="Sign_07">Vypadá to jako elektricky zamčené. Možná můžu přerušit napájení...</Entry>
+		<Entry Name="Sign_08">Dveře jsou zamčené. Abych je otevřel budu potřebovat heslo.</Entry>
+		<Entry Name="Sign_09">Je to zamčené. Na otevření budu potřebovat nějaký nástroj. Možná to s páčidlem půjde.</Entry>
+		<Entry Name="Sign_10">Vypadá to volně. Možná to dokážu přerušit. Ale proč?</Entry>
+		<Entry Name="Locked_1">Nepohne se to.</Entry>
+		<Entry Name="Locked_2">Zámek je rozbitý.</Entry>
+		<Entry Name="Locked_3">Nepohne se to.</Entry>
+		<Entry Name="Locked_4">Je to zaseklé.</Entry>
+		<Entry Name="Locked_5">Neotevře se to.</Entry>
+		<Entry Name="Button">Zmáčkl jsem to, ale nic se nestalo.</Entry>
+		<Entry Name="ScrewDriver">Odemknuto.</Entry>
+		<Entry Name="Rooms_Stuck">Je to zaseklé.</Entry>
+		<Entry Name="HotTub">Je to příliš horké. Nemůžu tam sáhnout.</Entry>
+		<Entry Name="HotKey">Ve vaně je klíč.</Entry>
+		<Entry Name="WTF">Co to...</Entry>
+		<Entry Name="Panel">Šrouby jsou moc těsné. tímhle to neotevřu.[br]Možná to můžu rozbít?</Entry>
+		<Entry Name="Panel2">Možná to musím rozbít. Znovu...</Entry>
+		<Entry Name="GasolineUsed">To je ono, myslím. Teď jen musím zatáhnout za páku.</Entry>
+		<Entry Name="Pulled">Nic se nestalo.</Entry>
+		<Entry Name="Pulled2">Slyšel jsem jiskření, ale nefungovalo to. Měl bych to zkusit znovu.</Entry>
+		<Entry Name="EmptyGasoline">Naplnil jsem kanystr benzínem.</Entry>
+		<Entry Name="ClosedSec">Je to moc těžké, nemůžu to otevřít. Musím nastartovat generátor.</Entry>
+		<Entry Name="Suitor">Pokud budu dlouho čekat, tak mě chytí.</Entry>
+		<Entry Name="Phono01">V gramofónu není válec.</Entry>
+		<Entry Name="Ending_Stairs">Měl bych použít výtah místo schodů.</Entry>
+		<Entry Name="String">Bez háčku ten klíč nechytím.</Entry>
+		<Entry Name="Hook">Bez provázku na ten klíč nedosáhnu.</Entry>
+		<Entry Name="WaitAlittle">Možná bych měl počkat až to druhé přehrávání skončí.</Entry>
+    </CATEGORY>
+	<CATEGORY Name="Levels">
+        <Entry Name="Intro_01">Tato ůroveň ještě není dokončena, takže vás pošlu k další, poslední ůrovni.</Entry>
+    </CATEGORY>
+	<CATEGORY Name="Hints">
+        <Entry Name="Death_01">Drž se dál od temnoty...</Entry>
+        <Entry Name="Death_02">Utíkej od nich...</Entry>
+        <Entry Name="Death_03">Pozor kam šlapeš...</Entry>
+		<Entry Name="Forget">Zapomeň</Entry>
+		<Entry Name="Run">Utíkej</Entry>
+    </CATEGORY>
+	<CATEGORY Name="LoadingText">
+        <Entry Name="Load_Text_01">Jakmile jsem vstal, byl jsem, ani nevím kde, ale bylo mi to povědomé.[br]Cítil jsem se, jako bych tu už někdy byl, ale nemůžu si na nic o tom vzpomenout.[br][br]Nejhorší je, že si ani nevzpomenu, kdo vlastně jsem.[br]Je to jakobych žil v klišé noční můře, která rozhodně není jako ta z televize.</Entry>
+		<Entry Name="Load_Text_02">Vzbudit se v nemocnici bez ponětí, kdo jsem... Čemu mám věřit? Nebo... Komu?[br]Jsem opravdu kriminálník? Vrah? Tomu nevěřím. Zatím to ale nemohu ůplně zamítnout... Musím si vzpomenout... kdo jsem byl. Musím si vzpomenout, co se stalo. Musím si vzpomenout, jestli...  Jestli jsem opravdu zabiják...</Entry>
+		<Entry Name="Load_Text_03">[br]Mám na jazyku hořkou chuť... Cítím bolest v mém spánku... Má mysl si nevzpomíná, ale mé tělo ano.[br]Udělal jsem něco, čím bych si toto zasloužil?[br]To je otázka na kterou bych měl odpovědět...[br]Na to si musím vzpomenout...</Entry>
+		<Entry Name="Load_Text_04">[br]Soudce vypadal, že se ho to netýká, jakoby to nemělo nic společného s životy těch lidí. Vše co pan Lawrence chtěl, bylo hodit vinu na někoho jiného. Nejspíše porprvé, kdy chtěl někoho opravdu zabít...[br][br]Dobře... Možná ne poprvé...</Entry>
+		<Entry Name="Load_Text_05">[br]Psychiatrička zvolala jeho jméno laskavým hlasem. On otevřel oči a podíval se do prázdnoty.[br]"Jak se máš?" zeptala se. "Je mi dobře" zalhal.[br]Ona věděla, že lže. Ona věděla, co musí udělat...</Entry>
+		<Entry Name="Load_Text_06">[br]Vzal si poznámky na jeho další sezení. "Co když" pomyslel si když si spravoval plášť, "Co když jsem uspěl?".[br]Běda! Ona pro něj a jeho plášť měla ůplně jiné plány...</Entry>
+		<Entry Name="Load_Text_07">[br]"Máš nějaké vzpomínky, které nechceš zapomenout?..."[br]"Můžeš slyšet melodii pravdy?..."[br]"Už si někdy porušil slib?..."[br][br]Muž mluvil do nekonečna o změně životních zkušeností... Málem ho to přimělo smát. Potom začal přemýšlet, jak se omluvit...</Entry>
+		<Entry Name="Load_Text_08">[br]"To byla hračka", řekl Patrick; "pro tebe bude jednodužší ji navštívit tady. Teď... o tom..."
+		[br]Konečně začal odhalovat jeho skutečné záměry...</Entry>
+		<Entry Name="Load_Text_09">[br]Byl jsem chycen. Unesen. Vyřízen. Potlačen...[br]Byl obyčejný, deštivý, pochmurný den, když jsem přišel navštívit Grace...[br]Měla strach z blesků, vzpomínám si...[br]Vzpomínám si, kdy jsme se poprvé potkali... pršelo...</Entry>
+		<Entry Name="Load_Text_10">[br][br]Vše co se stalo... Vše co jsem zapoměl - Co jsem byl donucen zapomenout... a...[br][br][br]co jsem chtěl zapomenout...</Entry>
+    </CATEGORY>	
+	<CATEGORY Name="Ending">
+		<Entry Name="MyCredits">*White Night[br][br]
+		An "Amnesia: The Dark Descent (C) 2011 Frictional Games" Mod
+		[br][br][br]
+		[br][br]*Presents[br][br]
+		Tanshaydar (Tansel Altınel)[br][br][br]
+		- Design, Story, Development, Programming, etc.-[br]
+		Tansel Altınel[br][br][br]
+		- Voice Acting -[br]
+		David: David Lyon[br]
+		Grace: Amanda Ford[br]
+		Sofia: Deyanira Gomez[br]
+		Dr. Patrick Parr: Ryan Terry (Cryaotic)[br]
+		Last Psychiatrist: Miss Rigi[br][br][br]
+		- Music -[br]
+		Broken Notes[br]
+		Liminality[br]
+		See music_credits.txt for respective credits[br][br][br]
+		- Beta Testing -[br]
+		David Lyon - Lee(Huge thanks, really!)[br]
+		Yaşar Arabacı - yasar11732 (Ambitious)[br]
+		Plato Mavropoulos - plutomaniac (Bug Hunter!)[br]
+		Glenn - C-zom[br]
+		Gizem Tavukçu (Thanks...)[br]
+		Ünal Yıldız (unalsnake)[br]
+		[br][br][br]
+		-Custom Flashlight[br]
+		HD Flashlight model: DIGIByte (from FG community)[br]
+		Hand Animations: MrBigzy (from FG community)[br]
+		File Editing and structure: Xiphirx (from FG community)[br][br]
+		-Many Other Custom Models and Textures[br]
+		See disclaimer.txt for reference[br][br]
+		-Credits Music[br]
+		Higurashi Main Theme - Kawai Kenji[br][br][br]
+		-Translation to Czech[br]
+		Numennes - From team NumaSoft
+		[br][br]*Special Thanks[br][br]
+		Although she does not love me anymore... my ex-girlfriend, Gizem, for pushing me, giving great ideas, testing the mod, being in my life[br][br][br]
+		My friend, Ünal, for sketching two good levels and constantly testing the mod[br][br][br]
+		David Lyon, for giving his sexy voice for David, ideas, and being the first one giving proper feedback, thanks to his criticism and all of his efforts. He is a game critic so his ideas helped me a lot[br][br][br]
+		yasar11732, for constantly testing the mod, teaching and helping with modeling issues, being sick in the mind, being a good roommate[br][br][br]
+		Mkilbride, for giving criticism and ideas to make the mod even better[br][br][br]
+		Amanda Ford, for giving Grace a soul, making the twists realistic[br][br][br]
+		Deyanira Gomez, for her great work and making Dr. Sofia sound like a real doctor and psychopat[br][br][br]
+		Ryan Terry, for letting Patrick Parr to be a really legendary psychiatrist[br][br][br]
+		Everlone (from FG community) for teaching how to convert models from Penumbra series or even from outside[br][br][br]
+		Modsentry, C-zom(Glenn) specifically, for his support and spreading the word, criticism, ideas[br][br][br]
+		ModDB, for content hosting and giving the support to great mods[br][br][br]
+		Frictional Games, for making such a great game, I love you guys![br][br][br][br][br]
+		It's a cliché, but you, for playing till the end, I really hope you enjoyed!..
+		[br][br][br][br][br][br]
+		This mod is my first creation ever and aimed to be a test for immersion and storytelling.[br]If you have any questions please contact me: tansel[at]tanshaydar.com[br][br][br]
+		I hope you enjoyed a lot, and I hope you noticed the symbolism. I'd like to hear your comments and feedback for my future projects!
+		[br][br][br][br][br][br]David's Story has ended. See you in another story![br][br][br][br]
+		Tanshaydar.com</Entry>
+    </CATEGORY>
+	<CATEGORY Name="PreMenu">
+		<Entry Name="WelcomeMessage01">Vítej u našeho dnešního sezení.[br][br]Bude následovat pár rychlých zpráv o tom, jak získat nejlepší možný výsledek z vaší mysli.</Entry>
+		<Entry Name="WelcomeMessage02">Toto sezení není o výhře nebo prohře, není tu žádná skutečná odpověď. [br][br]Mluvíme tu o vaší mysli. Nezkoušejte to přerušit.</Entry>
+		<Entry Name="WelcomeMessage03">Amnesia: The Dark Descent má ůžasnou ukládací mechaniku, o kterou se nemusíte starat. Dělejte to jednoduše, ponořte se do hry, následujte příběh, dokončete sezení. Jako váš doktor se o vše postarám, ale jestli chcete odejít ze sezení dříve, můžete. Dejte uložit a ukončit pro pozdější vzpomenutí.</Entry>
+		<Entry Name="WelcomeMessage04">White Night je zcela příběhově založené sezení. Proto si užijte čtení poznámek, přemýšlení o tom, co jste viděli, co vám lidé řeknou a co se stane. [br][br]Nesnažte se s ničím co potkáte bojovat. Místo toho, použijte duvtip a následujte instrukce zadané během sezení. Věřte mi, jsem tu abych vám vyléčila mysl.</Entry>
+		<Entry Name="WelcomeMessage05">Souhra mezi světlem a tmou je u sezení velice důležitá, proto si nastavte jas správně. Použijte pro to posuvník níže. Nastavujte to, dokud nebude pravý čtverec sotva viditelný. A prosím, nenastavujte jas příliš vysoko nebo si ůplně pokazíte hru. [br][br]Také hrejte v temné místnosti se sluchátkama pro dosažení nejlepšího efektu. Pamatujte, příběh je důležitý, ale prostředí také. Nepokažte si svá sezení.</Entry>
+		<Entry Name="WelcomeMessage06">To je vše. Pojďme začít naše dnešní sezení. Doufám, že tentokrát jsi připraven.[br][br][br]- Dr. Sofia</Entry>
+	</CATEGORY>
+	  <CATEGORY Name="Levels">
+		<Entry Name="Intro">Ůvod</Entry>
+		<Entry Name="Rooms">Pokoje</Entry>
+		<Entry Name="Stairs">Schody</Entry>
+		<Entry Name="Hospital">Nemocnice</Entry>
+		<Entry Name="Morgue">Márnice</Entry>
+		<Entry Name="Basement">Suterén</Entry>
+		<Entry Name="Tunnels">Tunely</Entry>
+		<Entry Name="Asylum">Azyl</Entry>
+		<Entry Name="Entrance">Vstup</Entry>
+		<Entry Name="Remember">Vzpomínky</Entry>
+		<Entry Name="Ending">Závěr</Entry>
+	  </CATEGORY>
+</LANGUAGE>

@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>jeff</author>
+      <authoring_tool>Feeling ColladaMax v1.06 with FCollada v1.14.</authoring_tool>
+      <comments>ColladaMax Export Options: ExportNormals=1;ExportEPolyAsTriangles=1;ExportXRefs=1;ExportSelected=0;ExportTangents=0;SampleAnim=0;ExportSingleAnim=0;BakeMatrices=0;ExportRelativePaths=1;AnimStart=0;AnimEnd=100;</comments>
+      <source_data>file:///F:/3Dwork/Penumbra_Overture/week_01/cabinet/02.max</source_data>
+    </contributor>
+    <created>2007-03-22T17:43:57Z</created>
+    <modified>2007-03-22T17:43:58Z</modified>
+    <unit meter="1" name="meter"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="F__3Dwork_Penumbra_Overture_week_01_cabinet_textures_furniture_metal_cabinet_jpg" name="Map__5">
+      <init_from>file:///F:/3Dwork/Penumbra_Overture/week_01/cabinet/textures/furniture_metal_cabinet.jpg</init_from>
+    </image>
+    <image id="F__3Dwork_Penumbra_Overture_week_01_cabinet_textures_furniture_metal_cabinet_spec_jpg" name="Map__6">
+      <init_from>file:///F:/3Dwork/Penumbra_Overture/week_01/cabinet/textures/furniture_metal_cabinet_spec.jpg</init_from>
+    </image>
+    <image id="F__3Dwork_Penumbra_Overture_week_01_cabinet_textures_furniture_metal_cabinet_normals_jpg" name="Map__8">
+      <init_from>file:///F:/3Dwork/Penumbra_Overture/week_01/cabinet/textures/furniture_metal_cabinet_normals.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="_1_-_Default" name="_1_-_Default">
+      <instance_effect url="#_1_-_Default-fx"/>
+    </material>
+    <material id="_7_-_Default1111" name="_7_-_Default1111">
+      <instance_effect url="#_7_-_Default1111-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="_1_-_Default-fx" name="_1_-_Default">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 0</color>
+            </emission>
+            <ambient>
+              <color>0.588235 0.588235 0.588235 0</color>
+            </ambient>
+            <diffuse>
+              <color>0.588235 0.588235 0.588235 0</color>
+            </diffuse>
+            <specular>
+              <color>0.900000 0.900000 0.900000 0</color>
+            </specular>
+            <shininess>
+              <float>9.999999</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float>1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color>1.000000 1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float>0</float>
+            </transparency>
+            <index_of_refraction>
+              <float>0</float>
+            </index_of_refraction>
+          </phong>
+          <extra>
+            <technique profile="MAYA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="_7_-_Default1111-fx" name="_7_-_Default1111">
+      <profile_COMMON>
+        <newparam sid="F__3Dwork_Penumbra_Overture_week_01_cabinet_textures_furniture_metal_cabinet_jpg-surface">
+          <surface type="2D">
+            <init_from>F__3Dwork_Penumbra_Overture_week_01_cabinet_textures_furniture_metal_cabinet_jpg</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="F__3Dwork_Penumbra_Overture_week_01_cabinet_textures_furniture_metal_cabinet_jpg-sampler">
+          <sampler2D>
+            <source>F__3Dwork_Penumbra_Overture_week_01_cabinet_textures_furniture_metal_cabinet_jpg-surface</source>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+          </sampler2D>
+        </newparam>
+        <newparam sid="F__3Dwork_Penumbra_Overture_week_01_cabinet_textures_furniture_metal_cabinet_spec_jpg-surface">
+          <surface type="2D">
+            <init_from>F__3Dwork_Penumbra_Overture_week_01_cabinet_textures_furniture_metal_cabinet_spec_jpg</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="F__3Dwork_Penumbra_Overture_week_01_cabinet_textures_furniture_metal_cabinet_spec_jpg-sampler">
+          <sampler2D>
+            <source>F__3Dwork_Penumbra_Overture_week_01_cabinet_textures_furniture_metal_cabinet_spec_jpg-surface</source>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+          </sampler2D>
+        </newparam>
+        <newparam sid="F__3Dwork_Penumbra_Overture_week_01_cabinet_textures_furniture_metal_cabinet_normals_jpg-surface">
+          <surface type="2D">
+            <init_from>F__3Dwork_Penumbra_Overture_week_01_cabinet_textures_furniture_metal_cabinet_normals_jpg</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="F__3Dwork_Penumbra_Overture_week_01_cabinet_textures_furniture_metal_cabinet_normals_jpg-sampler">
+          <sampler2D>
+            <source>F__3Dwork_Penumbra_Overture_week_01_cabinet_textures_furniture_metal_cabinet_normals_jpg-surface</source>
+            <minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+            <magfilter>LINEAR</magfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 0</color>
+            </emission>
+            <ambient>
+              <color>0.588235 0.588235 0.588235 0</color>
+            </ambient>
+            <diffuse>
+              <texture texture="F__3Dwork_Penumbra_Overture_week_01_cabinet_textures_furniture_metal_cabinet_jpg-sampler" texcoord="CHANNEL1">
+                <extra>
+                  <technique profile="MAX3D">
+                    <amount>1.000000</amount>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0.900000 0.900000 0.900000 0</color>
+            </specular>
+            <shininess>
+              <float>9.999999</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float>1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color>1.000000 1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float>0</float>
+            </transparency>
+            <index_of_refraction>
+              <float>0</float>
+            </index_of_refraction>
+          </phong>
+          <extra>
+            <technique profile="MAYA">
+              <shininess>
+                <texture texture="F__3Dwork_Penumbra_Overture_week_01_cabinet_textures_furniture_metal_cabinet_spec_jpg-sampler" texcoord="CHANNEL1">
+                  <extra>
+                    <technique profile="MAX3D">
+                      <amount>1.000000</amount>
+                    </technique>
+                  </extra>
+                </texture>
+              </shininess>
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+              <bump>
+                <texture texture="F__3Dwork_Penumbra_Overture_week_01_cabinet_textures_furniture_metal_cabinet_normals_jpg-sampler" texcoord="CHANNEL1">
+                  <extra>
+                    <technique profile="MAX3D">
+                      <amount>0.300000</amount>
+                    </technique>
+                  </extra>
+                </texture>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="door02-mesh">
+      <mesh>
+        <source id="door02-mesh-positions">
+          <float_array id="door02-mesh-positions-array" count="132">0.000782 -0.385784 -0.957632 0.000782 -0.385784 0.964315 -0.708433 -0.385784 0.964315 -0.708433 -0.385784 -0.957632 0.000782 -0.356340 -0.957632 0.000782 -0.356340 0.964315 -0.708433 -0.356340 0.964315 -0.708433 -0.356340 -0.957632 -0.087708 -0.356576 0.082699 -0.137436 -0.356576 0.092866 -0.137436 -0.356576 -0.092892 -0.087708 -0.356576 -0.082724 -0.161974 -0.383107 -0.106258 -0.114543 -0.414917 -0.106258 -0.129172 -0.414917 -0.091629 -0.114543 -0.414917 0.106233 -0.129172 -0.414917 0.091604 -0.161974 -0.383107 0.106233 -0.075797 -0.383107 -0.106258 -0.075797 -0.383107 0.106233 -0.709043 -0.363956 -0.755051 -0.715280 -0.353153 -0.755051 -0.727755 -0.353153 -0.755051 -0.733993 -0.363956 -0.755051 -0.727755 -0.374760 -0.755051 -0.715280 -0.374760 -0.755051 -0.709043 -0.363956 -0.632567 -0.715280 -0.353153 -0.632567 -0.727755 -0.353153 -0.632567 -0.733993 -0.363956 -0.632567 -0.727755 -0.374760 -0.632567 -0.715280 -0.374760 -0.632567 -0.709043 -0.363956 0.655651 -0.715280 -0.353153 0.655651 -0.715280 -0.353153 0.778134 -0.709043 -0.363956 0.778134 -0.727755 -0.353153 0.655651 -0.727755 -0.353153 0.778134 -0.733993 -0.363956 0.655651 -0.733993 -0.363956 0.778134 -0.727755 -0.374760 0.655651 -0.727755 -0.374760 0.778134 -0.715280 -0.374760 0.655651 -0.715280 -0.374760 0.778134</float_array>
+          <technique_common>
+            <accessor source="#door02-mesh-positions-array" count="44" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="door02-mesh-normals">
+          <float_array id="door02-mesh-normals-array" count="594">0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 -0.486603 -0.725558 -0.486603 -0.486603 -0.725558 -0.486603 -0.486603 -0.725558 -0.486603 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 -0.486603 -0.725558 0.486603 -0.486603 -0.725558 0.486603 -0.486603 -0.725558 0.486603 -0.330334 0.091388 0.939429 -0.330334 0.091389 0.939429 -0.330334 0.091388 0.939429 -0.191428 -0.294626 0.936243 -0.191428 -0.294626 0.936243 -0.191428 -0.294626 0.936243 -0.815103 0.579316 0 -0.815103 0.579316 0 -0.815103 0.579316 0 -0.815103 0.579316 0 -0.815103 0.579316 0 -0.815103 0.579316 0 -0.441523 -0.043142 -0.896212 -0.441523 -0.043142 -0.896212 -0.441523 -0.043142 -0.896212 -0.200314 -0.007167 -0.979705 -0.200314 -0.007167 -0.979706 -0.200314 -0.007167 -0.979705 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0.634546 -0.772885 0 0.634546 -0.772885 0 0.634546 -0.772885 0 0.634546 -0.772885 0 0.634546 -0.772885 0 0.634546 -0.772885 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0.866024 0.500003 0 0.866024 0.500003 0 0.866024 0.500003 0 0.866024 0.500003 0 0.866024 0.500003 0 0.866024 0.500003 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 -0.866024 0.500003 0 -0.866024 0.500003 0 -0.866024 0.500003 0 -0.866024 0.500003 0 -0.866024 0.500003 0 -0.866024 0.500003 0 -0.866023 -0.500004 0 -0.866023 -0.500004 0 -0.866023 -0.500004 0 -0.866023 -0.500004 0 -0.866023 -0.500004 0 -0.866023 -0.500004 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0.866023 -0.500004 0 0.866023 -0.500004 0 0.866023 -0.500004 0 0.866023 -0.500004 0 0.866023 -0.500004 0 0.866023 -0.500004 0 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0.866024 0.500003 0 0.866024 0.500003 0 0.866024 0.500003 0 0.866024 0.500003 0 0.866024 0.500003 0 0.866024 0.500003 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 -0.866024 0.500003 0 -0.866024 0.500003 0 -0.866024 0.500003 0 -0.866024 0.500003 0 -0.866024 0.500003 0 -0.866024 0.500003 0 -0.866023 -0.500004 0 -0.866023 -0.500004 0 -0.866023 -0.500004 0 -0.866023 -0.500004 0 -0.866023 -0.500004 0 -0.866023 -0.500004 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0.866023 -0.500004 0 0.866023 -0.500004 0 0.866023 -0.500004 0 0.866023 -0.500004 0 0.866023 -0.500004 0 0.866023 -0.500004 0 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000</float_array>
+          <technique_common>
+            <accessor source="#door02-mesh-normals-array" count="198" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="door02-mesh-map-channel1">
+          <float_array id="door02-mesh-map-channel1-array" count="210">0.916635 0.757195 0 0.414317 0.529165 0 0.414317 0.990494 0 0.615969 0.997641 0 0.624397 0.529165 0 0.422488 0.529165 0 0.422494 0.990494 0 0.616046 0.990494 0 0.616040 0.529165 0 0.872653 0.934932 0 0.888510 0.970152 0 0.889466 0.769681 0 0.872424 0.805239 0 0.916139 0.982829 0 0.941808 0.789703 0 0.928462 0.796069 0 0.941533 0.950478 0 0.928231 0.944037 0 0.979818 0.785322 0 0.979508 0.955038 0 0.944386 0.557548 0 0.961152 0.557548 0 0.877767 0.557548 0 0.894220 0.557548 0 0.910825 0.557548 0 0.927568 0.557548 0 0.944386 0.708609 0 0.961208 0.708609 0 0.877767 0.708609 0 0.894220 0.708609 0 0.910850 0.708609 0 0.927593 0.708609 0 0.977602 0.557548 0 0.977686 0.708609 0 0.961266 0.530441 0 0.977628 0.530441 0 0.985809 0.543766 0 0.953085 0.543766 0 0.953171 0.721358 0 0.985895 0.721358 0 0.977714 0.734683 0 0.961352 0.734683 0 0.817946 0.531246 0 0.817982 0.990494 0 0.624415 0.990494 0 0.422512 0.997641 0 0.422504 0.522046 0 0.615960 0.522046 0 0.944386 0.557548 0 0.961152 0.557548 0 0.961208 0.708609 0 0.944386 0.708609 0 0.977602 0.557548 0 0.977686 0.708609 0 0.877767 0.557548 0 0.894220 0.557548 0 0.894220 0.708609 0 0.877767 0.708609 0 0.910825 0.557548 0 0.910850 0.708609 0 0.927568 0.557548 0 0.927593 0.708609 0 0.961266 0.530441 0 0.977628 0.530441 0 0.985809 0.543766 0 0.953085 0.543766 0 0.953171 0.721358 0 0.985895 0.721358 0 0.977714 0.734683 0 0.961352 0.734683 0</float_array>
+          <technique_common>
+            <accessor source="#door02-mesh-map-channel1-array" count="70" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="door02-mesh-vertices">
+          <input semantic="POSITION" source="#door02-mesh-positions"/>
+        </vertices>
+        <triangles material="_7_-_Default1111" count="66">
+          <input semantic="VERTEX" source="#door02-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#door02-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#door02-mesh-map-channel1" offset="2" set="1"/>
+          <p>0 0 42 1 1 43 2 2 44 2 3 44 3 4 4 0 5 42 4 6 5 5 7 6 1 8 2 1 9 2 0 10 1 4 11 5 5 12 6 6 13 7 2 14 3 2 15 3 1 16 45 5 17 6 6 18 7 7 19 8 3 20 4 3 21 4 2 22 44 6 23 7 7 24 8 4 25 5 0 26 46 0 27 46 3 28 47 7 29 8 7 30 8 6 31 7 5 32 6 5 33 6 4 34 5 7 35 8 12 36 0 13 37 14 14 38 15 13 39 14 15 40 16 16 41 17 16 42 17 14 43 15 13 44 14 15 45 16 17 46 13 16 47 17 12 48 0 14 49 15 11 50 12 11 51 12 10 52 11 12 53 0 14 54 15 16 55 17 8 56 9 8 57 9 11 58 12 14 59 15 16 60 17 17 61 13 9 62 10 9 63 10 8 64 9 16 65 17 12 66 0 18 67 18 13 68 14 18 69 18 19 70 19 15 71 16 15 72 16 13 73 14 18 74 18 19 75 19 17 76 13 15 77 16 20 78 20 21 79 21 27 80 27 27 81 27 26 82 26 20 83 20 21 84 21 22 85 32 28 86 33 28 87 33 27 88 27 21 89 21 22 90 22 23 91 23 29 92 29 29 93 29 28 94 28 22 95 22 23 96 23 24 97 24 30 98 30 30 99 30 29 100 29 23 101 23 24 102 24 25 103 25 31 104 31 31 105 31 30 106 30 24 107 24 25 108 25 20 109 20 26 110 26 26 111 26 31 112 31 25 113 25 24 114 35 23 115 36 22 116 32 22 117 32 21 118 21 20 119 37 24 120 35 22 121 32 20 122 37 25 123 34 24 124 35 20 125 37 27 126 27 28 127 33 29 128 39 29 129 39 30 130 40 31 131 41 27 132 27 29 133 39 31 134 41 26 135 38 27 136 27 31 137 41 32 138 48 33 139 49 34 140 50 34 141 50 35 142 51 32 143 48 33 144 49 36 145 52 37 146 53 37 147 53 34 148 50 33 149 49 36 150 54 38 151 55 39 152 56 39 153 56 37 154 57 36 155 54 38 156 55 40 157 58 41 158 59 41 159 59 39 160 56 38 161 55 40 162 58 42 163 60 43 164 61 43 165 61 41 166 59 40 167 58 42 168 60 32 169 48 35 170 51 35 171 51 43 172 61 42 173 60 40 174 63 38 175 64 36 176 52 36 177 52 33 178 49 32 179 65 40 180 63 36 181 52 32 182 65 42 183 62 40 184 63 32 185 65 34 186 50 37 187 53 39 188 67 39 189 67 41 190 68 43 191 69 34 192 50 39 193 67 43 194 69 35 195 66 34 196 50 43 197 69</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="_joint_hinge_door01_cabinet_2_95_hinge01-mesh">
+      <mesh>
+        <source id="_joint_hinge_door01_cabinet_2_95_hinge01-mesh-positions">
+          <float_array id="_joint_hinge_door01_cabinet_2_95_hinge01-mesh-positions-array" count="36">0 -0.001484 -0.978119 0 0.014058 -0.978119 -0.014781 0.003318 -0.978119 -0.009135 -0.014058 -0.978119 0.009135 -0.014058 -0.978119 0.014781 0.003318 -0.978119 0 0.014058 0.978119 -0.014781 0.003318 0.978119 -0.009135 -0.014058 0.978119 0.009135 -0.014058 0.978119 0.014781 0.003318 0.978119 0 -0.001484 0.978119</float_array>
+          <technique_common>
+            <accessor source="#_joint_hinge_door01_cabinet_2_95_hinge01-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_joint_hinge_door01_cabinet_2_95_hinge01-mesh-normals">
+          <float_array id="_joint_hinge_door01_cabinet_2_95_hinge01-mesh-normals-array" count="66">0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 -0.000000 1.000000 0 -0.951056 0.309017 0 -0.000000 1.000000 0 -0.951056 0.309017 0 -0.587785 -0.809017 0 -0.587785 -0.809017 0 0.587785 -0.809017 0 0.587785 -0.809017 0 0.951056 0.309017 0 0.951056 0.309017 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000</float_array>
+          <technique_common>
+            <accessor source="#_joint_hinge_door01_cabinet_2_95_hinge01-mesh-normals-array" count="22" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_joint_hinge_door01_cabinet_2_95_hinge01-mesh-map-channel1">
+          <float_array id="_joint_hinge_door01_cabinet_2_95_hinge01-mesh-map-channel1-array" count="51">0.500000 0 0 0.750000 0 1.000000 0.950000 0 1.000000 0.150000 0 1.000000 0.350000 0 1.000000 0.550000 0 1.000000 0.750000 1.000000 1.000000 0.950000 1.000000 1.000000 0.150000 1.000000 1.000000 0.350000 1.000000 1.000000 0.550000 1.000000 1.000000 0.500000 1.000000 0 -0.050000 0 1.000000 -0.050000 0 1.000000 -0.050000 1.000000 1.000000 -0.050000 0 1.000000 -0.050000 1.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#_joint_hinge_door01_cabinet_2_95_hinge01-mesh-map-channel1-array" count="17" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="_joint_hinge_door01_cabinet_2_95_hinge01-mesh-vertices">
+          <input semantic="POSITION" source="#_joint_hinge_door01_cabinet_2_95_hinge01-mesh-positions"/>
+        </vertices>
+        <triangles material="_1_-_Default" count="20">
+          <input semantic="VERTEX" source="#_joint_hinge_door01_cabinet_2_95_hinge01-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#_joint_hinge_door01_cabinet_2_95_hinge01-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#_joint_hinge_door01_cabinet_2_95_hinge01-mesh-map-channel1" offset="2" set="1"/>
+          <p>0 0 0 2 1 2 1 2 1 0 0 0 3 3 3 2 1 12 0 0 0 4 4 4 3 3 3 0 0 0 5 5 5 4 4 4 0 0 0 1 2 1 5 5 5 1 6 1 7 7 7 6 8 6 1 6 1 2 9 2 7 7 7 2 9 13 8 10 8 7 7 14 2 9 15 3 11 3 8 10 8 3 11 3 9 12 9 8 10 8 3 11 3 4 13 4 9 12 9 4 13 4 10 14 10 9 12 9 4 13 4 5 15 5 10 14 10 5 15 5 6 8 6 10 14 10 5 15 5 1 6 1 6 8 6 11 16 11 6 17 6 7 18 7 11 16 11 7 18 16 8 19 8 11 16 11 8 19 8 9 20 9 11 16 11 9 20 9 10 21 10 11 16 11 10 21 10 6 17 6</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="_joint_hinge_door02_cabinet_95_2_hinge02-mesh">
+      <mesh>
+        <source id="_joint_hinge_door02_cabinet_95_2_hinge02-mesh-positions">
+          <float_array id="_joint_hinge_door02_cabinet_95_2_hinge02-mesh-positions-array" count="36">-0.001484 0 -0.978119 0.014058 0 -0.978119 0.003318 0.014781 -0.978119 -0.014058 0.009135 -0.978119 -0.014058 -0.009135 -0.978119 0.003318 -0.014781 -0.978119 0.014058 0 0.978119 0.003318 0.014781 0.978119 -0.014058 0.009135 0.978119 -0.014058 -0.009135 0.978119 0.003318 -0.014781 0.978119 -0.001484 0 0.978119</float_array>
+          <technique_common>
+            <accessor source="#_joint_hinge_door02_cabinet_95_2_hinge02-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_joint_hinge_door02_cabinet_95_2_hinge02-mesh-normals">
+          <float_array id="_joint_hinge_door02_cabinet_95_2_hinge02-mesh-normals-array" count="66">0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 1.000000 0 0 0.309017 0.951056 0 1.000000 0 0 0.309017 0.951056 0 -0.809017 0.587785 0 -0.809017 0.587785 0 -0.809017 -0.587785 0 -0.809017 -0.587785 0 0.309017 -0.951056 0 0.309017 -0.951056 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000</float_array>
+          <technique_common>
+            <accessor source="#_joint_hinge_door02_cabinet_95_2_hinge02-mesh-normals-array" count="22" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_joint_hinge_door02_cabinet_95_2_hinge02-mesh-map-channel1">
+          <float_array id="_joint_hinge_door02_cabinet_95_2_hinge02-mesh-map-channel1-array" count="51">0.500000 0 0 0.750000 0 1.000000 0.950000 0 1.000000 0.150000 0 1.000000 0.350000 0 1.000000 0.550000 0 1.000000 0.750000 1.000000 1.000000 0.950000 1.000000 1.000000 0.150000 1.000000 1.000000 0.350000 1.000000 1.000000 0.550000 1.000000 1.000000 0.500000 1.000000 0 -0.050000 0 1.000000 -0.050000 0 1.000000 -0.050000 1.000000 1.000000 -0.050000 0 1.000000 -0.050000 1.000000 1.000000</float_array>
+          <technique_common>
+            <accessor source="#_joint_hinge_door02_cabinet_95_2_hinge02-mesh-map-channel1-array" count="17" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="_joint_hinge_door02_cabinet_95_2_hinge02-mesh-vertices">
+          <input semantic="POSITION" source="#_joint_hinge_door02_cabinet_95_2_hinge02-mesh-positions"/>
+        </vertices>
+        <triangles material="_1_-_Default" count="20">
+          <input semantic="VERTEX" source="#_joint_hinge_door02_cabinet_95_2_hinge02-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#_joint_hinge_door02_cabinet_95_2_hinge02-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#_joint_hinge_door02_cabinet_95_2_hinge02-mesh-map-channel1" offset="2" set="1"/>
+          <p>0 0 0 2 1 2 1 2 1 0 0 0 3 3 3 2 1 12 0 0 0 4 4 4 3 3 3 0 0 0 5 5 5 4 4 4 0 0 0 1 2 1 5 5 5 1 6 1 7 7 7 6 8 6 1 6 1 2 9 2 7 7 7 2 9 13 8 10 8 7 7 14 2 9 15 3 11 3 8 10 8 3 11 3 9 12 9 8 10 8 3 11 3 4 13 4 9 12 9 4 13 4 10 14 10 9 12 9 4 13 4 5 15 5 10 14 10 5 15 5 6 8 6 10 14 10 5 15 5 1 6 1 6 8 6 11 16 11 6 17 6 7 18 7 11 16 11 7 18 16 8 19 8 11 16 11 8 19 8 9 20 9 11 16 11 9 20 9 10 21 10 11 16 11 10 21 10 6 17 6</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="_collider_box_cabinet_col00-mesh">
+      <mesh>
+        <source id="_collider_box_cabinet_col00-mesh-positions">
+          <float_array id="_collider_box_cabinet_col00-mesh-positions-array" count="24">0.019441 -0.357684 -0.988848 0.019441 -0.357684 0.988848 -0.019441 -0.357684 0.988848 -0.019441 -0.357684 -0.988848 0.019441 0.357684 -0.988848 0.019441 0.357684 0.988848 -0.019441 0.357684 0.988848 -0.019441 0.357684 -0.988848</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col00-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_cabinet_col00-mesh-normals">
+          <float_array id="_collider_box_cabinet_col00-mesh-normals-array" count="108">0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col00-mesh-normals-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_cabinet_col00-mesh-map-channel1">
+          <float_array id="_collider_box_cabinet_col00-mesh-map-channel1-array" count="42">0.414317 0.523805 0 0.414317 0.990494 0 0.615969 0.997641 0 0.624397 0.523805 0 0.422488 0.523805 0 0.422494 0.990494 0 0.616046 0.990494 0 0.616040 0.523805 0 0.817946 0.525886 0 0.817982 0.990494 0 0.624415 0.990494 0 0.422512 0.997641 0 0.422504 0.516686 0 0.615960 0.516686 0</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col00-mesh-map-channel1-array" count="14" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="_collider_box_cabinet_col00-mesh-vertices">
+          <input semantic="POSITION" source="#_collider_box_cabinet_col00-mesh-positions"/>
+        </vertices>
+        <triangles material="_1_-_Default" count="12">
+          <input semantic="VERTEX" source="#_collider_box_cabinet_col00-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#_collider_box_cabinet_col00-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#_collider_box_cabinet_col00-mesh-map-channel1" offset="2" set="1"/>
+          <p>0 0 8 1 1 9 2 2 10 2 3 10 3 4 3 0 5 8 4 6 4 5 7 5 1 8 1 1 9 1 0 10 0 4 11 4 5 12 5 6 13 6 2 14 2 2 15 2 1 16 11 5 17 5 6 18 6 7 19 7 3 20 3 3 21 3 2 22 10 6 23 6 7 24 7 4 25 4 0 26 12 0 27 12 3 28 13 7 29 7 7 30 7 6 31 6 5 32 5 5 33 5 4 34 4 7 35 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="_collider_box_cabinet_col01-mesh">
+      <mesh>
+        <source id="_collider_box_cabinet_col01-mesh-positions">
+          <float_array id="_collider_box_cabinet_col01-mesh-positions-array" count="24">-0.019441 -0.357683 -0.988848 -0.019441 -0.357684 0.988848 0.019441 -0.357684 0.988848 0.019441 -0.357683 -0.988848 -0.019441 0.357685 -0.988848 -0.019441 0.357683 0.988848 0.019441 0.357683 0.988848 0.019441 0.357684 -0.988848</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col01-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_cabinet_col01-mesh-normals">
+          <float_array id="_collider_box_cabinet_col01-mesh-normals-array" count="108">0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col01-mesh-normals-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_cabinet_col01-mesh-map-channel1">
+          <float_array id="_collider_box_cabinet_col01-mesh-map-channel1-array" count="42">0.414317 0.523805 0 0.414317 0.990494 0 0.615969 0.997641 0 0.624397 0.523805 0 0.422488 0.523805 0 0.422494 0.990494 0 0.616046 0.990494 0 0.616040 0.523805 0 0.817946 0.525886 0 0.817982 0.990494 0 0.624415 0.990494 0 0.422512 0.997641 0 0.422504 0.516686 0 0.615960 0.516686 0</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col01-mesh-map-channel1-array" count="14" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="_collider_box_cabinet_col01-mesh-vertices">
+          <input semantic="POSITION" source="#_collider_box_cabinet_col01-mesh-positions"/>
+        </vertices>
+        <triangles material="_1_-_Default" count="12">
+          <input semantic="VERTEX" source="#_collider_box_cabinet_col01-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#_collider_box_cabinet_col01-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#_collider_box_cabinet_col01-mesh-map-channel1" offset="2" set="1"/>
+          <p>0 0 8 1 1 9 2 2 10 2 3 10 3 4 3 0 5 8 4 6 4 5 7 5 1 8 1 1 9 1 0 10 0 4 11 4 5 12 5 6 13 6 2 14 2 2 15 2 1 16 11 5 17 5 6 18 6 7 19 7 3 20 3 3 21 3 2 22 10 6 23 6 7 24 7 4 25 4 0 26 12 0 27 12 3 28 13 7 29 7 7 30 7 6 31 6 5 32 5 5 33 5 4 34 4 7 35 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="_collider_box_cabinet_col02-mesh">
+      <mesh>
+        <source id="_collider_box_cabinet_col02-mesh-positions">
+          <float_array id="_collider_box_cabinet_col02-mesh-positions-array" count="24">-0.715247 -0.357684 -0.019441 0.715247 -0.357684 -0.019441 0.715247 -0.357684 0.019441 -0.715247 -0.357684 0.019441 -0.715247 0.357684 -0.019441 0.715247 0.357684 -0.019441 0.715247 0.357684 0.019441 -0.715247 0.357684 0.019441</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col02-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_cabinet_col02-mesh-normals">
+          <float_array id="_collider_box_cabinet_col02-mesh-normals-array" count="108">0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col02-mesh-normals-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_cabinet_col02-mesh-map-channel1">
+          <float_array id="_collider_box_cabinet_col02-mesh-map-channel1-array" count="42">0.414317 0.523805 0 0.414317 0.990494 0 0.615969 0.997641 0 0.624397 0.523805 0 0.422488 0.523805 0 0.422494 0.990494 0 0.616046 0.990494 0 0.616040 0.523805 0 0.817946 0.525886 0 0.817982 0.990494 0 0.624415 0.990494 0 0.422512 0.997641 0 0.422504 0.516686 0 0.615960 0.516686 0</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col02-mesh-map-channel1-array" count="14" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="_collider_box_cabinet_col02-mesh-vertices">
+          <input semantic="POSITION" source="#_collider_box_cabinet_col02-mesh-positions"/>
+        </vertices>
+        <triangles material="_1_-_Default" count="12">
+          <input semantic="VERTEX" source="#_collider_box_cabinet_col02-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#_collider_box_cabinet_col02-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#_collider_box_cabinet_col02-mesh-map-channel1" offset="2" set="1"/>
+          <p>0 0 8 1 1 9 2 2 10 2 3 10 3 4 3 0 5 8 4 6 4 5 7 5 1 8 1 1 9 1 0 10 0 4 11 4 5 12 5 6 13 6 2 14 2 2 15 2 1 16 11 5 17 5 6 18 6 7 19 7 3 20 3 3 21 3 2 22 10 6 23 6 7 24 7 4 25 4 0 26 12 0 27 12 3 28 13 7 29 7 7 30 7 6 31 6 5 32 5 5 33 5 4 34 4 7 35 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="_collider_box_cabinet_col03-mesh">
+      <mesh>
+        <source id="_collider_box_cabinet_col03-mesh-positions">
+          <float_array id="_collider_box_cabinet_col03-mesh-positions-array" count="24">-0.729924 -0.019441 -0.988848 -0.729924 -0.019441 0.988848 -0.729924 0.019441 0.988848 -0.729924 0.019441 -0.988848 0.729924 -0.019441 -0.988848 0.729924 -0.019441 0.988848 0.729924 0.019441 0.988848 0.729924 0.019441 -0.988848</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col03-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_cabinet_col03-mesh-normals">
+          <float_array id="_collider_box_cabinet_col03-mesh-normals-array" count="108">-1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col03-mesh-normals-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_cabinet_col03-mesh-map-channel1">
+          <float_array id="_collider_box_cabinet_col03-mesh-map-channel1-array" count="42">0.414317 0.523805 0 0.414317 0.990494 0 0.615969 0.997641 0 0.624397 0.523805 0 0.422488 0.523805 0 0.422494 0.990494 0 0.616046 0.990494 0 0.616040 0.523805 0 0.817946 0.525886 0 0.817982 0.990494 0 0.624415 0.990494 0 0.422512 0.997641 0 0.422504 0.516686 0 0.615960 0.516686 0</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col03-mesh-map-channel1-array" count="14" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="_collider_box_cabinet_col03-mesh-vertices">
+          <input semantic="POSITION" source="#_collider_box_cabinet_col03-mesh-positions"/>
+        </vertices>
+        <triangles material="_1_-_Default" count="12">
+          <input semantic="VERTEX" source="#_collider_box_cabinet_col03-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#_collider_box_cabinet_col03-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#_collider_box_cabinet_col03-mesh-map-channel1" offset="2" set="1"/>
+          <p>0 0 8 1 1 9 2 2 10 2 3 10 3 4 3 0 5 8 4 6 4 5 7 5 1 8 1 1 9 1 0 10 0 4 11 4 5 12 5 6 13 6 2 14 2 2 15 2 1 16 11 5 17 5 6 18 6 7 19 7 3 20 3 3 21 3 2 22 10 6 23 6 7 24 7 4 25 4 0 26 12 0 27 12 3 28 13 7 29 7 7 30 7 6 31 6 5 32 5 5 33 5 4 34 4 7 35 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="_collider_box_cabinet_col04-mesh">
+      <mesh>
+        <source id="_collider_box_cabinet_col04-mesh-positions">
+          <float_array id="_collider_box_cabinet_col04-mesh-positions-array" count="24">0.717475 -0.357684 0.019441 -0.717475 -0.357684 0.019441 -0.717475 -0.357684 -0.019441 0.717475 -0.357684 -0.019441 0.717475 0.357684 0.019441 -0.717475 0.357684 0.019441 -0.717475 0.357684 -0.019441 0.717475 0.357684 -0.019441</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col04-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_cabinet_col04-mesh-normals">
+          <float_array id="_collider_box_cabinet_col04-mesh-normals-array" count="108">0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col04-mesh-normals-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_cabinet_col04-mesh-map-channel1">
+          <float_array id="_collider_box_cabinet_col04-mesh-map-channel1-array" count="42">0.414317 0.523805 0 0.414317 0.990494 0 0.615969 0.997641 0 0.624397 0.523805 0 0.422488 0.523805 0 0.422494 0.990494 0 0.616046 0.990494 0 0.616040 0.523805 0 0.817946 0.525886 0 0.817982 0.990494 0 0.624415 0.990494 0 0.422512 0.997641 0 0.422504 0.516686 0 0.615960 0.516686 0</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col04-mesh-map-channel1-array" count="14" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="_collider_box_cabinet_col04-mesh-vertices">
+          <input semantic="POSITION" source="#_collider_box_cabinet_col04-mesh-positions"/>
+        </vertices>
+        <triangles material="_1_-_Default" count="12">
+          <input semantic="VERTEX" source="#_collider_box_cabinet_col04-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#_collider_box_cabinet_col04-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#_collider_box_cabinet_col04-mesh-map-channel1" offset="2" set="1"/>
+          <p>0 0 8 1 1 9 2 2 10 2 3 10 3 4 3 0 5 8 4 6 4 5 7 5 1 8 1 1 9 1 0 10 0 4 11 4 5 12 5 6 13 6 2 14 2 2 15 2 1 16 11 5 17 5 6 18 6 7 19 7 3 20 3 3 21 3 2 22 10 6 23 6 7 24 7 4 25 4 0 26 12 0 27 12 3 28 13 7 29 7 7 30 7 6 31 6 5 32 5 5 33 5 4 34 4 7 35 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="_collider_box_cabinet_col05-mesh">
+      <mesh>
+        <source id="_collider_box_cabinet_col05-mesh-positions">
+          <float_array id="_collider_box_cabinet_col05-mesh-positions-array" count="24">0.717970 -0.318944 0.015641 -0.716980 -0.318944 0.015642 -0.716980 -0.318944 -0.015641 0.717970 -0.318944 -0.015642 0.716980 0.318944 0.015641 -0.717970 0.318944 0.015642 -0.717970 0.318944 -0.015641 0.716980 0.318944 -0.015642</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col05-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_cabinet_col05-mesh-normals">
+          <float_array id="_collider_box_cabinet_col05-mesh-normals-array" count="108">0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col05-mesh-normals-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_cabinet_col05-mesh-map-channel1">
+          <float_array id="_collider_box_cabinet_col05-mesh-map-channel1-array" count="42">0.414317 0.523805 0 0.414317 0.990494 0 0.615969 0.997641 0 0.624397 0.523805 0 0.422488 0.523805 0 0.422494 0.990494 0 0.616046 0.990494 0 0.616040 0.523805 0 0.817946 0.525886 0 0.817982 0.990494 0 0.624415 0.990494 0 0.422512 0.997641 0 0.422504 0.516686 0 0.615960 0.516686 0</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col05-mesh-map-channel1-array" count="14" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="_collider_box_cabinet_col05-mesh-vertices">
+          <input semantic="POSITION" source="#_collider_box_cabinet_col05-mesh-positions"/>
+        </vertices>
+        <triangles material="_1_-_Default" count="12">
+          <input semantic="VERTEX" source="#_collider_box_cabinet_col05-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#_collider_box_cabinet_col05-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#_collider_box_cabinet_col05-mesh-map-channel1" offset="2" set="1"/>
+          <p>0 0 8 1 1 9 2 2 10 2 3 10 3 4 3 0 5 8 4 6 4 5 7 5 1 8 1 1 9 1 0 10 0 4 11 4 5 12 5 6 13 6 2 14 2 2 15 2 1 16 11 5 17 5 6 18 6 7 19 7 3 20 3 3 21 3 2 22 10 6 23 6 7 24 7 4 25 4 0 26 12 0 27 12 3 28 13 7 29 7 7 30 7 6 31 6 5 32 5 5 33 5 4 34 4 7 35 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="_collider_box_cabinet_col06-mesh">
+      <mesh>
+        <source id="_collider_box_cabinet_col06-mesh-positions">
+          <float_array id="_collider_box_cabinet_col06-mesh-positions-array" count="24">0.717970 -0.318944 0.015641 -0.716980 -0.318944 0.015642 -0.716980 -0.318944 -0.015641 0.717970 -0.318944 -0.015642 0.716980 0.318944 0.015641 -0.717970 0.318944 0.015642 -0.717970 0.318944 -0.015641 0.716980 0.318944 -0.015642</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col06-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_cabinet_col06-mesh-normals">
+          <float_array id="_collider_box_cabinet_col06-mesh-normals-array" count="108">0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col06-mesh-normals-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_cabinet_col06-mesh-map-channel1">
+          <float_array id="_collider_box_cabinet_col06-mesh-map-channel1-array" count="42">0.414317 0.523805 0 0.414317 0.990494 0 0.615969 0.997641 0 0.624397 0.523805 0 0.422488 0.523805 0 0.422494 0.990494 0 0.616046 0.990494 0 0.616040 0.523805 0 0.817946 0.525886 0 0.817982 0.990494 0 0.624415 0.990494 0 0.422512 0.997641 0 0.422504 0.516686 0 0.615960 0.516686 0</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col06-mesh-map-channel1-array" count="14" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="_collider_box_cabinet_col06-mesh-vertices">
+          <input semantic="POSITION" source="#_collider_box_cabinet_col06-mesh-positions"/>
+        </vertices>
+        <triangles material="_1_-_Default" count="12">
+          <input semantic="VERTEX" source="#_collider_box_cabinet_col06-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#_collider_box_cabinet_col06-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#_collider_box_cabinet_col06-mesh-map-channel1" offset="2" set="1"/>
+          <p>0 0 8 1 1 9 2 2 10 2 3 10 3 4 3 0 5 8 4 6 4 5 7 5 1 8 1 1 9 1 0 10 0 4 11 4 5 12 5 6 13 6 2 14 2 2 15 2 1 16 11 5 17 5 6 18 6 7 19 7 3 20 3 3 21 3 2 22 10 6 23 6 7 24 7 4 25 4 0 26 12 0 27 12 3 28 13 7 29 7 7 30 7 6 31 6 5 32 5 5 33 5 4 34 4 7 35 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="_collider_box_cabinet_col07-mesh">
+      <mesh>
+        <source id="_collider_box_cabinet_col07-mesh-positions">
+          <float_array id="_collider_box_cabinet_col07-mesh-positions-array" count="24">0.717970 -0.318944 0.015641 -0.716980 -0.318944 0.015642 -0.716980 -0.318944 -0.015641 0.717970 -0.318944 -0.015642 0.716980 0.318944 0.015641 -0.717970 0.318944 0.015642 -0.717970 0.318944 -0.015641 0.716980 0.318944 -0.015642</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col07-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_cabinet_col07-mesh-normals">
+          <float_array id="_collider_box_cabinet_col07-mesh-normals-array" count="108">0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col07-mesh-normals-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_cabinet_col07-mesh-map-channel1">
+          <float_array id="_collider_box_cabinet_col07-mesh-map-channel1-array" count="42">0.414317 0.523805 0 0.414317 0.990494 0 0.615969 0.997641 0 0.624397 0.523805 0 0.422488 0.523805 0 0.422494 0.990494 0 0.616046 0.990494 0 0.616040 0.523805 0 0.817946 0.525886 0 0.817982 0.990494 0 0.624415 0.990494 0 0.422512 0.997641 0 0.422504 0.516686 0 0.615960 0.516686 0</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_cabinet_col07-mesh-map-channel1-array" count="14" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="_collider_box_cabinet_col07-mesh-vertices">
+          <input semantic="POSITION" source="#_collider_box_cabinet_col07-mesh-positions"/>
+        </vertices>
+        <triangles material="_1_-_Default" count="12">
+          <input semantic="VERTEX" source="#_collider_box_cabinet_col07-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#_collider_box_cabinet_col07-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#_collider_box_cabinet_col07-mesh-map-channel1" offset="2" set="1"/>
+          <p>0 0 8 1 1 9 2 2 10 2 3 10 3 4 3 0 5 8 4 6 4 5 7 5 1 8 1 1 9 1 0 10 0 4 11 4 5 12 5 6 13 6 2 14 2 2 15 2 1 16 11 5 17 5 6 18 6 7 19 7 3 20 3 3 21 3 2 22 10 6 23 6 7 24 7 4 25 4 0 26 12 0 27 12 3 28 13 7 29 7 7 30 7 6 31 6 5 32 5 5 33 5 4 34 4 7 35 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="cabinet-mesh">
+      <mesh>
+        <source id="cabinet-mesh-positions">
+          <float_array id="cabinet-mesh-positions-array" count="120">-0.732131 -0.341661 -0.976174 0.732131 -0.341661 -0.976174 -0.732131 0.341661 -0.976174 0.732131 0.341661 -0.976174 -0.732131 -0.341661 0.976175 0.732131 -0.341661 0.976175 -0.732131 0.341661 0.976175 0.732131 0.341661 0.976175 -0.707088 -0.341661 -0.951132 0.707088 -0.341661 -0.951132 0.707088 -0.341661 0.951132 -0.707088 -0.341661 0.951132 -0.707088 0.247216 -0.951132 0.707088 0.247216 -0.951132 0.707088 0.247216 0.951132 -0.707088 0.247216 0.951132 -0.707088 -0.275159 0.636530 0.707088 -0.275159 0.636530 0.707088 0.258811 0.636530 -0.707088 0.258811 0.636530 -0.707088 -0.275159 0.607086 0.707088 -0.275159 0.607086 0.707088 0.258811 0.607086 -0.707088 0.258811 0.607086 0.707088 -0.275159 0.001824 -0.707088 -0.275159 0.001825 -0.707088 0.258811 0.001825 0.707088 0.258811 0.001824 0.707088 -0.275159 0.031268 -0.707088 -0.275159 0.031269 0.707088 0.258811 0.031268 -0.707088 0.258811 0.031269 -0.707088 -0.275159 -0.519547 0.707088 -0.275159 -0.519547 0.707088 0.258811 -0.519547 -0.707088 0.258811 -0.519547 -0.707088 -0.275159 -0.548991 0.707088 -0.275159 -0.548991 -0.707088 0.258811 -0.548991 0.707088 0.258811 -0.548991</float_array>
+          <technique_common>
+            <accessor source="#cabinet-mesh-positions-array" count="40" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cabinet-mesh-normals">
+          <float_array id="cabinet-mesh-normals-array" count="414">0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 -0.000000 0 -1.000000 -0.000000 0 -1.000000 -0.000000 0 -1.000000 -0.000000 0 -1.000000 -0.000000 0 -1.000000 -0.000000 0 -1.000000 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0.000000 0 1.000000 0.000000 0 1.000000 0.000000 0 1.000000 0.000000 0 1.000000 0.000000 0 1.000000 0.000000 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000</float_array>
+          <technique_common>
+            <accessor source="#cabinet-mesh-normals-array" count="138" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cabinet-mesh-map-channel1">
+          <float_array id="cabinet-mesh-map-channel1-array" count="168">0.334849 0.501738 0 0.516898 0.501738 0 0.334849 0.400276 0 0.516899 0.408296 0 0.334850 0.008919 0 0.516900 0.008919 0 0.334849 0.110381 0 0.516900 0.110381 0 0.337962 0.505456 0 0.513785 0.505456 0 0.604970 0.114101 0 0.337964 0.005201 0 0.601857 0.110382 0 0.601857 0.408297 0 0.249893 0.400276 0 0.513786 0.005201 0 0.249893 0.110381 0 0.604970 0.404579 0 0.004844 0.204714 0 0.246778 0.396557 0 0.237028 0.204714 0 0.246779 0.114099 0 0.237028 0.394020 0 0.095801 0.411483 0 0.312189 0.411483 0 0.402294 0.884399 0 0.095801 0.996191 0 0.004844 0.394020 0 0.004844 0.194277 0 0.237028 0.194277 0 0.237028 0.004971 0 0.004844 0.004971 0 0.095801 0.523275 0 0.312188 0.523275 0 0.312188 0.884399 0 0.095801 0.884399 0 0.312189 0.996191 0 0.005696 0.884399 0 0.005696 0.523275 0 0.402294 0.523275 0 0.004844 0.204714 0 0.237028 0.204714 0 0.237028 0.394020 0 0.004844 0.394020 0 0.004844 0.194277 0 0.237028 0.194277 0 0.004844 0.004971 0 0.237028 0.004971 0 0.004844 0.204714 0 0.237028 0.204714 0 0.237028 0.394020 0 0.004844 0.394020 0 0.004844 0.194277 0 0.237028 0.194277 0 0.004844 0.004971 0 0.237028 0.004971 0</float_array>
+          <technique_common>
+            <accessor source="#cabinet-mesh-map-channel1-array" count="56" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="cabinet-mesh-vertices">
+          <input semantic="POSITION" source="#cabinet-mesh-positions"/>
+        </vertices>
+        <triangles material="_7_-_Default1111" count="46">
+          <input semantic="VERTEX" source="#cabinet-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#cabinet-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#cabinet-mesh-map-channel1" offset="2" set="1"/>
+          <p>0 0 0 2 1 2 3 2 3 3 3 3 1 4 1 0 5 0 4 6 4 5 7 5 7 8 7 7 9 7 6 10 6 4 11 4 12 12 32 13 13 33 14 14 34 14 15 34 15 16 35 12 17 32 1 18 13 3 19 3 7 20 7 7 21 7 5 22 12 1 23 13 3 24 3 2 25 2 6 26 6 6 27 6 7 28 7 3 29 3 2 30 2 0 31 14 4 32 16 4 33 16 6 34 6 2 35 2 0 36 0 1 37 1 9 38 9 9 39 9 8 40 8 0 41 0 1 42 13 5 43 12 10 44 10 10 45 10 9 46 17 1 47 13 5 48 5 4 49 4 11 50 11 11 51 11 10 52 15 5 53 5 4 54 16 0 55 14 8 56 19 8 57 19 11 58 21 4 59 16 8 60 23 9 61 24 13 62 33 13 63 33 12 64 32 8 65 23 9 66 39 10 67 25 14 68 34 14 69 34 13 70 33 9 71 39 10 72 36 11 73 26 15 74 35 15 75 35 14 76 34 10 77 36 11 78 37 8 79 38 12 80 32 12 81 32 15 82 35 11 83 37 16 84 18 17 85 20 18 86 22 18 87 22 19 88 27 16 89 18 20 90 28 21 91 29 17 92 20 17 93 20 16 94 18 20 95 28 23 96 31 22 97 30 21 98 29 21 99 29 20 100 28 23 101 31 24 102 40 25 103 41 26 104 42 26 105 42 27 106 43 24 107 40 28 108 44 29 109 45 25 110 41 25 111 41 24 112 40 28 113 44 30 114 46 31 115 47 29 116 45 29 117 45 28 118 44 30 119 46 32 120 48 33 121 49 34 122 50 34 123 50 35 124 51 32 125 48 36 126 52 37 127 53 33 128 49 33 129 49 32 130 48 36 131 52 38 132 54 39 133 55 37 134 53 37 135 53 36 136 52 38 137 54</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="_collider_box_door01col-mesh">
+      <mesh>
+        <source id="_collider_box_door01col-mesh-positions">
+          <float_array id="_collider_box_door01col-mesh-positions-array" count="24">-0.349907 -0.019762 -0.961135 -0.349907 -0.019762 0.961136 0.349907 -0.019762 0.961136 0.349907 -0.019762 -0.961135 -0.349907 0.019762 -0.961135 -0.349907 0.019762 0.961136 0.349907 0.019762 0.961136 0.349907 0.019762 -0.961135</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_door01col-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_door01col-mesh-normals">
+          <float_array id="_collider_box_door01col-mesh-normals-array" count="108">0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_door01col-mesh-normals-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_door01col-mesh-map-channel1">
+          <float_array id="_collider_box_door01col-mesh-map-channel1-array" count="42">0.817946 0.525886 0 0.817982 0.990494 0 0.624415 0.990494 0 0.624397 0.523805 0 0.422488 0.523805 0 0.422494 0.990494 0 0.414317 0.990494 0 0.414317 0.523805 0 0.616046 0.990494 0 0.615969 0.997641 0 0.422512 0.997641 0 0.616040 0.523805 0 0.422504 0.516686 0 0.615960 0.516686 0</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_door01col-mesh-map-channel1-array" count="14" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="_collider_box_door01col-mesh-vertices">
+          <input semantic="POSITION" source="#_collider_box_door01col-mesh-positions"/>
+        </vertices>
+        <triangles material="_1_-_Default" count="12">
+          <input semantic="VERTEX" source="#_collider_box_door01col-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#_collider_box_door01col-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#_collider_box_door01col-mesh-map-channel1" offset="2" set="1"/>
+          <p>0 0 0 3 1 3 2 2 2 2 3 2 1 4 1 0 5 0 4 6 4 0 7 7 1 8 6 1 9 6 5 10 5 4 11 4 5 12 5 1 13 10 2 14 9 2 15 9 6 16 8 5 17 5 6 18 8 2 19 2 3 20 3 3 21 3 7 22 11 6 23 8 7 24 11 3 25 13 0 26 12 0 27 12 4 28 4 7 29 11 7 30 11 4 31 4 5 32 5 5 33 5 6 34 8 7 35 11</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="_collider_box_door02_coll-mesh">
+      <mesh>
+        <source id="_collider_box_door02_coll-mesh-positions">
+          <float_array id="_collider_box_door02_coll-mesh-positions-array" count="24">0.354608 -0.020475 -0.960974 0.354608 -0.020475 0.960974 -0.354608 -0.020475 0.960974 -0.354608 -0.020475 -0.960974 0.354608 0.020475 -0.960974 0.354608 0.020475 0.960974 -0.354608 0.020475 0.960974 -0.354608 0.020475 -0.960974</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_door02_coll-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_door02_coll-mesh-normals">
+          <float_array id="_collider_box_door02_coll-mesh-normals-array" count="108">0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_door02_coll-mesh-normals-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_box_door02_coll-mesh-map-channel1">
+          <float_array id="_collider_box_door02_coll-mesh-map-channel1-array" count="42">0.414317 0.523805 0 0.414317 0.990494 0 0.615969 0.997641 0 0.624397 0.523805 0 0.422488 0.523805 0 0.422494 0.990494 0 0.616046 0.990494 0 0.616040 0.523805 0 0.817946 0.525886 0 0.817982 0.990494 0 0.624415 0.990494 0 0.422512 0.997641 0 0.422504 0.516686 0 0.615960 0.516686 0</float_array>
+          <technique_common>
+            <accessor source="#_collider_box_door02_coll-mesh-map-channel1-array" count="14" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="_collider_box_door02_coll-mesh-vertices">
+          <input semantic="POSITION" source="#_collider_box_door02_coll-mesh-positions"/>
+        </vertices>
+        <triangles material="_1_-_Default" count="12">
+          <input semantic="VERTEX" source="#_collider_box_door02_coll-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#_collider_box_door02_coll-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#_collider_box_door02_coll-mesh-map-channel1" offset="2" set="1"/>
+          <p>0 0 8 1 1 9 2 2 10 2 3 10 3 4 3 0 5 8 4 6 4 5 7 5 1 8 1 1 9 1 0 10 0 4 11 4 5 12 5 6 13 6 2 14 2 2 15 2 1 16 11 5 17 5 6 18 6 7 19 7 3 20 3 3 21 3 2 22 10 6 23 6 7 24 7 4 25 4 0 26 12 0 27 12 3 28 13 7 29 7 7 30 7 6 31 6 5 32 5 5 33 5 4 34 4 7 35 7</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="door01-mesh">
+      <mesh>
+        <source id="door01-mesh-positions">
+          <float_array id="door01-mesh-positions-array" count="132">0.001539 -0.385783 -0.957633 0.001539 -0.385783 0.964315 0.707873 -0.385783 0.964315 0.707873 -0.385783 -0.957633 0.001539 -0.356340 -0.957633 0.001539 -0.356340 0.964315 0.707873 -0.356340 0.964315 0.707873 -0.356340 -0.957633 0.164296 -0.383107 -0.106258 0.116865 -0.414917 -0.106258 0.131493 -0.414917 -0.091629 0.116865 -0.414917 0.106232 0.131493 -0.414917 0.091603 0.164296 -0.383107 0.106232 0.090029 -0.356576 -0.082724 0.139758 -0.356576 -0.092892 0.090029 -0.356576 0.082699 0.139758 -0.356576 0.092866 0.078119 -0.383107 -0.106258 0.078119 -0.383107 0.106232 0.708482 -0.363956 -0.729110 0.714719 -0.353153 -0.729110 0.714719 -0.353153 -0.606627 0.708482 -0.363956 -0.606627 0.727194 -0.353153 -0.729110 0.727194 -0.353153 -0.606627 0.733432 -0.363956 -0.729110 0.733432 -0.363956 -0.606627 0.727194 -0.374760 -0.729110 0.727194 -0.374760 -0.606627 0.714719 -0.374760 -0.729110 0.714719 -0.374760 -0.606627 0.708482 -0.363956 0.671935 0.714719 -0.353153 0.671935 0.714719 -0.353153 0.794418 0.708482 -0.363956 0.794418 0.727194 -0.353153 0.671935 0.727194 -0.353153 0.794418 0.733432 -0.363956 0.671935 0.733432 -0.363956 0.794418 0.727194 -0.374760 0.671935 0.727194 -0.374760 0.794418 0.714719 -0.374760 0.671935 0.714719 -0.374760 0.794418</float_array>
+          <technique_common>
+            <accessor source="#door01-mesh-positions-array" count="44" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="door01-mesh-normals">
+          <float_array id="door01-mesh-normals-array" count="594">0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0.486603 -0.725558 -0.486604 0.486603 -0.725558 -0.486604 0.486603 -0.725558 -0.486604 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0.486603 -0.725558 0.486604 0.486603 -0.725558 0.486604 0.486603 -0.725558 0.486604 0.191428 -0.294626 0.936243 0.191428 -0.294626 0.936243 0.191428 -0.294626 0.936243 0.330334 0.091389 0.939429 0.330334 0.091389 0.939429 0.330334 0.091389 0.939429 0.815103 0.579316 0 0.815103 0.579316 0 0.815103 0.579316 0 0.815103 0.579316 0 0.815103 0.579316 0 0.815103 0.579316 0 0.200314 -0.007167 -0.979706 0.200314 -0.007167 -0.979706 0.200314 -0.007167 -0.979705 0.441523 -0.043142 -0.896212 0.441523 -0.043142 -0.896212 0.441523 -0.043142 -0.896212 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 -0.634546 -0.772885 0 -0.634546 -0.772885 0 -0.634546 -0.772885 0 -0.634546 -0.772885 0 -0.634546 -0.772885 0 -0.634546 -0.772885 0 0 0 1.000000 0 0 1.000000 0 0 1.000000 -0.866024 0.500003 0 -0.866024 0.500003 0 -0.866024 0.500003 0 -0.866024 0.500003 0 -0.866024 0.500003 0 -0.866024 0.500003 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0.866024 0.500003 0 0.866024 0.500003 0 0.866024 0.500003 0 0.866024 0.500003 0 0.866024 0.500003 0 0.866024 0.500003 0 0.866023 -0.500004 0 0.866023 -0.500004 0 0.866023 -0.500004 0 0.866023 -0.500004 0 0.866023 -0.500004 0 0.866023 -0.500004 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 -0.866023 -0.500004 0 -0.866023 -0.500004 0 -0.866023 -0.500004 0 -0.866023 -0.500004 0 -0.866023 -0.500004 0 -0.866023 -0.500004 0 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 -0.866024 0.500003 0 -0.866024 0.500003 0 -0.866024 0.500003 0 -0.866024 0.500003 0 -0.866024 0.500003 0 -0.866024 0.500003 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0.866024 0.500003 0 0.866024 0.500003 0 0.866024 0.500003 0 0.866024 0.500003 0 0.866024 0.500003 0 0.866024 0.500003 0 0.866023 -0.500004 0 0.866023 -0.500004 0 0.866023 -0.500004 0 0.866023 -0.500004 0 0.866023 -0.500004 0 0.866023 -0.500004 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 -0.866023 -0.500004 0 -0.866023 -0.500004 0 -0.866023 -0.500004 0 -0.866023 -0.500004 0 -0.866023 -0.500004 0 -0.866023 -0.500004 0 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 -1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000 0 0 1.000000</float_array>
+          <technique_common>
+            <accessor source="#door01-mesh-normals-array" count="198" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="door01-mesh-map-channel1">
+          <float_array id="door01-mesh-map-channel1-array" count="210">0.998767 0.018151 0 0.998802 0.481896 0 0.812731 0.481896 0 0.812714 0.016074 0 0.618624 0.016074 0 0.618630 0.481896 0 0.610769 0.481896 0 0.610769 0.016074 0 0.804686 0.481896 0 0.804612 0.489030 0 0.618647 0.489030 0 0.804680 0.016074 0 0.618639 0.008968 0 0.804603 0.008968 0 0.916635 0.757195 0 0.941808 0.789703 0 0.928462 0.796069 0 0.941533 0.950478 0 0.928231 0.944037 0 0.916139 0.982829 0 0.872424 0.805239 0 0.889466 0.769681 0 0.872653 0.934932 0 0.888510 0.970152 0 0.979818 0.785322 0 0.979508 0.955038 0 0.944386 0.557548 0 0.961152 0.557548 0 0.961208 0.708609 0 0.944386 0.708609 0 0.977602 0.557548 0 0.977686 0.708609 0 0.877767 0.557548 0 0.894220 0.557548 0 0.894220 0.708609 0 0.877767 0.708609 0 0.910825 0.557548 0 0.910850 0.708609 0 0.927568 0.557548 0 0.927593 0.708609 0 0.961266 0.530441 0 0.977628 0.530441 0 0.985809 0.543766 0 0.953085 0.543766 0 0.953171 0.721358 0 0.985895 0.721358 0 0.977714 0.734683 0 0.961352 0.734683 0 0.944386 0.557548 0 0.961152 0.557548 0 0.961208 0.708609 0 0.944386 0.708609 0 0.977602 0.557548 0 0.977686 0.708609 0 0.877767 0.557548 0 0.894220 0.557548 0 0.894220 0.708609 0 0.877767 0.708609 0 0.910825 0.557548 0 0.910850 0.708609 0 0.927568 0.557548 0 0.927593 0.708609 0 0.961266 0.530441 0 0.977628 0.530441 0 0.985809 0.543766 0 0.953085 0.543766 0 0.953171 0.721358 0 0.985895 0.721358 0 0.977714 0.734683 0 0.961352 0.734683 0</float_array>
+          <technique_common>
+            <accessor source="#door01-mesh-map-channel1-array" count="70" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="door01-mesh-vertices">
+          <input semantic="POSITION" source="#door01-mesh-positions"/>
+        </vertices>
+        <triangles material="_7_-_Default1111" count="66">
+          <input semantic="VERTEX" source="#door01-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#door01-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#door01-mesh-map-channel1" offset="2" set="1"/>
+          <p>0 0 0 3 1 3 2 2 2 2 3 2 1 4 1 0 5 0 4 6 4 0 7 7 1 8 6 1 9 6 5 10 5 4 11 4 5 12 5 1 13 10 2 14 9 2 15 9 6 16 8 5 17 5 6 18 8 2 19 2 3 20 3 3 21 3 7 22 11 6 23 8 7 24 11 3 25 13 0 26 12 0 27 12 4 28 4 7 29 11 7 30 11 4 31 4 5 32 5 5 33 5 6 34 8 7 35 11 8 36 14 10 37 16 9 38 15 9 39 15 10 40 16 12 41 18 12 42 18 11 43 17 9 44 15 11 45 17 12 46 18 13 47 19 8 48 14 15 49 21 14 50 20 14 51 20 10 52 16 8 53 14 10 54 16 14 55 20 16 56 22 16 57 22 12 58 18 10 59 16 12 60 18 16 61 22 17 62 23 17 63 23 13 64 19 12 65 18 8 66 14 9 67 15 18 68 24 18 69 24 9 70 15 11 71 17 11 72 17 19 73 25 18 74 24 19 75 25 11 76 17 13 77 19 20 78 26 23 79 29 22 80 28 22 81 28 21 82 27 20 83 26 21 84 27 22 85 28 25 86 31 25 87 31 24 88 30 21 89 27 24 90 32 25 91 35 27 92 34 27 93 34 26 94 33 24 95 32 26 96 33 27 97 34 29 98 37 29 99 37 28 100 36 26 101 33 28 102 36 29 103 37 31 104 39 31 105 39 30 106 38 28 107 36 30 108 38 31 109 39 23 110 29 23 111 29 20 112 26 30 113 38 20 114 43 21 115 27 24 116 30 24 117 30 26 118 42 28 119 41 20 120 43 24 121 30 28 122 41 30 123 40 20 124 43 28 125 41 31 126 47 29 127 46 27 128 45 27 129 45 25 130 31 22 131 28 31 132 47 27 133 45 22 134 28 23 135 44 31 136 47 22 137 28 32 138 48 35 139 51 34 140 50 34 141 50 33 142 49 32 143 48 33 144 49 34 145 50 37 146 53 37 147 53 36 148 52 33 149 49 36 150 54 37 151 57 39 152 56 39 153 56 38 154 55 36 155 54 38 156 55 39 157 56 41 158 59 41 159 59 40 160 58 38 161 55 40 162 58 41 163 59 43 164 61 43 165 61 42 166 60 40 167 58 42 168 60 43 169 61 35 170 51 35 171 51 32 172 48 42 173 60 32 174 65 33 175 49 36 176 52 36 177 52 38 178 64 40 179 63 32 180 65 36 181 52 40 182 63 42 183 62 32 184 65 40 185 63 43 186 69 41 187 68 39 188 67 39 189 67 37 190 53 34 191 50 43 192 69 39 193 67 34 194 50 35 195 66 43 196 69 34 197 50</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="_2_max" name="_2_max">
+      <node id="group_door02-node" name="group_door02" type="NODE">
+        <translate>-0.406854 -0.638097 0.987019</translate>
+        <rotate sid="RotZ">0 0 1.000000 0</rotate>
+        <rotate sid="RotY">0 1.000000 0 0</rotate>
+        <rotate sid="RotX">1.000000 0 0 0</rotate>
+        <node id="door02-node" name="door02" sid="door02-node" type="JOINT">
+          <translate>0.366605 0.384035 -0.003341</translate>
+          <rotate sid="RotZ">0 0 1.000000 0</rotate>
+          <rotate sid="RotY">0 1.000000 0 0</rotate>
+          <rotate sid="RotX">1.000000 0 0 0</rotate>
+          <instance_geometry url="#door02-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="_7_-_Default1111" target="#_7_-_Default1111">
+                  <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="_collider_box_door02_coll-node" name="_collider_box_door02_coll" sid="_collider_box_door02_coll-node" type="JOINT">
+          <translate>0.012780 0.010307 0</translate>
+          <rotate sid="RotZ">0 0 1.000000 0</rotate>
+          <rotate sid="RotY">0 1.000000 0 0</rotate>
+          <rotate sid="RotX">1.000000 0 0 0</rotate>
+          <instance_geometry url="#_collider_box_door02_coll-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="_1_-_Default" target="#_1_-_Default"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <extra>
+          <technique profile="MAX3D">
+            <helper>
+              <bounding_min>-0.367388 -0.030882 -0.960974</bounding_min>
+              <bounding_max>0.367388 0.030882 0.960974</bounding_max>
+            </helper>
+          </technique>
+        </extra>
+      </node>
+      <node id="group_door01-node" name="group_door01" type="NODE">
+        <translate>0.327237 -0.638096 0.986666</translate>
+        <rotate sid="RotZ">0 0 1.000000 0</rotate>
+        <rotate sid="RotY">0 1.000000 0 0</rotate>
+        <rotate sid="RotX">1.000000 0 0 0</rotate>
+        <node id="_collider_box_door01col-node" name="_collider_box_door01col" sid="_collider_box_door01col-node" type="JOINT">
+          <translate>-0.012780 0.010401 -0.000191</translate>
+          <rotate sid="RotZ">0 0 1.000000 0</rotate>
+          <rotate sid="RotY">0 1.000000 0 0</rotate>
+          <rotate sid="RotX">1.000000 0 0 0</rotate>
+          <instance_geometry url="#_collider_box_door01col-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="_1_-_Default" target="#_1_-_Default"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="door01-node" name="door01" sid="door01-node" type="JOINT">
+          <translate>-0.367486 0.384035 -0.002988</translate>
+          <rotate sid="RotZ">0 0 1.000000 0</rotate>
+          <rotate sid="RotY">0 1.000000 0 0</rotate>
+          <rotate sid="RotX">1.000000 0 0 0</rotate>
+          <instance_geometry url="#door01-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="_7_-_Default1111" target="#_7_-_Default1111">
+                  <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <extra>
+          <technique profile="MAX3D">
+            <helper>
+              <bounding_min>-0.365946 -0.030882 -0.961327</bounding_min>
+              <bounding_max>0.365946 0.030882 0.961327</bounding_max>
+            </helper>
+          </technique>
+        </extra>
+      </node>
+      <node id="group_cabinet-node" name="group_cabinet" type="NODE">
+        <translate>-0.038772 -0.251476 0.986938</translate>
+        <rotate sid="RotZ">0 0 1.000000 0</rotate>
+        <rotate sid="RotY">0 1.000000 0 0</rotate>
+        <rotate sid="RotX">1.000000 0 0 0</rotate>
+        <node id="_collider_box_cabinet_col00-node" name="_collider_box_cabinet_col00" sid="_collider_box_cabinet_col00-node" type="JOINT">
+          <translate>-0.720098 -0.000001 0.000122</translate>
+          <rotate sid="RotZ">0 0 1.000000 0</rotate>
+          <rotate sid="RotY">0 1.000000 0 0</rotate>
+          <rotate sid="RotX">1.000000 0 0 0</rotate>
+          <instance_geometry url="#_collider_box_cabinet_col00-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="_1_-_Default" target="#_1_-_Default"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="_collider_box_cabinet_col01-node" name="_collider_box_cabinet_col01" sid="_collider_box_cabinet_col01-node" type="JOINT">
+          <translate>0.720098 0.000000 0.000122</translate>
+          <rotate sid="RotZ">0 0 1.000000 0</rotate>
+          <rotate sid="RotY">0 1.000000 0 0</rotate>
+          <rotate sid="RotX">1.000000 0 0 -0.000010</rotate>
+          <instance_geometry url="#_collider_box_cabinet_col01-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="_1_-_Default" target="#_1_-_Default"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="_collider_box_cabinet_col02-node" name="_collider_box_cabinet_col02" sid="_collider_box_cabinet_col02-node" type="JOINT">
+          <translate>0.009451 -0.000001 0.966147</translate>
+          <rotate sid="RotZ">0 0 1.000000 0</rotate>
+          <rotate sid="RotY">0 1.000000 0 0</rotate>
+          <rotate sid="RotX">1.000000 0 0 0</rotate>
+          <instance_geometry url="#_collider_box_cabinet_col02-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="_1_-_Default" target="#_1_-_Default"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="_collider_box_cabinet_col03-node" name="_collider_box_cabinet_col03" sid="_collider_box_cabinet_col03-node" type="JOINT">
+          <translate>0.007372 0.334728 0.000122</translate>
+          <rotate sid="RotZ">0 0 1.000000 0</rotate>
+          <rotate sid="RotY">0 1.000000 0 0</rotate>
+          <rotate sid="RotX">1.000000 0 0 0</rotate>
+          <instance_geometry url="#_collider_box_cabinet_col03-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="_1_-_Default" target="#_1_-_Default"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="_collider_box_cabinet_col04-node" name="_collider_box_cabinet_col04" sid="_collider_box_cabinet_col04-node" type="JOINT">
+          <translate>0.004621 -0.000001 -0.969529</translate>
+          <rotate sid="RotZ">0 0 1.000000 0</rotate>
+          <rotate sid="RotY">0 1.000000 0 0</rotate>
+          <rotate sid="RotX">1.000000 0 0 0</rotate>
+          <instance_geometry url="#_collider_box_cabinet_col04-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="_1_-_Default" target="#_1_-_Default"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="_collider_box_cabinet_col05-node" name="_collider_box_cabinet_col05" sid="_collider_box_cabinet_col05-node" type="JOINT">
+          <translate>0.005116 0.038739 -0.535431</translate>
+          <rotate sid="RotZ">0 0 1.000000 0</rotate>
+          <rotate sid="RotY">0 1.000000 0 0</rotate>
+          <rotate sid="RotX">1.000000 0 0 0</rotate>
+          <instance_geometry url="#_collider_box_cabinet_col05-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="_1_-_Default" target="#_1_-_Default"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="_collider_box_cabinet_col06-node" name="_collider_box_cabinet_col06" sid="_collider_box_cabinet_col06-node" type="JOINT">
+          <translate>0.005116 0.038739 0.014382</translate>
+          <rotate sid="RotZ">0 0 1.000000 0</rotate>
+          <rotate sid="RotY">0 1.000000 0 0</rotate>
+          <rotate sid="RotX">1.000000 0 0 0</rotate>
+          <instance_geometry url="#_collider_box_cabinet_col06-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="_1_-_Default" target="#_1_-_Default"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="_collider_box_cabinet_col07-node" name="_collider_box_cabinet_col07" sid="_collider_box_cabinet_col07-node" type="JOINT">
+          <translate>0.005116 0.038739 0.620120</translate>
+          <rotate sid="RotZ">0 0 1.000000 0</rotate>
+          <rotate sid="RotY">0 1.000000 0 0</rotate>
+          <rotate sid="RotX">1.000000 0 0 0</rotate>
+          <instance_geometry url="#_collider_box_cabinet_col07-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="_1_-_Default" target="#_1_-_Default"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="cabinet-node" name="cabinet" sid="cabinet-node" type="JOINT">
+          <translate>-0.001477 -0.002586 -0.003260</translate>
+          <rotate sid="RotZ">0 0 1.000000 0</rotate>
+          <rotate sid="RotY">0 1.000000 0 0</rotate>
+          <rotate sid="RotX">1.000000 0 0 0</rotate>
+          <instance_geometry url="#cabinet-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="_7_-_Default1111" target="#_7_-_Default1111">
+                  <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <extra>
+          <technique profile="MAX3D">
+            <helper>
+              <bounding_min>-0.739539 -0.357685 -0.988971</bounding_min>
+              <bounding_max>0.739539 0.357685 0.988971</bounding_max>
+            </helper>
+          </technique>
+        </extra>
+      </node>
+      <node id="_joint_hinge_door01_cabinet_2_95_hinge01-node" name="_joint_hinge_door01_cabinet_2_95_hinge01" sid="_joint_hinge_door01_cabinet_2_95_hinge01-node" type="JOINT">
+        <translate>0.676567 -0.599753 0.977161</translate>
+        <rotate sid="RotZ">0 0 1.000000 0</rotate>
+        <rotate sid="RotY">0 1.000000 0 0</rotate>
+        <rotate sid="RotX">1.000000 0 0 0</rotate>
+        <instance_geometry url="#_joint_hinge_door01_cabinet_2_95_hinge01-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_1_-_Default" target="#_1_-_Default"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="_joint_hinge_door02_cabinet_95_2_hinge02-node" name="_joint_hinge_door02_cabinet_95_2_hinge02" sid="_joint_hinge_door02_cabinet_95_2_hinge02-node" type="JOINT">
+        <translate>-0.762942 -0.614222 0.977161</translate>
+        <rotate sid="RotZ">0 0 1.000000 0</rotate>
+        <rotate sid="RotY">0 1.000000 0 0</rotate>
+        <rotate sid="RotX">1.000000 0 0 0</rotate>
+        <instance_geometry url="#_joint_hinge_door02_cabinet_95_2_hinge02-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_1_-_Default" target="#_1_-_Default"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#_2_max"/>
+  </scene>
+</COLLADA>

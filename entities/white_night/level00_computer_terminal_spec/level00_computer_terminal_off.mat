@@ -1,0 +1,9 @@
+<Material>
+  <Main Type="BumpColorSpecular" PhysicsMaterial="Default" UseAlpha="False" DepthTest="True" Value="1" />
+  <TextureUnits>
+    <Diffuse File="level00_computer_terminal.jpg" Compress="false" Type="2D" Mipmaps="true" Wrap="Repeat" AnimMode="None" AnimFrameTime="1" />
+    <NMap File="level00_computer_terminal_bump.jpg" Compress="false" Type="2D" Mipmaps="true" Wrap="Repeat" AnimMode="None" AnimFrameTime="1" />
+    <Illumination File="level00_computer_terminal_illum1.jpg" Compress="false" Type="2D" Mipmaps="true" Wrap="Repeat" AnimMode="None" AnimFrameTime="1" />
+    <Specular File="level00_computer_terminal_spec.jpg" Compress="false" Type="2D" Mipmaps="true" Wrap="Repeat" AnimMode="None" AnimFrameTime="1" />
+  </TextureUnits>
+</Material>

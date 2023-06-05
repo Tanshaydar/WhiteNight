@@ -1,0 +1,13 @@
+<Material>
+    <Main BlendMode="Add" DepthTest="true" PhysicsMaterial="Metal" Type="soliddiffuse" UseAlpha="false" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="0" AnimMode="None" Compress="false" File="/usr/games/Amnesia/entities/white_night/curtain/metallic-white.jpg" MipMaps="true" Type="2D" Wrap="Repeat" />
+    </TextureUnits>
+    <SpecificVariables>
+        <Var Name="HeightMapScale" Value="0.05000000074505805969" />
+        <Var Name="HeightMapBias" Value="0" />
+        <Var Name="FrenselBias" Value="0.20000000298023223877" />
+        <Var Name="FrenselPow" Value="8" />
+        <Var Name="AlphaDissolveFilter" Value="false" />
+    </SpecificVariables>
+</Material>

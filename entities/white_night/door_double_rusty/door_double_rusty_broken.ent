@@ -1,0 +1,40 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 180" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="180 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="1.86896 2.43558 -0.613339" CameraTarget="-0.328003 0.420288 0.446834" CameraZoom="2.76013" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/white_night/door_double_rusty/door_double_rusty_broken.dae">
+            <SubMesh Active="true" ID="0" Material="" Name="door01" Rotation="0 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 -0.019 0" />
+            <SubMesh Active="true" ID="1" Material="" Name="door02" Rotation="0 0 0" Scale="1 1 1" SubMeshID="1" Tag="" WorldPos="0 -0.019 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="2" Name="Shape_1" RelativeRotation="0 0 0" RelativeScale="0.1 1.96 1.1" RelativeTranslation="0 0 0" Rotation="0 0 0" Scale="0.1 1.96 1.1" ShapeType="Box" Tag="" WorldPos="0 0.98 -0.55" />
+            <BodyShape Active="true" ID="3" Name="Shape_2" RelativeRotation="0 0 0" RelativeScale="0.1 1.96 1.1" RelativeTranslation="0 0 0" Rotation="0 0 0" Scale="0.1 1.96 1.1" ShapeType="Box" Tag="" WorldPos="0 0.98 0.55" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="2.5" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="4" LinearDamping="2.5" Mass="25" Material="Metal" MaxAngularSpeed="10" MaxLinearSpeed="10" Name="Body_1" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0 0.98 -0.55">
+                <Children>
+                    <Child ID="1" />
+                </Children>
+                <Shape ID="2" />
+            </Body>
+            <Body Active="true" AngularDamping="2.5" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="5" LinearDamping="2.5" Mass="25" Material="Metal" MaxAngularSpeed="10" MaxLinearSpeed="10" Name="Body_2" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0 0.98 0.55">
+                <Children>
+                    <Child ID="0" />
+                </Children>
+                <Shape ID="3" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="StaticProp" />
+</Entity>

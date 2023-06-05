@@ -1,0 +1,40 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 180" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="180 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="-1.53979 1.55165 0.696188" CameraTarget="-0.0610844 1.2696 1.14653" CameraZoom="3.46013" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/white_night/curtain/perde-yeni.dae">
+            <SubMesh Active="true" ID="9" Material="" Name="perde" Rotation="0 1.5708 1.5708" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0.00880506 1.33767 0.0219685" />
+            <SubMesh Active="true" ID="10" Material="" Name="ayak1" Rotation="-2.54258 1.5708 -0.971785" Scale="1 1 1" SubMeshID="1" Tag="" WorldPos="0 0.154839 0.629622" />
+            <SubMesh Active="true" ID="11" Material="" Name="ayakucu2" Rotation="-2.54258 1.5708 -0.971785" Scale="1 1 1" SubMeshID="2" Tag="" WorldPos="0 0.154839 0.629622" />
+            <SubMesh Active="true" ID="12" Material="" Name="ayakucu1" Rotation="-2.54258 1.5708 -0.971785" Scale="1 1 1" SubMeshID="3" Tag="" WorldPos="0 0.154839 0.629622" />
+            <SubMesh Active="true" ID="13" Material="" Name="ayakucu3" Rotation="-2.54258 1.5708 -0.971785" Scale="1 1 1" SubMeshID="4" Tag="" WorldPos="0 0.152253 -0.44878" />
+            <SubMesh Active="true" ID="14" Material="" Name="cerceve" Rotation="-1.5708 0 0" Scale="1 1 1" SubMeshID="5" Tag="" WorldPos="0 0.171666 0" />
+            <SubMesh Active="true" ID="15" Material="" Name="ayak2" Rotation="-2.54258 1.5708 -0.971785" Scale="1 1 1" SubMeshID="6" Tag="" WorldPos="0 0.152253 -0.44878" />
+            <SubMesh Active="true" ID="16" Material="" Name="ayakucu4" Rotation="-2.54258 1.5708 -0.971785" Scale="1 1 1" SubMeshID="7" Tag="" WorldPos="0 0.152253 -0.44878" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="5" Name="Shape_1" RelativeRotation="0 0 0" RelativeScale="0.1 2.3 1.85" RelativeTranslation="0.0185821 0.58027 -0.0256505" Rotation="0 0 0" Scale="0.1 2.3 1.85" ShapeType="Box" Tag="" WorldPos="0.0211642 1.28554 0.0502115" />
+            <BodyShape Active="true" ID="6" Name="Shape_2" RelativeRotation="0 0 0" RelativeScale="0.5 0.25 0.1" RelativeTranslation="-0.0185821 -0.58027 0.536138" Rotation="0 0 0" Scale="0.5 0.25 0.1" ShapeType="Box" Tag="" WorldPos="-0.016 0.125 0.612" />
+            <BodyShape Active="true" ID="7" Name="Shape_3" RelativeRotation="0 0 0" RelativeScale="0.5 0.25 0.1" RelativeTranslation="-0.0185821 -0.58027 -0.536138" Rotation="0 0 0" Scale="0.5 0.25 0.1" ShapeType="Box" Tag="" WorldPos="-0.016 0.125 -0.460276" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="false" ID="8" LinearDamping="0" Mass="0" Material="Default" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_1" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0.0025821 0.70527 0.075862">
+                <Shape ID="7" />
+                <Shape ID="6" />
+                <Shape ID="5" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="StaticProp" />
+</Entity>

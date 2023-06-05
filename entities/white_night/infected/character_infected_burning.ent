@@ -1,0 +1,192 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 180" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="180 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="-0.929514 1.77445 0.481738" CameraTarget="-0.176276 1.29231 -0.0746144" CameraZoom="3.86013" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities>
+            <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/particles/ps_fire_stove_small.ps" ID="58" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_1" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-0.00514992 1.64951 -0.0690639" />
+            <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/particles/ps_fire_stove_small.ps" ID="59" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_2" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="0.866334 1.21397 -0.0801591" />
+            <ParticleSystem Active="true" Color="1 1 1 1" FadeAtDistance="true" File="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/particles/ps_fire_stove_small.ps" ID="60" MaxFadeDistanceEnd="110" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MinFadeDistanceStart="2" Name="ParticleSystem_3" Rotation="0 0 0" Scale="1 1 1" Tag="" WorldPos="-0.901881 1.27981 -0.00926822" />
+            <PointLight Active="true" CastShadows="false" DiffuseColor="1 1 1 1" FalloffMap="" FlickerActive="false" FlickerFade="false" FlickerOffColor="0 0 0 1" FlickerOffFadeMaxLength="0" FlickerOffFadeMinLength="0" FlickerOffMaxLength="0" FlickerOffMinLength="0" FlickerOffPS="" FlickerOffRadius="0" FlickerOffSound="" FlickerOnFadeMaxLength="0" FlickerOnFadeMinLength="0" FlickerOnMaxLength="0" FlickerOnMinLength="0" FlickerOnPS="" FlickerOnSound="" Gobo="" GoboAnimFrameTime="0" GoboAnimMode="None" ID="61" Name="PointLight_1" Radius="1.5" Rotation="0 0 0" Scale="1 1 1" ShadowResolution="High" ShadowsAffectDynamic="true" ShadowsAffectStatic="true" Tag="" WorldPos="0 1 0" />
+        </Entities>
+        <Mesh Filename="entities/white_night/infected/character_infected_idle.dae">
+            <SubMesh Active="true" ID="29" Material="" Name="character_infected" Rotation="0 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones>
+            <Bone ID="30" Name="Hips" />
+            <Bone ID="31" Name="LeftUpLeg" />
+            <Bone ID="32" Name="LeftLeg" />
+            <Bone ID="33" Name="LeftFoot" />
+            <Bone ID="34" Name="LFoot_End" />
+            <Bone ID="35" Name="RightUpLeg" />
+            <Bone ID="36" Name="RightLeg" />
+            <Bone ID="37" Name="RightFoot" />
+            <Bone ID="38" Name="RFoot_End" />
+            <Bone ID="39" Name="Spine">
+                <Children>
+                    <Child ID="61" />
+                </Children>
+            </Bone>
+            <Bone ID="40" Name="Spine1" />
+            <Bone ID="41" Name="Neck" />
+            <Bone ID="42" Name="Head" />
+            <Bone ID="43" Name="Head_End">
+                <Children>
+                    <Child ID="58" />
+                </Children>
+            </Bone>
+            <Bone ID="44" Name="LeftShoulder" />
+            <Bone ID="45" Name="LeftArm" />
+            <Bone ID="46" Name="LeftForeArm" />
+            <Bone ID="47" Name="LeftHand" />
+            <Bone ID="48" Name="LeftHandFingers" />
+            <Bone ID="49" Name="LeftHandFingersEnd">
+                <Children>
+                    <Child ID="59" />
+                </Children>
+            </Bone>
+            <Bone ID="50" Name="FlashlightJoint" />
+            <Bone ID="51" Name="RightShoulder" />
+            <Bone ID="52" Name="RightArm" />
+            <Bone ID="53" Name="RightForeArm" />
+            <Bone ID="54" Name="RightHand" />
+            <Bone ID="55" Name="RightHandFingers" />
+            <Bone ID="56" Name="RightHandFingersEnd">
+                <Children>
+                    <Child ID="60" />
+                </Children>
+            </Bone>
+            <Bone ID="57" Name="WeaponJoint" />
+        </Bones>
+        <Shapes />
+        <Bodies />
+        <Joints />
+        <Animations>
+            <Animation File="D:/Scratches/dog/Infected/animation/character_infected_idle.dae_anim" Name="Idle" SpecialEventTime="5.9037e-034" Speed="1" />
+            <Animation File="D:/Scratches/dog/Infected/animation/character_infected_run.dae_anim" Name="Run" SpecialEventTime="1.02426e-033" Speed="0.2" />
+            <Animation File="D:/Scratches/dog/Infected/animation/character_infected_walk.dae_anim" Name="Walk" SpecialEventTime="1.02426e-033" Speed="1" />
+            <Animation File="D:/Scratches/dog/Infected/animation/character_infected_kickdoor.dae_anim" Name="BreakDoor" SpecialEventTime="0.5" Speed="1">
+                <Event Time="0.5" Type="PlaySound" Value="infected/enemy_infected_bang" />
+            </Animation>
+            <Animation File="D:/Scratches/dog/Infected/animation/character_infected_swing_still_v1.dae_anim" Name="SwingClaws01" SpecialEventTime="0" Speed="1.1">
+                <Event Time="0.1" Type="PlaySound" Value="infected/enemy_infected_attack_claw" />
+            </Animation>
+            <Animation File="D:/Scratches/dog/Infected/animation/character_infected_swing_still_v2.dae_anim" Name="SwingClaws02" SpecialEventTime="0.5" Speed="1.1">
+                <Event Time="0.4" Type="PlaySound" Value="infected/enemy_infected_attack_claw" />
+            </Animation>
+            <Animation File="D:/Scratches/dog/Infected/animation/character_infected_swing_launch.dae_anim" Name="SwingLaunch" SpecialEventTime="0.5" Speed="1">
+                <Event Time="0.5" Type="PlaySound" Value="infected/enemy_infected_attack_launch_claw" />
+            </Animation>
+            <Animation File="D:/Scratches/dog/Infected/animation/character_infected_flinch.dae_anim" Name="Flinch" SpecialEventTime="1.02679e-033" Speed="0.75">
+                <Event Time="0.1" Type="PlaySound" Value="infected/enemy_infected_eminiss" />
+            </Animation>
+        </Animations>
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="Enemy_Grunt">
+        <Var Name="Health" Value="100" />
+        <Var Name="Toughness" Value="0" />
+        <Var Name="SightRange" Value="20" />
+        <Var Name="DarknessSightRange" Value="5" />
+        <Var Name="HearVolume" Value="0.55" />
+        <Var Name="FOV" Value="120" />
+        <Var Name="FOVXMul" Value="1" />
+        <Var Name="ActivationDistance" Value="40" />
+        <Var Name="MaxRegenHealth" Value="100" />
+        <Var Name="RegenHealthSpeed" Value="5" />
+        <Var Name="DangerMusic" Value="" />
+        <Var Name="DangerMusicPrio" Value="0" />
+        <Var Name="SearchMusic" Value="" />
+        <Var Name="SearchMusicPrio" Value="0" />
+        <Var Name="AttackMusic" Value="" />
+        <Var Name="AttackMusicPrio" Value="0" />
+        <Var Name="PlayerSearchMaxAngle" Value="45" />
+        <Var Name="PlayerSearchMinDistMul" Value="0.5" />
+        <Var Name="PlayerSearchMaxDistMul" Value="2" />
+        <Var Name="PlayerSearchTime" Value="10" />
+        <Var Name="PlayerPatrolMaxAngle" Value="110" />
+        <Var Name="PlayerPatrolMinDist" Value="8" />
+        <Var Name="PlayerPatrolMaxDist" Value="18" />
+        <Var Name="Body_Size" Value="1.2 1.85 1.2" />
+        <Var Name="Body_Mass" Value="50" />
+        <Var Name="Body_AccurateClimbing" Value="false" />
+        <Var Name="Body_MaxNoSlideSlopeAngle" Value="45" />
+        <Var Name="Body_MaxPushMass" Value="40" />
+        <Var Name="Body_PushForce" Value="200" />
+        <Var Name="Body_CharacterMaxPushMass" Value="20" />
+        <Var Name="Body_CharacterPushForce" Value="100" />
+        <Var Name="Body_MaxStepSize" Value="0.5" />
+        <Var Name="Body_StepClimbSpeed" Value="6" />
+        <Var Name="Body_OffsetRot" Value="0 180 0" />
+        <Var Name="Body_OffsetTrans" Value="0 -0.02 0" />
+        <Var Name="Walk_ForwardSpeed" Value="1.3" />
+        <Var Name="Walk_BackwardSpeed" Value="0.4" />
+        <Var Name="Walk_ForwardAcc" Value="2" />
+        <Var Name="Walk_ForwardDeacc" Value="18" />
+        <Var Name="Run_ForwardSpeed" Value="5.1" />
+        <Var Name="Run_BackwardSpeed" Value="2" />
+        <Var Name="Run_ForwardAcc" Value="4" />
+        <Var Name="Run_ForwardDeacc" Value="8" />
+        <Var Name="TurnSpeedMul" Value="6" />
+        <Var Name="TurnMaxSpeed" Value="12" />
+        <Var Name="TurnMinBreakAngle" Value="10" />
+        <Var Name="TurnBreakMul" Value="2" />
+        <Var Name="MoveSpeedAnimMul" Value="1.2" />
+        <Var Name="StoppedToWalkSpeed" Value="0.15" />
+        <Var Name="WalkToStoppedSpeed" Value="0.1" />
+        <Var Name="WalkToRunSpeed" Value="3.2" />
+        <Var Name="RunToWalkSpeed" Value="2.8" />
+        <Var Name="WaterStepSpeedWalk" Value="3" />
+        <Var Name="WaterStepSpeedRun" Value="5" />
+        <Var Name="WaterStepSpeedMisc" Value="3" />
+        <Var Name="HitPS_Sword" Value="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/particles/hit/blood.ps" />
+        <Var Name="HitSound_Sword" Value="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/sounds/enemy/grunt/hit_generic.snt" />
+        <Var Name="HitPS_Club" Value="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/particles/hit/blood.ps" />
+        <Var Name="HitSound_Club" Value="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/sounds/enemy/grunt/hit_generic.snt" />
+        <Var Name="HitPS_Bullet" Value="" />
+        <Var Name="HitSound_Bullet" Value="" />
+        <Var Name="HitPS_Dud" Value="" />
+        <Var Name="HitSound_Dud" Value="" />
+        <Var Name="AmbientSound_Idle" Value="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/sounds/enemy/grunt/enabled.snt" />
+        <Var Name="AmbientMinTime_Idle" Value="1" />
+        <Var Name="AmbientMaxTime_Idle" Value="3" />
+        <Var Name="AmbientSound_Alert" Value="C:/Program Files (x86)/Amnesia - The Dark Descent/redist/sounds/enemy/grunt/amb_alert.snt" />
+        <Var Name="AmbientMinTime_Alert" Value="1" />
+        <Var Name="AmbientMaxTime_Alert" Value="3" />
+        <Var Name="AmbientSound_Hunt" Value="" />
+        <Var Name="AmbientMinTime_Hunt" Value="1" />
+        <Var Name="AmbientMaxTime_Hunt" Value="3" />
+        <Var Name="NormalAttackDistance" Value="1.9" />
+        <Var Name="NormalDamageSize" Value="1 1.6 1.75" />
+        <Var Name="NormalDamageOffset" Value="0 0 1.2" />
+        <Var Name="NormalAttackHitSound" Value="attack_claw_hit" />
+        <Var Name="NormalAttackDamage" Value="30 60" />
+        <Var Name="NormalAttackForce" Value="30 5" />
+        <Var Name="NormalAttackStrength" Value="1" />
+        <Var Name="NormalDamageType" Value="Claws" />
+        <Var Name="BreakDoorAttackDamage" Value="26 26" />
+        <Var Name="BreakDoorAttackForce" Value="30 5" />
+        <Var Name="BreakDoorAttackStrength" Value="6" />
+        <Var Name="BreakDoorAttackHitSound" Value="attack_claw_hit" />
+        <Var Name="BreakDoorDamageType" Value="BloodSplat" />
+        <Var Name="NoticeSound" Value="" />
+        <Var Name="EnabledSound" Value="" />
+        <Var Name="GroggyDamageCount" Value="1" />
+        <Var Name="AlertToHuntDistance" Value="9" />
+        <Var Name="AlertToInstantHuntDistance" Value="2.5" />
+        <Var Name="HuntPauseMinTime" Value="2" />
+        <Var Name="HuntPauseMaxTime" Value="4.5" />
+        <Var Name="IncreaseAlertSpeedDistance" Value="6" />
+        <Var Name="IncreasedAlertSpeedMul" Value="1.5" />
+        <Var Name="AlertRunTowardsToHuntLimit" Value="30" />
+        <Var Name="AlertRunTowardsCheckDistance" Value="6" />
+        <Var Name="IdleExtraTimeMin" Value="2" />
+        <Var Name="IdleExtraTimeMax" Value="6" />
+        <Var Name="IdleExtraNum" Value="3" />
+    </UserDefinedVariables>
+</Entity>

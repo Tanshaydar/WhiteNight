@@ -1,0 +1,35 @@
+<HandObject>
+	<Main
+		Model = "lantern/item_flashlight.ent"
+		Type= "LightSource"
+	
+	/>
+
+	<Settings
+		OffsetScale = "1 1 1"
+		OffsetRotation = "0 180 0"
+		OffsetPosition = "-0.015 0.015 -0.05"
+			
+		HandsAnim_Idle = "Flashlight_Idle"
+		HandsAnim_Draw = "Flashlight_Draw"
+		HandsAnim_Holster = "Flashlight_Holster"
+		
+		AttachBoneName = "attachpoint"
+				
+		FadeInTime = "1"
+		FadeOutTime = "1"
+		
+		HasSwayPhysics = "false"
+		MaxSwayVel = "15"
+		SwayAngleLimits = "-13 90"
+		SwayDownAngleLimits = "-7 80"
+		SwayPinDir = "0 0 1"
+		SwayGravity = "12"
+		SwayFriction = "1.0"
+		SwayPlayerSpeedMul = "0.015"
+		SwayCameraRollMul = "1"
+		
+		SkipSwaySubMesh = "handle_wood"
+	/>
+
+</HandObject>

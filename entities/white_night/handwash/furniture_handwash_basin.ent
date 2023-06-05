@@ -1,0 +1,31 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 180" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="180 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="0.815867 1.35405 -0.127372" CameraTarget="-0.752693 0.285531 0.157412" CameraZoom="3.26013" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="D:/Scratches/handwash/furniture_handwash_basin.dae">
+            <SubMesh Active="true" ID="0" Material="" Name="pCube1" Rotation="-1.56477 0 0" Scale="0.02 0.02 0.09" SubMeshID="0" Tag="" WorldPos="0.038 1.159 -0.0781977" />
+            <SubMesh Active="true" ID="1" Material="" Name="pCube4" Rotation="-1.56477 0 0" Scale="0.02 0.02 0.09" SubMeshID="1" Tag="" WorldPos="0.0378777 1.15907 0.104212" />
+            <SubMesh Active="true" ID="2" Material="" Name="polySurface1" Rotation="0 0 0" Scale="1 1 1" SubMeshID="2" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="3" Name="Shape_1" RelativeRotation="0 0 0" RelativeScale="0.554682 1.15 0.647406" RelativeTranslation="0 0 0" Rotation="0 0 0" Scale="0.554682 1.15 0.647406" ShapeType="Box" Tag="" WorldPos="0.245537 0.569404 -0.00933542" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="true" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="5" LinearDamping="0" Mass="0" Material="Rock" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_1" PushedByCharacterGravity="true" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0.245537 0.569404 -0.00933542">
+                <Shape ID="3" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="StaticProp" />
+</Entity>

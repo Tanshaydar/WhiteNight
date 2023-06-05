@@ -1,0 +1,73 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 180" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="180 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="5.07707 3.16923 3.30535" CameraTarget="-0.576666 0.280777 2.76436" CameraZoom="2.06013" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/white_night/rock_worm/character_rockworm_base.dae">
+            <SubMesh Active="true" ID="0" Material="" Name="worm" Rotation="0 0 0" Scale="1 1 1" SubMeshID="0" Tag="" WorldPos="0 0 0" />
+        </Mesh>
+        <Bones>
+            <Bone ID="1" Name="root" />
+            <Bone ID="2" Name="tail" />
+            <Bone ID="3" Name="spine03" />
+            <Bone ID="4" Name="Spine02" />
+            <Bone ID="5" Name="spine01" />
+            <Bone ID="6" Name="head" />
+            <Bone ID="7" Name="mouth" />
+            <Bone ID="8" Name="teeth02" />
+            <Bone ID="9" Name="teeth01" />
+            <Bone ID="10" Name="teeth04" />
+            <Bone ID="11" Name="teeth03" />
+        </Bones>
+        <Shapes>
+            <BodyShape Active="true" ID="13" Name="Shape_1" RelativeRotation="1.5708 0 0" RelativeScale="1.25 10 1.25" RelativeTranslation="0 0 0" Rotation="1.5708 0 0" Scale="1.25 10 1.25" ShapeType="Cylinder" Tag="" WorldPos="0 1.457 3.796" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="15" LinearDamping="0" Mass="0" Material="Organic" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Body_1" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0 1.457 3.796">
+                <Shape ID="13" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="MoveObject">
+        <Var Name="Health" Value="100" />
+        <Var Name="Toughness" Value="0" />
+        <Var Name="MaxFocusDistance" Value="1" />
+        <Var Name="MainPhysicsBody" Value="" />
+        <Var Name="ShowMesh" Value="true" />
+        <Var Name="DissolveOnDestruction" Value="false" />
+        <Var Name="DissolveTime" Value="1.0" />
+        <Var Name="EffectsOnSound" Value="" />
+        <Var Name="EffectsOffSound" Value="" />
+        <Var Name="EffectsOnTime" Value="1" />
+        <Var Name="EffectsOffTime" Value="1" />
+        <Var Name="EffectsOffLightColor" Value="0 0 0 0" />
+        <Var Name="EffectsOffLightRadius" Value="-1" />
+        <Var Name="ShowHints" Value="true" />
+        <Var Name="StaticMoveCheckCollision" Value="false" />
+        <Var Name="StaticMoveStartSound" Value="" />
+        <Var Name="StaticMoveStopSound" Value="" />
+        <Var Name="StaticMoveLoopSound" Value="" />
+        <Var Name="RandomizeAnimationStart" Value="true" />
+        <Var Name="MoveObjectType" Value="Linear" />
+        <Var Name="OpenAmount" Value="-2.5" />
+        <Var Name="MoveAxis" Value="Z" />
+        <Var Name="OpenAcc" Value="3" />
+        <Var Name="OpenSpeed" Value="1.0" />
+        <Var Name="CloseAcc" Value="3" />
+        <Var Name="CloseSpeed" Value="1.0" />
+        <Var Name="AutoMove" Value="false" />
+        <Var Name="AutoMoveStateGoal" Value="0.0" />
+        <Var Name="AutoMoveAcc" Value="7" />
+        <Var Name="AutoMoveSpeed" Value="5.0" />
+        <Var Name="AutoMoveSlowdownDist" Value="0.1" />
+    </UserDefinedVariables>
+</Entity>

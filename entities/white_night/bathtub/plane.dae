@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.4.0" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	<asset>
+		<contributor>
+			<author>Illusoft Collada 1.4.0 plugin for Blender - http://colladablender.illusoft.com</author>
+			<authoring_tool>Blender v:249 - Illusoft Collada Exporter v:0.3.162</authoring_tool>
+			<comments></comments>
+			<copyright></copyright>
+			<source_data>file:///home/yasar/Dropbox/BlenderThings/check_these_out/plane.blend</source_data>
+		</contributor>
+		<created>2011-07-25T10:34:24.388181</created>
+		<modified>2011-07-25T10:34:24.388209</modified>
+		<unit meter="0.01" name="centimeter"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_effects>
+		<effect id="Material-fx" name="Material-fx">
+			<profile_COMMON>
+				<newparam sid="water_castlebase_foun-surface">
+					<surface type="2D">
+						<init_from>water_castlebase_foun-img</init_from>
+						<format>A8R8G8B8</format>
+					</surface>
+				</newparam>
+				<newparam sid="water_castlebase_foun-sampler">
+					<sampler2D>
+						<source>water_castlebase_foun-surface</source>
+						<minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+						<magfilter>LINEAR</magfilter>
+					</sampler2D>
+				</newparam>
+				<technique sid="blender">
+					<phong>
+						<emission>
+							<color>0.00000 0.00000 0.00000 1</color>
+						</emission>
+						<ambient>
+							<color>0.40000 0.40000 0.40000 1</color>
+						</ambient>
+						<diffuse>
+							<texture texcoord="CHANNEL1" texture="water_castlebase_foun-sampler"/>
+						</diffuse>
+						<specular>
+							<color>0.50000 0.50000 0.50000 1</color>
+						</specular>
+						<shininess>
+							<float>12.0</float>
+						</shininess>
+						<reflective>
+							<color>1.00000 1.00000 1.00000 1</color>
+						</reflective>
+						<reflectivity>
+							<float>0.0</float>
+						</reflectivity>
+						<transparent>
+							<color>1 1 1 1</color>
+						</transparent>
+						<transparency>
+							<float>0.0</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_images>
+		<image id="water_castlebase_foun-img" name="water_castlebase_foun-img">
+			<init_from>water_sewer.dds</init_from>
+		</image>
+	</library_images>
+	<library_materials>
+		<material id="Material" name="Material">
+			<instance_effect url="#Material-fx"/>
+		</material>
+	</library_materials>
+	<library_geometries>
+		<geometry id="bathtub_001-Geometry" name="bathtub_001-Geometry">
+			<mesh>
+				<source id="bathtub_001-Geometry-Position">
+					<float_array count="54" id="bathtub_001-Geometry-Position-array">-52.73455 -59.23679 -12.72037 9.18185 -59.24298 -13.25167 -52.73455 -59.23679 16.01793 -54.57235 -59.23679 -11.65937 -54.57235 -59.23679 14.95693 -56.66215 -59.23679 -8.03967 -56.66226 -59.23679 11.33723 -55.93646 -59.23679 -10.03377 3.83185 -59.24298 17.08963 -55.93646 -59.23679 13.33133 9.18185 -59.24298 16.14623 17.37855 -59.24298 9.26843 19.23655 -59.24298 4.16353 13.88655 -59.24298 13.43003 17.37855 -59.24298 -6.37387 13.88655 -59.24298 -10.53547 19.23655 -59.24298 -1.26897 3.83185 -59.24298 -14.19507</float_array>
+					<technique_common>
+						<accessor count="18" source="#bathtub_001-Geometry-Position-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="bathtub_001-Geometry-Normals">
+					<float_array count="144" id="bathtub_001-Geometry-Normals-array">0.00000 1.00000 0.00000 0.00006 1.00000 0.00000 0.00006 1.00000 0.00000 0.00006 1.00000 0.00000 0.00003 1.00000 0.00000 0.00006 1.00000 0.00000 0.00000 1.00000 0.00000 0.00006 1.00000 0.00000 0.00003 1.00000 0.00000 0.00000 1.00000 0.00000 0.00003 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00006 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="48" source="#bathtub_001-Geometry-Normals-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="bathtub_001-Geometry-UV">
+					<float_array count="96" id="bathtub_001-Geometry-UV-array">0.66497 0.89731 0.30657 0.89731 0.68336 0.19187 0.30657 0.89731 0.29321 0.19187 0.68336 0.19187 0.67159 0.12515 0.68336 0.19187 0.29321 0.19187 0.67159 0.12515 0.29321 0.19187 0.30497 0.12515 0.67159 0.12515 0.30497 0.12515 0.63772 0.06648 0.30497 0.12515 0.33884 0.06648 0.63772 0.06648 0.33884 0.06648 0.58582 0.02293 0.63772 0.06648 0.39074 0.02293 0.58582 0.02293 0.33884 0.06648 0.39074 0.02293 0.52216 -0.00024 0.58582 0.02293 0.39074 0.02293 0.45441 -0.00024 0.52216 -0.00024 0.66497 0.89731 0.33264 0.94246 0.30657 0.89731 0.66497 0.89731 0.65946 0.93704 0.38102 0.97769 0.66497 0.89731 0.38102 0.97769 0.33264 0.94246 0.65946 0.93704 0.65107 0.96575 0.46443 0.99976 0.65946 0.93704 0.46443 0.99976 0.38102 0.97769 0.63613 0.99128 0.46443 0.99976 0.65107 0.96575</float_array>
+					<technique_common>
+						<accessor count="48" source="#bathtub_001-Geometry-UV-array" stride="2">
+							<param type="float" name="S"></param>
+							<param type="float" name="T"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="bathtub_001-Geometry-Vertex">
+					<input semantic="POSITION" source="#bathtub_001-Geometry-Position"/>
+				</vertices>
+				<triangles count="16" material="Material">
+					<input offset="0" semantic="VERTEX" source="#bathtub_001-Geometry-Vertex"/>
+					<input offset="1" semantic="NORMAL" source="#bathtub_001-Geometry-Normals"/>
+					<input offset="2" semantic="TEXCOORD" source="#bathtub_001-Geometry-UV"/>
+					<p>0 0 0 2 1 1 17 2 2 2 3 3 8 4 4 17 5 5 1 6 6 17 7 7 8 8 8 1 9 9 8 10 10 10 11 11 1 12 12 10 13 13 15 14 14 10 15 15 13 16 16 15 17 17 13 18 18 14 19 19 15 20 20 11 21 21 14 22 22 13 23 23 11 24 24 16 25 25 14 26 26 11 27 27 12 28 28 16 29 29 0 30 30 4 31 31 2 32 32 0 33 33 3 34 34 9 35 35 0 36 36 9 37 37 4 38 38 3 39 39 7 40 40 6 41 41 3 42 42 6 43 43 9 44 44 5 45 45 6 46 46 7 47 47</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_visual_scenes>
+		<visual_scene id="Scene001" name="Scene001">
+			<node layer="L1" id="bathtub_001" name="bathtub_001">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">0.10000 0.10000 0.10000</scale>
+				<instance_geometry url="#bathtub_001-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Material" target="#Material">
+								<bind_vertex_input input_semantic="TEXCOORD" input_set="1" semantic="CHANNEL1"/>
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene001"/>
+	</scene>
+</COLLADA>

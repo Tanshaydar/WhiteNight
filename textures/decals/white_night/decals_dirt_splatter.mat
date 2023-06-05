@@ -1,0 +1,7 @@
+<Material>
+    <Main BlendMode="Add" DepthTest="true" PhysicsMaterial="Default" Type="decal" UseAlpha="false" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="0" AnimMode="None" Compress="false" File="D:/Amnesia - The Dark Descent/redist/decal2/decals_dirt_splatter.jpg" MipMaps="true" Type="2D" Wrap="Repeat" />
+    </TextureUnits>
+    <SpecificVariables />
+</Material>

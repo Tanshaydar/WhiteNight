@@ -1,0 +1,10 @@
+<SOUNDENTITY>
+  <SOUNDS>
+  	<Main>
+  		<Sound File="infected/enemy_infected_attack_launch_claw1" />
+  		<Sound File="infected/enemy_infected_attack_launch_claw2" />
+  		<Sound File="infected/enemy_infected_attack_launch_claw3" />
+  	</Main>
+  </SOUNDS>
+  <PROPERTIES Volume="1" MinDistance="0.5" MaxDistance="15" Random="1" Interval="0" FadeEnd="False" FadeStart="False" Stream="False" Loop="False" Use3D="True" Blockable="True" BlockVolumeMul="0.5" Priority="0" />
+</SOUNDENTITY>

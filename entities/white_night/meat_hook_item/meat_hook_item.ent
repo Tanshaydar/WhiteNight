@@ -1,0 +1,62 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 180" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="180 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="-0.0491263 0.176272 0.0515656" CameraTarget="0.0329924 0 -0.0111946" CameraZoom="5.5" GridHeight="0" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/equipment/meat_hook/meat_hook.dae">
+            <SubMesh Active="true" ID="0" Material="" Name="headusOBJexport" Rotation="0 0 1.5708" Scale="0.2 0.2 0.2" SubMeshID="0" Tag="" WorldPos="-0.0444444 0.0162885 0" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="1" Name="Shape_1" RelativeRotation="0.149677 0 5.78183e-014" RelativeScale="0.028 0.28 0.028" RelativeTranslation="4.15947e-007 0.114149 -0.0311114" Rotation="0.149677 0 1.5708" Scale="0.0084 0.084 0.0084" ShapeType="Box" Tag="" WorldPos="-0.0357333 0.0209987 -0.0052105" />
+            <BodyShape Active="true" ID="2" Name="Shape_2" RelativeRotation="-0.034907 0 5.78183e-014" RelativeScale="0.028 0.03 0.15" RelativeTranslation="-6.98954e-008 -0.0200621 -0.0311114" Rotation="-0.034907 0 1.5708" Scale="0.0084 0.009 0.045" ShapeType="Box" Tag="" WorldPos="0.00453003 0.0209987 -0.0052105" />
+            <BodyShape Active="true" ID="3" Name="Shape_3" RelativeRotation="0.034907 0 5.78183e-014" RelativeScale="0.028 0.03 0.15" RelativeTranslation="-4.10489e-007 -0.114149 -0.0311114" Rotation="0.034907 0 1.5708" Scale="0.0084 0.009 0.045" ShapeType="Box" Tag="" WorldPos="0.0327561 0.0209987 -0.0052105" />
+            <BodyShape Active="true" ID="4" Name="Shape_4" RelativeRotation="0 0 5.78183e-014" RelativeScale="0.028 0.1 0.03" RelativeTranslation="-2.29439e-007 -0.064135 0.0311114" Rotation="0 0 1.5708" Scale="0.0084 0.03 0.009" ShapeType="Box" Tag="" WorldPos="0.0177519 0.0209987 0.0134563" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0.3" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="false" CollideNonCharacter="true" ContinuousCollision="true" HasGravity="true" ID="5" LinearDamping="0.3" Mass="2" Material="Metal" MaxAngularSpeed="16" MaxLinearSpeed="16" Name="Body" PushedByCharacterGravity="false" Rotation="0 0 1.5708" Scale="0.3 0.3 0.3" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="-0.0014886 0.0209987 0.00412292">
+                <Children>
+                    <Child ID="0" />
+                </Children>
+                <Shape ID="1" />
+                <Shape ID="2" />
+                <Shape ID="3" />
+                <Shape ID="4" />
+            </Body>
+        </Bodies>
+        <Joints />
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="Puzzle" EntityType="Item">
+        <Var Name="Health" Value="100" />
+        <Var Name="Toughness" Value="0" />
+        <Var Name="MaxFocusDistance" Value="0" />
+        <Var Name="MainPhysicsBody" Value="" />
+        <Var Name="ShowMesh" Value="true" />
+        <Var Name="DissolveOnDestruction" Value="false" />
+        <Var Name="DissolveTime" Value="1.0" />
+        <Var Name="EffectsOnSound" Value="" />
+        <Var Name="EffectsOffSound" Value="" />
+        <Var Name="EffectsOnTime" Value="1" />
+        <Var Name="EffectsOffTime" Value="1" />
+        <Var Name="EffectsOffLightColor" Value="0 0 0 0" />
+        <Var Name="EffectsOffLightRadius" Value="-1" />
+        <Var Name="ShowHints" Value="true" />
+        <Var Name="StaticMoveCheckCollision" Value="false" />
+        <Var Name="StaticMoveStartSound" Value="" />
+        <Var Name="StaticMoveStopSound" Value="" />
+        <Var Name="StaticMoveLoopSound" Value="" />
+        <Var Name="RandomizeAnimationStart" Value="true" />
+        <Var Name="SubItemTypeName" Value="hook" />
+        <Var Name="ImageFile" Value="D:/Amnesia - The Dark Descent/redist/entities/white_night/meat_hook_item/hook.tga" />
+        <Var Name="PickSound" Value="Generic" />
+        <Var Name="TempVar" Value="0" />
+    </UserDefinedVariables>
+</Entity>

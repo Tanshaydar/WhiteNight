@@ -1,0 +1,13 @@
+<Material>
+    <Main BlendMode="Add" DepthTest="true" PhysicsMaterial="Metal" Type="soliddiffuse" UseAlpha="false" />
+    <TextureUnits>
+        <Diffuse AnimFrameTime="0" AnimMode="None" Compress="false" File="/home/reeko5k/Games/Amnesia/custom_stories/OneLongNight/entities/ceiling_fan/ceiling_fan.png" MipMaps="false" Type="2D" Wrap="Repeat" />
+    </TextureUnits>
+    <SpecificVariables>
+        <Var Name="HeightMapScale" Value="0.55" />
+        <Var Name="HeightMapBias" Value="0" />
+        <Var Name="FrenselBias" Value="0.3" />
+        <Var Name="FrenselPow" Value="50" />
+        <Var Name="AlphaDissolveFilter" Value="false" />
+    </SpecificVariables>
+</Material>

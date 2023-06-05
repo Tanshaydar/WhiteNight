@@ -1,0 +1,780 @@
+<LANGUAGE>
+  <RESOURCES />
+  <CATEGORY Name="Global">
+    <Entry Name="Warning">Warnung</Entry>
+    <Entry Name="Yes">Ja</Entry>
+    <Entry Name="No">Nein</Entry>
+    <Entry Name="OK">OK</Entry>
+    <Entry Name="Cancel">Abbrechen</Entry>
+    <Entry Name="None">Nichts</Entry>
+  </CATEGORY>
+  <CATEGORY Name="MainMenu">
+    <Entry Name="Start Game">Neue Sitzung</Entry>
+    <Entry Name="Load Game">Erinnere dich</Entry>
+    <Entry Name="Custom Map">Welten anderer</Entry>
+    <Entry Name="Change Profile">Anderer Patient</Entry>
+    <Entry Name="Exit">Vergiss</Entry>
+    <Entry Name="Start a new game?">Neue Sitzung beginnen?</Entry>
+    <Entry Name="Yes">Ja</Entry>
+    <Entry Name="No">Nein</Entry>
+    <Entry Name="Sure you want to quit?">Möchtest du wirklich vergessen?</Entry>
+    <Entry Name="Profiles">Patienten</Entry>
+    <Entry Name="Select">Auswählen</Entry>
+    <Entry Name="Create">Erstellen</Entry>
+    <Entry Name="Delete">Töten</Entry>
+    <Entry Name="Information:">Information:</Entry>
+    <Entry Name="Create Profile">Neuer Patient</Entry>
+    <Entry Name="Enter name of Profile">Gib den Namen des Patienten ein</Entry>
+    <Entry Name="Cancel">Abbrechen</Entry>
+    <Entry Name="No profile to be deleted!">Kann Patienten nicht töten!</Entry>
+    <Entry Name="Sure you want to delete profile">Möchtest du diesen Patienten wirklich töten? Alle Fortschritte gehen verloren!</Entry>
+    <Entry Name="Could not remove profile">Patient konnte nicht umgebracht werden!</Entry>
+    <Entry Name="The profile name already exists">Dieser Patient existiert bereits!</Entry>
+    <Entry Name="OK">OK</Entry>
+    <Entry Name="New Player">Neuer Patient</Entry>
+    <Entry Name="Back To Game">Zurück zur Sitzung</Entry>
+    <Entry Name="Options">Optionen</Entry>
+    <Entry Name="OptionsGame">Spiel</Entry>
+    <Entry Name="OptionsGraphics">Grafik</Entry>
+    <Entry Name="OptionsGraphicsAdvanced">Grafik (Erweitert)</Entry>
+    <Entry Name="OptionsSound">Sound</Entry>
+    <Entry Name="OptionsInput">Eingabe</Entry>
+    <Entry Name="Apply">Übernehmen</Entry>
+    <Entry Name="ExitToMainMenu">Vergessen</Entry>
+    <Entry Name="Sure you want to exit to main menu?">Möchtest du wirklich alles vergessen? Alle Fortschritte gehen verloren!</Entry>
+    <Entry Name="Continue">Behandlung fortsetzen</Entry>
+    <Entry Name="Continue old game?">Begonnene Sitzung fortsetzen?</Entry>
+    <Entry Name="ExitAndSave">Später erinnern</Entry>
+    <Entry Name="Sure you want to exit and save?">Möchtest du wirklich vergessen und dich später erinnern?</Entry>
+    <Entry Name="Chapter">Kapitel</Entry>
+    <Entry Name="Level">Level</Entry>
+    <Entry Name="Save">Speichern</Entry>
+  </CATEGORY>
+  <CATEGORY Name="OptionsMenu">
+    <Entry Name="Low">Niedrig</Entry>
+    <Entry Name="Medium">Mittel</Entry>
+    <Entry Name="High">Hoch</Entry>
+    <Entry Name="Show">Anzeigen</Entry>
+    <Entry Name="BasicOptions">Grundeinstellungen</Entry>
+    <Entry Name="AdvancedOptions">Erweiterte Einstellungen</Entry>
+    <Entry Name="Nearest">Nearest</Entry>
+    <Entry Name="Bilinear">Bilinear</Entry>
+    <Entry Name="Trilinear">Trilinear</Entry>
+    <Entry Name="ReqRestart">Neustart erforderlich</Entry>
+    <Entry Name="ReqRestartLabel">Achtung!</Entry>
+    <Entry Name="ReqRestartMessage">Für einige Änderungen ist ein Neustart erforderlich.</Entry>
+    <Entry Name="ShowHints">Hinweise anzeigen</Entry>
+    <Entry Name="ShowHintsTip">Lass dir im Display während des Spiels Hinweise anzeigen.</Entry>
+    <Entry Name="Resolution">Auflösung</Entry>
+    <Entry Name="ResolutionTip">Bildschirmauflösung ändern.</Entry>
+    <Entry Name="FullScreen">Vollbild</Entry>
+    <Entry Name="FullScreenTip">Wechsle zwischen Vollbild und Fenster-Modus.</Entry>
+    <Entry Name="VSync">VSync</Entry>
+    <Entry Name="VSyncTip">Vertikalrücklauf synchronisieren. Zur Reduzierung des Tearings.</Entry>
+    <Entry Name="TexQuality">Textur-Qualität</Entry>
+    <Entry Name="TexQualityTip">Auflösung der Textur im Spiel.</Entry>
+    <Entry Name="TexFilter">Textur-Filter</Entry>
+    <Entry Name="TexFilterTip">Passt die Qualität der Texturen der Betrachtungsentfernung an.</Entry>
+    <Entry Name="PostEffects">Post-Effekte</Entry>
+    <Entry Name="PostEffectsTip">Einstellen, ob Post-Effekte verwendet werden sollen.</Entry>
+    <Entry Name="Bloom">Bloom</Entry>
+    <Entry Name="BloomTip">Überstrahleffekte.</Entry>
+    <Entry Name="ImageTrail">ImageTrail</Entry>
+    <Entry Name="ImageTrailTip">Ein für einige Szenen verwendeter Unschärfe-Effekt.</Entry>
+    <Entry Name="Sepia">Sepia</Entry>
+    <Entry Name="SepiaTip">Filter zum Ändern der Farbtöne.</Entry>
+    <Entry Name="RadialBlur">RadialBlur</Entry>
+    <Entry Name="RadialBlurTip">Ein in einigen Sequenzen verwendeter Unschärfe-Filter.</Entry>
+    <Entry Name="SSAO">SSAO</Entry>
+    <Entry Name="SSAOTip">Screen Space Ambient Occlusion-Filter. Für realistischere Schatten.</Entry>
+    <Entry Name="SSAOSamplesTip">Anzahl der Samples für SSAO-Filter.</Entry>
+    <Entry Name="Shadows">Schatten</Entry>
+    <Entry Name="ShadowsTip">Einstellen, ob Objekte Schatten werfen.</Entry>
+    <Entry Name="ShadowQuality">Qualität</Entry>
+    <Entry Name="ShadowQualityTip">Schattenqualität. Hohe Schattenqualität glättet die Kanten, benötigt aber mehr Rechenleistung.</Entry>
+    <Entry Name="ShadowRes">Auflösung</Entry>
+    <Entry Name="ShadowResTip">Je höher die Auflösung, desto detaillierter die Schatten.</Entry>
+    <Entry Name="Gamma">Gamma</Entry>
+    <Entry Name="GammaTip">Gamma Tip</Entry>
+    <Entry Name="ParallaxQuality">Parallax-Qualität</Entry>
+    <Entry Name="ParallaxQualityTip">Qualität des Parallax-Effekts. Eine hohe Parallax-Qualität benötigt sehr viel Rechenleistung.</Entry>
+    <Entry Name="InvertMouse">Maus invertieren</Entry>
+    <Entry Name="InvertMouseTip">Invertiert die Y-Ache der Maus.</Entry>
+    <Entry Name="SmoothMouse">Glatte Maus</Entry>
+    <Entry Name="SmoothMouseTip">Glatte Mausbewegungen einstellen.</Entry>
+    <Entry Name="MouseSensitivity">Empfindlichkeit der Maus</Entry>
+    <Entry Name="MouseSensitivityTip">Empfindlichkeit der Mausbewegungen einstellen.</Entry>
+    <Entry Name="Volume">Master Volume</Entry>
+    <Entry Name="VolumeTip">Klangvolumen</Entry>
+    <Entry Name="GammaInstructions">Steuert die Bildschirmhelligkeit. Zum Anpassen Gamma reduzieren, bis das rechte Viereck nicht mehr sichtbar ist.</Entry>
+    <Entry Name="KeyConfigButton">Tastenkonfiguration</Entry>
+    <Entry Name="KeyConfigButtonTip">Tastenkonfiguration vornehmen.</Entry>
+    <Entry Name="WorldReflection">Umgebungsreflektion</Entry>
+    <Entry Name="WorldReflectionTip">Einstellen, ob Umgebungsreflektionen auf dem Wasser erscheinen.</Entry>
+    <Entry Name="SSAOSamples">Samples</Entry>
+    <Entry Name="SSAOResolution">Auflösung</Entry>
+    <Entry Name="SSAOResolutionTip">Eine hohe Auflösung sorgt für schärferes SSAO, benötigt aber eine hohe Rechenleistung.</Entry>
+    <Entry Name="Material">Material</Entry>
+    <Entry Name="Anisotropy">Anisotropie</Entry>
+    <Entry Name="AnisotropyTip">Lässt Texturen in der Ferne realistischer erscheinen.</Entry>
+    <Entry Name="Off">Aus</Entry>
+    <Entry Name="FullscreenSmooth">Glätten</Entry>
+    <Entry Name="Enabled">Aktiviert</Entry>
+    <Entry Name="EdgeSmoothTip">Glättet Kanten, benötigt aber viel Rechenleistung.</Entry>
+    <Entry Name="Insanity">Geisteskrank</Entry>
+    <Entry Name="InsanityTip">Verwendeter Effekt bei schlechtem geistigen Zustand.</Entry>
+    <Entry Name="ParallaxEnabledTip">Dieser Effekt lässt flache Oberflächen tief erscheinen.</Entry>
+    <Entry Name="ShowSubtitles">Untertitel einblenden</Entry>
+    <Entry Name="ShowSubtitlesTip">Einstellen, ob Untertitel zusammen mit dem gesprochenem Text angezeigt werden sollen.</Entry>
+    <Entry Name="ShowDeathHints">Todeshinweise anzeigen</Entry>
+    <Entry Name="ShowDeathHintsTip">Einstellen, ob Hinweise nach dem Tod aktiviert werden sollen.</Entry>
+    <Entry Name="ShowEffectSubtitles">Untertitel zu den Effekten anzeigen</Entry>
+    <Entry Name="ShowEffectSubtitlesTip">Einstellen, ob Untertitel zusammen mit den Effektstimmen angezeigt werden sollen.</Entry>
+    <Entry Name="ShowCrosshair">Fadenkreuz anzeigen</Entry>
+    <Entry Name="ShowCrosshairTip">Einstellen, ob das Fadenkreuz im Spiel angezeigt werden soll.</Entry>
+    <Entry Name="Language">Sprache</Entry>
+    <Entry Name="LanguageTip">Sprache für Texte und Untertitel.</Entry>
+    <Entry Name="FocusIconStyle">Fokussymbol</Entry>
+    <Entry Name="FocusIconStyleTip">Aussehen des Symbols beim Betrachten von interagierbaren Objekten. "Einfach" ändert nur die Farbe des Fadenkreuzes.</Entry>
+    <Entry Name="FocusIconStyleSimple">Einfach</Entry>
+    <Entry Name="FocusIconStyleDefault">Voreinstellung</Entry>
+    <Entry Name="Refraction">Brechung</Entry>
+    <Entry Name="RefractionTip">Einstellen, ob einige Gegenstände Lichtbrechungen erzeugen sollen.</Entry>
+    <Entry Name="SoundDevice">Audiogeräte</Entry>
+    <Entry Name="Commentary">Kommentar</Entry>
+    <Entry Name="CommentaryTip">Aktiviert Entwickler-Kommentare im Spiel.</Entry>
+    <Entry Name="SoundDeviceTip">Zu verwendende Audiogeräte</Entry>
+    <Entry Name="Water">Wasser</Entry>
+    <Entry Name="Screen">Bildschirm</Entry>
+  </CATEGORY>
+  <CATEGORY Name="LoadGame">
+    <Entry Name="LoadGameTitle">Spiel laden</Entry>
+    <Entry Name="NoGame">Kein zu ladendes Spiel vorhanden.</Entry>
+    <Entry Name="LoadGameMessage">Gespeichertes Spiel laden?</Entry>
+  </CATEGORY>
+  <CATEGORY Name="KeyConfig">
+    <Entry Name="KeyConfigTitle">Tastenkonfiguration</Entry>
+    <Entry Name="Category">Kategorie</Entry>
+    <Entry Name="Movement">Bewegung</Entry>
+    <Entry Name="Actions">Aktionen</Entry>
+    <Entry Name="Misc">Verschiedenes</Entry>
+    <Entry Name="HeaderAction">Aktion</Entry>
+    <Entry Name="HeaderPrimary">Primär</Entry>
+    <Entry Name="HeaderSecondary">Sekundär</Entry>
+    <Entry Name="SetDefault">Voreingestellte Tastenkonfiguration übernehmen</Entry>
+    <Entry Name="LoadDefaultsMessage">Möchtest du die voreingestellte Tastenkonfiguration übernehmen?</Entry>
+    <Entry Name="InvalidInputMessage">Es existieren verschiedene Tasten mit derselben Funktion. Möchtest du sie wirklich beibehalten?</Entry>
+  </CATEGORY>
+  <CATEGORY Name="StartUp" />
+  <CATEGORY Name="ButtonNames">
+    <Entry Name="BackSpace">Backspace</Entry>
+    <Entry Name="Tab">Tabulator</Entry>
+    <Entry Name="Clear">Clear</Entry>
+    <Entry Name="Return">Eingabetaste</Entry>
+    <Entry Name="Pause">Pause</Entry>
+    <Entry Name="Escape">Escape</Entry>
+    <Entry Name="Space">Leertaste</Entry>
+    <Entry Name="Exclaim">Ausrufezeichen</Entry>
+    <Entry Name="DblQoute">Doppelte Anführungszeichen</Entry>
+    <Entry Name="Hash">Paragraph</Entry>
+    <Entry Name="Dollar">Dollar</Entry>
+    <Entry Name="Ampersand">
+    </Entry>
+    <Entry Name="Quote">Ä</Entry>
+    <Entry Name="LeftParent">Klammer zu</Entry>
+    <Entry Name="RightParent">Ist gleich</Entry>
+    <Entry Name="Asterisk">
+    </Entry>
+    <Entry Name="Comma">Komma</Entry>
+    <Entry Name="Slash">Unterstrich</Entry>
+    <Entry Name="Colon">Ö</Entry>
+    <Entry Name="SemiColon">ö</Entry>
+    <Entry Name="Less">Semikolon</Entry>
+    <Entry Name="Greater">Doppelpunkt</Entry>
+    <Entry Name="Question">Bindestrich</Entry>
+    <Entry Name="At">
+    </Entry>
+    <Entry Name="LeftBracket">Ü</Entry>
+    <Entry Name="BackSlash">Raute</Entry>
+    <Entry Name="RightBracket">Alt Gr</Entry>
+    <Entry Name="Caret">Kaufmanns-Und</Entry>
+    <Entry Name="Underscore">Esszett</Entry>
+    <Entry Name="BackQuote">
+    </Entry>
+    <Entry Name="A">A</Entry>
+    <Entry Name="B">
+    </Entry>
+    <Entry Name="C">C</Entry>
+    <Entry Name="D">D</Entry>
+    <Entry Name="E">E</Entry>
+    <Entry Name="F">F</Entry>
+    <Entry Name="G">G</Entry>
+    <Entry Name="H">H</Entry>
+    <Entry Name="I">I</Entry>
+    <Entry Name="J">J</Entry>
+    <Entry Name="K">K</Entry>
+    <Entry Name="L">L</Entry>
+    <Entry Name="M">M</Entry>
+    <Entry Name="N">N</Entry>
+    <Entry Name="O">O</Entry>
+    <Entry Name="P">P</Entry>
+    <Entry Name="Q">Q</Entry>
+    <Entry Name="R">R</Entry>
+    <Entry Name="S">S</Entry>
+    <Entry Name="T">T</Entry>
+    <Entry Name="U">U</Entry>
+    <Entry Name="V">V</Entry>
+    <Entry Name="W">W</Entry>
+    <Entry Name="X">X</Entry>
+    <Entry Name="Y">Z</Entry>
+    <Entry Name="Z">Y</Entry>
+    <Entry Name="0">
+    </Entry>
+    <Entry Name="1">
+    </Entry>
+    <Entry Name="2">
+    </Entry>
+    <Entry Name="3">
+    </Entry>
+    <Entry Name="4">
+    </Entry>
+    <Entry Name="5">
+    </Entry>
+    <Entry Name="6">
+    </Entry>
+    <Entry Name="7">
+    </Entry>
+    <Entry Name="8">
+    </Entry>
+    <Entry Name="9">
+    </Entry>
+    <Entry Name="KP_0">
+    </Entry>
+    <Entry Name="KP_1">
+    </Entry>
+    <Entry Name="KP_2">
+    </Entry>
+    <Entry Name="KP_3">
+    </Entry>
+    <Entry Name="KP_4">
+    </Entry>
+    <Entry Name="KP_5">
+    </Entry>
+    <Entry Name="KP_6">
+    </Entry>
+    <Entry Name="KP_7">
+    </Entry>
+    <Entry Name="KP_8">
+    </Entry>
+    <Entry Name="KP_9">
+    </Entry>
+    <Entry Name="Delete">Entf</Entry>
+    <Entry Name="Period">Punkt</Entry>
+    <Entry Name="Divide">Dividieren</Entry>
+    <Entry Name="Multiply">Multiplizieren</Entry>
+    <Entry Name="Minus">Minus</Entry>
+    <Entry Name="Plus">Plus</Entry>
+    <Entry Name="Enter">Eingabetaste</Entry>
+    <Entry Name="Equals">Ist gleich</Entry>
+    <Entry Name="Up">Nach oben</Entry>
+    <Entry Name="Down">Nach unten</Entry>
+    <Entry Name="Right">Nach rechts</Entry>
+    <Entry Name="Left">Nach links</Entry>
+    <Entry Name="Insert">Einfügetaste</Entry>
+    <Entry Name="Home">Pos. 1</Entry>
+    <Entry Name="End">Ende</Entry>
+    <Entry Name="PageUp">Bild nach unten</Entry>
+    <Entry Name="PageDown">Bild nach oben</Entry>
+    <Entry Name="NumLock">Nummern</Entry>
+    <Entry Name="CapsLock">Feststelltaste</Entry>
+    <Entry Name="ScrollLock">Rollen</Entry>
+    <Entry Name="RightShift">Shift rechts</Entry>
+    <Entry Name="LeftShift">Shift links</Entry>
+    <Entry Name="RightControl">Steuerung rechts</Entry>
+    <Entry Name="RightAlt">Alt Gr</Entry>
+    <Entry Name="LeftAlt">Alt</Entry>
+    <Entry Name="RightMeta">RightMeta</Entry>
+    <Entry Name="LeftMeta">LeftMeta</Entry>
+    <Entry Name="LeftSuper">Super links</Entry>
+    <Entry Name="RightSuper">Super rechts</Entry>
+    <Entry Name="Mode">Modus</Entry>
+    <Entry Name="Help">Hilfe</Entry>
+    <Entry Name="Print">Druck</Entry>
+    <Entry Name="SysReq">S-Abf</Entry>
+    <Entry Name="Break">Unterbrechen</Entry>
+    <Entry Name="Menu">Menü</Entry>
+    <Entry Name="Power">Power</Entry>
+    <Entry Name="Euro">Euro</Entry>
+    <Entry Name="None">Kein</Entry>
+    <Entry Name="LeftMouse">Linke Maustaste</Entry>
+    <Entry Name="MiddleMouse">Mittlere Maustaste</Entry>
+    <Entry Name="RightMouse">Rechte Maustaste</Entry>
+    <Entry Name="WheelUp">Mausrad nach oben</Entry>
+    <Entry Name="WheelDown">Mausrad nach unten</Entry>
+    <Entry Name="LeftControl">Steuerung links</Entry>
+    <Entry Name="KP_Period">
+    </Entry>
+    <Entry Name="KP_Divide">
+    </Entry>
+    <Entry Name="KP_Multiply">
+    </Entry>
+    <Entry Name="KP_Minus">
+    </Entry>
+    <Entry Name="KP_Plus">
+    </Entry>
+    <Entry Name="KP_Enter">
+    </Entry>
+    <Entry Name="KP_Equals">
+    </Entry>
+    <Entry Name="F1">
+    </Entry>
+    <Entry Name="F2">
+    </Entry>
+    <Entry Name="F3">
+    </Entry>
+    <Entry Name="F4">
+    </Entry>
+    <Entry Name="F5">
+    </Entry>
+    <Entry Name="F6">
+    </Entry>
+    <Entry Name="F7">
+    </Entry>
+    <Entry Name="F8">
+    </Entry>
+    <Entry Name="F9">
+    </Entry>
+    <Entry Name="F10">
+    </Entry>
+    <Entry Name="F11">
+    </Entry>
+    <Entry Name="F12">
+    </Entry>
+    <Entry Name="F13">
+    </Entry>
+    <Entry Name="F14">
+    </Entry>
+    <Entry Name="F15">
+    </Entry>
+    <Entry Name="World_0">
+    </Entry>
+    <Entry Name="World_1">
+    </Entry>
+    <Entry Name="World_2">
+    </Entry>
+    <Entry Name="World_3">
+    </Entry>
+    <Entry Name="World_4">
+    </Entry>
+    <Entry Name="World_5">
+    </Entry>
+    <Entry Name="World_6">
+    </Entry>
+    <Entry Name="World_7">
+    </Entry>
+    <Entry Name="World_8">
+    </Entry>
+    <Entry Name="World_9">
+    </Entry>
+    <Entry Name="World_10">
+    </Entry>
+    <Entry Name="World_11">
+    </Entry>
+    <Entry Name="World_12">
+    </Entry>
+    <Entry Name="World_13">
+    </Entry>
+    <Entry Name="World_14">
+    </Entry>
+    <Entry Name="World_15">
+    </Entry>
+    <Entry Name="World_16">
+    </Entry>
+    <Entry Name="World_17">
+    </Entry>
+    <Entry Name="World_18">
+    </Entry>
+    <Entry Name="World_19">
+    </Entry>
+    <Entry Name="World_20">
+    </Entry>
+    <Entry Name="World_21">
+    </Entry>
+    <Entry Name="World_22">
+    </Entry>
+    <Entry Name="World_23">
+    </Entry>
+    <Entry Name="World_24">
+    </Entry>
+    <Entry Name="World_25">
+    </Entry>
+    <Entry Name="World_26">
+    </Entry>
+    <Entry Name="World_27">
+    </Entry>
+    <Entry Name="World_28">
+    </Entry>
+    <Entry Name="World_29">
+    </Entry>
+    <Entry Name="World_30">
+    </Entry>
+    <Entry Name="World_31">
+    </Entry>
+    <Entry Name="World_32">
+    </Entry>
+    <Entry Name="World_33">
+    </Entry>
+    <Entry Name="World_34">
+    </Entry>
+    <Entry Name="World_35">
+    </Entry>
+    <Entry Name="World_36">
+    </Entry>
+    <Entry Name="World_37">
+    </Entry>
+    <Entry Name="World_38">
+    </Entry>
+    <Entry Name="World_39">
+    </Entry>
+    <Entry Name="World_40">
+    </Entry>
+    <Entry Name="World_41">
+    </Entry>
+    <Entry Name="World_42">
+    </Entry>
+    <Entry Name="World_43">
+    </Entry>
+    <Entry Name="World_44">
+    </Entry>
+    <Entry Name="World_45">
+    </Entry>
+    <Entry Name="World_46">
+    </Entry>
+    <Entry Name="World_47">
+    </Entry>
+    <Entry Name="World_48">
+    </Entry>
+    <Entry Name="World_49">
+    </Entry>
+    <Entry Name="World_50">
+    </Entry>
+    <Entry Name="World_51">
+    </Entry>
+    <Entry Name="World_52">
+    </Entry>
+    <Entry Name="World_53">
+    </Entry>
+    <Entry Name="World_54">
+    </Entry>
+    <Entry Name="World_55">
+    </Entry>
+    <Entry Name="World_56">
+    </Entry>
+    <Entry Name="World_57">
+    </Entry>
+    <Entry Name="World_58">
+    </Entry>
+    <Entry Name="World_59">
+    </Entry>
+    <Entry Name="World_60">
+    </Entry>
+    <Entry Name="World_61">
+    </Entry>
+    <Entry Name="World_62">
+    </Entry>
+    <Entry Name="World_63">
+    </Entry>
+    <Entry Name="World_64">
+    </Entry>
+    <Entry Name="World_65">
+    </Entry>
+    <Entry Name="World_66">
+    </Entry>
+    <Entry Name="World_67">
+    </Entry>
+    <Entry Name="World_68">
+    </Entry>
+    <Entry Name="World_69">
+    </Entry>
+    <Entry Name="World_70">
+    </Entry>
+    <Entry Name="World_71">
+    </Entry>
+    <Entry Name="World_72">
+    </Entry>
+    <Entry Name="World_73">
+    </Entry>
+    <Entry Name="World_74">
+    </Entry>
+    <Entry Name="World_75">
+    </Entry>
+    <Entry Name="World_76">
+    </Entry>
+    <Entry Name="World_77">
+    </Entry>
+    <Entry Name="World_78">
+    </Entry>
+    <Entry Name="World_79">
+    </Entry>
+    <Entry Name="World_80">
+    </Entry>
+    <Entry Name="World_81">
+    </Entry>
+    <Entry Name="World_82">
+    </Entry>
+    <Entry Name="World_83">
+    </Entry>
+    <Entry Name="World_84">
+    </Entry>
+    <Entry Name="World_85">
+    </Entry>
+    <Entry Name="World_86">
+    </Entry>
+    <Entry Name="World_87">
+    </Entry>
+    <Entry Name="World_88">
+    </Entry>
+    <Entry Name="World_89">
+    </Entry>
+    <Entry Name="World_90">
+    </Entry>
+    <Entry Name="World_91">
+    </Entry>
+    <Entry Name="World_92">
+    </Entry>
+    <Entry Name="World_93">
+    </Entry>
+    <Entry Name="World_94">
+    </Entry>
+    <Entry Name="World_95">
+    </Entry>
+  </CATEGORY>
+  <CATEGORY Name="Actions">
+    <Entry Name="Forward">Vorwärts</Entry>
+    <Entry Name="Backward">Rückwärts</Entry>
+    <Entry Name="Right">Rechts</Entry>
+    <Entry Name="Left">Links</Entry>
+    <Entry Name="LeanRight">Nach rechts neigen</Entry>
+    <Entry Name="LeanLeft">Nach links neigen</Entry>
+    <Entry Name="Run">Laufen</Entry>
+    <Entry Name="Crouch">Ducken</Entry>
+    <Entry Name="Jump">Springen</Entry>
+    <Entry Name="Attack">Werfen</Entry>
+    <Entry Name="Interact">Interagieren</Entry>
+    <Entry Name="Rotate">Drehen</Entry>
+    <Entry Name="Lantern">Taschenlampe</Entry>
+    <Entry Name="Inventory">Inventar</Entry>
+    <Entry Name="Journal">Journal</Entry>
+    <Entry Name="QuestLog">Mementos</Entry>
+    <Entry Name="RecentText">Öffnet die neuesten Einträge</Entry>
+    <Entry Name="AttackTooltip">Ein aufgenommenes Objekt werfen oder verschieben.</Entry>
+    <Entry Name="BackwardTooltip">Rückwärts bewegen</Entry>
+    <Entry Name="CrouchTooltip">Geduckt bewegen.</Entry>
+    <Entry Name="ForwardTooltip">Vorwärts bewegen</Entry>
+    <Entry Name="InteractTooltip">Mit Objekten im Spiel interagieren.</Entry>
+    <Entry Name="InventoryTooltip">Öffnet das Inventar.</Entry>
+    <Entry Name="JournalTooltip">Öffnet das Journal.</Entry>
+    <Entry Name="JumpTooltip">Lässt Deinen Charakter springen.</Entry>
+    <Entry Name="LanternTooltip">Schaltet die Tatschenlampe ein oder aus.</Entry>
+    <Entry Name="LeanLeftTooltip">Neigt Kopf nach links. Nützlich wenn man um die Ecke spähen möchte.</Entry>
+    <Entry Name="LeanRightTooltip">Neigt Kopf nach rechts. Nützlich wenn man um die Ecke spähen möchte.</Entry>
+    <Entry Name="LeftTooltip">Nach links bewegen.</Entry>
+    <Entry Name="QuestLogTooltip">Öffnet die Memento-Liste. Nützlich wenn Du nicht weiterkommst.</Entry>
+    <Entry Name="RecentTextTooltip">Zeigt kürzlich gelesene Texte (Notizen oder Tagebucheinträge).</Entry>
+    <Entry Name="RightTooltip">Nach rechts laufen.</Entry>
+    <Entry Name="RotateTooltip">Gedrückt halten und Maus bewegen um einen aufgenommenen Gegenstand in der Hand zu drehen.</Entry>
+    <Entry Name="RunTooltip">Gedrückt halten um zu laufen.</Entry>
+    <Entry Name="CrosshairToggle">Fadenkreuz ein/aus</Entry>
+    <Entry Name="CrosshairToggleTooltip">Fadenkreuz auf dem Bildschirm ein- und ausschalten.</Entry>
+  </CATEGORY>
+  <CATEGORY Name="Inventory">
+    <Entry Name="Combine">Kombinieren</Entry>
+    <Entry Name="with">mit</Entry>
+    <Entry Name="CombinationDoesNotWork">Kann nicht kombiniert werden!</Entry>
+    <Entry Name="UseItemDoesNotWork">Dieser Gegenstand kann dafür nicht verwendet werden!</Entry>
+    <Entry Name="UseItemHasNoObject">Gegenstand kann auf kein Objekt angewendet werden.</Entry>
+    <Entry Name="Equipped:">Ausrüstung:</Entry>
+    <Entry Name="ItemDesc_Lantern">Die Taschenlampe erhellt dunkle Orte. Im Spiel $ButLantern drücken um sie einzuschalten.</Entry>
+    <Entry Name="ItemName_Lantern">Taschenlampe</Entry>
+    <Entry Name="ItemDesc_Flashlight">Die Taschenlampe erhellt dunkle Orte. Im Spiel $ButLantern drücken um sie einzuschalten.</Entry>
+    <Entry Name="ItemName_Flashlight">Taschenlampe</Entry>
+    <Entry Name="Thalers">Taler:</Entry>
+    <Entry Name="Sanity">Geistiger Zustand</Entry>
+    <Entry Name="SanityDesc0">...</Entry>
+    <Entry Name="SanityDesc1">Der Kopf dröhnt und die Hände zittern.</Entry>
+    <Entry Name="SanityDesc2">Leichte Kopfschmerzen.</Entry>
+    <Entry Name="SanityDesc3">Glasklar.</Entry>
+    <Entry Name="Health">Körperlicher Zustand</Entry>
+    <Entry Name="HealthDesc0">Kaum bei Bewusstsein.</Entry>
+    <Entry Name="HealthDesc1">Eine Wunde blutet ziemlich stark.</Entry>
+    <Entry Name="HealthDesc2">Einige Schnittwunden und blaue Flecken.</Entry>
+    <Entry Name="HealthDesc3">Alles ist gut.</Entry>
+    <Entry Name="LampOil">Energie</Entry>
+    <Entry Name="LampOilDesc">Wird dazu benutzt, um die Taschenlampe zu betreiben. Ist es leer, kann die Taschenlampe nicht mehr benutzt werden.</Entry>
+    <Entry Name="ItemDesc_HealthPotion">Wird meine Wunden zwar nicht heilen, aber immerhin die Schmerzen lindern.</Entry>
+    <Entry Name="ItemName_HealthPotion">Morphium</Entry>
+    <Entry Name="ItemDesc_SanityPotion">Verbessert den geistigen Zustand.</Entry>
+    <Entry Name="ItemName_SanityPotion">Beruhigungsmittel</Entry>
+    <Entry Name="ItemName_OilPotion">Öl</Entry>
+    <Entry Name="ItemDesc_OilPotion">Brennstoff für Laterne.</Entry>
+    <Entry Name="ItemName_Battery">Akkus</Entry>
+    <Entry Name="ItemDesc_Battery">Ein Akku für die Taschenlampe.</Entry>
+    <Entry Name="ItemName_OilPotionLarge">Große Menge Öl</Entry>
+    <Entry Name="ItemDesc_OilPotionLarge">Brennstoff für Laterne.</Entry>
+    <Entry Name="TooManyItemsOfSort">Es ist kein Platz mehr für diese Art von Gegenstand.</Entry>
+    <Entry Name="PickedUp">Aufgenommen</Entry>
+    <Entry Name="ItemName_CoinsSmall">Säckchen mit 10 Talern</Entry>
+    <Entry Name="ItemDesc_CoinsSmall">Ein kleiner Beutel mit 10 Talern.</Entry>
+    <Entry Name="ItemName_CoinsMedium">Beutel mit 25 Talern</Entry>
+    <Entry Name="ItemDesc_CoinsMedium">Ein Beutel mit 25 Talern.</Entry>
+    <Entry Name="ItemName_CoinsLarge">Sack mit 50 Talern</Entry>
+    <Entry Name="ItemDesc_CoinsLarge">Ein großer Sack mit 50 Talern.</Entry>
+    <Entry Name="ItemDesc_Tinderbox">Ersatz für durchgebrannte Glühbirnen.</Entry>
+    <Entry Name="ItemName_Tinderbox">Glühbirne</Entry>
+    <Entry Name="ItemName_LockPick">Dietrich</Entry>
+    <Entry Name="ItemDesc_LockPick">Verrostet und alt, aber immer noch zum Öffnen von Schlössern geeignet.</Entry>
+    <Entry Name="UseItemCanNotBeLit">Dieses Objekt kann nicht angezündet werden.</Entry>
+    <Entry Name="LanternOn">An</Entry>
+    <Entry Name="LanternOff">Aus</Entry>
+    <Entry Name="OilNeedsLantern">Da ist nichts um ein Akku einzusetzen.</Entry>
+    <Entry Name="Tinderboxes">Glühbirnen</Entry>
+    <Entry Name="TinderboxesDesc">Zum Erneuern von kaputten Lichtquellen in der Umgebung.</Entry>
+    <Entry Name="Journal">Journal</Entry>
+    <Entry Name="JournalDesc">Beinhaltet alle Aufzeichnungen, die eingesammelt wurden. Klicken um zu öffnen.</Entry>
+  </CATEGORY>
+  <CATEGORY Name="Game">
+    <Entry Name="InteractChest01">Zum Öffnen dieser Kiste</Entry>
+    <Entry Name="InteractChest02">werden Taler benötigt.</Entry>
+    <Entry Name="InteractChest03_NoCoins">Du hast nicht genügend Taler!</Entry>
+    <Entry Name="InteractChest03_Question">Entriegeln?</Entry>
+    <Entry Name="InteractChest03">Aktuelle Taleranzahl:</Entry>
+    <Entry Name="DeathPress">Drücke einen Knopf um fortzufahren...</Entry>
+    <Entry Name="NoMoreTinderboxes">Es sind keine Glühbirnen mehr übrig.</Entry>
+    <Entry Name="OilBarrel_Empty">Es ist kein Öl mehr im Faß übrig.</Entry>
+    <Entry Name="OilBarrel_LanternFull">Keine weiteren Akkus nötig. Die Taschenlampe ist bereits voll!</Entry>
+    <Entry Name="OilBarrel_Refill_Full">Die Laterne ist jetzt vollständig aufgefüllt.</Entry>
+    <Entry Name="OilBarrel_Refill_Amount_025">Die Laterne ist mit einigen Tropfen Öl aufgefüllt.</Entry>
+    <Entry Name="OilBarrel_FocusText_Empty">Das Fass enthält kein Öl.</Entry>
+    <Entry Name="OilBarrel_Refill_Amount_050">Die Laterne ist mit einer kleinen Menge Öl aufgefüllt.</Entry>
+    <Entry Name="OilBarrel_Refill_Amount_075">Mehr als die Hälfte der Laterne ist mit Öl aufgefüllt.</Entry>
+    <Entry Name="OilBarrel_Refill_Amount_100">Die Laterne ist fast vollständig gefüllt.</Entry>
+    <Entry Name="OilBarrel_FocusText_025">Im Faß befinden sich einige Tropfen Öl.</Entry>
+    <Entry Name="OilBarrel_FocusText_050">Das Fass enthält weniger als die Hälfte einer Laternenfüllung.</Entry>
+    <Entry Name="OilBarrel_FocusText_075">Das Fass enthält mehr als die Hälfte einer Laternenfüllung.</Entry>
+    <Entry Name="OilBarrel_FocusText_100">Das Fass enthält eine volle Laternenfüllung.</Entry>
+  </CATEGORY>
+  <CATEGORY Name="Journal">
+    <Entry Name="Notes">NOTIZEN</Entry>
+    <Entry Name="Diaries">TAGEBÜCHER</Entry>
+    <Entry Name="Quest Log">MEMENTOS</Entry>
+    <Entry Name="Back">Zurück</Entry>
+    <Entry Name="MainBack">ZURÜCK</Entry>
+    <Entry Name="NotesEmpty">Keine Notizen vorhanden!</Entry>
+    <Entry Name="DiariesEmpty">Keine Tagebucheinträge vorhanden!</Entry>
+    <Entry Name="QuestsEmpty">Keine Mementos vorhanden!</Entry>
+  </CATEGORY>
+  <CATEGORY Name="Quest">
+    <Entry Name="QuestCompleted">SUCHE ABGESCHLOSSEN</Entry>
+    <Entry Name="QuestAdded">SUCHE HINZUGEFÜGT</Entry>
+  </CATEGORY>
+  <CATEGORY Name="CompletionCount">
+    <Entry Name="Completed">Abgeschlossen</Entry>
+  </CATEGORY>
+  <CATEGORY Name="Hints">
+    <Entry Name="SanityAdd">Machst du Fortschritte oder hebst wichtige Gegenstände auf, verbessert sich dein geistiger Zustand wieder.</Entry>
+    <Entry Name="LanternNoItem">Du musst zunächst eine Taschenlampe finden, bevor du sie aktivieren kannst.</Entry>
+    <Entry Name="LanternNoOil">Die Taschenlampe hat keine Energie mehr. Finde ein Akku und benutze es mit der Taschenlampe.</Entry>
+    <Entry Name="LeanHint">Um um Ecken zu sehen oder in enge Gänge zu spähen, drück $ButLeanLeft oder $ButLeanRight.</Entry>
+    <Entry Name="PushHint">Wenn du ein Objekt in der Hand hältst, kannst du ihm mit $ButAttack einen besonders heftigen Stoß versetzen.</Entry>
+    <Entry Name="ThrowHint">Wenn du ein Objekt in der Hand hältst, kannst du es mit $ButAttack werfen.</Entry>
+    <Entry Name="HINT:">HINWEISE:</Entry>
+    <Entry Name="DefaultDeath">Du musst dich erinnern...</Entry>
+    <Entry Name="HintHint">Die Hinweise können in den Optionen unter Spiel ausgeschaltet werden. In die Optionen gelangst du mit $ButExit.</Entry>
+    <Entry Name="EntityWheel">Halte $ButInteract gedrückt und bewege die Maus im Kreis, um das Rad zu bewegen. Das Rad dreht sich entsprechend der Drehrichtung der Maus.</Entry>
+    <Entry Name="EntityGrab01">Wenn Du ein Objekt in der Hand hälst, drück $ButAttack um es zu werfen. Halte $ButRotate gedrückt und bewege die Maus, um das Objekt zu drehen.</Entry>
+    <Entry Name="EntityGrab02">Verwende $ButScrollDown und $ButScrollUp, um das Objekt näher oder weiter weg zu bewegen.</Entry>
+    <Entry Name="EntityPush">Zum Schieben halte $ButInteract gedrückt, während du dich mit $ButForward, $ButBackward, $ButLeft und $ButRight bewegst. Für einen heftigen Stoß in Blickrichtung drück $ButAttack.</Entry>
+    <Entry Name="EntitySlide">Zum Bewegen des Objektes, bewege die Maus und halte dabei $ButInteract gedrückt.</Entry>
+    <Entry Name="EntitySwingDoor">Halte $ButInteract gedrückt und bewege die Maus, um die Tür zu bewegen. Drück $ButAttack, um die Tür aufzustoßen oder sie zuzuwerfen (abhängig von deiner Blickrichtung).</Entry>
+    <Entry Name="EntityLever">Halte $ButInteract gedrückt und bewege die Maus in die gewünschte Bewegungsrichtung des Hebels.</Entry>
+    <Entry Name="DarknessDecrease">Achtung! Wenn du im Dunkeln bist, wird sich dein geistiger Zustand allmählich verschlechtern. Ersetze durchgebrannte Lichter in deiner Umgebung mit gefundenen Glühbirnen oder suche nach anderen Lichtquellen.</Entry>
+    <Entry Name="SanityHit">Beunruhigende Ereignisse verschlechtern deinen geistigen Zustand. Er kann wieder verbessert werden, wenn du Rätsel löst und weiter vorankommst.</Entry>
+    <Entry Name="SanityLow">Dein geistiger Zustand ist jetzt bedenklich schlecht. Bleib im Licht und versuche weiterzukommen.</Entry>
+    <Entry Name="PickSanityPotion">Benutze den Beruhigungstrank um deinen geistigen Zustand zu verbessern. Aktiviere es durch einen Doppelklick im Inventar ($ButInventory).</Entry>
+    <Entry Name="PickCoin">Du hast einen Beutel Taler gefunden. Wenn du genügend Taler hast, kannst du Kisten mit wertvollen Gegenständen öffnen.</Entry>
+    <Entry Name="PickHealthPotion">Benutze Morphium um dich zu heilen. Um es einzunehmen, doppelklicke auf das Symbol im Inventar ($ButInventory).</Entry>
+    <Entry Name="PickOil">Die Taschenlampe verbraucht beim Benutzen Energie. Um sie wieder aufzufüllen, doppelklicke ein Akku im Inventar ($ButInventory).</Entry>
+    <Entry Name="PickLantern">Du hast eine Taschenlampe gefunden. Mit Akkus aufgeladen, kann sie mit der Taste $ButLantern oder einem Doppelklick im Inventar ($ButInventory) aktiviert werden.</Entry>
+    <Entry Name="PickTinderbox">Glühbirnen werden dazu vewendet, um durchgebrannte Lichtquellen in der Umgebung zu ersetzen. Die aktuelle Anzahl an Glühbirnen wird im Inventar ($ButInventory) angezeigt.</Entry>
+    <Entry Name="EnemySeen">Schau deine Feinde nicht zu lange an. Es wird deinen geistigen Zustand verschlechtern und du wirst vielleicht gesehen.</Entry>
+    <Entry Name="StickyArea">Du kannst verschiedene Objekte einsetzen, um schwer zugängliche Orte zu erreichen.</Entry>
+    <Entry Name="HideHint">Du solltest besser ein Versteck finden; du hast nichts, um dich zu verteidigen.</Entry>
+    <Entry Name="EnemyTip01">Falls ein Feind in der Nähe ist, lass dich nicht von ihm sehen und versteck dich im Dunkeln. Falls möglich, vergiss nicht die Taschenlampe auszuschalten ($ButLantern).</Entry>
+    <Entry Name="EnemyTip02">Sei vorsichtig, wenn Feinde in der Nähe sind. Wenn du dich in der Dunkelheit duckst ($ButCrouch), bist du nicht so einfach zu sehen.</Entry>
+    <Entry Name="CombineHint">Einige Gegenstände im Bestand können miteinander kombiniert werden ($ButInventory). Zieh dazu einen Gegenstand auf den anderen, um zu sehen, ob sie sich kombinieren lassen.</Entry>
+    <Entry Name="RunHint">Um zu laufen, halte $ButRun beim Bewegen gedrückt.</Entry>
+    <Entry Name="QuestAdded">Ein Memento wurde zum Journal hinzugefügt ($ButJournal). Mit $ButQuestLog kannst du auf die Mementos schneller zugreifen. Sieh sie dir genau an, wenn du nicht weiterkommst!</Entry>
+    <Entry Name="RecentlyReadText">Mit $ButRecentText kannst du schnell die neuesten Texte lesen.</Entry>
+  </CATEGORY>
+  <CATEGORY Name="LevelDoors">
+    <Entry Name="LockedForever">Es lässt sich nicht bewegen.</Entry>
+  </CATEGORY>
+  <CATEGORY Name="General">
+    <Entry Name="Loading">Erinnern...</Entry>
+    <Entry Name="TheEnd">Ende</Entry>
+  </CATEGORY>
+  <CATEGORY Name="Launcher">
+    <Entry Name="Off">Aus</Entry>
+    <Entry Name="On">An</Entry>
+    <Entry Name="ShowBasic">Grundeinstellungen anzeigen</Entry>
+    <Entry Name="ShowAdvanced">Erweiterte Einstellungen anzeigen</Entry>
+    <Entry Name="TabGeneral">Allgemein</Entry>
+    <Entry Name="VideoDevice">Videovorrichtung:</Entry>
+    <Entry Name="Quality">Qualität:</Entry>
+    <Entry Name="DetectSettings">Ermitteln</Entry>
+    <Entry Name="TabGraphics">Grafikoptionen</Entry>
+    <Entry Name="ShadowQuality">Schattenqualität:</Entry>
+    <Entry Name="ShadowResolution">Schattenauflösung:</Entry>
+    <Entry Name="SSAORes">SSAO-Auflösung</Entry>
+    <Entry Name="EdgeSmooth">Kanten glätten</Entry>
+    <Entry Name="Parallax">Parallax:</Entry>
+    <Entry Name="TabSound">Sound-Optionen</Entry>
+    <Entry Name="SoundDevice">Gerät:</Entry>
+    <Entry Name="LaunchGame">Spiel starten</Entry>
+    <Entry Name="UnsupportedVCard">Karte wird nicht unterstützt</Entry>
+    <Entry Name="UnlistedVCard">Grafikkarte nicht gefunden, Voreinstellung auf Medium gesetzt.</Entry>
+    <Entry Name="UnlistedVCardClosestMatch">Grafikkarte nicht gefunden, benutze passende Einstellungen:</Entry>
+    <Entry Name="Custom">Benutzerdefiniert</Entry>
+    <Entry Name="Unsupported">Nicht unterstützt</Entry>
+  </CATEGORY>
+  <CATEGORY Name="PreMenu">
+    <Entry Name="Continue">Behandlung fortsetzen</Entry>
+  </CATEGORY>
+  <CATEGORY Name="CustomStory">
+    <Entry Name="By">mit</Entry>
+    <Entry Name="NoName">Kein Name verfügbar</Entry>
+    <Entry Name="NoDescription">Keine Beschreibung verfügbar</Entry>
+    <Entry Name="NoAuthor">Anonym</Entry>
+    <Entry Name="StartCustomQuestion">Benutzerdefinierte Story beginnen?</Entry>
+    <Entry Name="Start">Start</Entry>
+    <Entry Name="NoValidStory">Du musst eine benutzerdefinierte Story aus der Liste auswählen</Entry>
+  </CATEGORY>
+  <CATEGORY Name="Languages">
+    <Entry Name="english">English</Entry>
+	<Entry Name="turkish">Türkçe</Entry>
+	<Entry Name="czech">Čeština</Entry>
+    <Entry Name="german">Deutsch</Entry
+	<Entry Name="portuguese">Portuguese</Entry>
+	<Entry Name="greek">Ελληνικά</Entry>>
+    <Entry Name="spanish">Español</Entry>
+    <Entry Name="french">Français</Entry>
+    <Entry Name="russian">Russian</Entry>
+    <Entry Name="polish">Polish</Entry>
+    <Entry Name="italian">Italiano</Entry>
+    <Entry Name="swedish">Svenska</Entry>
+    <Entry Name="finnish">Suomi</Entry>
+    <Entry Name="danish">Dansk</Entry>
+    <Entry Name="norwegian">Norsk</Entry>
+    <Entry Name="icelandish">Icelandish</Entry>
+  </CATEGORY>
+</LANGUAGE>

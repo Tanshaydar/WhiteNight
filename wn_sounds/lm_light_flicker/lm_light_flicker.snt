@@ -1,0 +1,15 @@
+<SOUNDENTITY>
+  <SOUNDS>
+  	<Main>
+  		<Sound File="lm_light_flicker1" />
+  		<Sound File="lm_light_flicker2" />
+  		<Sound File="lm_light_flicker3" />
+  		<Sound File="lm_light_flicker4" />
+		<Sound File="lm_light_flicker5" />
+		<Sound File="lm_light_flicker6" />
+		<Sound File="lm_light_flicker7" />
+		<Sound File="lm_light_flicker8" />
+  	</Main>
+  </SOUNDS>
+  <PROPERTIES Volume="0.7" MinDistance="1" MaxDistance="5" Random="1" Interval="0" FadeEnd="False" FadeStart="False" Stream="False" Loop="False" Use3D="True" Blockable="True" BlockVolumeMul="0.7" Priority="0" />
+</SOUNDENTITY>

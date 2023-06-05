@@ -1,0 +1,13 @@
+////////////////////////////
+// Run at the start of the game.
+void OnGameStart()
+{
+	AddCombineCallback("Silent_Hill", "string_pile_1", "meat_hook_item_1", "Combinator", true);
+}
+
+void Combinator(string &in asItemA, string &in asItemB)
+{
+	GiveItem("silent_hill", "Puzzle", "silent_hill", "pile_string_hook.tga", 1);
+	RemoveItem(asItemA);
+	RemoveItem(asItemB);
+}

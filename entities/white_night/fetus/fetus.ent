@@ -1,0 +1,51 @@
+<Entity>
+    <EditorSession>
+        <Performance CamClipPlanes="0.05 1000" LightsActive="true" PSActive="true" ShowFog="true" ShowSkybox="true" WorldReflection="true" />
+        <ViewportConfig BGColor="0.2 0.2 0.2 1" GAmbientLight="true" GPointLight="true" GridSnap="false" GridSnapSeparation="0.25" SelectedViewport="3" UsingEnlargedViewport="true">
+            <Viewport CameraPosition="0 0 180" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="2" Preset="0" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="180 0 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="0" Preset="1" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="0 180 0" CameraTarget="0 0 0" CameraZoom="0" GridHeight="0" GridPlane="1" Preset="2" RenderMode="1" ShowAxes="true" ShowGrid="true" UsingLTCam="false" />
+            <Viewport CameraPosition="-0.1042 0.959753 1.12917" CameraTarget="0.132151 -0.25 -0.493954" CameraZoom="3.2" GridHeight="-0.25" GridPlane="1" Preset="3" RenderMode="0" ShowAxes="true" ShowGrid="true" UsingLTCam="true" />
+        </ViewportConfig>
+    </EditorSession>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="entities/white_night/fetus/fetus.dae">
+            <SubMesh Active="true" ID="0" Material="" Name="Sphere_002" Rotation="0 0 0" Scale="0.02 0.02 0.02" SubMeshID="0" Tag="" WorldPos="0 -0.162303 0" />
+            <SubMesh Active="true" ID="1" Material="" Name="Sphere" Rotation="0 0 0" Scale="0.02 0.02 0.02" SubMeshID="1" Tag="" WorldPos="0 -0.162303 0" />
+            <SubMesh Active="true" ID="2" Material="" Name="Mesh" Rotation="0 0 0" Scale="0.02 0.02 0.02" SubMeshID="2" Tag="" WorldPos="0.0517199 -0.162303 0.145631" />
+        </Mesh>
+        <Bones />
+        <Shapes>
+            <BodyShape Active="true" ID="7" Name="Shape_1" RelativeRotation="0 0 -0.318348" RelativeScale="0.23 0.55 0.23" RelativeTranslation="0 0 0" Rotation="0 0 -0.318348" Scale="0.23 0.55 0.23" ShapeType="Capsule" Tag="" WorldPos="0 -0.149 0" />
+            <BodyShape Active="true" ID="9" Name="Shape_2" RelativeRotation="3.14159 0 3.14159" RelativeScale="0.025 0.3 0.025" RelativeTranslation="0.00919862 0.0739025 0" Rotation="3.14159 0 3.14159" Scale="0.025 0.3 0.025" ShapeType="Cylinder" Tag="" WorldPos="0.0445888 0.349281 -0.0183525" />
+            <BodyShape Active="true" ID="10" Name="Shape_3" RelativeRotation="3.14159 0 2.57926" RelativeScale="0.025 0.2 0.025" RelativeTranslation="-0.00919863 -0.0739026 0" Rotation="3.14159 0 2.57926" Scale="0.025 0.2 0.025" ShapeType="Cylinder" Tag="" WorldPos="0.0261916 0.201475 -0.0183525" />
+            <BodyShape Active="true" ID="12" Name="Shape_4" RelativeRotation="0 0 0" RelativeScale="0.1 0.001 0.1" RelativeTranslation="0 0 0" Rotation="0 0 0" Scale="0.1 0.001 0.1" ShapeType="Box" Tag="" WorldPos="0.0437664 0.5 -0.023653" />
+        </Shapes>
+        <Bodies>
+            <Body Active="true" AngularDamping="0.3" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="true" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="8" LinearDamping="0.2" Mass="4" Material="Organic" MaxAngularSpeed="10" MaxLinearSpeed="10" Name="Body_1" PushedByCharacterGravity="true" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0 -0.149 0">
+                <Children>
+                    <Child ID="1" />
+                    <Child ID="2" />
+                </Children>
+                <Shape ID="7" />
+            </Body>
+            <Body Active="true" AngularDamping="0.3" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="11" LinearDamping="0.2" Mass="2.5" Material="Organic" MaxAngularSpeed="10" MaxLinearSpeed="10" Name="Body_2" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0.0353902 0.275378 -0.0183525">
+                <Children>
+                    <Child ID="0" />
+                </Children>
+                <Shape ID="10" />
+                <Shape ID="9" />
+            </Body>
+            <Body Active="true" AngularDamping="0" BlocksSound="false" BuoyancyDensityMul="1" CanAttachCharacter="false" CollideCharacter="true" CollideNonCharacter="true" ContinuousCollision="false" HasGravity="true" ID="13" LinearDamping="0" Mass="0" Material="Organic" MaxAngularSpeed="0" MaxLinearSpeed="0" Name="Hinge" PushedByCharacterGravity="false" Rotation="0 0 0" Scale="1 1 1" Tag="" UseSurfaceEffects="true" Volatile="false" WorldPos="0.0437664 0.5 -0.023653">
+                <Shape ID="12" />
+            </Body>
+        </Bodies>
+        <Joints>
+            <JointBall Active="true" BreakForce="0" BreakSound="" Breakable="false" CollideBodies="false" ConnectedChildBodyID="11" ConnectedParentBodyID="13" ID="14" LimitStepCount="0" MaxConeAngle="45" MaxLimitMaxSpeed="0" MaxLimitMinSpeed="0" MaxLimitSound="" MaxMoveFreq="1.1" MaxMoveFreqSpeed="0.7" MaxMoveSpeed="2" MaxMoveVolume="0.8" MaxTwistAngle="0" MiddleMoveSpeed="0.5" MiddleMoveVolume="0.5" MinLimitMaxSpeed="0" MinLimitMinSpeed="0" MinLimitSound="" MinMoveFreq="0.95" MinMoveFreqSpeed="0.2" MinMoveSpeed="0.1" MinMoveVolume="0.01" MoveSound="" MoveType="Linear" Name="JointBall_1" PinDir="0 1 0" Rotation="0 0 0" Scale="1 1 1" StickyMaxLimit="false" StickyMinLimit="false" Stiffness="0" Tag="" WorldPos="0.044 0.5 -0.024" />
+            <JointBall Active="true" BreakForce="0" BreakSound="" Breakable="false" CollideBodies="false" ConnectedChildBodyID="8" ConnectedParentBodyID="11" ID="16" LimitStepCount="0" MaxConeAngle="45" MaxLimitMaxSpeed="0" MaxLimitMinSpeed="0" MaxLimitSound="" MaxMoveFreq="1.1" MaxMoveFreqSpeed="0.7" MaxMoveSpeed="2" MaxMoveVolume="0.8" MaxTwistAngle="45" MiddleMoveSpeed="0.5" MiddleMoveVolume="0.5" MinLimitMaxSpeed="0" MinLimitMinSpeed="0" MinLimitSound="" MinMoveFreq="0.95" MinMoveFreqSpeed="0.2" MinMoveSpeed="0.1" MinMoveVolume="0.01" MoveSound="" MoveType="Linear" Name="JointBall_2" PinDir="0 1 0" Rotation="0 0 0" Scale="1 1 1" StickyMaxLimit="false" StickyMinLimit="false" Stiffness="0" Tag="" WorldPos="0 0.118954 0" />
+        </Joints>
+        <Animations />
+    </ModelData>
+    <UserDefinedVariables EntitySubType="" EntityType="StaticProp" />
+</Entity>

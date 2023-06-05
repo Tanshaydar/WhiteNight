@@ -1,0 +1,530 @@
+void OnStart()
+{
+	SetMapDisplayNameEntry("Rooms");
+	//User Settings
+	SetSanityDrainDisabled(true);
+	SetInventoryDisabled(true);
+	SetPlayerJumpDisabled(true);
+	SetPlayerCrouchDisabled(true);
+	SetPlayerCrouching(true);
+	ShowPlayerCrossHairIcons(false);
+	
+	//Entity Settings
+	PlaySoundAtEntity("Flow", "12_epoxy_flow.snt", "ScriptArea_1", 0, true);
+	PlaySoundAtEntity("Flow", "12_epoxy_flow.snt", "ScriptArea_2", 0, true);
+	PlaySoundAtEntity("water_sound_1", "12_epoxy_flow.snt", "water_sound_1", 0, true);
+	PlaySoundAtEntity("water_sound_2", "12_epoxy_flow.snt", "water_sound_2", 0, true);
+	PlaySoundAtEntity("water_sound_3", "12_epoxy_flow.snt", "water_sound_3", 0, true);
+	
+	
+	//Area CallBacks
+	AddEntityCollideCallback("Player", "Puzzle", "EnteredBath", true, 1);
+	AddEntityCollideCallback("Player", "death", "PlayerFalls", false, 1);
+	AddEntityCollideCallback("Player", "BrokenPipe_1", "OpenHatch2", true, 1);
+	AddEntityCollideCallback("Player", "EnemyActive", "ActivateEnemy", true, 1);
+	//if( !ScriptDebugOn())
+		AddEntityCollideCallback("Player", "DoctorArea", "ActivateDoctor", true, 1);
+	AddEntityCollideCallback("Player", "Corpse", "CorpseSeen", true, 1);
+	AddEntityCollideCallback("Player", "ChairFly", "ChairFlyer", true, 1);
+	
+	//UseCallBacks
+	AddUseItemCallback("", "key_tower_2", "prison_section_plain_2", "KeyOnDoor", true);
+	AddUseItemCallback("", "key_tower_1", "metal_1", "KeyOnDoor_2", true);
+
+	FadeOut(0);
+	AddTimer("porter", 1, "Teleporter");
+	AddTimer("lamp_flourescent01_flickering_1", 2, "Flickering");
+	AddTimer("lamp_flourescent01_flickering_2", 3, "Flickering");
+}
+
+void Teleporter(string &in asTimer)
+{
+//	TeleportPlayer("onbed");
+	PlayMusic("rooms_1", false, 1, 0, 1, true);
+	//Wake Up
+	FadeImageTrailTo(0,1);
+	FadeSepiaColorTo(0,1);
+	FadePlayerRollTo(0, 1, 3); 
+	FadePlayerFOVMulTo(1, 1);;
+	SetPlayerRunSpeedMul(0);
+	FadePlayerRollTo(75, 10, 100);
+	MovePlayerHeadPos(0, -0.9f, 0, 10, 0.5f);
+	AddTimer("blackout", 0.5f, "TimerBlackOut");
+	SetSanityDrainDisabled(true);
+}
+
+void TimerBlackOut(string &in asTimer)
+{
+	AddLocalVarInt("BlackoutStep", 1);		//What step to play in the event
+	float fEventSpeed = 0.5f;				//The default time between steps in an event
+
+	switch( GetLocalVarInt("BlackoutStep") ) {
+		case 1:
+			AddDebugMessage("Sahne 1", false);
+			FadeIn(4);
+			FadeImageTrailTo(2,1);
+			SetPlayerActive(true);
+			SetPlayerMoveSpeedMul(0.05f);
+			SetPlayerLookSpeedMul(0.05f);
+			fEventSpeed = 3.0f;
+		break;
+		case 2:
+			AddDebugMessage("Sahne 2", false);
+			StartPlayerLookAt("ScriptArea_3", 10, 10, "");
+			FadePlayerRollTo(85, 1, 1); 
+		break;
+		case 3:
+			AddDebugMessage("Sahne 3", false);
+		break;
+		case 4:
+			AddDebugMessage("Sahne 4", false);
+			FadeImageTrailTo(0,1);
+			FadePlayerRollTo(65, 1, 1); 
+		break;
+		case 5:
+			AddDebugMessage("Sahne 5", false);
+			PlaySoundAtEntity("sigh", "react_sigh.snt", "Player", 1.0 / 2, false);
+			FadeOut(2);
+			fEventSpeed = 1.5f;	
+		break;
+		case 6:
+			AddDebugMessage("Sahne 6", false);
+			FadePlayerRollTo(85, 1, 4); 
+		break;
+		case 7:
+			AddDebugMessage("Sahne 7", false);
+			FadeImageTrailTo(1.8f,1.5f);
+			FadePlayerFOVMulTo(1.25f, 0.01);
+			StartPlayerLookAt("ScriptArea_4", 10, 10, "");
+		break;
+		case 8:
+			AddDebugMessage("Sahne 8", false);
+			FadePlayerRollTo(45, 1, 2); 
+			FadeIn(2);
+			fEventSpeed = 1.5f;	
+		break;
+		case 9:
+			AddDebugMessage("Sahne 9", false);
+		break;
+		case 10:
+			AddDebugMessage("Sahne 10", false);
+			FadePlayerRollTo(15, 1, 2); 
+			FadePlayerFOVMulTo(0.75f, 0.01);
+		break;
+		case 11:
+			AddDebugMessage("Sahne 11", false);
+			PlaySoundAtEntity("sigh", "react_sigh.snt", "Player", 1.0 / 1.5f, false);
+			FadeOut(1);
+			StartPlayerLookAt("ScriptArea_5", 1, 1, "");
+			FadePlayerRollTo(50, 1, 2); 
+			fEventSpeed = 2.0f;	
+		break;
+		case 12:
+			AddDebugMessage("Sahne 12", false);
+			SetPlayerMoveSpeedMul(0.1f);
+			SetPlayerLookSpeedMul(0.1f);
+			StartPlayerLookAt("ScriptArea_5", 1, 1, "");
+			FadePlayerFOVMulTo(1.1f, 0.01);
+			FadeImageTrailTo(0,1.5f);
+			fEventSpeed = 1.5f;	
+		break;
+		case 13:
+			AddDebugMessage("Sahne 13", false);
+			SetPlayerMoveSpeedMul(0.2f);
+			SetPlayerLookSpeedMul(0.2f);
+			FadePlayerRollTo(-15, 1, 2); 
+			FadeIn(1);
+			fEventSpeed = 2.0f;	
+		break;
+		case 14:
+			AddDebugMessage("Sahne 14", false);
+			SetPlayerMoveSpeedMul(0.3f);
+			SetPlayerLookSpeedMul(0.4f);
+			FadePlayerRollTo(-30, 10, 60); 	
+			MovePlayerHeadPos(0, 0, 0, 1, 0.5f);	
+			FadePlayerFOVMulTo(0.9f, 0.01);
+			FadeImageTrailTo(1.5,2);
+			PlaySoundAtEntity("movement", "player_climb.snt", "Player", 0, false);
+		break;
+		case 15:
+			AddDebugMessage("Sahne 15", false);
+			SetPlayerMoveSpeedMul(0.4f);
+			SetPlayerLookSpeedMul(0.6f);
+			FadePlayerRollTo(10, 10, 20); 	
+			MovePlayerHeadPos(0, -0.5f, 0, 1, 0.5f);
+		break;
+		case 16:
+			AddDebugMessage("Sahne 16", false);
+			SetPlayerMoveSpeedMul(0.5f);
+			SetPlayerLookSpeedMul(0.8f);
+			FadePlayerRollTo(0, 10, 60);
+			MovePlayerHeadPos(0, 0, 0, 1, 0.5f);
+			StartPlayerLookAt("ScriptArea_3", 2, 2, "");
+			FadePlayerFOVMulTo(1, 0.01f);
+			PlaySoundAtEntity("movement", "player_climb.snt", "Player", 0, false);
+			fEventSpeed = 2.0f;	
+		break;
+		case 17:
+			StopPlayerLookAt();
+			ShowPlayerCrossHairIcons(true);
+			AddDebugMessage("Sahne 17", false);
+			SetPlayerJumpDisabled(false);
+			SetPlayerCrouchDisabled(false);
+			SetPlayerMoveSpeedMul(0.6f);
+			SetPlayerLookSpeedMul(1.0f);
+			FadeImageTrailTo(0,0.2f);
+			PlaySoundAtEntity("sigh", "react_sigh.snt", "Player", 1.0 / 1, false);
+			fEventSpeed = 1.0f;		
+		break;
+		case 30:
+			ChangePlayerStateToNormal();
+			ShowPlayerCrossHairIcons(true);
+			SetPlayerMoveSpeedMul(1.0f);
+			SetPlayerRunSpeedMul(1.0f);
+			SetInventoryDisabled(false);
+			SetSanityDrainDisabled(true);
+		break;
+	}
+	
+	if( GetLocalVarInt("BlackoutStep") < 31)
+		AddTimer("blackout", fEventSpeed, "TimerBlackOut");
+}
+///////////////////////////////////////////////////////////////////////
+//Interactions
+void StopFlow_1(string &in asEntity, int alState)
+{
+	if( alState == -1)
+	{
+		SetWheelInteractionDisablesStuck(asEntity, false);
+		SetWheelStuckState(asEntity, alState, false);
+		DestroyParticleSystem("ParticleSystem_3");
+		StopSound("water_sound_3", 1);
+		AddLocalVarInt("BathroomLocker", 1);
+		HatchOpener();
+	}
+}
+void StopFlow_2(string &in asEntity, int alState)
+{
+	if( alState == 1)
+	{
+		SetWheelInteractionDisablesStuck(asEntity, false);
+		SetWheelStuckState(asEntity, alState, false);
+		DestroyParticleSystem("ParticleSystem_2");
+		StopSound("water_sound_3", 2);
+		AddLocalVarInt("BathroomLocker", 1);
+		HatchOpener();
+	}
+}
+void StopFlow_3(string &in asEntity, int alState)
+{
+	if( alState == -1)
+	{
+		SetWheelInteractionDisablesStuck(asEntity, false);
+		SetWheelStuckState(asEntity, alState, false);
+		DestroyParticleSystem("ParticleSystem_1");
+		StopSound("water_sound_1", 1);
+		AddLocalVarInt("BathroomLocker", 1);		
+		HatchOpener();
+	}
+}
+
+void HatchOpener()
+{
+	if( GetLocalVarInt("BathroomLocker") == 3 )
+	{
+		SetEntityActive("control_room_pipe01_1", false);
+		SetEntityActive("control_room_pipe01_2", true);
+		AddPropImpulse("control_room_pipe01_2", 0, -20.0f, 0, "World");
+		SetEntityActive("control_room_pipe03_1", true);
+		if( HasItem("key_tower_2") )
+		{
+			SetEntityActive("LadderArea_1", true);
+			SetEntityActive("ladder_mount_1", true);
+			SetEntityActive("ladder_broken_1", true);
+		}
+		CreateParticleSystemAtEntity("WaterStream", "ps_water_stream.ps", "BrokenPipe", true);
+		SetSwingDoorLocked("hatch_metal01_1", false, true);
+		SetSwingDoorClosed("hatch_metal01_1", false, true);
+		SetSwingDoorDisableAutoClose("hatch_metal01_1", true);
+		StartPlayerLookAt("BrokenPipe", 4, 100, "");
+		AddTimer("LookDone", 0.5f, "LookStopper");
+	}
+	SetSanityDrainDisabled(true);
+}
+
+void OpenHatch(string &in entity)
+{
+	if( !GetSwingDoorLocked("hatch_metal01_1") )
+	{
+		SetEntityActive("LadderArea_1", true);
+		SetEntityActive("ladder_mount_1", true);
+		SetEntityActive("ladder_broken_1", true);
+		StartPlayerLookAt("BrokenPipe", 4, 100, "");
+		AddTimer("LookDone", 0.5f, "LookStopper");
+		CreateParticleSystemAtEntity("Ladder", "ps_break_wood.ps", "BrokenPipe", true);
+	}
+}
+
+void KnifeInteracted(string &in entity)
+{
+	AddEffectVoice("12_girl_cry_02", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("12_girl_scream", "", "", "", false, "", 0, 0 );
+	SetEntityActive("key_tower_1", true);
+	AddPropImpulse("key_tower_1", 10, 0, 0, "World");
+	AddPropImpulse("key_tower_1", 0, 0, -5, "World");
+	AddTimer("LookStart", 0.5f, "LookStopper");
+	SetSanityDrainDisabled(true);
+}
+
+void PickedUpNote_1(string &in entity)
+{
+	SetSwingDoorLocked("prison_1", false, true);
+	SetSwingDoorClosed("prison_1", false, true);
+	SetSwingDoorDisableAutoClose("prison_1", true);
+	AddTimer("prison_1", 0.01f, "TimerSwingDoor");
+	StartPlayerLookAt("ScriptArea_6", 4, 100, "");
+	SetEntityActive("corpse_bloody_1", false);
+	SetEntityActive("chair_wood02_8", false);
+	AddTimer("LookDone", 1.5f, "LookStopper");
+	SetSanityDrainDisabled(true);
+	AutoSave();
+}
+
+void TimerSwingDoor(string &in asTimer)
+{
+	if(GetLocalVarInt("SwingDoor") == 10){
+		SetLocalVarInt("SwingDoor", 0);
+		return;
+	}
+	
+	if(asTimer == "prison_1") AddPropForce(asTimer, 0, 0, 70.0f, "World"); 
+	else AddPropForce(asTimer, 0, 0, 95.0f, "World"); 
+	
+	AddLocalVarInt("SwingDoor", 1);
+	
+	AddTimer(asTimer, 0.03f, "TimerSwingDoor");
+	SetSanityDrainDisabled(true);
+}
+
+void StuckMessage(string &in entity)
+{
+	SetMessage( "Signs", "Rooms_Stuck", 0);
+	SetSanityDrainDisabled(true);
+}
+////////////////////////////////////////////////
+
+void Flickering(string &in asTimer)
+{
+	SetLampLit(asTimer, true, false);
+	PlaySoundAtEntity("Lamp_Flicker_1", "lm_light_flicker.snt", asTimer, 0, true);
+	
+	AddTimer(asTimer, RandFloat(0.2f, 0.4f), "FlickeringOff");
+}
+
+void FlickeringOff(string &in asTimer)
+{
+	SetLampLit(asTimer, false, false);
+	AddTimer(asTimer, RandFloat(0.6f, 0.8f), "Flickering");
+}
+
+////////////////////////////////////////////////////////////////////////////
+//CollideCallBacks
+void EnteredBath(string &in asParent, string &in asChild, int alState)
+{
+	SetSwingDoorDisableAutoClose("prison_section_plain_1", false);
+	SetSwingDoorClosed("prison_section_plain_1", true, true);
+	SetSwingDoorLocked("prison_section_plain_1", true, true);
+	StartPlayerLookAt("ScriptArea_6", 4, 100, "");
+	AddTimer("LookDone", 0.5f, "LookStopper");
+	SetSanityDrainDisabled(true);
+}
+
+void OpenHatch2(string &in asParent, string &in asChild, int alState)
+{
+	SetSwingDoorLocked("hatch_metal01_2", false, true);
+	SetSwingDoorClosed("hatch_metal01_2", false, true);
+	SetSwingDoorDisableAutoClose("hatch_metal01_2", true);
+}
+
+void PlayerFalls(string &in asParent, string &in asChild, int alState)
+{
+	GivePlayerDamage(200, "Slash", true, true);
+	CheckPoint("checkpoint2","PlayerStartArea_3","", "", "");
+	PlayMusic("rooms_2", true, 1, 0, 1, true);
+}
+
+void ActivateEnemy(string &in asParent, string &in asChild, int alState)
+{
+	SetEntityActive("character_infected_2", true);
+	SetEnemyDisableTriggers("character_infected_2", false);
+	AddEnemyPatrolNode("character_infected_2", "PathNodeArea_0", 0, "");
+	AddEnemyPatrolNode("character_infected_2", "PathNodeArea_1", 0, "");
+	AddEnemyPatrolNode("character_infected_2", "PathNodeArea_2", 0, "");
+	AddEnemyPatrolNode("character_infected_2", "PathNodeArea_3", 0, "");
+	AddTimer("EnemyKiller", 15, "EnemyKilled");
+	SetSanityDrainDisabled(true);
+}
+
+void EnemyKilled(string &in asTimer)
+{
+	SetEntityActive("character_infected_2", false);
+}
+
+void ActivateDoctor(string &in asParent, string &in asChild, int alState)
+{
+	PlayMusic("doctor", true, 0.7f, 0, 1, true);
+	AddEffectVoice("1_0", "", "Voice", "01_rooms_01", false, "", 0, 0 );
+	SetPlayerActive(false);
+	FadeOut(2);
+	AddTimer("Teleporter1", 3, "TeleporterToDoctor");
+}
+
+void TeleporterToDoctor(string &in asTimer)
+{
+	if(asTimer == "Teleporter1")
+	{
+		TeleportPlayer("doctor");
+		AddTimer("Teleporter", 2, "TeleporterToDoctor");
+	}
+	else
+	{
+		FadeIn(2);
+		SetPlayerActive(true);
+		SetPlayerCrouching(true);
+		SetInventoryDisabled(true);
+		SetPlayerJumpDisabled(true);
+		SetPlayerCrouchDisabled(true);
+		ShowPlayerCrossHairIcons(false);
+		SetPlayerRunSpeedMul(0);
+		SetPlayerMoveSpeedMul(0);
+		SetPlayerLookSpeedMul(0.2f);
+		AddTimer("SofiaTalks", 2.0f, "StartSofia");
+	}
+}
+
+void StartSofia(string &in asTimer)
+{
+	AddEffectVoice("1_2", "", "Voice", "01_rooms_02", false, "", 0, 0 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("1_3", "", "Voice", "01_rooms_03", false, "", 0, 0 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("1_4", "", "Voice", "01_rooms_04", false, "", 0, 0 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("1_5", "", "Voice", "01_rooms_05", false, "", 0, 0 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("1_6", "", "Voice", "01_rooms_06", false, "", 0, 0 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("1_7", "", "Voice", "01_rooms_07", false, "", 0, 0 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("1_8", "", "Voice", "01_rooms_08", false, "", 0, 0 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("1_9", "", "Voice", "01_rooms_09", false, "", 0, 0 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("1_10", "", "Voice", "01_rooms_10", false, "", 0, 0 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("1_11", "", "Voice", "01_rooms_11", false, "", 0, 0 );
+	AddEffectVoice("0_placeholder.ogg", "", "", "", false, "", 0, 0 );
+	AddEffectVoice("1_12", "", "Voice", "01_rooms_12", false, "", 0, 0 );
+	SetEffectVoiceOverCallback("SofiaEnds");
+}
+
+void SofiaEnds()
+{
+	FadeOut(2);
+	AddTimer("TeleportPlayerBack", 4.0f, "TeleportedBack");
+}
+
+void TeleportedBack(string &in asTimer)
+{
+	TeleportPlayer("PlayerStartArea_2");
+	SetPlayerCrouching(false);
+	SetInventoryDisabled(false);
+	SetPlayerJumpDisabled(false);
+	SetPlayerCrouchDisabled(false);
+	ShowPlayerCrossHairIcons(true);
+	SetPlayerRunSpeedMul(1);
+	SetPlayerMoveSpeedMul(1);
+	SetPlayerLookSpeedMul(1);
+	FadeIn(2);
+	StopMusic( 0, 1);
+	PlayMusic("rooms_2", true, 1, 0, 1, true);
+}
+
+void CorpseSeen(string &in asParent, string &in asChild, int alState)
+{
+	GiveSanityDamage(100.0f, true);
+	StartPlayerLookAt("agrippa_head_obj_1", 4, 100, "");
+	FadeOut(2);
+	AddTimer("Sanity", 4.0f, "SanityGiver");
+	AddTimer("LookDone", 1.5f, "LookStopper");
+	AddTimer("character_infected_4", 4.5f, "Monster");
+}
+
+void Monster(string &in asTimer)
+{
+	AddPropImpulse("prison_6", 0, 0, 100, "World");
+	SetEntityActive(asTimer, true);
+	ShowEnemyPlayerPosition(asTimer);
+}
+
+void SanityGiver(string &in asTimer)
+{
+	FadeIn(2);
+	AddPlayerSanity(500.0f);
+	ChangePlayerStateToNormal();
+}
+
+void ChairFlyer(string &in asParent, string &in asChild, int alState)
+{
+	SetEntityActive("flying_chair", true);
+	AddPropImpulse("flying_chair", -10.0f, 0, 0, "World");
+}
+////////////////////////////////////////////////////////////////////////////
+//Item Use CallBacks
+void KeyOnDoor(string &in asItem, string &in asEntity)
+{
+	SetSwingDoorLocked("prison_section_plain_2", false, true);
+	PlaySoundAtEntity("", "unlock_door.snt", "prison_section_plain_2", 0.0f, true);
+	RemoveItem("key_tower_2");
+}
+void KeyOnDoor_2(string &in asItem, string &in asEntity)
+{
+	SetSwingDoorLocked("metal_1", false, true);
+	PlaySoundAtEntity("", "unlock_door.snt", "metal_1", 0.0f, true);
+	RemoveItem("key_tower_1");
+}
+////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////
+void LookStopper(string &in asTimer)
+{
+	if( asTimer == "LookDone")
+	{
+		StopPlayerLookAt();
+		return;
+	}
+	else if( asTimer == "LookStart")
+	{
+		StartPlayerLookAt("key_tower_1", 4, 50, "");
+		AddPropImpulse("key_tower_1", 0, 0, -2, "World");
+		AddTimer("LookDone", 0.5f, "LookStopper");
+		return;
+	}
+}
+
+void OnEnter()
+{	
+	PreloadSound("12_epoxy_flow");	PreloadSound("lm_light_flicker");	PreloadParticleSystem("ps_childsnake_water_stream");	PreloadParticleSystem("ps_water_stream_sewer");
+	PreloadParticleSystem("ps_water_drop_small_stream");	PreloadParticleSystem("ps_break_wood");	PreloadParticleSystem("ps_light_dust_large");
+	SetSanityDrainDisabled(true);
+}
+
+////////////////////////////
+// Run when leaving map
+void OnLeave()
+{
+	StopMusic(5.0f, 1);
+	//////////////////////
+	//Load Screen Setup
+	SetupLoadScreen("LoadingText", "Load_Text_02", 1, "game_loading_sofia.jpg");
+}

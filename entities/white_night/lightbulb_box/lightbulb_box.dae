@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.4.0" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	<asset>
+		<contributor>
+			<author>Illusoft Collada 1.4.0 plugin for Blender - http://colladablender.illusoft.com</author>
+			<authoring_tool>Blender v:249 - Illusoft Collada Exporter v:0.3.162</authoring_tool>
+			<comments></comments>
+			<copyright></copyright>
+			<source_data>file:///home/yasar/Dropbox/BlenderThings/lightbulb-box/lightbulbox-2.5.blend</source_data>
+		</contributor>
+		<created>2011-06-14T11:50:07.482599</created>
+		<modified>2011-06-14T11:50:07.482659</modified>
+		<unit meter="0.01" name="centimeter"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_effects>
+		<effect id="Material_002-fx" name="Material_002-fx">
+			<profile_COMMON>
+				<newparam sid="lightbulb_box_tga-surface">
+					<surface type="2D">
+						<init_from>lightbulb_box_tga-img</init_from>
+						<format>A8R8G8B8</format>
+					</surface>
+				</newparam>
+				<newparam sid="lightbulb_box_tga-sampler">
+					<sampler2D>
+						<source>lightbulb_box_tga-surface</source>
+						<minfilter>LINEAR_MIPMAP_LINEAR</minfilter>
+						<magfilter>LINEAR</magfilter>
+					</sampler2D>
+				</newparam>
+				<technique sid="blender">
+					<phong>
+						<emission>
+							<color>0.00000 0.00000 0.00000 1</color>
+						</emission>
+						<ambient>
+							<color>0.40000 0.40000 0.40000 1</color>
+						</ambient>
+						<diffuse>
+							<texture texcoord="CHANNEL1" texture="lightbulb_box_tga-sampler"/>
+						</diffuse>
+						<specular>
+							<color>0.50000 0.50000 0.50000 1</color>
+						</specular>
+						<shininess>
+							<float>12.0</float>
+						</shininess>
+						<reflective>
+							<color>1.00000 1.00000 1.00000 1</color>
+						</reflective>
+						<reflectivity>
+							<float>0.0</float>
+						</reflectivity>
+						<transparent>
+							<color>1 1 1 1</color>
+						</transparent>
+						<transparency>
+							<float>0.0</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_images>
+		<image id="lightbulb_box_tga-img" name="lightbulb_box_tga-img">
+			<init_from>lightbulb_box.tga</init_from>
+		</image>
+	</library_images>
+	<library_materials>
+		<material id="Material_002" name="Material_002">
+			<instance_effect url="#Material_002-fx"/>
+		</material>
+	</library_materials>
+	<library_geometries>
+		<geometry id="Plane_001-Geometry" name="Plane_001-Geometry">
+			<mesh>
+				<source id="Plane_001-Geometry-Position">
+					<float_array count="78" id="Plane_001-Geometry-Position-array">-4.21002 -3.00125 0.95644 -5.66755 -3.00125 0.95644 -5.65633 -3.01940 2.39883 -4.19816 -3.02984 2.39431 -4.31824 -3.34694 2.63560 -5.52138 -3.34750 2.62623 -4.50648 -3.68786 2.45051 -5.30339 -3.69398 2.45159 -5.63309 -3.16909 2.51454 -4.22210 -3.16359 2.50500 -4.31859 -3.34466 2.63403 -5.52173 -3.34521 2.62466 -5.65633 -3.01940 2.39883 -4.19816 -3.02984 2.39431 -5.63274 -3.17138 2.51611 -4.22175 -3.16587 2.50658 -5.30339 -3.69398 2.45159 -4.50648 -3.68786 2.45051 -5.52138 -3.34750 2.62623 -4.31824 -3.34694 2.63560 -4.22175 -3.16587 2.50658 -5.63274 -3.17138 2.51611 -4.19816 -3.02984 2.39431 -5.65633 -3.01940 2.39883 -5.66755 -3.00125 0.95644 -4.21002 -3.00125 0.95644</float_array>
+					<technique_common>
+						<accessor count="26" source="#Plane_001-Geometry-Position-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Plane_001-Geometry-Normals">
+					<float_array count="48" id="Plane_001-Geometry-Normals-array">0.00000 -0.99992 -0.01258 -0.00722 -0.99978 -0.01982 0.00673 0.45346 -0.89125 -0.00487 0.47920 -0.87769 -0.00365 -0.53181 -0.84686 0.00660 -0.58264 -0.81270 -0.00683 -0.61158 -0.79115 -0.00273 -0.63625 -0.77148 0.00487 -0.47920 0.87769 -0.00673 -0.45346 0.89125 -0.00660 0.58262 0.81272 0.00364 0.53181 0.84686 0.00273 0.63625 0.77148 0.00683 0.61158 0.79115 0.00722 0.99978 0.01982 -0.00000 0.99992 0.01258</float_array>
+					<technique_common>
+						<accessor count="16" source="#Plane_001-Geometry-Normals-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Plane_001-Geometry-UV">
+					<float_array count="96" id="Plane_001-Geometry-UV-array">0.36043 0.71397 0.47285 0.82056 0.47264 0.71436 0.47285 0.82056 0.36043 0.71397 0.35958 0.81986 0.32074 0.72361 0.47715 0.74152 0.50299 0.72244 0.47715 0.74152 0.32074 0.72361 0.34409 0.74145 0.07509 0.94380 0.27548 0.96887 0.29011 0.93440 0.27718 0.96653 0.07466 0.93997 0.08753 0.96123 0.31336 0.71239 0.51263 0.73164 0.51720 0.71150 0.51263 0.73164 0.31336 0.71239 0.31857 0.73396 0.08753 0.96123 0.25558 0.98711 0.11828 0.98619 0.25558 0.98711 0.08753 0.96123 0.27718 0.96653 0.07509 0.94380 0.27548 0.96887 0.09322 0.97005 0.27718 0.96653 0.07466 0.93997 0.29351 0.94269 0.07057 0.91178 0.29351 0.94269 0.07466 0.93997 0.29351 0.94269 0.07057 0.91178 0.29810 0.91004 0.06486 0.67895 0.29810 0.91004 0.07057 0.91178 0.29810 0.91004 0.06486 0.67895 0.30098 0.67932</float_array>
+					<technique_common>
+						<accessor count="48" source="#Plane_001-Geometry-UV-array" stride="2">
+							<param type="float" name="S"></param>
+							<param type="float" name="T"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="Plane_001-Geometry-Vertex">
+					<input semantic="POSITION" source="#Plane_001-Geometry-Position"/>
+				</vertices>
+				<triangles count="16" material="Material_002">
+					<input offset="0" semantic="VERTEX" source="#Plane_001-Geometry-Vertex"/>
+					<input offset="1" semantic="NORMAL" source="#Plane_001-Geometry-Normals"/>
+					<input offset="2" semantic="TEXCOORD" source="#Plane_001-Geometry-UV"/>
+					<p>0 0 0 2 0 1 1 0 2 2 1 3 0 1 4 3 1 5 4 2 6 7 2 7 5 2 8 7 3 9 4 3 10 6 3 11 9 4 12 11 4 13 8 4 14 11 5 15 9 5 16 10 5 17 13 6 18 14 6 19 12 6 20 14 7 21 13 7 22 15 7 23 19 8 24 16 8 25 17 8 26 16 9 27 19 9 28 18 9 29 20 10 30 18 10 31 19 10 32 18 11 33 20 11 34 21 11 35 22 12 36 21 12 37 20 12 38 21 13 39 22 13 40 23 13 41 25 14 42 23 14 43 22 14 44 23 15 45 25 15 46 24 15 47</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="Plane-Geometry" name="Plane-Geometry">
+			<mesh>
+				<source id="Plane-Geometry-Position">
+					<float_array count="48" id="Plane-Geometry-Position-array">-4.24623 -3.03746 -1.16611 -4.24623 -4.42257 -1.16611 -5.63135 -4.42257 -1.16611 -5.63135 -3.03746 -1.16611 -5.63135 -3.03746 0.90236 -5.63135 -4.42257 0.90236 -4.24623 -4.42257 0.90236 -4.24623 -3.03746 0.90236 -4.21002 -3.00125 0.95644 -4.21002 -4.45878 0.95644 -5.66755 -4.45878 0.95644 -5.66755 -3.00125 0.95644 -5.66755 -3.00125 -1.22019 -5.66755 -4.45878 -1.22019 -4.21002 -4.45878 -1.22019 -4.21002 -3.00125 -1.22019</float_array>
+					<technique_common>
+						<accessor count="16" source="#Plane-Geometry-Position-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Plane-Geometry-Normals">
+					<float_array count="84" id="Plane-Geometry-Normals-array">-0.00000 0.00000 1.00000 0.00000 -0.00000 1.00000 1.00000 0.00000 -0.00000 1.00000 -0.00000 0.00000 -0.00000 -1.00000 -0.00000 0.00000 -1.00000 -0.00000 -1.00000 0.00000 0.00000 -1.00000 -0.00000 -0.00000 0.00000 1.00000 -0.00000 0.00000 1.00000 0.00000 -0.00000 -1.00000 -0.00000 0.00000 -1.00000 0.00000 1.00000 0.00000 0.00000 1.00000 -0.00000 0.00000 -0.00000 1.00000 0.00000 0.00000 1.00000 -0.00000 -1.00000 0.00000 0.00000 -1.00000 -0.00000 0.00000 -0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 -0.83094 0.55637 0.00000 -0.83094 0.55637 0.83101 0.00000 0.55626 0.83101 0.00000 0.55626 0.00000 0.83094 0.55636 0.00000 0.83094 0.55636 -0.83094 0.00000 0.55637 -0.83094 0.00000 0.55637</float_array>
+					<technique_common>
+						<accessor count="28" source="#Plane-Geometry-Normals-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Plane-Geometry-UV">
+					<float_array count="168" id="Plane-Geometry-UV-array">0.41767 0.75837 0.40164 0.76890 0.40402 0.75757 0.40164 0.76890 0.41767 0.75837 0.41445 0.77324 0.45454 0.81238 0.41767 0.75837 0.40402 0.75757 0.41767 0.75837 0.45454 0.81238 0.37545 0.80124 0.40402 0.75757 0.40164 0.76890 0.45433 0.72140 0.40402 0.75757 0.45433 0.72140 0.45454 0.81238 0.36916 0.72509 0.40164 0.76890 0.41445 0.77324 0.40164 0.76890 0.36916 0.72509 0.45433 0.72140 0.37545 0.80124 0.41445 0.77324 0.41767 0.75837 0.41445 0.77324 0.37545 0.80124 0.36916 0.72509 0.06486 0.67895 0.30902 0.24127 0.30098 0.67932 0.30902 0.24127 0.06486 0.67895 0.06520 0.24309 0.30098 0.67932 0.53629 0.24180 0.52931 0.68392 0.53629 0.24180 0.30098 0.67932 0.30902 0.24127 0.52931 0.68392 0.76755 0.24353 0.76240 0.68102 0.76755 0.24353 0.52931 0.68392 0.53629 0.24180 0.76240 0.68102 0.99425 0.24601 0.99638 0.68417 0.99425 0.24601 0.76240 0.68102 0.76755 0.24353 0.76757 0.01102 0.53629 0.24180 0.54673 0.01415 0.53629 0.24180 0.76757 0.01102 0.76755 0.24353 0.46643 0.70896 0.45454 0.81238 0.45433 0.72140 0.45454 0.81238 0.46643 0.70896 0.46643 0.82505 0.36547 0.81086 0.45454 0.81238 0.46643 0.82505 0.45454 0.81238 0.36547 0.81086 0.37545 0.80124 0.35753 0.71441 0.37545 0.80124 0.36547 0.81086 0.37545 0.80124 0.35753 0.71441 0.36916 0.72509 0.46643 0.70896 0.36916 0.72509 0.35753 0.71441 0.36916 0.72509 0.46643 0.70896 0.45433 0.72140</float_array>
+					<technique_common>
+						<accessor count="84" source="#Plane-Geometry-UV-array" stride="2">
+							<param type="float" name="S"></param>
+							<param type="float" name="T"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="Plane-Geometry-Vertex">
+					<input semantic="POSITION" source="#Plane-Geometry-Position"/>
+				</vertices>
+				<triangles count="28" material="Material_002">
+					<input offset="0" semantic="VERTEX" source="#Plane-Geometry-Vertex"/>
+					<input offset="1" semantic="NORMAL" source="#Plane-Geometry-Normals"/>
+					<input offset="2" semantic="TEXCOORD" source="#Plane-Geometry-UV"/>
+					<p>2 0 0 0 0 1 3 0 2 0 1 3 2 1 4 1 1 5 4 2 6 2 2 7 3 2 8 2 3 9 4 3 10 5 3 11 3 4 12 0 4 13 7 4 14 3 5 15 7 5 16 4 5 17 6 6 18 0 6 19 1 6 20 0 7 21 6 7 22 7 7 23 5 8 24 1 8 25 2 8 26 1 9 27 5 9 28 6 9 29 10 10 30 14 10 31 9 10 32 14 11 33 10 11 34 13 11 35 9 12 36 15 12 37 8 12 38 15 13 39 9 13 40 14 13 41 8 14 42 12 14 43 11 14 44 12 15 45 8 15 46 15 15 47 11 16 48 13 16 49 10 16 50 13 17 51 11 17 52 12 17 53 13 18 54 15 18 55 14 18 56 15 19 57 13 19 58 12 19 59 8 20 60 4 20 61 7 20 62 4 21 63 8 21 64 11 21 65 10 22 66 4 22 67 11 22 68 4 23 69 10 23 70 5 23 71 9 24 72 5 24 73 10 24 74 5 25 75 9 25 76 6 25 77 8 26 78 6 26 79 9 26 80 6 27 81 8 27 82 7 27 83</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_visual_scenes>
+		<visual_scene id="Scene002" name="Scene002">
+			<node layer="L1" id="Plane_001" name="Plane_001">
+				<translate sid="translate">3.02244 2.66014 0.14763</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#Plane_001-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Material_002" target="#Material_002">
+								<bind_vertex_input input_semantic="TEXCOORD" input_set="1" semantic="CHANNEL1"/>
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="Plane" name="Plane">
+				<translate sid="translate">3.02244 2.66014 0.14763</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#Plane-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Material_002" target="#Material_002">
+								<bind_vertex_input input_semantic="TEXCOORD" input_set="1" semantic="CHANNEL1"/>
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene002"/>
+	</scene>
+</COLLADA>

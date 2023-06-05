@@ -1,0 +1,535 @@
+==============================================================================================
+DISCLAIMER
+==============================================================================================
+  
+  White Night is a free total conversion modification for Amnesia: The Dark Descent and created
+by Tanshaydar.
+  
+  All of the assets in White Night are free to use, but you are expected to give proper credits to
+Tanshaydar & White Night for every asset touched by Tanshaydar.
+  Also, you are expected to give credits to other contributors.
+
+  White Night does use many assets from Amnesia itself, as well as many other outside sources.
+Following list is all of the credits to all of the assets.
+
+  Source SDK is now free and available to everyone. So you can freely use Source materials with
+proper credits.
+  Penumbra engine, HPL1, is open source; but Penumbra assets are still exclusive to Frictional
+Games. So, if you don't already have Penumbra series, please buy them.
+
+*I have purchased both Penumbra series and Source licensed games.
+
+==============================================================================================
+CREDITS TO ASSETS
+==============================================================================================
+----------------------------------------------------------------------------------------------
+| Billboards: ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+----------------------------------------------------------------------------------------------
+Taken from Penumbra series, converted by Tanshaydar. No need for credits.
+
+----------------------------------------------------------------------------------------------
+| Entities: ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+----------------------------------------------------------------------------------------------
+- Bathtub:
+    Model & Texture ->  Source Material
+    Amnesia Conversion->  Tanshaydar
+
+- Box Metal Barrel
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Cabinet
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Everlone  (FG Community)
+
+- Cardboard
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Ceiling Fan
+    Model & Texture->  Your Computer (FG Community)
+    Entity Conversion->  Your Computer & Tanshaydar
+
+- Cleaning Vaccum Cleaner
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Container Barrel
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Cooker
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Everlone
+
+- Corpse Scientist
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Curtain
+    Model & Texture->  yasar11732
+    Amnesia Conversion->  Tanshaydar
+
+- Door Air Lock
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Door Double Rusty
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Door Freezer Door
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Door Infected Corridor
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Door Infirmary
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Door Mining Room
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Door Modern Mine
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Door Residental
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Door Security Door
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Door Shaft Panel
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Door Shaft Propeller
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Door Storage Door
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Door Vent Shaft
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Door WC
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Dufflebag
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Everlone
+
+- Duy (Socket)
+    Model & Texture->  yasar11732
+    Amnesia Conversion->  Tanshaydar
+
+- Eyeball
+    Model & Texture->  yasar11732
+    Amnesia Conversion->  Tanshaydar
+
+- Fetus
+    Model & Texture->  yasar11732
+    Amnesia Conversion->  Tanshaydar
+
+- Firelurker
+    Bone adding->  nkmol
+    Amnesia Conversion->  Tanshaydar
+
+- Flashlight as item
+    Model & Texture->  DigiByte
+    Amnesia Conversion->  Tanshaydar
+
+- Footsool
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Everlone
+
+- Fridge
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Furniture Chair Thin
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Furniture Office Chair
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Furniture Radiator
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Everlone
+
+- Furniture TV
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+    
+- Gameplay Power Switch
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+    
+- Gaschamber Chair
+    Model & Texture->  Double Helix
+    Amnesia Conversion->  Tanshaydar
+
+- Handwash
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Everlone
+
+- Infected
+    Model->  Penumbra Series
+    Texture & Amnesia Conversion->  Tanshaydar
+
+- Infected Alpha
+    Model->  Penumbra Series
+    Texture & Amnesia Conversion->  Tanshaydar
+
+- Infirmary Hospital Bed
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+    
+- Infirmary Medical Cabinet
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Iron Mine Lamp
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Item Axe
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Item Battery
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Item Gasoline
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Item Medical Alkohol
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+    
+- Item Painkillers
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Item Screwdriver
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Item Secret Mine Door Key
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Item Syringe
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Items Casette Recorder
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Items Cloth
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Ketchup
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Everlone
+
+- Kitchen Ration Can
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Everlone
+
+- Lab Autopsy Table
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Lab Autopsy Utility Table 
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Lamp Flourescent
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Lamp Wall Flour
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Lamp Wall Lamp
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Lamps Older Desklamp
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Level Computer Terminal
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- LightBulb
+    Model & Texture->  yasar11732
+    Amnesia Conversion->  Tanshaydar
+
+- Lightbulb Box
+    Model & Texture->  yasar11732
+    Amnesia Conversion->  Tanshaydar
+
+- Madrass
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Everlone
+
+- Meat Hook Item
+    Model & Texture->  Amnesia
+    Amnesia Conversion & item picture->  Tanshaydar
+
+- Mining Room Desklamp
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Mining Room Wall
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Misty Day
+    Model->  Amnesia
+    Texture-> Silent Hill 2
+    Amnesia Conversion->  Tanshaydar
+
+- Modern Mine Crate
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Modern Mine Flour Light
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Modern Mine Generator
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Nurse
+    Model >  Penumbra Series
+    Texture & Amnesia Conversion->  Tanshaydar
+
+- Office Folder
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+    
+- Office Folderholder
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Office Noteboard
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Office Papers
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Office Pen
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Pan
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Everlone
+
+- Park Bench
+    Model & Texture & Entity Conversion->  nkmol
+
+- Phnoe
+    Model & Texture->  Plutomaniac
+    Amnesia Conversion->  Tanshaydar
+
+- Ring
+      Model & Texture & Entity->  Tanshaydar
+
+- Rock Worm
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Shelf Cardboardbox
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Shelf Item Gas Tank
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Showerhead
+    Model & Texture->  yasar11732
+    Amnesia Conversion->  Tanshaydar
+
+- Simple Bed & Broken
+    Model & Texture->  Source Material
+    Amnesia Conversion->  Tanshaydar
+
+- Kitchen Sink
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Everlone
+
+- Storage Box (all)
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Street Lamp
+    Model & Texture->  Source Material
+    Amnesia Conversion->  Tanshaydar
+
+- Tech Door Panel
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Tech Electric Cabinet
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Tech Projector
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Tech Soda Machine
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Tech Speaker
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Toilet
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Everlone
+
+- Toilet Paper
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Trashbag
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Everlone
+
+- Trashcan
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Everlone
+
+- TypeWriter
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Everlone
+
+- Wallfan
+    Model & Texture->  Double Helix
+    Amnesia Conversion->  Tanshaydar
+
+- Wall Sconce
+    Model & Texture->  Selyp
+    Entity Conversion->  Tanshaydar
+
+- WheelChair
+    Model & Texture->  Garry's Mod
+    Amnesia Conversion->  Tanshaydar
+
+----------------------------------------------------------------------------------------------
+| Lights: ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+----------------------------------------------------------------------------------------------
+Custom flashlight gobo by Tanshaydar. Needs credits.
+
+----------------------------------------------------------------------------------------------
+| Particles:  ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+----------------------------------------------------------------------------------------------
+Leaf images are taken from Leaft 4 Dead 2. If you don't own Left 4 Dead 2, please do not use
+these particle materials. If you do own Left 4 Dead 2, still you need to give credits for custom
+particles.
+
+----------------------------------------------------------------------------------------------
+|  Static Objects:  ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+----------------------------------------------------------------------------------------------
+- Bench
+    Model & Texture->  Source Material
+    Amnesia Conversion->  Tanshaydar  
+
+- Car
+    Model & Texture->  Source Material
+    Amnesia Conversion->  Tanshaydar
+
+- Corpses
+    Model & Texture->  Penumbra Series
+    Amnesia Conversion->  Tanshaydar
+
+- Walls
+    Model & Texture & Amnesia Conversion->  DonProtz (FG Community)
+
+- Some of the textures are converted from Penumbra series. All other textures in these folders
+are created from scratch with images from cgtextues and sharecg:
+*nightmare
+*pack_1
+*skybox
+*TilesPlain
+
+I've put so much time to convert these textures, tweaking bump and specular maps, converting to
+.dds format.
+----------------------------------------------------------------------------------------------
+| Textures: ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+----------------------------------------------------------------------------------------------
+All of the custom decals created by Tanshaydar. Image files in wn_decals folder are taken from
+cgtextures.com and sharecg.com; you need to give credits.
+http://www.sharecg.com/
+http://www.cgtextures.com/
+
+----------------------------------------------------------------------------------------------
+| WN_Graphics:  ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+----------------------------------------------------------------------------------------------
+Pre-menu images are taken from Wikipedia.
+I created new images for inventory screen. So, if you want to use it, you need to give credits.
+
+----------------------------------------------------------------------------------------------
+| WN_Models:  ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+----------------------------------------------------------------------------------------------
+Flashlight credits can be seen in credits screen of White Night. What I did was to add a custom
+flashlight gobo and tweaking it. For flashlight gobo, you need to give credits.
+
+----------------------------------------------------------------------------------------------
+| WN_Music: ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+----------------------------------------------------------------------------------------------
+See the music_credits.txt file for information.
+
+----------------------------------------------------------------------------------------------
+| WN_Sounds:  ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+----------------------------------------------------------------------------------------------
+Some of the custom sounds are taken from Penumbra series, but most of them are from internet,
+converted by Tanshaydar. You do not need to give credits.
+----------------------------------------------------------------------------------------------
+
+==============================================================================================
+USE OF ASSETS
+==============================================================================================
+
+  Amnesia conversion progress for entities, and creation process of textures are really hard jobs.
+Do not forget that correcting 'bad normal errors' was quite a job needed me to learn to use of
+Blender software. Also, plutomaniac has his credits in solving bad normal errors too. Therefore,
+although it is not illegal to use them without giving credits, giving proper credits
+would be much better for both sides. As for the assets I didn't demand credits, you should give
+credits to original creators.
+  I took the time to write down every credits for all of the assets. I just ask you to give proper
+credits if you decide to re-use any of the assets come with White Night.
+
+  Contact: tansel@tanshaydar.com
+
+  By any chance if you really feel like all the effort I gave for White Night is really worth something,
+feel free to donate a few cents: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=t_altinel%40ug%2ebilkent%2eedu%2etr&lc=TR&item_name=Tanshaydar&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted

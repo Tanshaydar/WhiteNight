@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.0">
+  <asset>
+    <contributor>
+      <author>Laptop</author>
+      <authoring_tool>Maya 7.0 | ColladaMaya v0.88</authoring_tool>
+      <comments>Collada Maya Export Options: bakeTransforms=0;exportPolygonMeshes=1;bakeLighting=0;isSampling=0;
+curveConstrainSampling=0;exportCameraAsLookat=0;relativePaths=0;
+exportLights=1;exportCameras=1;exportJointsAndSkin=1;
+exportAnimations=1;exportTriangles=1;exportInvisibleNodes=0;
+exportNormals=1;exportTexCoords=1;exportVertexColors=1;exportTangents=0;
+exportTexTangents=0;exportConstraints=0;exportPhysics=0;exportXRefs=1;
+dereferenceXRefs=0;cameraXFov=0;cameraYFov=1</comments>
+      <source_data>file://C|/penumbra/work_models/boxes/box_metal_barrel01/box_metal_barrel01.mb</source_data>
+    </contributor>
+    <created>2007-06-04T14:24:57Z</created>
+    <modified>2007-06-04T14:24:57Z</modified>
+    <unit name="meter" meter="1.000000"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="diffuse-image" name="diffuse">
+      <init_from>file://C|/penumbra/redist/models/boxes/box_metal_barrel01.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="lambert1" name="lambert1">
+      <instance_effect url="#lambert1-fx"/>
+    </material>
+    <material id="box_flamable_barrel01" name="box_flamable_barrel01">
+      <instance_effect url="#box_flamable_barrel01-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="lambert1-fx" name="lambert1">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1.000000</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.500000 0.500000 0.500000 1.000000</color>
+            </diffuse>
+            <transparent>
+              <color sid="transparent">0 0 0 1.000000</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="box_flamable_barrel01-fx" name="box_flamable_barrel01">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.588000 0.588000 0.588000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="diffuse-image" texcoord="UVSET1">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">true</wrapU>
+                    <wrapV sid="wrapV0">true</wrapV>
+                    <mirrorU sid="mirrorU0">false</mirrorU>
+                    <mirrorV sid="mirrorV0">false</mirrorV>
+                    <coverageU sid="coverageU0">1.000000</coverageU>
+                    <coverageV sid="coverageV0">1.000000</coverageV>
+                    <translateFrameU sid="translateFrameU0">0</translateFrameU>
+                    <translateFrameV sid="translateFrameV0">0</translateFrameV>
+                    <rotateFrame sid="rotateFrame0">0</rotateFrame>
+                    <stagger sid="stagger0">false</stagger>
+                    <fast sid="fast0">false</fast>
+                    <repeatU sid="repeatU0">1.000000</repeatU>
+                    <repeatV sid="repeatV0">1.000000</repeatV>
+                    <offsetU sid="offsetU0">0</offsetU>
+                    <offsetV sid="offsetV0">0</offsetV>
+                    <rotateUV sid="rotateUV0">0</rotateUV>
+                    <noiseU sid="noiseU0">0</noiseU>
+                    <noiseV sid="noiseV0">0</noiseV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0 0 0 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">115.199997</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0 0 0 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">0.500000</float>
+            </reflectivity>
+            <transparent>
+              <color sid="transparent">0 0 0 1.000000</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="_collider_cylinder_cShape1-lib" name="_collider_cylinder_cShape1">
+      <mesh>
+        <source id="_collider_cylinder_cShape1-lib-Position">
+          <float_array count="126" id="_collider_cylinder_cShape1-lib-Position-array">
+0.951057 -1.000000 -0.309017
+0.809017 -1.000000 -0.587786
+0.587785 -1.000000 -0.809017
+0.309017 -1.000000 -0.951057
+0.000000 -1.000000 -1.000000
+-0.309017 -1.000000 -0.951057
+-0.587785 -1.000000 -0.809017
+-0.809017 -1.000000 -0.587785
+-0.951057 -1.000000 -0.309017
+-1.000000 -1.000000 -0.000000
+-0.951057 -1.000000 0.309017
+-0.809017 -1.000000 0.587785
+-0.587785 -1.000000 0.809017
+-0.309017 -1.000000 0.951057
+0.000000 -1.000000 1.000000
+0.309017 -1.000000 0.951057
+0.587785 -1.000000 0.809017
+0.809017 -1.000000 0.587785
+0.951056 -1.000000 0.309017
+1.000000 -1.000000 0
+0.951057 1.000000 -0.309017
+0.809017 1.000000 -0.587786
+0.587785 1.000000 -0.809017
+0.309017 1.000000 -0.951057
+0.000000 1.000000 -1.000000
+-0.309017 1.000000 -0.951057
+-0.587785 1.000000 -0.809017
+-0.809017 1.000000 -0.587785
+-0.951057 1.000000 -0.309017
+-1.000000 1.000000 -0.000000
+-0.951057 1.000000 0.309017
+-0.809017 1.000000 0.587785
+-0.587785 1.000000 0.809017
+-0.309017 1.000000 0.951057
+0.000000 1.000000 1.000000
+0.309017 1.000000 0.951057
+0.587785 1.000000 0.809017
+0.809017 1.000000 0.587785
+0.951056 1.000000 0.309017
+1.000000 1.000000 0
+0 -1.000000 0
+0 1.000000 0
+</float_array>
+          <technique_common>
+            <accessor source="#_collider_cylinder_cShape1-lib-Position-array" count="42" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="_collider_cylinder_cShape1-lib-Normal">
+          <float_array count="246" id="_collider_cylinder_cShape1-lib-Normal-array">
+0.951057 0 -0.309016
+0.809017 0 -0.587785
+0.809017 0 -0.587785
+0.951057 0 -0.309016
+0.587785 0 -0.809017
+0.587785 0 -0.809017
+0.309017 0 -0.951056
+0.309017 0 -0.951056
+0 0 -1.000000
+0 0 -1.000000
+-0.309017 0 -0.951056
+-0.309017 0 -0.951056
+-0.587785 0 -0.809017
+-0.587785 0 -0.809017
+-0.809017 0 -0.587785
+-0.809017 0 -0.587785
+-0.951057 0 -0.309017
+-0.951057 0 -0.309017
+-1.000000 0 0
+-1.000000 0 0
+-0.951056 0 0.309017
+-0.951056 0 0.309017
+-0.809017 0 0.587785
+-0.809017 0 0.587785
+-0.587785 0 0.809017
+-0.587785 0 0.809017
+-0.309017 0 0.951056
+-0.309017 0 0.951056
+0 0 1.000000
+0 0 1.000000
+0.309017 0 0.951056
+0.309017 0 0.951056
+0.587785 0 0.809017
+0.587785 0 0.809017
+0.809017 0 0.587785
+0.809017 0 0.587785
+0.951057 0 0.309017
+0.951057 0 0.309017
+1.000000 0 0.000001
+1.000000 0 0.000001
+0 -1.000000 0
+0 -1.000000 0.000000
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 -0.000000
+0 -1.000000 -0.000000
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 -0.000000
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0.000000
+0 1.000000 0.000000
+0 1.000000 0.000000
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0.000000
+0 1.000000 0.000000
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+</float_array>
+          <technique_common>
+            <accessor source="#_collider_cylinder_cShape1-lib-Normal-array" count="82" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+          <technique profile="MAYA">
+            <DOUBLE_SIDED>false</DOUBLE_SIDED>
+          </technique>
+        </source>
+        <source id="_collider_cylinder_cShape1-lib-map1" name="map1">
+          <float_array count="88" id="_collider_cylinder_cShape1-lib-map1-array">
+0.500000 0
+0 0.159155
+0.050000 0.159155
+0.100000 0.159155
+0.150000 0.159155
+0.200000 0.159155
+0.250000 0.159155
+0.300000 0.159155
+0.350000 0.159155
+0.400000 0.159155
+0.450000 0.159155
+0.500000 0.159155
+0.550000 0.159155
+0.600000 0.159155
+0.650000 0.159155
+0.700000 0.159155
+0.750000 0.159155
+0.800000 0.159155
+0.850000 0.159155
+0.900000 0.159155
+0.950000 0.159155
+1.000000 0.159155
+0 0.477465
+0.050000 0.477465
+0.100000 0.477465
+0.150000 0.477465
+0.200000 0.477465
+0.250000 0.477465
+0.300000 0.477465
+0.350000 0.477465
+0.400000 0.477465
+0.450000 0.477465
+0.500000 0.477465
+0.550000 0.477465
+0.600000 0.477465
+0.650000 0.477465
+0.700000 0.477465
+0.750000 0.477465
+0.800000 0.477465
+0.850000 0.477465
+0.900000 0.477465
+0.950000 0.477465
+1.000000 0.477465
+0.500000 0.636620
+</float_array>
+          <technique_common>
+            <accessor source="#_collider_cylinder_cShape1-lib-map1-array" count="44" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="_collider_cylinder_cShape1-lib-Vertex">
+          <input semantic="POSITION" source="#_collider_cylinder_cShape1-lib-Position"/>
+        </vertices>
+        <triangles material="lambert1" count="80">
+          <input semantic="VERTEX" offset="0" source="#_collider_cylinder_cShape1-lib-Vertex"/>
+          <input semantic="NORMAL" offset="1" source="#_collider_cylinder_cShape1-lib-Normal"/>
+          <input semantic="TEXCOORD" offset="2" set="0" source="#_collider_cylinder_cShape1-lib-map1"/>
+          <p>0 0 1 1 1 2 20 3 22 1 1 2 21 2 23 20 3 22 1 1 2 2 4 3 21 2 23 2 4 3 22 5 24 21 2 23 2 4 3 3 6 4 22 5 24 3 6 4 23 7 25 22 5 24 3 6 4 4 8 5 23 7 25 4 8 5 24 9 26 23 7 25 4 8 5 5 10 6 24 9 26 5 10 6 25 11 27 24 9 26 5 10 6 6 12 7 25 11 27 6 12 7 26 13 28 25 11 27 6 12 7 7 14 8 26 13 28 7 14 8 27 15 29 26 13 28 7 14 8 8 16 9 27 15 29 8 16 9 28 17 30 27 15 29 8 16 9 9 18 10 28 17 30 9 18 10 29 19 31 28 17 30 9 18 10 10 20 11 29 19 31 10 20 11 30 21 32 29 19 31 10 20 11 11 22 12 30 21 32 11 22 12 31 23 33 30 21 32 11 22 12 12 24 13 31 23 33 12 24 13 32 25 34 31 23 33 12 24 13 13 26 14 32 25 34 13 26 14 33 27 35 32 25 34 13 26 14 14 28 15 33 27 35 14 28 15 34 29 36 33 27 35 14 28 15 15 30 16 34 29 36 15 30 16 35 31 37 34 29 36 15 30 16 16 32 17 35 31 37 16 32 17 36 33 38 35 31 37 16 32 17 17 34 18 36 33 38 17 34 18 37 35 39 36 33 38 17 34 18 18 36 19 37 35 39 18 36 19 38 37 40 37 35 39 18 36 19 19 38 20 38 37 40 19 38 20 39 39 41 38 37 40 19 38 20 0 0 21 39 39 41 0 0 21 20 3 42 39 39 41 1 40 2 0 41 1 40 42 0 2 43 3 1 40 2 40 42 0 3 44 4 2 43 3 40 42 0 4 45 5 3 44 4 40 42 0 5 46 6 4 45 5 40 42 0 6 47 7 5 46 6 40 42 0 7 48 8 6 47 7 40 42 0 8 49 9 7 48 8 40 42 0 9 50 10 8 49 9 40 42 0 10 51 11 9 50 10 40 42 0 11 52 12 10 51 11 40 42 0 12 53 13 11 52 12 40 42 0 13 54 14 12 53 13 40 42 0 14 55 15 13 54 14 40 42 0 15 56 16 14 55 15 40 42 0 16 57 17 15 56 16 40 42 0 17 58 18 16 57 17 40 42 0 18 59 19 17 58 18 40 42 0 19 60 20 18 59 19 40 42 0 0 41 21 19 60 20 40 42 0 20 61 22 21 62 23 41 63 43 21 62 23 22 64 24 41 63 43 22 64 24 23 65 25 41 63 43 23 65 25 24 66 26 41 63 43 24 66 26 25 67 27 41 63 43 25 67 27 26 68 28 41 63 43 26 68 28 27 69 29 41 63 43 27 69 29 28 70 30 41 63 43 28 70 30 29 71 31 41 63 43 29 71 31 30 72 32 41 63 43 30 72 32 31 73 33 41 63 43 31 73 33 32 74 34 41 63 43 32 74 34 33 75 35 41 63 43 33 75 35 34 76 36 41 63 43 34 76 36 35 77 37 41 63 43 35 77 37 36 78 38 41 63 43 36 78 38 37 79 39 41 63 43 37 79 39 38 80 40 41 63 43 38 80 40 39 81 41 41 63 43 39 81 41 20 61 42 41 63 43</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="barrelShape-lib" name="barrelShape">
+      <mesh>
+        <source id="barrelShape-lib-Position">
+          <float_array count="90" id="barrelShape-lib-Position-array">
+0.275493 0.000754 0.000000
+0.248211 0.000754 -0.119532
+0.171767 0.000754 -0.215389
+0.061303 0.000754 -0.268586
+-0.061303 0.000754 -0.268586
+-0.171767 0.000754 -0.215389
+-0.248211 0.000754 -0.119532
+-0.275493 0.000754 0.000000
+-0.248211 0.000754 0.119532
+-0.171767 0.000754 0.215389
+-0.061303 0.000754 0.268586
+0.061303 0.000754 0.268586
+0.171767 0.000754 0.215389
+0.248211 0.000754 0.119532
+0.061303 0.000754 0.268586
+0.171767 0.000754 0.215389
+0.275493 0.913275 0.000000
+0.248211 0.913275 -0.119532
+0.171767 0.913275 -0.215389
+0.061303 0.913275 -0.268586
+-0.061303 0.913275 -0.268586
+-0.171767 0.913275 -0.215389
+-0.248211 0.913275 -0.119532
+-0.275493 0.913275 0.000000
+-0.248211 0.913275 0.119532
+-0.171767 0.913275 0.215389
+-0.061303 0.913275 0.268586
+0.061303 0.913275 0.268586
+0.171767 0.913275 0.215389
+0.248211 0.913275 0.119532
+</float_array>
+          <technique_common>
+            <accessor source="#barrelShape-lib-Position-array" count="30" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="barrelShape-lib-Normal">
+          <float_array count="168" id="barrelShape-lib-Normal-array">
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+0 -1.000000 0
+1.000000 0 0
+0.900969 0 -0.433884
+0.900969 0 -0.433884
+1.000000 0 0
+0.623490 0 -0.781832
+0.623490 0 -0.781832
+0.222521 0 -0.974928
+0.222521 0 -0.974928
+-0.222521 0 -0.974928
+-0.222521 0 -0.974928
+-0.623490 0 -0.781831
+-0.623490 0 -0.781831
+-0.900969 0 -0.433884
+-0.900969 0 -0.433884
+-1.000000 0 0
+-1.000000 0 0
+-0.900969 0 0.433884
+-0.900969 0 0.433884
+-0.623490 0 0.781832
+-0.623490 0 0.781832
+-0.222521 0 0.974928
+-0.222521 0 0.974928
+0.222521 0 0.974928
+0.222521 0 0.974928
+0.623490 0 0.781831
+0.623490 0 0.781831
+0.900969 0 0.433884
+0.900969 0 0.433884
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+0 1.000000 0
+</float_array>
+          <technique_common>
+            <accessor source="#barrelShape-lib-Normal-array" count="56" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+          <technique profile="MAYA">
+            <DOUBLE_SIDED>false</DOUBLE_SIDED>
+          </technique>
+        </source>
+        <source id="barrelShape-lib-uvSet1" name="uvSet1">
+          <float_array count="116" id="barrelShape-lib-uvSet1-array">
+0.970963 0.370582
+0.933365 0.323435
+0.879032 0.297270
+0.818728 0.297270
+0.764396 0.323435
+0.726797 0.370582
+0.713378 0.429375
+0.726797 0.488167
+0.764396 0.535315
+0.818728 0.561480
+0.879032 0.561480
+0.933365 0.535315
+0.970963 0.488167
+0.984383 0.429375
+0.500486 0.006117
+0.549939 0.006117
+0.549939 0.779042
+0.500486 0.779042
+0.599392 0.006117
+0.599392 0.779042
+0.648846 0.006117
+0.648846 0.779042
+0.698299 0.006117
+0.698299 0.779042
+0.005953 0.006117
+0.055406 0.006117
+0.055406 0.779042
+0.005953 0.779042
+0.104860 0.006117
+0.104860 0.779042
+0.154313 0.006117
+0.154313 0.779042
+0.203766 0.006117
+0.203766 0.779042
+0.253219 0.006117
+0.253220 0.779042
+0.302673 0.006117
+0.302673 0.779042
+0.352126 0.006117
+0.352126 0.779042
+0.401579 0.006117
+0.401579 0.779042
+0.451033 0.006117
+0.451033 0.779042
+0.970963 0.370582
+0.984383 0.429375
+0.970963 0.488167
+0.933365 0.535315
+0.879032 0.561480
+0.818728 0.561480
+0.764396 0.535315
+0.726797 0.488167
+0.713378 0.429375
+0.726797 0.370582
+0.764396 0.323435
+0.818728 0.297270
+0.879032 0.297270
+0.933365 0.323435
+</float_array>
+          <technique_common>
+            <accessor source="#barrelShape-lib-uvSet1-array" count="58" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="barrelShape-lib-Vertex">
+          <input semantic="POSITION" source="#barrelShape-lib-Position"/>
+        </vertices>
+        <triangles material="box_flamable_barrel01" count="52">
+          <input semantic="VERTEX" offset="0" source="#barrelShape-lib-Vertex"/>
+          <input semantic="NORMAL" offset="1" source="#barrelShape-lib-Normal"/>
+          <input semantic="TEXCOORD" offset="2" set="1" source="#barrelShape-lib-uvSet1"/>
+          <p>13 0 0 12 1 1 0 13 13 12 1 1 11 2 2 0 13 13 11 2 2 10 3 3 0 13 13 10 3 3 9 4 4 0 13 13 9 4 4 8 5 5 0 13 13 8 5 5 7 6 6 0 13 13 7 6 6 6 7 7 0 13 13 6 7 7 5 8 8 0 13 13 5 8 8 4 9 9 0 13 13 4 9 9 3 10 10 0 13 13 3 10 10 2 11 11 0 13 13 2 11 11 1 12 12 0 13 13 0 14 14 1 15 15 16 17 17 1 15 15 17 16 16 16 17 17 1 15 15 2 18 18 17 16 16 2 18 18 18 19 19 17 16 16 2 18 18 3 20 20 18 19 19 3 20 20 19 21 21 18 19 19 3 20 20 4 22 22 19 21 21 4 22 22 20 23 23 19 21 21 4 22 24 5 24 25 20 23 27 5 24 25 21 25 26 20 23 27 5 24 25 6 26 28 21 25 26 6 26 28 22 27 29 21 25 26 6 26 28 7 28 30 22 27 29 7 28 30 23 29 31 22 27 29 7 28 30 8 30 32 23 29 31 8 30 32 24 31 33 23 29 31 8 30 32 9 32 34 24 31 33 9 32 34 25 33 35 24 31 33 9 32 34 10 34 36 25 33 35 10 34 36 26 35 37 25 33 35 10 34 36 14 36 38 26 35 37 14 36 38 27 37 39 26 35 37 14 36 38 15 38 40 27 37 39 15 38 40 28 39 41 27 37 39 15 38 40 13 40 42 28 39 41 13 40 42 29 41 43 28 39 41 13 40 42 0 14 14 29 41 43 0 14 14 16 17 17 29 41 43 29 42 44 16 43 45 28 55 57 16 43 45 17 44 46 28 55 57 17 44 46 18 45 47 28 55 57 18 45 47 19 46 48 28 55 57 19 46 48 20 47 49 28 55 57 20 47 49 21 48 50 28 55 57 21 48 50 22 49 51 28 55 57 22 49 51 23 50 52 28 55 57 23 50 52 24 51 53 28 55 57 24 51 53 25 52 54 28 55 57 25 52 54 26 53 55 28 55 57 26 53 55 27 54 56 28 55 57</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="DefaultScene" name="box_metal_barrel01">
+      <node id="group2" name="group2" sid="group2">
+        <translate sid="rotatePivot">-0.000000 0.457014 -0.000000</translate>
+        <rotate sid="rotateZ">0 0 1 0</rotate>
+        <rotate sid="rotateY">0 1 0 0</rotate>
+        <rotate sid="rotateX">1 0 0 0</rotate>
+        <translate sid="rotatePivotInverse">0.000000 -0.457014 0.000000</translate>
+        <translate sid="scalePivot">-0.000000 0.457014 -0.000000</translate>
+        <translate sid="scalePivotInverse">0.000000 -0.457014 0.000000</translate>
+        <node id="_collider_cylinder_c1" name="_collider_cylinder_c1" sid="_collider_cylinder_c1">
+          <translate sid="translate">0 0.459777 0</translate>
+          <rotate sid="rotateZ">0 0 1 0</rotate>
+          <rotate sid="rotateY">0 1 0 0</rotate>
+          <rotate sid="rotateX">1 0 0 0</rotate>
+          <scale sid="scale">0.276921 0.451656 0.276921</scale>
+          <instance_geometry url="#_collider_cylinder_cShape1-lib">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="lambert1" target="#lambert1"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="barrel" name="barrel" sid="barrel">
+          <rotate sid="rotateZ">0 0 1 0</rotate>
+          <rotate sid="rotateY">0 1 0 0</rotate>
+          <rotate sid="rotateX">1 0 0 0</rotate>
+          <instance_geometry url="#barrelShape-lib">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="box_flamable_barrel01" target="#box_flamable_barrel01">
+                  <bind semantic="UVSET1" target="#barrelShape-lib-uvSet1"/>
+                </instance_material>
+                <instance_material symbol="lambert1" target="#lambert1"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+      <extra>
+        <technique profile="MAYA">
+          <start_time>0.041667</start_time>
+          <end_time>2.000000</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#DefaultScene"/>
+  </scene>
+</COLLADA>

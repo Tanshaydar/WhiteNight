@@ -1,0 +1,484 @@
+<LANGUAGE>
+  <RESOURCES>
+    <Directory Path="fonts/eng" />
+    <Directory Path="lang/eng" />
+  </RESOURCES>
+  
+  <CATEGORY Name="Inventory">
+		<Entry Name="ItemName_key_tower_2">Hall Key</Entry>
+		<Entry Name="ItemDesc_key_tower_2">Key that opens the door end of the hall.</Entry>
+		<Entry Name="ItemName_strairs">Nowhere Key</Entry>
+		<Entry Name="ItemDesc_strairs">Probably opens that one locked door.</Entry>
+		<Entry Name="ItemName_LunaticDoor">Locked Patients Key</Entry>
+		<Entry Name="ItemDesc_LunaticDoor">Label says it's isolated patients hall key.</Entry>
+		<Entry Name="ItemName_LunaticDoor2">Hospital Hall Key</Entry>
+		<Entry Name="ItemDesc_LunaticDoor2">Label says it's hospital hall key.</Entry>
+		<Entry Name="ItemName_DownStairs">Patient Wing Key</Entry>
+		<Entry Name="ItemDesc_DownStairs">Label says it's patients wing key.</Entry>
+		<Entry Name="ItemName_PatientDownStairs">Downstairs Key</Entry>
+		<Entry Name="ItemDesc_PatientDownStairs">Label says it's downstairs section key.</Entry>
+		<Entry Name="ItemName_storage_key">Storage Key</Entry>
+		<Entry Name="ItemDesc_storage_key">Probably it opens that locked storage.</Entry>
+		<Entry Name="ItemName_female">Female Wing Key</Entry>
+		<Entry Name="ItemDesc_female">Probably it opens that locked door in first floor.</Entry>
+		<Entry Name="ItemName_axe">Fire Axe</Entry>
+		<Entry Name="ItemDesc_axe">An old Fire Axe. Looks like used too much...</Entry>
+		<Entry Name="ItemName_screwdriver">Screwdriver</Entry>
+		<Entry Name="ItemDesc_screwdriver">A screwdriver. Might come in handy to open somewhere.</Entry>
+		<Entry Name="ItemName_hook">Hook</Entry>
+		<Entry Name="ItemDesc_hook">A small hook.</Entry>
+		<Entry Name="ItemName_illumination">Illumination</Entry>
+		<Entry Name="ItemDesc_illumination">...</Entry>
+		<Entry Name="ItemName_silent_hill">String with Hook</Entry>
+		<Entry Name="ItemDesc_silent_hill">A string with a little hook on its end.</Entry>
+		<Entry Name="ItemName_Lightbulb">Lightbulb</Entry>
+		<Entry Name="ItemDesc_Lightbulb">An unused lightbulb. I might use it to change burned out ones.</Entry>
+		<Entry Name="ItemName_Gasoline_Empty">Empty Gasoline Can</Entry>
+		<Entry Name="ItemDesc_Gasoline_Empty">An empty gasoline can. I'll need to find gasoline to fill it.</Entry>
+		<Entry Name="ItemName_Gasoline">Filled Gasoline Can</Entry>
+		<Entry Name="ItemDesc_Gasoline">A filled gasoline can. Ready to use.</Entry>
+		<Entry Name="ItemName_ring_memories">Ring of Memories</Entry>
+		<Entry Name="ItemDesc_ring_memories">It's a silver ring. "Memories" is inscribed inside.</Entry>
+		<Entry Name="ItemName_ring_reflections">Ring of Reflections</Entry>
+		<Entry Name="ItemDesc_ring_reflections">It's a silver ring. "Reflections" is inscribed inside.</Entry>
+		<Entry Name="ItemName_key_tower_1">Section Key</Entry>
+		<Entry Name="ItemDesc_key_tower_1">Key that opens the door of this section of the Hospital.</Entry>
+		<Entry Name="ItemName_key_laboratory_1">Stairs Key</Entry>
+		<Entry Name="ItemDesc_key_laboratory_1">Key that opens the door at the top of the stairs.</Entry>
+		<Entry Name="ItemName_Sewers">Sewers Key</Entry>
+		<Entry Name="ItemDesc_Sewers">Key that opens the door to the sewers.</Entry>
+		<Entry Name="ItemDesc_crowbar">A tool allowing great leverage.</Entry>
+		<Entry Name="ItemName_crowbar">Crowbar</Entry>
+		<Entry Name="ItemDesc_StringPile">A tough string made from hemp.</Entry>
+		<Entry Name="ItemName_StringPile">String</Entry>
+		<Entry Name="ItemName_waxroll_record">Wax Cylinder</Entry>
+		<Entry Name="ItemDesc_waxroll_record">A wax cylinder for a phonograph.</Entry>
+		<Entry Name="ItemName_cermony_knife">Dagger</Entry>
+		<Entry Name="ItemDesc_cermony_knife">A blade meant for cutting and skinning.</Entry>
+		<Entry Name="ItemDesc_WrigglePrisonBar">A rod of iron from the stair bars.</Entry>
+		<Entry Name="ItemName_WrigglePrisonBar">Iron Bar</Entry>
+		<Entry Name="ItemName_HollowNeedle">Hollow Needle</Entry>
+		<Entry Name="ItemDesc_HollowNeedle">A strong surgical needle.</Entry>
+	</CATEGORY>
+	<CATEGORY Name="Journal">
+		<Entry Name="Quest_Password01_Text">Last digit of the password is half of the second digit.[br]
+		Second digit is equal to the number of washbasins in the restroom.</Entry>
+		<Entry Name="Quest_Password02_Text">Third digit of the password is 2. Password is four digit.</Entry>
+		<Entry Name="Quest_Bricks_Text">Sounds like I should be able to find a way forward using bricks.</Entry>
+	    <Entry Name="Note_Text01_Name">a note to YOU</Entry>
+	    <Entry Name="Note_Text01_Text">You don't remember anything, do you David? Hah! I bet you don't. They won't let you remember.[br]But please David, you have to help ME.[br]For once in your life, think about ME![br][br]I want you to get out of here. Nevertheless, I can't promise you that you won't be seeing nightmares again.[br][br]One last thing: Be careful about what or who to believe...
+		</Entry>
+	    <Entry Name="Note_Text02_Name">To Dr. S.</Entry>
+	    <Entry Name="Note_Text02_Text">Patient continues to lose some parts of his memories occasionally; especially the ones after the incident. This is not unexpected at this rate.[br]However, he still shows the capability of gaining and preserving new ones; and there is a possibility that he might remember everything happened.[br][br]Patient's progress should be watched closely and he should be locked up immediately in need.</Entry>
+	    <Entry Name="Note_Text03_Name">another note to YOU</Entry>
+	    <Entry Name="Note_Text03_Text">Run before they catch YOU![br]Do NOT look back, ever!</Entry>
+	    <Entry Name="Note_Text04_Name">one other note to YOU</Entry>
+	    <Entry Name="Note_Text04_Text">Remember how you forgot everything.[br]Remember who YOU are.[br][br][br][br][br][br]You have to try harder David.[br]Or we will perish...</Entry>
+		<Entry Name="Note_stranger_Name">My Last Words</Entry>
+	    <Entry Name="Note_stranger_Text">Why no one lets me to live in my very own world?[br]
+		Are they jealous of me? Or simply I'm a threat to community?[br]
+		I can understand my family and my friends want me to heal. But why would I go back to the life full of misery?[br][br]
+		I'm afraid they will make me forget everything... I thought doctors were trying to help me...</Entry>
+		<Entry Name="Note_formylove1_Name">I Did It For My Love</Entry>
+	    <Entry Name="Note_formylove1_Text">I loved her so much, so much that I couldn't breathe without her...[br][br]
+		When they brought me here, they told me everything was gonna be just fine. Like I would believe that nonsense.[br]
+		They'll never understand me, I know this for sure.[br][new_page][br]
+		Yesterday he took my ring and locked it away. I should have hidden it better. It was my only memento left from her. He said it was part of the progress. Who said I want to develop some progress? I just want my ring back. My ring, inscribed with her reflection...[br][new_page][br]
+		Today I did it. I did it for you my love. I took the knife and searched inside him. It was not there. I think I will find it in his cabinet. He was always locking his cabinet. It has to be there.</Entry>
+		<Entry Name="Note_formylove2_Name">I Found It My Love</Entry>
+	    <Entry Name="Note_formylove2_Text">After I searched inside him, they caught me while I was looking inside his cabinet.[br][br]
+		They found and took my ring too. My ring, inscribed with her memories...[br][new_page][br]
+		If I don't have a ring to wear, why would I have fingers?</Entry>
+		<Entry Name="Note_formylove3_Name">Patient #6 Death Report</Entry>
+	    <Entry Name="Note_formylove3_Text">-Patient #6, Mr. Jamestown;[br][br]
+		-Cause of Death: Loss of blood.[br]
+		-Found? When: Before noon, around 11 am.[br]
+		-Found? Where: In one of the locked rooms near the morgue.[br][br]
+		Door was locked from the inside, which leads us to believe he locked himself in. Last night the janitor's body was found and patient #6 was missing. As far as we understand, patient killed the janitor with a knife he stole from morgue, and then locked himself in a room.[br][new_page][br]
+		Patient was delusional and aggressive when he first came, however his rate of hallucinations was decreasing. Although he never married, he was hallucinating a dead wife he called Maria; and often talking about her to the janitor. That's why we were observing his relationship with the janitor, in hope it would turn into friendship.[br]
+		The janitor and patient were not close, but they were often talking to each other. When we found Mr. Jamestown, he was already dead from loss of blood. His fingers and left hand were cut with presumably same knife he used to murder the janitor. I wonder why he did this to himself after killing him.[br][new_page][br]
+		We still don't know why he killed the janitor, why he locked himself in, why he cut his fingers and left hand as he didn't have any suicidal tendencies.</Entry>
+		<Entry Name="Note_History_Name">Hospital History</Entry>
+	    <Entry Name="Note_History_Text">
+		  In 1878 the State Lunatic Hospital at Denver was erected, under the supervision of prominent Boston architect Nathaniel J Bradlee, in an extremely rural, "out-of-the-way location". The immediate crisis which precipitated the building of a mental hospital north of Boston was the imminence in the early 1870's of the closing of the facility at South Boston. In 1873, Worcester, Taunton and Northampton and the 1866 Tewksbury Asylum for chronic patients were already housing 1300 patients in buildings designed for 1000; another 1200 were scattered about in various other hospitals.
+		[br][new_page][br]
+		  While the hospital was originally established to provide residential treatment and care to "the mentally ill", its functions expanded to include a training program for nurses in 1889 and a pathological research laboratory in 1895. By the 1920's the hospital was operating school clinics to help determine mental deficiency in children. During the 1960's as a result of increased emphasis on alternative methods of treatment and deinstitutionalization and community based mental health care, "the inpatient population started to decrease". Denver State Hospital closed on June 24, 1992 due to budget cuts within the mental health system.
+		[br][new_page][br]
+		  In 1998, Denver State Hospital opened again by Dr. Diane Selwyn and began to undergo a partial reconstruction to meet the modern day standards. After country's one of the most respectable doctors Patrick Parr joined to the hospital crew, reputation of the hospital started to increase; however the still "out-of-the-way location" left an average impression throughout the country.
+		[br][new_page][br]
+		(There is a handwritten note here)[br][br]Today, Denver State Hospital is a forgotten and desolate place...
+		</Entry>
+		<Entry Name="Note_Renewal_Name">Renewal Works</Entry>
+	    <Entry Name="Note_Renewal_Text">We are under complete overhaul. All of the old furnitures and stuffs are being replaced. Dr. S. is very strict about her instructions.[br][br]Well, I don't mind those old rotting wooden beds are being replaced by new strong iron ones. I'm tired of chinches already.
+		[br][new_page][br]What I don't understand is, while they're placing an electronic gate to Isolated Patients Ward, why they wanted me to keep the ward door locked?
+		</Entry>
+		<Entry Name="Note_puzzle_1_3_Name">Annoying Her</Entry>
+	    <Entry Name="Note_puzzle_1_3_Text">#3 -- [2]. She doesn't know this. But I know it's a four digit!</Entry>
+		<Entry Name="Note_Clarence_Name">Note to Dr. Patrick</Entry>
+	    <Entry Name="Note_Clarence_Text">Dr. Patrick[br]
+		Clarence is out of control and I administered one dose of sedative.[br]
+		That's not up to me, but I think his condition is getting worse. He started to claim that someone named Philip is trying to get rid of him. If you pardon my curiosity, just who is this Philip and why is he thinking that he tries to kill him?[br]
+		For other patients' welfare, I locked him to observation cells until further assistance.
+		</Entry>
+		<Entry Name="Note_Regression_Name">Regression</Entry>
+	    <Entry Name="Note_Regression_Text">Once, a patient dear to me told me that:[br][br]
+		  "All people live relying on their knowledge and perception, and are thus bound to them. Those boundaries are what they tend to accept as 'reality'.[br][br]
+		  However knowledge and perception are both ambiguous, so 'reality' could be nothing more than illusion.[br][br]
+		  People live trapped by their limited perception, do you see?"
+		[br][new_page][br]
+		"What is reality" then I asked. "Does it matter what I'd say?" she answered. She was right, it wouldn't matter... What could I do to prove she was right back then?[br][br]
+		Since then, there is a question prepossess my mind: What if... someone loses his all memories? What would he believe? What would reality be for him? And most importantly, could we insert new memories to create an unexisted reality for him?[br][br]
+		[br][new_page][br]
+		Although I'm respected throughout country now, I couldn't save her back then.[br]
+		I still do have a lot to learn.[br][br]
+		- Dr. Patric Parr</Entry>
+		<Entry Name="Note_Generator_Name">Generator Replacement</Entry>
+	    <Entry Name="Note_Generator_Text">In this complete renewal, it's crucial that the generator must be replaced first. However, Dr. S didn't listen to me and now all hospital suffers from local electrical shotdowns. Not my mistake like previous power failure.[br][br]
+		That Generator is very old and it sometimes may go off without reason. Last week it went off twice. If it goes off again, it might be impossible to fix it. 
+		[br][new_page][br]
+		In case of an emergency:[br][br]
+		1- Make sure you have a filled gasoline can.[br]
+		2- Fill the container next to the generator with gasoline to give a starting force.[br]
+		3- Pull the switch next to the container.[br]
+		4- Switch is old, too. So you might need to pull it twice.</Entry>
+		<Entry Name="Note_Retrograde_Name">Ribot's Law</Entry>
+	    <Entry Name="Note_Retrograde_Text">Retrograde amnesia is a loss of access to events that occurred, or information that was learned, before an injury or the onset of a disease.[br][br]
+		Ribot's Law of retrograde amnesia was hypothesized in 1881 by Théodule Ribot. It states that there is a time-gradient in retrograde amnesia. Recent memories are more likely to be lost than the more remote memories. Not all patients suffering from retrograde amnesia report the symptoms of Ribot's Law.[br][br]
+		"The dissolution of memory is inversely related to the recency of the event."[br][br]
+		Simply put, as memories age, they become resistant to disruption.
+		[br][new_page][br]
+		A large body of research supports the predictions of Ribot's Law. The theory concerns the relative strength of memories over time, which is not directly testable. Instead, scientists investigate the processes of forgetting (amnesia), and recollection. Ribot's Law states that following a disruptive event, patients will show a temporally graded retrograde amnesia that preferentially spares more distant memories.[br][br]
+		Means, if one tries to forcefully trigger a retrograde amnesia, preferably in surgical ways, it's nearly impossible to erase all respective memories without having to cause Korsakoff's syndrome; which will completely ruin the goal of this study.
+		[br][new_page][br]
+		However, one cannot say that if a patient is to be subjected to this study episodically, there is no chance that the study will finally achieve success. Nevertheless, even Dr. Parr agrees to the difficulty of progress, especially to remove 'selected' part(s) of the memory without having to cause damage to the temporal lobe.[br][br]
+		Dr. S has been strongly disagreeing with the idea of switching from theoric study to act. In fact, without having a real experiment, all theories that this study brings to the light, is no more different than the meaningless mutters of the lunatics here.</Entry>
+		<Entry Name="Note_SofiaParr_Name">Organizing the Sessions</Entry>
+	    <Entry Name="Note_SofiaParr_Text">Dr. Selwyn[br][br]
+		I have been unable to organize my sessions, given the state of our study. Three urgent patient suffering severely from different mental diseases should be constantly in watch, and my weekly sessions with other patients prevent me to advance further in my study about the memory replacement.[br][br]
+		You know the importance of my study and the possible outcomes to open a new era in this field, and possible cures. Therefore, if you please, I'd like to dismiss all the sessions except Grace's and Sofia's until we reach a state to conduct physical experiments. Those two are really important for me and my study. I'd like to spent more time about their conditions.[br][br]
+		Another thing is for you to consider that those two have become good friends, which is surprising -and interesting- situation, considering Sofia never had -nor wanted- friends since she came here. I'd like to examine their friendship and its effects on their conditions.
+		[br][br]- Dr. Patrick P.</Entry>
+		<Entry Name="Note_Music_Name">Music for Theraphy?</Entry>
+	    <Entry Name="Note_Music_Text">I have been thinking that artistic feeling might be able to reach different parts of mind, which we cannot reach directly. Moreover, it can activate the unused or worse, misused parts of the brain; thus fortify the results of regular sessions.[br][br]
+		It's just a theory, but patients that I'm attending seemed interested in with the music experiments. Although I cannot explicate direct results of the music, they are, at least, paying more attention to me and looking more interested in the sessions.[br][br]
+		In next session, I'll try to make them play the tune with the piano, exactly from what they'd listen from phonograph. If they succeed, I'll reward some of them.[br][br]
+		(I think it's time to buy a stereo)</Entry>
+		<Entry Name="Note_SofiaDown_Name">Lockdown and Restoration</Entry>
+	    <Entry Name="Note_SofiaDown_Text">Patient wards door is locked as Dr. Sofia instructed.
+		[br][br]Restoration was left half finished and it was nearly impossible to use patient wards. She said patients with craft should continue to work, so I took the files to examine patients and made a list. You need to somehow have them to continue the work that was left half finished.
+		[br][br]- John Barker (was a carpenter before coming here)
+		[br]- Richard Crichton (was a painter and crafter)
+		[br]- Thomas Redwood (a young boy with experience)
+		[br]- David
+		[br][br]
+		(It is impossible to read rest of the entry due to bad handwriting)</Entry>
+		<Entry Name="Note_LastLine_Name">Patient Progress Report #2</Entry>
+	    <Entry Name="Note_LastLine_Text">Now that David's trauma is gone, we can begin our experiment's next step.</Entry>
+	</CATEGORY>
+	<CATEGORY Name="Flashbacks">
+        <Entry Name="Flashback_01">It's hot, too hot that my body cannot handle it.
+		[br]It's bright, too bright that my eyes went blind.
+		[br]It's unbearable to hear those screams... "Help me!"
+		[br]I'm covering my ears in hope I'll go deaf...</Entry>
+        <Entry Name="Flashback_02">The screams I heard was indelible.
+		[br]As I was sitting and looking into the emptiness, they called me survivor.
+		[br]Who would want to survive with a memory like that?</Entry>
+        <Entry Name="Flashback_03">Dephening voices echoing in my mind.
+		[br]I had always wanted to be a fireman.
+		[br]One looks me down, with a face darkened from soot.
+		[br]"Are you alright son?" he asks. I know,  I will never be alright again.</Entry>
+        <Entry Name="Flashback_04">It was burning... Everything was burning.
+		[br]Everyone was screaming... pleading for help.
+		[br]I could nearly see them like embodied screams.</Entry>
+        <Entry Name="Flashback_05">I remember now... My parents never screamed for help...
+		[br]I now can clearly hear what they said...
+		[br]"Save yourself David, for us!..."</Entry>
+    </CATEGORY>
+	<CATEGORY Name="Voice">
+        <Entry Name="00_intro_01">David, try not to be late.</Entry>
+        <Entry Name="00_intro_02">I will. Don't worry, I haven't forgotten it.</Entry>
+        <Entry Name="00_intro_03">Forget what?</Entry>
+        <Entry Name="00_intro_04">Our anniversary.</Entry>
+        <Entry Name="00_intro_05">I know you didn't. Okay, see you later then...</Entry>
+        <Entry Name="00_intro_06">Time for you to go out Grace. Lots of things to do.</Entry>
+        <Entry Name="00_intro_07">It's been three years...</Entry>
+        <Entry Name="00_intro_08">Yes, years pass quickly...</Entry>
+        <Entry Name="00_intro_09">Do you remember when we first met?</Entry>
+        <Entry Name="00_intro_10">Of course I do Grace! How can I forget?</Entry>
+        <Entry Name="01_rooms_01">David?</Entry>
+        <Entry Name="01_rooms_02">Hello David, how are you today?</Entry>
+        <Entry Name="01_rooms_03">Where am I, who are you?</Entry>
+        <Entry Name="01_rooms_04">Oh, David. Have you forgotten again? I'm your doctor, Doctor Sofia, and you are in a hospital, a mental one. Do you remember now?</Entry>
+        <Entry Name="01_rooms_05">No...</Entry>
+        <Entry Name="01_rooms_06">Don't worry David. It's not unexpected to forget things in your condition. And that's why I'm here. To help you.</Entry>
+        <Entry Name="01_rooms_07">Ah...</Entry>
+        <Entry Name="01_rooms_08">Are you ready for our session today, David?</Entry>
+        <Entry Name="01_rooms_09">Why am I alone here?</Entry>
+        <Entry Name="01_rooms_10">Because you are a criminal patient, David.</Entry>
+        <Entry Name="01_rooms_11">What? I'm not a criminal!</Entry>
+        <Entry Name="01_rooms_12">Easy, David. I am here to help you. I am here to heal your mind.</Entry>
+        <Entry Name="01_mental_1_01">David, I need you to come back. Open your eyes.</Entry>
+        <Entry Name="03_hospital_01">Patient progress report.</Entry>
+        <Entry Name="03_hospital_02">As for the latest diagnosis, the patient has started to show signs of acknowledgment for her second personality. 
+		I still couldn't understand what may have caused this dissociative identity disorder and when the cause in question occurred, if there is one.</Entry>
+        <Entry Name="03_hospital_03">The interesting thing is, while in her normal personality, as I decided to call this for now, she acts like a completely normal person with a strong mind.</Entry>
+        <Entry Name="03_hospital_04">Today I want to test what might trigger the second -sick- personality with a little experiment. 
+		I asked her if she knew Dr. S. She told me that she even knows her room's password. 
+		I asked what it was, and she told me last digit of the password is half of the second digit.</Entry>
+        <Entry Name="03_hospital_05">Then she whispered that second digit was equal to the number of washbasins in the restroom.</Entry>
+        <Entry Name="03_hospital_06">I asked how she knew this much, and she told me that Sofia told her.
+		I'm afraid this personality I was trying to examine was already triggered when I started to ask questions.
+		Is this Sofia's act?</Entry>
+        <Entry Name="03_hospital_07">Most importantly, how did Sofia know this much?</Entry>
+        <Entry Name="03_hospital_08">Tell me what you see, David.</Entry>
+        <Entry Name="03_hospital_09">Tell me what you feel when you look at this painting.</Entry>
+        <Entry Name="03_hospital_10">Nightmares again ha, David?</Entry>
+        <Entry Name="03_hospital_11">I hoped you would be better today, but you are not, as it turns out...</Entry>
+        <Entry Name="03_hospital_12">What's happened to me? Why is there no one but me in this... place?</Entry>
+        <Entry Name="03_hospital_13">Already asking questions? Then you remember me and your name? Good, you finally started to show progress.</Entry>
+        <Entry Name="03_hospital_14">What progress, what are you talking about?</Entry>
+        <Entry Name="03_hospital_15">Mind is fragile, David. I'm afraid yours is heavily broken. But don't worry, I'm here to heal your mind.</Entry>
+        <Entry Name="03_hospital_16">Stop saying that!</Entry>
+        <Entry Name="03_hospital_17">We are a little aggressive today, aren't we, David? It's good to see you are ambitious. Let's start our session today then.</Entry>
+        <Entry Name="03_hospital_18">What happened to me?</Entry>
+        <Entry Name="03_hospital_19">A lot happened to you David, but let's take it slow.</Entry>
+        <Entry Name="03_hospital_20">You should know you are a good person, David; but there are bad things you made.</Entry>
+        <Entry Name="03_hospital_21">I haven't done anything wrong!</Entry>
+        <Entry Name="03_hospital_22">So you remember?</Entry>
+        <Entry Name="03_hospital_23">I... don't.</Entry>
+        <Entry Name="03_hospital_24">How can you be so sure then, David?</Entry>
+        <Entry Name="03_hospital_25">I...</Entry>
+        <Entry Name="03_hospital_26">Why do you think you are seeing dead bodies, David?</Entry>
+        <Entry Name="03_hospital_27">How do you know I'm seeing dead bodies?</Entry>
+        <Entry Name="03_hospital_28">So you admit it.</Entry>
+        <Entry Name="03_hospital_29">Look, David, guilt often tends to rise to the surface in the form of your acts, no matter how deeply you bury it.</Entry>
+        <Entry Name="03_hospital_30">But there is a bright side, guilt also shows you are developing some progress.</Entry>
+        <Entry Name="03_hospital_31">That's why there are things attacking me?</Entry>
+        <Entry Name="03_hospital_32">There are things attacking you? Hmmm...</Entry>
+        <Entry Name="05_basement_01">David, I need you to calm down and stay still now.</Entry>
+        <Entry Name="05_basement_02">This might hurt a little bit. But you know, I'm here to help you.</Entry>
+        <Entry Name="05_basement_03">I'm here to heal your mind.</Entry>
+        <Entry Name="05_basement_04">...</Entry>
+        <Entry Name="05_basement_05">Hold the patient.</Entry>
+        <Entry Name="06_tunnels_01">...</Entry>
+        <Entry Name="06_tunnels_02">So, this is it. I failed again...</Entry>
+        <Entry Name="06_tunnels_03">I worked so much to fail again?</Entry>
+        <Entry Name="06_tunnels_04">This hospital, this place, this would be a new beginning for me.</Entry>
+        <Entry Name="06_tunnels_05">Sofia outsmarted me.</Entry>
+        <Entry Name="06_tunnels_06">I can hear her voice echoing in the tunnels, giving orders to other patients.</Entry>
+        <Entry Name="06_tunnels_07">...</Entry>
+        <Entry Name="06_tunnels_08">This is Doctor Patrick Parr. I've spent all of my life learning about human psyche; and it seems I haven't learned anything at all.</Entry>
+        <Entry Name="06_tunnels_09">These are my last words. I don't think anyone will find them in the near future, but if you do find them...</Entry>
+        <Entry Name="06_tunnels_10">The moment you are sure of something you see is the moment you are mistaken.</Entry>
+        <Entry Name="06_tunnels_11">[steps]</Entry>
+        <Entry Name="06_tunnels_12">So, you came, Sofia...</Entry>
+        <Entry Name="06_tunnels_13">What did you... How... What happened to Patrick?</Entry>
+        <Entry Name="06_tunnels_14">I always knew you were a sharp one, David. So you figured it out.</Entry>
+        <Entry Name="06_tunnels_15">You weren't a doctor from the start!</Entry>
+        <Entry Name="06_tunnels_16">Yes David, I wasn't a real doctor, but you can't deny I was a good doctor to you.</Entry>
+        <Entry Name="06_tunnels_17">In fact, Patrick was a good doctor to me, but I can't just accept someone conducting experiments on me, can I?</Entry>
+        <Entry Name="06_tunnels_18">Instead, I conducted an experiment on him. It resulted with some casualties. Poor Patrick, he was so devoted to his work.</Entry>
+        <Entry Name="06_tunnels_19">Why are you telling this to me?!</Entry>
+        <Entry Name="06_tunnels_20">Does it really matter? You will forget again. I will make you forget. It is easy to make you forget. You don't even remember Patrick was your... friend.</Entry>
+        <Entry Name="06_tunnels_21">My friend... So... I... was a doctor here?</Entry>
+        <Entry Name="06_tunnels_22">It doesn't matter who you were David. What matters is, who I want you to be.</Entry>
+        <Entry Name="06_tunnels_23">You will be my first successful experiment since my first real victory, my White Night!</Entry>
+        <Entry Name="06_tunnels_24">Time for you to wake up David, time for you to remember.</Entry>
+        <Entry Name="07_asylum_1">Isn't it beautiful David? Isn't it looking great?</Entry>
+        <Entry Name="07_asylum_2">I bet it is wonderful to watch sunset from there.</Entry>
+        <Entry Name="07_asylum_3">When you come to visit me, we can ramble around.</Entry>
+        <Entry Name="07_asylum_4">You will come to visit me, won't you, David?</Entry>
+        <Entry Name="07_asylum_5">I have a new friend here, David. She is so nice and she knows so much!</Entry>
+        <Entry Name="07_asylum_6">I missed you David, why didn't you come other day?</Entry>
+        <Entry Name="07_asylum_7">We need to talk David. This is a serious matter.</Entry>
+        <Entry Name="08_entrance_1">Grace, you have a visitor.</Entry>
+        <Entry Name="08_entrance_2">You are not coming to visit me anymore David?</Entry>
+        <Entry Name="08_entrance_3">Will you leave me alone here?</Entry>
+        <Entry Name="08_entrance_4">Will you abandon me?</Entry>
+        <Entry Name="08_entrance_5">Don't you care what they are gonna do to me?</Entry>
+        <Entry Name="08_entrance_6">Hello Grace, hello.</Entry>
+        <Entry Name="08_entrance_7">Hello doctor.</Entry>
+        <Entry Name="08_entrance_8">And how is Grace feeling today?</Entry>
+        <Entry Name="08_entrance_9">I'm perfectly fine doctor. How are you?</Entry>
+        <Entry Name="08_entrance_10">I'm fine Grace, thank you. I see you are feeling much better today?</Entry>
+        <Entry Name="08_entrance_11">Yes doctor.</Entry>
+        <Entry Name="08_entrance_12">And is there a particular reason for this, might I ask?</Entry>
+        <Entry Name="08_entrance_13">Yes doctor, because he is coming to visit me today.</Entry>
+        <Entry Name="08_entrance_14">Hello Grace, how are you doing today?</Entry>
+        <Entry Name="08_entrance_15">Hello doctor. I'm perfectly fine. Did I tell you about my new friend?</Entry>
+        <Entry Name="08_entrance_16">No Grace. You've made a new friend?</Entry>
+        <Entry Name="08_entrance_17">Yes doctor. I have a new friend, and she is so nice to me. She knows so much...</Entry>
+        <Entry Name="08_entrance_18">I see, so then you don't find it boring here?</Entry>
+        <Entry Name="08_entrance_19">No, but...</Entry>
+        <Entry Name="08_entrance_20">But?</Entry>
+        <Entry Name="08_entrance_21">I wish David was here too...</Entry>
+        <Entry Name="08_entrance_22">This is unlike anything I've ever seen before. All this time, she was trying to take over, to become the real personality. She grew stronger and I'm afraid I'll have to use some... unprecedented methods...</Entry>
+        <Entry Name="08_entrance_24">How is she, Patrick?</Entry>
+        <Entry Name="08_entrance_25">Easy, David, there is much we need to discuss.</Entry>
+        <Entry Name="08_entrance_26">What is her problem doctor?</Entry>
+        <Entry Name="08_entrance_27">I'm afraid it's much more complicated than I previously imagined.</Entry>
+        <Entry Name="08_entrance_28">How could I be so blind... She was in front of my eyes all the time...</Entry>
+        <Entry Name="08_entrance_29">David, this case is not something ordinary individuals could understand. So please, don't punish yourself, it is not your fault. In fact, quite contrary, it's because of you that her normal personality is much stronger than her... well, sick personality.</Entry>
+        <Entry Name="08_entrance_30">You promised lots of things David. You promised to come and visit me. You promised to protect me. But no! Things will always be as you like!</Entry>
+        <Entry Name="08_entrance_31">Did you know David, why I didn't kill you while I was hunting others? Because other Grace wouldn't let me. But now, she is gone! Thanks to Sofia!</Entry>
+        <Entry Name="09_mental_3_1">You see Mr. Lawrence? What needs to be done is not to put her in a jail. That will solve nothing. What she needs is treatment. Mentally. And I, Patrick Parr, am personally interested in this case. I think I have already proven broken minds can be healed...</Entry>
+        <Entry Name="09_mental_3_2">Think about your memories David. Think about them as bricks. Use them to find your way.</Entry>
+        <Entry Name="09_mental_3_3">See David, that wasn't that hard.</Entry>
+        <Entry Name="09_mental_3_4">Run David, this is your last chance!</Entry>
+        <Entry Name="09_mental_3_5">David, do you know why Sofia calls her victory as white night? Because she likes scrubs so much, especially when they are white. Did you know, the one she wears now is... was Patrick's.</Entry>
+        <Entry Name="09_mental_3_6">It was the night before your last visit. She organized all the patients here, and took over the hospital. Poor Selwyn, her Dr. S nick now belongs to Sofia.</Entry>
+        <Entry Name="09_mental_3_7">Grace values you so much, yet you let that bastard to conduct his disgusting experiments on her!</Entry>
+        <Entry Name="09_mental_3_8">Ah, yesss. I was there... While Sofia was chopping your precious friend's head off!</Entry>
+        <Entry Name="09_mental_3_9">Sofia taught me a lot, and in return, I taught her how to use knives. After all, I'm experienced.</Entry>
+        <Entry Name="09_mental_3_10">All these years David! All these years! And you wouldn't tell me about your parents! And you call yourself a husband?!</Entry>
+        <Entry Name="09_mental_3_11">You know what, David. I guess I'm gonna help Sofia this time. After all, I, too, have a crush on you. You can stay here with me.</Entry>
+        <Entry Name="09_mental_3_12">Do you remember when we first met? Oh wait, you don't need to 'remember' David. Because 'I' will put those memories as I like.</Entry>
+        <Entry Name="09_mental_3_13">Into the abyss, David, into the abyss...</Entry>
+        <Entry Name="09_mental_3_14">Remember that night David? They came to take Grace, not you. She was the one, not you.</Entry>
+        <Entry Name="09_mental_3_15">How did they make you forget David? But you should be thankful, I made you remember again. I always make you remember again, no matter how deep you bury me.</Entry>
+        <Entry Name="09_mental_3_16">I am your little 'trauma' David. I am a memory you tried so hard to forget. But in the end, I was all you had. Don't let me go, or you are done.</Entry>
+        <Entry Name="10_ending_01">I will now count to three, and you will wake up, David.</Entry>
+        <Entry Name="10_ending_02">One.</Entry>
+        <Entry Name="10_ending_03">Two.</Entry>
+        <Entry Name="10_ending_04">Three.</Entry>
+        <Entry Name="10_ending_05">Wake uuup, David.</Entry>
+        <Entry Name="10_ending_06">How are you feeling? I guess you are better. After a few sessions, you will be completely fine.</Entry>
+        <Entry Name="10_ending_07">Oh, look at the time. Well, that's it for today, David. See you next week.</Entry>
+        <Entry Name="10_ending_08">Oh, by the way David...</Entry>
+        <Entry Name="10_ending_09">You don't have to carry your parents' memory on your shoulder anymore.</Entry>
+        <Entry Name="10_ending_10">Because it might not let you to forget...</Entry>
+        <Entry Name="10_ending_11">Did you really think I'd let you out, David?...</Entry>
+    </CATEGORY>
+	<CATEGORY Name="Signs">
+        <Entry Name="Sign_01">It's stuck into the wall, I can't pull it out by hand.[br]I might use it to open that door.</Entry>
+		<Entry Name="Sign_02">I can't open it with my bare hands; and I don't have a key either.</Entry>
+		<Entry Name="Sign_03">Dead?...</Entry>
+		<Entry Name="Sign_04">Blood?...Jesus...</Entry>
+		<Entry Name="Sign_05">Where the hell am I?...</Entry>
+		<Entry Name="Sign_06">Just a little more!...</Entry>
+		<Entry Name="Sign_07">Looks like electronically locked. Maybe I can cut the power...</Entry>
+		<Entry Name="Sign_08">Door is locked. I need a password to open it.</Entry>
+		<Entry Name="Sign_09">It's locked. I need a tool to open it. Maybe crowbar would do it.</Entry>
+		<Entry Name="Sign_10">Looks loose. I might be able to break it. But why?</Entry>
+		<Entry Name="Locked_1">It won't budge.</Entry>
+		<Entry Name="Locked_2">Lock is broken.</Entry>
+		<Entry Name="Locked_3">It won't move.</Entry>
+		<Entry Name="Locked_4">It's stuck.</Entry>
+		<Entry Name="Locked_5">It's not gonna open.</Entry>
+		<Entry Name="Button">I pressed the button but nothing happens.</Entry>
+		<Entry Name="ScrewDriver">Unlocked.</Entry>
+		<Entry Name="Rooms_Stuck">Stuck.</Entry>
+		<Entry Name="HotTub">It's too hot. I can't touch it.</Entry>
+		<Entry Name="HotKey">There is a key in the tub's hole.</Entry>
+		<Entry Name="WTF">What the...</Entry>
+		<Entry Name="Panel">Screws are too tight. I can't open it with this.[br]Maybe I can break it?</Entry>
+		<Entry Name="Panel2">I might need to break this. Again...</Entry>
+		<Entry Name="GasolineUsed">That's it I think. Now I need to pull the switch.</Entry>
+		<Entry Name="Pulled">Nothing happens.</Entry>
+		<Entry Name="Pulled2">I heard a sparking but it didn't work. I should try again.</Entry>
+		<Entry Name="EmptyGasoline">Now I filled the gasoline can.</Entry>
+		<Entry Name="ClosedSec">It's too heavy and I can't open it. I need to start the generator.</Entry>
+		<Entry Name="Suitor">If I wait too much he will catch me.</Entry>
+		<Entry Name="Phono01">There is no cylinder in the phonograph.</Entry>
+		<Entry Name="Ending_Stairs">I should probably use elevator instead of stairs.</Entry>
+		<Entry Name="String">Without a hook I can't catch the key.</Entry>
+		<Entry Name="Hook">Without a string I can't reach the key.</Entry>
+		<Entry Name="WaitAlittle">Maybe I should wait for other recording to end.</Entry>
+    </CATEGORY>
+	<CATEGORY Name="Hints">
+        <Entry Name="Death_01">Stay away from darkness...</Entry>
+        <Entry Name="Death_02">Run away from them...</Entry>
+        <Entry Name="Death_03">Watch your step...</Entry>
+		<Entry Name="Forget">Forget</Entry>
+		<Entry Name="Run">Run</Entry>
+    </CATEGORY>
+	<CATEGORY Name="LoadingText">
+        <Entry Name="Load_Text_01">As I woke up, I was somewhere I didn't know, yet smelled familiar.[br]I felt like being here before, but I couldn't recall any memory of it.[br][br]Worst part is, I can't recall any memory of mine.[br]It feels like I'm living in a nightmare cliché, which is definitely not as it seemed on TV at all.</Entry>
+		<Entry Name="Load_Text_02">Wake up in a hospital, without any memory of yourself... What to believe? Or... Who to believe?[br]Am I really a criminal? A murderer? I don't believe it. Yet, I can't completely deny it... I need to remember... who I was. I need to remember what happened. I need to remember if...  If I'm really a killer...</Entry>
+		<Entry Name="Load_Text_03">[br]The bitter taste in my mouth... the pain in my temple... My mind does not remember, but my body remembers.[br]Have I done something to deserve this?[br]That's the question I should answer...[br]That's the thing I need to remember...</Entry>
+		<Entry Name="Load_Text_04">[br]The judge was seeming unrelated to the issue, like it had nothing to do with people's lives. All Mr. Lawrence wanted to do was throwing off the responsibility to someone else.[br]Possibly the first time he really wanted to kill someone...[br][br]Well... Maybe not first time...</Entry>
+		<Entry Name="Load_Text_05">[br]The psychiatrist called his name with a caring voice. He opened his eyes and looked into the void.[br]"How are you?" she asked. "I'm fine" he lied.[br]She knew he was lying. She knew what she was going to do...</Entry>
+		<Entry Name="Load_Text_06">[br]He was taking his notes for his next session. "What if" he thought while fixing his scrubs, "What if I succeed?".[br]Alas! She had other plans for him and for his scrubs...</Entry>
+		<Entry Name="Load_Text_07">[br]"Do you have any memories you don't want to forget?..."[br]"Can you hear the melody of truth?..."[br]"Have you ever broken your promise?..."[br][br]The man was talking endlessly about life changing experiences... It was making him almost laugh. Then he suddenly began to think about his promise...</Entry>
+		<Entry Name="Load_Text_08">[br]"It was a piece of cake", Patrick said; "it will be easier for you to visit her here. Now... about that..."
+		[br]He was finally revealing his true intentions...</Entry>
+		<Entry Name="Load_Text_09">[br]Captured. Abducted. Knocked out. Restrained...[br]It was an ordinary, rainy, gloomy day that I came to visit Grace...[br]She was afraid of thunders, I remember...[br]I remember when we first met... it was raining...</Entry>
+		<Entry Name="Load_Text_10">[br][br]All things that happened... All the past that I forgot - I was forced to forget... and...[br][br][br]wanted to forget...</Entry>
+    </CATEGORY>	
+	<CATEGORY Name="Ending">
+		<Entry Name="MyCredits">*White Night[br][br]
+		An "Amnesia: The Dark Descent (C) 2011 Frictional Games" Mod
+		[br][br][br]
+		[br][br]*Presents[br][br]
+		Tanshaydar (Tansel Altınel)[br][br][br]
+		- Design, Story, Development, Programming, etc.-[br]
+		Tansel Altınel[br][br][br]
+		- Voice Acting -[br]
+		David: David Lyon[br]
+		Grace: Amanda Ford[br]
+		Sofia: Deyanira Gomez[br]
+		Dr. Patrick Parr: Ryan Terry (Cryaotic)[br]
+		Last Psychiatrist: Miss Rigi[br][br][br]
+		- Music -[br]
+		Broken Notes[br]
+		Liminality[br]
+		See music_credits.txt for respective credits[br][br][br]
+		- Beta Testing -[br]
+		David Lyon - Lee(Huge thanks, really!)[br]
+		Yaşar Arabacı - yasar11732 (Ambitious)[br]
+		Plato Mavropoulos - plutomaniac (Bug Hunter!)[br]
+		Glenn Winkelmann Jr. - C-zom[br]
+		Gizem Tavukçu (Thanks...)[br]
+		Ünal Yıldız (unalsnake)[br]
+		[br][br][br]
+		-Custom Flashlight[br]
+		HD Flashlight model: DIGIByte (from FG community)[br]
+		Hand Animations: MrBigzy (from FG community)[br]
+		File Editing and structure: Xiphirx (from FG community)[br][br]
+		-Many Other Custom Models and Textures[br]
+		See disclaimer.txt for reference[br][br]
+		-Credits Music[br]
+		Higurashi Main Theme - Kawai Kenji[br][br][br]
+		[br][br]*Special Thanks[br][br]
+		Although she does not love me anymore... my ex-girlfriend, Gizem, for pushing me, giving great ideas, testing the mod, being in my life[br][br][br]
+		My friend, Ünal, for sketching two good levels and constantly testing the mod[br][br][br]
+		David Lyon, for giving his sexy voice for David, ideas, and being the first one giving proper feedback, thanks to his criticism and all of his efforts. He is a game critic so his ideas helped me a lot[br][br][br]
+		yasar11732, for constantly testing the mod, teaching and helping with modeling issues, being sick in the mind, being a good roommate[br][br][br]
+		Mkilbride, for giving criticism and ideas to make the mod even better[br][br][br]
+		Amanda Ford, for giving Grace a soul, making the twists realistic[br][br][br]
+		Deyanira Gomez, for her great work and making Dr. Sofia sound like a real doctor and psychopat[br][br][br]
+		Ryan Terry, for letting Patrick Parr to be a really legendary psychiatrist[br][br][br]
+		TheGroovyMule, for his awesome idea of replacing tinderboxes with lightbulbs[br][br][br]
+		Everlone (from FG community) for teaching how to convert models from Penumbra series or even from outside[br][br][br]
+		Modsentry, C-zom(Glenn) specifically, for his support and spreading the word, criticism, ideas, testing and a great review[br][br][br]
+		ModDB, for content hosting and giving the support to great mods[br][br][br]
+		Frictional Games, for making such a great game, I love you guys![br][br][br][br][br]
+		It's a cliché, but you, for playing till the end, I really hope you enjoyed!..
+		[br][br][br][br][br][br]
+		This mod is my first creation ever and aimed to be a test for immersion and storytelling.[br]If you have any questions please contact me: tansel[at]tanshaydar.com[br][br][br]
+		I hope you enjoyed a lot, and I hope you noticed the symbolism. I'd like to hear your comments and feedback for my future projects!
+		[br][br][br][br][br][br]David's Story has ended. See you in another story![br][br][br][br]
+		Tanshaydar.com</Entry>
+    </CATEGORY>
+	<CATEGORY Name="PreMenu">
+		<Entry Name="WelcomeMessage01">Welcome to our session today.[br][br]What follows is a couple of quick messages on how to get the best possible result from your mind.</Entry>
+		<Entry Name="WelcomeMessage02">This session is not about winning or losing, there is no true answer. [br][br]This is your mind we are talking about. Try not to break it.</Entry>
+		<Entry Name="WelcomeMessage03">Don't worry about saving. Keep it simple, immerse yourself in game, follow the story, finish the session. As your doctor, I will take care of everything, but if you want to leave our session earlier, you can do so. Save and exit to remember later.</Entry>
+		<Entry Name="WelcomeMessage04">White Night is a completely story oriented session. Try to enjoy yourself reading notes, thinking about what you see, what people tell you, what happened. [br][br]Do not try to fight anything encountered. Instead, use your wits, follow the instructions given in session. Trust me, I'm here to heal your mind.</Entry>
+		<Entry Name="WelcomeMessage05">The interplay between light and dark is very important to the session and because of this it is vital to set up the gamma correctly. Use the slider control below to do so. Adjust it until the square at the right is barely visible. And please do not set gamma too high or you will completely ruin the experience. [br][br]Also make sure to play in a dark room and wear headphones for the best effect. Remember, story is important but environment is also important. Do not ruin the session for yourself.</Entry>
+		<Entry Name="WelcomeMessage06">That's all. Let's begin our session today. I hope you are ready this time.[br][br][br]- Dr. Sofia</Entry>
+	</CATEGORY>
+	  <CATEGORY Name="Levels">
+		<Entry Name="Intro">Intro</Entry>
+		<Entry Name="Rooms">Rooms</Entry>
+		<Entry Name="Stairs">Stairs</Entry>
+		<Entry Name="Hospital">Hospital</Entry>
+		<Entry Name="Morgue">Morgue</Entry>
+		<Entry Name="Basement">Basement</Entry>
+		<Entry Name="Tunnels">Tunnels</Entry>
+		<Entry Name="Asylum">Asylum</Entry>
+		<Entry Name="Entrance">Entrance</Entry>
+		<Entry Name="Remember">Remember</Entry>
+		<Entry Name="Ending">Ending</Entry>
+	  </CATEGORY>
+</LANGUAGE>
