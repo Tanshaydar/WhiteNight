@@ -1,5 +1,8 @@
 <LANGUAGE>
   <RESOURCES />
+  <CATEGORY Name="CustomStoryMain">
+		<Entry Name="Description">White Night, 2011'de Amnesia: The Dark Descent için yayınlanmış ödüllü bir tam çeviri modudur. Şimdi hikâyeyi Steam Workshop desteği ile yeniden tecrübe edin.</Entry>
+  </CATEGORY>
   <CATEGORY Name="Global">
     <Entry Name="Warning">Uyarı</Entry>
     <Entry Name="Yes">Evet</Entry>
@@ -10,9 +13,9 @@
   </CATEGORY>
   <CATEGORY Name="MainMenu">
     <Entry Name="Start Game">Yeni Seans</Entry>
-    <Entry Name="Load Game">Hatırla</Entry>
-    <Entry Name="Custom Map">Başkalarının Dünyaları</Entry>
-    <Entry Name="Change Profile">Hastayı Değiştir</Entry>
+    <Entry Name="Load Game">Hatirla</Entry>
+    <Entry Name="Custom Map">Baskalarinin Dünyalari</Entry>
+    <Entry Name="Change Profile">Hastayi Degistir</Entry>
     <Entry Name="Exit">Unut</Entry>
     <Entry Name="Start a new game?">Yeni seansa başla?</Entry>
     <Entry Name="Yes">Evet</Entry>
@@ -149,8 +152,8 @@
     <Entry Name="ShowCrosshairTip">Oyuniçi imleç gösterilir.</Entry>
     <Entry Name="Language">Dil</Entry>
     <Entry Name="LanguageTip">Yazılar ve altyazılar için dil.</Entry>
-    <Entry Name="FocusIconStyle">Focus icon style</Entry>
-    <Entry Name="FocusIconStyleTip">The style of the icon when looking at an interactable object. Using Simple will only change color of the crosshair.</Entry>
+    <Entry Name="FocusIconStyle">Odak ikon stili</Entry>
+    <Entry Name="FocusIconStyleTip">Etkileşilebilir bir nesneye odaklandığınızda gösterilecek ikon stili. Basit ayarını kullanmak sadece imleç rengini değiştirir.</Entry>
     <Entry Name="FocusIconStyleSimple">Basit</Entry>
     <Entry Name="FocusIconStyleDefault">Varsayılan</Entry>
     <Entry Name="Refraction">Kırılma</Entry>
