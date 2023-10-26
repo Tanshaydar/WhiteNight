@@ -3,7 +3,9 @@
     <Directory Path="fonts/eng" />
     <Directory Path="lang/eng" />
   </RESOURCES>
-  
+  <CATEGORY Name="CustomStoryMain">
+		<Entry Name="Description">White Night, 2011'de Amnesia: The Dark Descent için yayınlanmış ödüllü bir tam çeviri modudur. Şimdi hikâyeyi Steam Workshop desteği ile yeniden tecrübe edin.</Entry>
+  </CATEGORY>
   <CATEGORY Name="Inventory">
 		<Entry Name="ItemName_key_tower_2">Koridor Anahtarı</Entry>
 		<Entry Name="ItemDesc_key_tower_2">Muhtemelen koridorun sonundaki kapıyı açıyor.</Entry>

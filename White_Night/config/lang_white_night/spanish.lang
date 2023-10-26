@@ -3,6 +3,9 @@
     <Directory Path="fonts/eng" />
     <Directory Path="lang/eng" />
   </RESOURCES>
+  <CATEGORY Name="CustomStoryMain">
+		<Entry Name="Description">White Night is an award winning total conversion mod for Amnesia: The Dark Descent that was released back in 2011. You can now re-live the experience through Steam Workshop support.</Entry>
+  </CATEGORY>
   <CATEGORY Name="Inventory">
 	<Entry Name="ItemName_key_tower_2">Llave del Vestíbulo</Entry>
 	<Entry Name="ItemDesc_key_tower_2">Llave que abre la puerta al final del vestíbulo.</Entry>

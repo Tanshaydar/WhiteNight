@@ -3,6 +3,9 @@
     <Directory Path="fonts/grk" />
     <Directory Path="lang/eng" />
   </RESOURCES>
+  <CATEGORY Name="CustomStoryMain">
+		<Entry Name="Description">White Night is an award winning total conversion mod for Amnesia: The Dark Descent that was released back in 2011. You can now re-live the experience through Steam Workshop support.</Entry>
+  </CATEGORY>
   <CATEGORY Name="Inventory">
     <Entry Name="ItemName_key_tower_2">[u922][u955][u949][u953][u948][u943] [u916][u953][u945][u948][u961][u972][u956][u959][u965]</Entry>
     <Entry Name="ItemDesc_key_tower_2">[u913][u965][u964][u972] [u964][u959] [u954][u955][u949][u953][u948][u943] [u958][u949][u954][u955][u949][u953][u948][u974][u957][u949][u953] [u964][u951][u957] [u960][u972][u961][u964][u945] [u963][u964][u959] [u964][u941][u955][u959][u962] [u964][u959][u965] [u948][u953][u945][u948][u961][u972][u956][u959][u965].</Entry>
